@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/android/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/android/</link></image><lastBuildDate>Tue, 09 Sep 2025 16:17:22 +0000</lastBuildDate><generator>Hugo</generator><item><title>Our Roadmap to Post-Quantum Cryptography</title><description>&lt;p>If you&amp;rsquo;re reading this, chances are you&amp;rsquo;ve heard about quantum computers and how they may eventually break some traditional ciphers. In this article, we outline how this affects Cryptomator and what our plan is to become fully quantum-secure.&lt;/p>
+&lt;h2 id="cryptographic-breakdown">Cryptographic Breakdown&lt;/h2>
+&lt;p>First, let&amp;rsquo;s take a look at the ciphers involved in Cryptomator:&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/traditional-cipher-breakdown.svg" alt="Plot showing the growth of 2^n compared to n^2" />
+&lt;figcaption>Cryptographic Breakdown of Cryptomator &amp; Cryptomator Hub&lt;/figcaption>
+&lt;/figure>
+&lt;p>As you can see, we mostly rely on AES- and EC-based algorithms. These are traditional algorithms whose security assumptions apply in a world of classical (non-quantum) computers. The general idea is that computations are efficient if you know the right key but practically impossible without. When I say &amp;ldquo;practically impossible&amp;rdquo; I mean on traditional computers, as the computations are just &amp;ldquo;too complex&amp;rdquo;.&lt;/p>
+&lt;h2 id="a-few-words-about-complexity">A Few Words About Complexity&lt;/h2>
+&lt;p>While we aim to avoid complexity when it comes to usability or code legibility, there is a specific kind of complexity that we strive for. Let me explain:&lt;/p>
+&lt;p>When we want to express how many steps a certain computation requires, we categorize algorithms into classes of computational complexity. To illustrate this concept, here are some dog-related examples:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Complexity Class&lt;/th>
+&lt;th>Example&lt;/th>
+&lt;th>Big O&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Constant Time&lt;/td>
+&lt;td>Blowing the dog whistle always takes the same time, regardless of how many dogs are listening.&lt;/td>
+&lt;td>O(1)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Logarithmic Time&lt;/td>
+&lt;td>Finding the phone number of a pet clinic is easy with a telephone book, as it&amp;rsquo;s sorted alphabetically and allows you to quickly narrow down the pages.&lt;/td>
+&lt;td>O(log n)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Linear Time&lt;/td>
+&lt;td>Petting every dog. If every dog gets the same attention, it takes exactly n times longer, if you have n dogs.&lt;/td>
+&lt;td>O(n)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Polynomial Time&lt;/td>
+&lt;td>If every dog at a party wants to sniff and greet every other dog. Dog 1 sniffs dog 2, 3, 4, &amp;hellip; Dog 2 sniffs dog 3, 4, &amp;hellip; and so on.&lt;/td>
+&lt;td>O(nᵏ)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Exponential Time&lt;/td>
+&lt;td>Every dog has 4 puppies. That makes 16 dogs after two generations, 64 after three generations and 256 after four generations.&lt;/td>
+&lt;td>O(kⁿ)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>To ensure that breaking a cipher requires an insane amount of time and energy, cryptographic algorithms rely on hard-to-compute problems—i.e., we&amp;rsquo;re operating on the more complex side of the spectrum.&lt;/p>
+&lt;p>The most illustrative example for this is the factorization problem: Determine the prime factors of 8633. The result is easy to verify through a simple multiplication (89 × 97), but finding the factors from the product is hard; &lt;a href="https://en.wikipedia.org/wiki/General_number_field_sieve">harder than polynomial but subexponential&lt;/a>. This is exactly what the RSA crypto scheme is based on (except with some &lt;em>very&lt;/em> large numbers), where the public key includes the product of two secret primes that are required to compute the private key.&lt;/p>
+&lt;h2 id="how-quantum-computers-weaken-ciphers">How Quantum Computers Weaken Ciphers&lt;/h2>
+&lt;h3 id="asymmetric-cryptography">Asymmetric Cryptography&lt;/h3>
+&lt;p>Quantum computers are not inherently faster, but they allow for a different set of algorithms to run. So, while a problem may be hard-to-compute for traditional algorithms, it could be far less complex when solved with quantum algorithms.&lt;/p>
+&lt;p>One of the most infamous examples is &lt;a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm">Shor&amp;rsquo;s algorithm&lt;/a>, which solves the factorization problem in polynomial time. While polynomial time is just one row above exponential time in the table above, it makes all the difference. The following graph illustrates the effect of an increasing problem size on the two complexity classes:&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/pqc-complexity-classes.svg" alt="Plot showing the growth of 2^n compared to n^2" />
+&lt;figcaption>Growth curves of polynomial and exponential functions&lt;/figcaption>
+&lt;/figure>
+&lt;p>If a quantum computer can be built that is capable of running Shor&amp;rsquo;s algorithm on large numbers, it would break most of today&amp;rsquo;s public-key cryptography—including ECDH.&lt;/p>
+&lt;h3 id="symmetric-cryptography">Symmetric Cryptography&lt;/h3>
+&lt;p>Imagine a number lock with four digits. To guess the correct combination, a traditional computer would have to check every possibility, starting with 0000 and ending with 9999. On average, it would take 5,000 guesses. Now, what if I told you that a quantum computer could do it in just 100 guesses? Sounds like magic? That is exactly what Grover&amp;rsquo;s algorithm can achieve.&lt;/p>
+&lt;p>More generally, when a traditional algorithm takes \(n/2\) steps on average, a quantum computer only needs \(\sqrt n\) attempts—a speed-up that the BBBV theorem proves to be the best possible solution. If you want to understand how this works, there&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=RQWpF2Gb-gU">a great video by 3Blue1Brown about Grover&amp;rsquo;s Algorithm&lt;/a>.&lt;/p>
+&lt;p>This &amp;ldquo;magic&amp;rdquo; applies to any problem where it&amp;rsquo;s efficient to check if a guessed solution is correct. That&amp;rsquo;s obviously a problem if you don&amp;rsquo;t want an attacker to guess your secret key. Fortunately, the defense is simple: increase \(n\) to a size where even \(\sqrt n\) becomes large enough to make Grover&amp;rsquo;s algorithm impractical.&lt;/p>
+&lt;div class="admonition question">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>&lt;/svg>
+&lt;span>Why is AES-256 quantum-secure?&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>Ever wondered why we use AES-256 instead of AES-128?&lt;/p>
+&lt;p>The &amp;ldquo;256&amp;rdquo; refers to the number of key bits, resulting in \(2^{256}\) possible keys. Guessing the correct key would therefore take \(2^{256} / 2 = 2^{255}\) attempts on a traditional computer and \(\sqrt{2^{256}} = 2^{128}\) attempts using Grover&amp;rsquo;s algorithm.&lt;/p>
+&lt;p>Making \(2^{128}\) guesses is simply unfeasible. So, while AES-128 suffices on traditional computers, the post-quantum world demands for AES-256.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;h2 id="a-new-era-of-ciphers">A New Era of Ciphers&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" srcset="https://staging.cryptomator.org/img/blog/cryptobot-crystals.webp, https://staging.cryptomator.org/img/blog/cryptobot-crystals@2x.webp 2x" src="https://staging.cryptomator.org/img/blog/cryptobot-crystals.webp" alt="Cryptobot wearing Jedi robes and levitating a Kyber crystal and a Dilithium crystal using the force" />
+&lt;figcaption>Kyber and Dilithium&lt;/figcaption>
+&lt;/figure>
+&lt;p>So, while a sufficiently large key space is enough for AES, our asymmetric ciphers need to be replaced to withstand attacks from quantum computers. In 2016, the National Institute of Standards and Technology (NIST) launched a competition to identify quantum-resistant cryptographic algorithms.&lt;/p>
+&lt;p>Electing algorithms through a competition has already proven successful in the past, as with AES and SHA-3. This approach attracts significant attention from experts, who do their best to uncover weaknesses.&lt;/p>
+&lt;p>In 2022, after several rounds of eliminating dozens of candidates, NIST &lt;a href="https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms">announced the winners&lt;/a>. Kyber and Dilithium—named after crystals from Star Wars and Star Trek, respectively—became the first standardized post-quantum algorithms for encryption and digital signatures. They were officially named ML-KEM and ML-DSA.&lt;/p>
+&lt;div class="admonition tip">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">&lt;path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c0 0 0 0 0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c0 0 0 0 0 0c19.8 27.1 39.7 54.4 49.2 86.2l160 0zM192 512c44.2 0 80-35.8 80-80l0-16-160 0 0 16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/>&lt;/svg>
+&lt;span>Tip&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>Again, here is a &lt;a href="https://www.youtube.com/watch?v=K026C5YaB3A">great video explaining the underlying math of ML-based cryptography&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;p>Great! So let&amp;rsquo;s integrate ML-KEM and ML-DSA into Cryptomator Hub:&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/pqc-cipher-breakdown.svg" alt="Plot showing the growth of 2^n compared to n^2" />
+&lt;figcaption>Cryptomator Hub with Post-Quantum Cryptography&lt;/figcaption>
+&lt;/figure>
+&lt;p>&amp;ldquo;But wait, there is still ECDH in it!?&amp;rdquo; I hear you say. And you&amp;rsquo;re right. Despite the new ciphers being very promising, we have to face the fact that they simply haven&amp;rsquo;t been around for long. We just don&amp;rsquo;t know yet what kinds of attacks might be discovered in the future—or whether these algorithms will truly stand the test of time.&lt;/p>
+&lt;p>So, to be extra cautious, we combine a traditional cipher and a post-quantum one. Think of it like a door with two locks: if one is broken, the other still protects what&amp;rsquo;s inside. It&amp;rsquo;s a simple design that ensures the system is no weaker than its individual components. This post-quantum/traditional (PQ/T) hybrid is called &lt;em>X-Wing&lt;/em>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" srcset="https://staging.cryptomator.org/img/blog/cryptobot-xwing.webp, https://staging.cryptomator.org/img/blog/cryptobot-xwing@2x.webp 2x" src="https://staging.cryptomator.org/img/blog/cryptobot-xwing.webp" alt="Cryptobot sitting in the droid socket of an X-Wing fighter, having great fun flying through space" />
+&lt;figcaption>Cryptomator will use X-Wing&lt;/figcaption>
+&lt;/figure>
+&lt;p>X-Wing is still a work in progress, but I reached out to the RFC authors—Deirdre Connolly, Peter Schwabe, and Bas Westerbaan—to ask when we can expect the final specification to be published. Just ten minutes later, Bas replied:&lt;/p>
+&lt;div class="admonition quote">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
+&lt;span>Quote&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>X-Wing is final and being shipped by Google and Apple presumably in hardware.&lt;/p>
+&lt;p>— Bas Westerbaan&lt;/p>
+&lt;/div>
+&lt;/div>&lt;p>To be sure, I followed up and asked whether they expect any further changes to the current RFC draft—which they don&amp;rsquo;t:&lt;/p>
+&lt;div class="admonition quote">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
+&lt;span>Quote&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>No significant changes, no changes planned or expected at all.&lt;/p>
+&lt;p>— Deirdre Connolly&lt;/p>
+&lt;/div>
+&lt;/div>&lt;p>This confirmed our belief that now is the perfect time to begin adopting X-Wing as the future standard for key encapsulation.&lt;/p>
+&lt;div class="admonition question">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>&lt;/svg>
+&lt;span>If PQ/T hybrids are preferable, what about a hybrid signature scheme?&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>Yes, there are also &lt;a href="https://datatracker.ietf.org/doc/draft-prabel-jose-pq-composite-sigs/02/">efforts to standardize a combination of ML-DSA and ECDSA&lt;/a>. Other than X-Wing, this is in an earlier phase, though. We are closely following developments in this area and will probably make use of this scheme once it is ready.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;h2 id="standardizing-cryptography">Standardizing Cryptography&lt;/h2>
+&lt;h3 id="benefits-of-standardization">Benefits of Standardization&lt;/h3>
+&lt;p>In every industry, standardization plays a key role. It ensures compatibility, promotes interoperability, and reduces costs by enabling different systems and organizations to work together using common protocols and specifications—maintaining consistency and reliability.&lt;/p>
+&lt;p>In the security sector, standardization is even more critical. Algorithms, protocols, and data formats must not only function reliably across heterogeneous systems—they must also withstand rigorous scrutiny. The more experts peer review a standard, the better. As with the NIST competitions mentioned earlier, such scrutiny can uncover weaknesses &lt;em>before&lt;/em> a cipher is deployed in production. By adhering to established, transparent standards, both developers and users benefit from stronger, more trustworthy protection—especially as the threat landscape evolves with technologies like quantum computing.&lt;/p>
+&lt;p>Ignoring such standards—sometimes in the name of speed or convenience—sets you on a path that may be paved with hidden flaws. Even the smallest change can introduce serious vulnerabilities that, without thorough peer reviews, are likely to be discovered first by someone smarter and less well-intentioned.&lt;/p>
+&lt;p>At Cryptomator, we&amp;rsquo;ve always stood against &amp;ldquo;security through obscurity&amp;rdquo; (which is also &lt;a href="https://staging.cryptomator.org/guides/open-source/">why open source matters&lt;/a>). Needless to say, we&amp;rsquo;ve never used home-cooked ciphers—that would pose a serious risk. And the more widely used an algorithm or protocol is, the easier it becomes to understand, verify, and audit the system as a whole.&lt;/p>
+&lt;h3 id="a-strong-foundation">A Strong Foundation&lt;/h3>
+&lt;p>Many standards are built upon others. Without ML-KEM, there would be no X-Wing. Now that X-Wing is around the corner, what can we do with it? Use it in yet another standard: &lt;a href="https://www.rfc-editor.org/rfc/rfc9180.html">HPKE&lt;/a>.&lt;/p>
+&lt;p>HPKE stands for Hybrid Public Key Encryption—and to be precise, it doesn&amp;rsquo;t depend on X-Wing at all. Instead, it defines how to combine three different cryptographic ingredients—KEM, KDF, and AEAD—in a specific way that ensures well-defined security properties. And X-Wing can serve as one of these ingredients (the KEM).&lt;/p>
+&lt;p>Another standard that we&amp;rsquo;ve come to love is JWE, a data format for exchanging encrypted payloads. And guess what—there are people working on &lt;a href="https://datatracker.ietf.org/doc/html/draft-reddy-cose-jose-pqc-hybrid-hpke-07">standardizing the use of X-Wing-based HPKE in JWE&lt;/a>. That&amp;rsquo;s exactly what we want to adopt in Cryptomator Hub, replacing the current ECDH-based JWEs.&lt;/p>
+&lt;p>Beyond the aforementioned benefits of peer reviews, adopting standardized formats over proprietary ones provides several additional advantages:&lt;/p>
+&lt;ul>
+&lt;li>Common APIs make it easy to swap out implementations—for example, HPKE usage remains the same regardless of the underlying algorithms.&lt;/li>
+&lt;li>Wide availability of well-established libraries. For instance, there are dozens of JWE/JWT libraries.&lt;/li>
+&lt;li>Official test vectors allows us to write tests that fail the build early if something goes wrong.&lt;/li>
+&lt;li>Faster vulnerabilities awareness: If a flaw is discovered in a widely used standard, it will likely be reported quickly—whereas a single proprietary implementation may go unnoticed for much longer.&lt;/li>
+&lt;/ul>
+&lt;p>Both JWE and HPKE support interchangeable internal algorithms while maintaining a consistent external interface. This allows us to retain the overall structure and quickly replace internal components if vulnerabilities arise.&lt;/p>
+&lt;div class="admonition quote">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
+&lt;span>Quote&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>The moral is the need for cryptographic agility. It’s not enough to implement a single standard; it’s vital that our systems be able to easily swap in new algorithms when required.&lt;/p>
+&lt;p>— &lt;a href="https://www.schneier.com/blog/archives/2022/08/nists-post-quantum-cryptography-standards.html">Bruce Schneier&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/div>&lt;h3 id="standardizing-the-vault-format">Standardizing the Vault Format&lt;/h3>
+&lt;p>So, if all the ciphers used in Cryptomator products—as well as the exchange of secrets in Cryptomator Hub—are based on standards, what about the vault format?&lt;/p>
+&lt;p>While we use well-established cryptography, the file formats themselves are our own. But we want to change that. Some time ago, we joined forces with developers of Cyberduck, gocryptfs, and rclone to derive a common format for encrypted directories—ensuring interoperability across our tools. Although the format is still a work in progress, we hope to share more details with you in a couple of months. In the meantime, you&amp;rsquo;re of course invited to review the format and contribute ideas for improvement on &lt;a href="https://github.com/encryption-alliance/unified-vault-format">GitHub&lt;/a>.&lt;/p>
+&lt;p>One key benefit of this &lt;em>Unified Vault Format&lt;/em> is that it enables key rotation—which itself brings two major advantages:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Access revocation&lt;/strong>: After rotating keys, former vault members can no longer decrypt files added after their access got revoked. What is trivial with access control lists requires special care when we want to enforce this cryptographically.&lt;/li>
+&lt;li>&lt;strong>Cipher agility&lt;/strong>: To some extent, it enables cipher upgrades. For example, if a vulnerability is found in one algorithm, we can flip a switch and transition to a new JWE algorithm—instantly protecting all newly added files.&lt;/li>
+&lt;/ol>
+&lt;h2 id="in-short-where-do-we-stand">In Short: Where Do We Stand?&lt;/h2>
+&lt;h3 id="cryptomator">Cryptomator&lt;/h3>
+&lt;p>As explained above, Cryptomator is already quantum-secure. Since it uses only symmetric ciphers with sufficiently large key spaces, quantum computers currently pose no known threat.&lt;/p>
+&lt;h3 id="cryptomator-hub">Cryptomator Hub&lt;/h3>
+&lt;p>Cryptomator Hub, on the other hand, will need to migrate to different algorithms. These are the steps we want to take:&lt;/p>
+&lt;ol>
+&lt;li>&lt;em>(In progress)&lt;/em> Implement X-Wing: As a 100% open-source company, we have always contributed to other libraries and projects. As mentioned before, we&amp;rsquo;re in contact with the authors of the &lt;a href="https://datatracker.ietf.org/doc/draft-connolly-cfrg-xwing-kem/">X-Wing RFC&lt;/a> and also with the JDK security team in order to add &lt;a href="https://github.com/openjdk/jdk/pull/26032">X-Wing support in the OpenJDK&lt;/a>.&lt;/li>
+&lt;li>&lt;em>(In progress)&lt;/em> Implement HPKE in JWE libraries: We have been contributing to one of the most widely used &lt;a href="https://connect2id.com/products/nimbus-jose-jwt">JOSE libraries for Java&lt;/a> from the very beginning of Cryptomator. Unsurprisingly, it is therefore in our interest to add HPKE support (and then X-Wing based HPHKE) as defined in &lt;a href="https://datatracker.ietf.org/doc/html/draft-reddy-cose-jose-pqc-hybrid-hpke-07">JOSE HPKE RFC&lt;/a>. The RFC authors (one of whom we know personally) are already eager to hear our feedback.&lt;/li>
+&lt;li>Migrate the JWEs used in Cryptomator Hub from traditional to PQ/T hybrid cryptography. We want to start this as soon as the standards are finalized and the aforementioned algorithm implementations can be published in upstream libraries.&lt;/li>
+&lt;li>Introduce a new vault format that will improve the cipher agility and has further benefits for Cryptomator Hub users.&lt;/li>
+&lt;/ol>
+&lt;p>As you can see this is a collaborative effort. All to build a resilient foundation for the years ahead.&lt;/p></description><pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/07/24/post-quantum-roadmap/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/07/24/post-quantum-roadmap/</guid><category>cryptomator</category><category>encryption</category></item><item><title>Cryptomator 1.17.0: Windows, say "Hello"!</title><description>&lt;p>With the new update to version &lt;strong>1.17.0&lt;/strong>, Cryptomator becomes even better — more stable, more compatible, and more user-friendly. In this blog post, we’ll take a look at the most exciting new features and explain why this upgrade is worth it.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/downloads/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.17.0.png" alt="Cryptomator Release 1.17.0" />
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="whats-new">What’s New?&lt;/h2>
+&lt;p>&lt;strong>Windows Hello Integration&lt;/strong>&lt;/p>
+&lt;p>Starting now, you can unlock your vaults on Windows using &lt;strong>Windows Hello&lt;/strong> — whether via facial recognition, fingerprint, or PIN. Added security meets maximum convenience. Once again, big thanks to &lt;a href="https://github.com/purejava">Ralph (purejava on GitHub)&lt;/a> for contributing to this feature!&lt;/p>
+&lt;p>&lt;strong>Double-Click to Unlock Vaults&lt;/strong>&lt;/p>
+&lt;p>You can now unlock your vaults by simply &lt;strong>double-clicking the&lt;/strong> &lt;code>vault.cryptomator&lt;/code> &lt;strong>file&lt;/strong> — no need to open the app interface first. This makes accessing frequently used vaults even easier.&lt;/p>
+&lt;p>&lt;strong>Updated Graphical Framework: JavaFX 24&lt;/strong>&lt;/p>
+&lt;p>Under the hood, Cryptomator&amp;rsquo;s graphical foundation has been updated to &lt;strong>JavaFX 24&lt;/strong>. This not only brings greater stability but also improves compatibility with modern systems.&lt;/p>
+&lt;h2 id="whats-fixed">What’s Fixed?&lt;/h2>
+&lt;p>&lt;strong>WinFsp Update: Blue Screen on Windows Resolved&lt;/strong>&lt;/p>
+&lt;p>One of the most important updates concerns the &lt;strong>WinFsp driver&lt;/strong>, which Cryptomator uses to mount vaults. The update to the latest version fixes a critical bug that, in combination with certain Trend Micro security products, could cause a blue screen.&lt;/p>
+&lt;p>&lt;strong>Legacy Vaults Can Be Imported Again&lt;/strong>&lt;/p>
+&lt;p>A pesky bug has been squashed: &lt;strong>Importing legacy vaults now works smoothly again&lt;/strong>. So if you have older backups, you can now restore them without any issues in this version.&lt;/p>
+&lt;p>You can find all the other changes in the &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.17.0">changelog on GitHub&lt;/a>!&lt;/p>
+&lt;h3 id="and-what-about-windows-arm">And what about Windows ARM?&lt;/h3>
+&lt;p>Unfortunately, the native ARM app for Windows must be postponed due to a bug in the JDK framework. We are working on a fix but cannot announce a release date yet.&lt;/p>
+&lt;h2 id="update-now">Update Now!&lt;/h2>
+&lt;p>Cryptomator 1.17.0 is available as usual via our download page. We highly recommend updating.&lt;/p>
+&lt;p>As always, we look forward to your feedback — whether on &lt;a href="https://github.com/cryptomator">GitHub&lt;/a>, &lt;a href="https://www.facebook.com/Cryptomator">Facebook&lt;/a>, &lt;a href="https://www.instagram.com/cryptomator/">Instagram&lt;/a>, &lt;a href="https://mastodon.online/@cryptomator">Mastodon&lt;/a>, or in our &lt;a href="https://community.cryptomator.org">support forum&lt;/a>.&lt;/p></description><pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/06/25/desktop-1.17.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/06/25/desktop-1.17.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Summer Sale: 25% Off Cryptomator – All June Long!</title><description>&lt;p>Summer is just around the corner – and so is our &lt;strong>Summer Sale&lt;/strong>! From &lt;strong>June 1 to 30&lt;/strong>, you’ll get &lt;strong>25% off&lt;/strong> all paid versions of Cryptomator as well as the &lt;strong>Supporter Certificate&lt;/strong>.&lt;/p>
+&lt;p>☀️ Get &lt;a href="https://staging.cryptomator.org/for-individuals/">Cryptomator&lt;/a> now – for just €14.99*!&lt;/p>
+&lt;p>&lt;a href="https://staging.cryptomator.org/for-teams/">Cryptomator Hub&lt;/a> is also &lt;strong>25% off for the first year&lt;/strong> – ideal for organizations looking to make the most of their security budgets before mid-year.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/summer-2025-sale.png" alt="25% Off Cryptomator" />
+&lt;/a>
+&lt;/figure>
+&lt;h3 id="summer--budget-season">Summer = Budget Season?&lt;/h3>
+&lt;p>For organizations and businesses, this is the perfect time to allocate remaining IT budgets before the mid-year deadline – and invest in &lt;strong>privacy that lasts&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub&lt;/strong> is the ideal solution for teams, NGOs, research institutions, and businesses that want to store sensitive data &lt;strong>encrypted and centrally managed in the cloud&lt;/strong>.&lt;/p>
+&lt;p>Now &lt;strong>25% off for the first year&lt;/strong> – and ready for immediate deployment.&lt;/p>
+&lt;h3 id="what-cryptomator-offers">What Cryptomator Offers&lt;/h3>
+&lt;ul role="list" class="not-prose fa-ul text-sm md:text-base ml-7 md:ml-8">
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>End-to-end encryption&lt;/strong> for cloud services like Dropbox, Google Drive, OneDrive, or iCloud&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Open source&lt;/strong> for full transparency&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Cross-platform support&lt;/strong>: Windows, macOS, Linux, iOS, and Android&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>No subscription, no hidden costs&lt;/strong> – just one-time payment&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="cryptomator-hub--built-for-teams-and-organizations">Cryptomator Hub – Built for Teams and Organizations&lt;/h3>
+&lt;ul role="list" class="not-prose fa-ul text-sm md:text-base ml-7 md:ml-8">
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Centralized management of encrypted vaults&lt;/strong> – simple, secure, and efficient&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Role-based access control&lt;/strong> tailored to your team’s structure&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Zero-knowledge architecture&lt;/strong> – only you have access to your data&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>Perfect for NGOs, academic institutions, research environments, and companies&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;p>Want to use &lt;strong>Cryptomator Hub&lt;/strong> in your organization? Contact us for more details or check out our &lt;a href="https://staging.cryptomator.org/pricing/#for-teams">pricing&lt;/a>.&lt;/p>
+&lt;h3 id="save-now--until-june-30">Save Now – Until June 30!&lt;/h3>
+&lt;p>Whether you&amp;rsquo;re an individual or an organization: If data privacy matters to you, this is your chance.&lt;/p>
+&lt;p>&lt;strong>Get Cryptomator now for only €14.99&lt;/strong> or start with &lt;strong>Cryptomator Hub – 25% off for the first year.&lt;/strong>&lt;/p></description><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/06/01/summer-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/06/01/summer-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Why Strong Passwords Matter More Than Ever</title><description>&lt;p>&lt;strong>Passwords are the first line of defense for our digital identity – and yet, they&amp;rsquo;re often neglected.&lt;/strong> From simple number sequences to reused logins: weak passwords remain one of the leading causes of data breaches. In an age of increasing cyberattacks and near-daily data leaks, it&amp;rsquo;s more important than ever to raise awareness for better password hygiene.&lt;/p>
+&lt;h2 id="the-reality-123456-is-still-a-classic">The Reality: “123456” is Still a Classic&lt;/h2>
+&lt;p>According to the &lt;a href="https://nordpass.com/most-common-passwords-list">NordPass 2024 password report&lt;/a>, “123456” is once again the most commonly used password worldwide. In Germany, “admin” tops the list. Millions of people still rely on passwords that are easy to guess – with serious consequences.&lt;/p>
+&lt;p>Cybercriminals use automated tools to crack weak passwords in seconds. When a data breach occurs, these passwords are often tested across multiple platforms – a huge problem if you&amp;rsquo;ve reused them.&lt;/p>
+&lt;h2 id="i-have-nothing-to-hide--really">“I have nothing to hide” – Really?&lt;/h2>
+&lt;p>This belief is common, but dangerously misleading. Even if your data seems “unimportant” at first glance, attackers can abuse it to:&lt;/p>
+&lt;ul>
+&lt;li>Steal your identity&lt;/li>
+&lt;li>Send emails in your name&lt;/li>
+&lt;li>Access other linked accounts&lt;/li>
+&lt;li>Extort or scam you or your contacts&lt;/li>
+&lt;/ul>
+&lt;p>It&amp;rsquo;s not just about private photos or chats – it’s about your entire digital identity and your trust in online services.&lt;/p>
+&lt;h2 id="three-everyday-examples-that-show-how-quickly-it-can-happen">Three Everyday Examples That Show How Quickly It Can Happen&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>The compromised streaming account&lt;/strong>&lt;br>
+Your streaming service password was leaked. Attackers use it to send phishing emails or test access to other services.&lt;/li>
+&lt;li>&lt;strong>The reused password&lt;/strong>&lt;br>
+You use the same password for your personal email and your work account. If one gets hacked, both are compromised.&lt;/li>
+&lt;li>&lt;strong>Social engineering with weak passwords&lt;/strong>&lt;br>
+An attacker guesses your password using public info (e.g., birthdate + pet’s name) and gains access to your cloud storage.&lt;/li>
+&lt;/ol>
+&lt;h2 id="when-it-gets-expensive-three-real-world-scenarios">When It Gets Expensive: Three Real-World Scenarios&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Hacked email leads to identity theft&lt;/strong>&lt;br>
+An attacker gains access to your email via a weak password.&lt;/p>
+&lt;ul>
+&lt;li>Resets your other account passwords&lt;/li>
+&lt;li>Uses your email for scams or phishing&lt;/li>
+&lt;li>Orders goods in your name&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Outcome:&lt;/strong> Financial loss, damage to reputation, tedious recovery process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Online banking access through password recycling&lt;/strong>&lt;br>
+A leaked password from a forum is reused for online banking. A bot tests major banking sites.&lt;br>
+&lt;strong>Outcome:&lt;/strong> Drained account, legal issues, possible criminal report&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Ransomware in a company via weak admin password&lt;/strong>&lt;br>
+A VPN login is compromised due to a weak password. Attackers install ransomware.&lt;br>
+&lt;strong>Outcome:&lt;/strong> Business shutdown, ransom demand, data loss, GDPR breach&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="password-check-how-safe-are-you">Password Check: How Safe Are You?&lt;/h2>
+&lt;p>Run a quick self-check:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> I use a unique password for each account&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> My passwords are at least 12 characters long and include numbers &amp;amp; symbols&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> I use a password manager&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> I have activated two-factor authentication (2FA)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> I reviewed or changed my passwords in the last 12 months&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Tip:&lt;/strong> Check if your data has been exposed in a breach: &lt;a href="https://haveibeenpwned.com">haveibeenpwned.com&lt;/a>&lt;/p>
+&lt;h2 id="tools-instead-of-headaches-use-a-password-manager">Tools Instead of Headaches: Use a Password Manager&lt;/h2>
+&lt;p>Nobody can remember dozens of complex passwords – and they don’t have to. &lt;strong>Password managers&lt;/strong> like Bitwarden, 1Password or KeePass help you generate, store and autofill strong passwords.&lt;/p>
+&lt;p>The biggest advantage: You only need to remember one master password – the app takes care of the rest.&lt;/p>
+&lt;h2 id="extra-protection-with-two-factor-authentication">Extra Protection With Two-Factor Authentication&lt;/h2>
+&lt;p>Even the strongest password could end up in a data leak. That’s why you should &lt;strong>always enable two-factor authentication (2FA)&lt;/strong> wherever possible. In addition to your password, you’ll enter a code sent via app or SMS.&lt;/p>
+&lt;p>This makes it much harder for attackers to access your accounts – even if they have your password.&lt;/p>
+&lt;h2 id="conclusion-password-security-isnt-a-nice-to-have">Conclusion: Password Security Isn’t a “Nice-to-Have”&lt;/h2>
+&lt;p>The effort required for strong passwords is small – but the benefits are huge. By changing a few habits, you protect yourself from real threats and ensure long-term digital safety.&lt;/p>
+&lt;p>&lt;strong>Now is the best time to update weak passwords, start using a password manager, and enable 2FA.&lt;/strong> &lt;em>Your digital future will thank you.&lt;/em>&lt;/p></description><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</guid><category>event</category></item><item><title>Cryptomator 1.16.0 is here - with practical new features!</title><description>&lt;p>The latest version of our desktop app has been released! &lt;strong>Cryptomator 1.16.0&lt;/strong> introduces several exciting new features that make working with encrypted files even more convenient. This update focuses on new functions that provide greater transparency and control over your vaults – and even &lt;strong>biometric unlocking&lt;/strong> on Mac!&lt;/p>
+&lt;h3 id="whats-new">What&amp;rsquo;s New?&lt;/h3>
+&lt;p>&lt;strong>EventView: Overview of Important Vault Events&lt;/strong>&lt;br>
+Want to know if any conflicts occurred when unlocking a vault or if corrupted files were detected? With the new &lt;strong>EventView&lt;/strong>, you now get a clear overview of relevant events within an unlocked vault – such as conflict resolutions or notifications about corrupted files. This way, you always stay informed about what&amp;rsquo;s happening inside your vault.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[430px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-eventview.png" alt="EventView in Cryptomator 1.16.0" />
+&lt;/figure>
+&lt;p>&lt;strong>Decrypt File Names&lt;/strong>&lt;br>
+With the new &lt;strong>Decrypt File Name&lt;/strong> feature, you can select encrypted files within a vault and retrieve their original, unencrypted filenames – without needing to open the file itself. A handy tool for anyone needing a quick overview!&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[449px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-decryptfilenames.png" alt="Decrypt file names in Cryptomator 1.16.0" />
+&lt;/figure>
+&lt;p>&lt;strong>Touch ID Support for macOS&lt;/strong>&lt;br>
+Starting now, you can unlock your vaults on &lt;strong>Mac&lt;/strong> easily with &lt;strong>Touch ID&lt;/strong>! This makes using Cryptomator not only faster but also more convenient and secure – especially on devices with biometric authentication. Thanks to &lt;a href="https://github.com/purejava">Ralph (purejava on GitHub)&lt;/a> for the great support!&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[408px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-touchid.png" alt="Touch ID support in Cryptomator 1.16.0" />
+&lt;/figure>
+&lt;h3 id="bugfixes">Bugfixes&lt;/h3>
+&lt;p>Of course, we also &lt;strong>fixed several bugs&lt;/strong> – here’s a quick overview:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>main window&lt;/strong> is now displayed correctly again on Windows.&lt;/li>
+&lt;li>The &lt;strong>tray icon&lt;/strong> now reliably adapts to the OS theme on Linux. Thanks again to Ralph for the help!&lt;/li>
+&lt;li>The app now properly quits when the main window is closed (if no tray is active).&lt;/li>
+&lt;li>&lt;strong>Supporter certificates&lt;/strong> can now be properly removed again.&lt;/li>
+&lt;li>In case of &lt;strong>filename conflicts&lt;/strong>, the original suffixes provided by your cloud service are now largely preserved – instead of being replaced by a simple numbering system.&lt;/li>
+&lt;/ul>
+&lt;h3 id="full-changelog-on-github">Full Changelog on GitHub&lt;/h3>
+&lt;p>In addition to the highlights mentioned above, there are also &lt;strong>several smaller improvements and updates&lt;/strong> – such as enhancements to vault settings, better symbolic icon support on Linux, and translation updates. You can find the complete list of changes as always in the &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.16.0">&lt;strong>Changelog&lt;/strong>&lt;/a> on GitHub.&lt;/p>
+&lt;p>&lt;strong>Thanks to all contributors&lt;/strong> from the community – and &lt;strong>enjoy the new update&lt;/strong>!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Cryptomator Hub 1.4.0: More Trust, More Control, More Transparency</title><description>&lt;p>With the release of version 1.4.0, &lt;strong>Cryptomator Hub&lt;/strong> receives a major feature upgrade that offers more control and transparency — while also improving the overall user experience.&lt;/p>
+&lt;p>At the heart of this release are a new &lt;strong>Web of Trust&lt;/strong>, finer-grained &lt;strong>permission management&lt;/strong>, extended &lt;strong>audit logging&lt;/strong>, and deeper &lt;strong>insights into user profiles&lt;/strong>.&lt;/p>
+&lt;p>Let’s take a closer look at what’s new!&lt;/p>
+&lt;h2 id="web-of-trust-mutual-verification-for-better-security">Web of Trust: Mutual Verification for Better Security&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-wot.png" alt="Hub 1.4.0 WoT" />
+&lt;/figure>
+&lt;p>One of the highlights of this release is the new &lt;strong>Web of Trust (WoT)&lt;/strong>. Users can now mutually verify each other&amp;rsquo;s identities by signing public keys. This creates a network of trust that protects against the injection of manipulated or forged public keys.&lt;/p>
+&lt;p>This feature directly addresses so-called &lt;strong>&amp;ldquo;key injection&amp;rdquo; risks&lt;/strong> and strengthens the protection of sensitive data across organizations.&lt;/p>
+&lt;p>The verification process is based on a simple but effective principle: &lt;strong>Only when a person’s public key is confirmed by trusted peers is their identity considered verified.&lt;/strong>&lt;/p>
+&lt;p>Admins can configure how many verifications are required.&lt;/p>
+&lt;h2 id="new-create-vaults-role-granular-permissions-for-vault-creation">New Create-Vaults Role: Granular Permissions for Vault Creation&lt;/h2>
+&lt;p>With the introduction of the new &lt;code>create-vaults&lt;/code> role, admins now have full control over who is allowed to create new vaults within the organization.&lt;/p>
+&lt;p>Previously, this permission was available to all users by default — now, admins can specify whether only certain teams, individuals, or everyone should have access to this feature.&lt;/p>
+&lt;p>Especially in large organizations, this is a key improvement for maintaining order and managing infrastructure growth in a more controlled way.&lt;/p>
+&lt;h2 id="audit-log-even-more-precise-activity-tracking">Audit Log: Even More Precise Activity Tracking&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[553px]" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-auditlog.png" alt="Hub 1.4.0 Audit Log" />
+&lt;/figure>
+&lt;p>Monitoring security-relevant actions is a key responsibility in IT operations. With version 1.4.0, the &lt;strong>audit log&lt;/strong> becomes even more powerful:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Filter by event type:&lt;/strong> You can now filter audit log entries by type — such as key changes, access attempts, or account activity — to quickly isolate relevant data during incidents.&lt;/li>
+&lt;li>&lt;strong>New events:&lt;/strong> Several new &lt;a href="https://docs.cryptomator.org/hub/admin/#event-types">event types&lt;/a> were added to better capture security-critical actions.
+&lt;ul>
+&lt;li>&lt;strong>Register Device&lt;/strong> – A user registered a new device, e.g., Cryptomator app or browser session.&lt;/li>
+&lt;li>&lt;strong>Remove Device&lt;/strong> – A user removed a device.&lt;/li>
+&lt;li>&lt;strong>Signed Identity&lt;/strong> – A user signed another user’s identity.&lt;/li>
+&lt;li>&lt;strong>Account Key Changed&lt;/strong> – A user regenerated their account key, which also affects user keys.&lt;/li>
+&lt;li>&lt;strong>Reset User Account&lt;/strong> – A user reset their account.&lt;/li>
+&lt;li>&lt;strong>User Keys Change&lt;/strong> – A user changed their keys, e.g., during initial setup or account key updates.&lt;/li>
+&lt;li>&lt;strong>Claim Vault Ownership&lt;/strong> – A user claimed ownership of a vault that was created with a Hub version prior to 1.3.0 using the Vault Admin Password.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Retrieve Vault Key event enhanced:&lt;/strong> This audit event now includes the &lt;strong>IP address and device ID&lt;/strong> — making it easier to trace who unlocked a vault and from which device.&lt;/li>
+&lt;/ul>
+&lt;h2 id="more-transparency-in-user-profile">More Transparency in User Profile&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-profile.png" alt="Hub 1.4.0 Profile View" />
+&lt;/figure>
+&lt;p>The user interface has also been updated to offer more transparency about devices and access patterns:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Legacy devices:&lt;/strong> Users can now see if they’re still using devices linked to vaults created with older versions of the Hub. This helps with migrations to the current user-key-based encryption introduced in version 1.3.0.&lt;/li>
+&lt;li>&lt;strong>Last IP and vault access timestamp:&lt;/strong> The device overview now shows the &lt;strong>last known IP address&lt;/strong> and the &lt;strong>most recent vault access timestamp&lt;/strong> for each device — ideal for identifying suspicious activity.&lt;/li>
+&lt;/ul>
+&lt;h2 id="new-languages-and-improved-usability">New Languages and Improved Usability&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>More language support:&lt;/strong> Cryptomator Hub is now available in &lt;strong>Dutch, French, Italian, Korean, Portuguese, and Turkish&lt;/strong> — making it even more accessible for international teams.&lt;/li>
+&lt;li>&lt;strong>Language preference is preserved:&lt;/strong> Your selected language setting is now saved in your user profile and no longer resets after logout.&lt;/li>
+&lt;/ul>
+&lt;h2 id="provenance-attestation-for-container-images">Provenance Attestation for Container Images&lt;/h2>
+&lt;p>A frequently overlooked but critical area of security is the &lt;strong>authenticity of software containers&lt;/strong>. Starting with version 1.4.0, we now publish &lt;strong>provenance attestations&lt;/strong> for our container images.&lt;/p>
+&lt;p>These attestations document the origin and integrity of our images and provide additional assurance for automated deployments and CI/CD pipelines.&lt;/p>
+&lt;h2 id="full-changelog">Full Changelog&lt;/h2>
+&lt;p>All technical details, fixes, and improvements can be found in the &lt;a href="https://github.com/cryptomator/hub/releases/tag/1.4.0">release notes&lt;/a> and the new &lt;a href="https://github.com/cryptomator/hub/blob/1.4.0/CHANGELOG.md">CHANGELOG&lt;/a> file.&lt;/p>
+&lt;h2 id="closing-remarks">Closing Remarks&lt;/h2>
+&lt;p>&lt;strong>Cryptomator Hub 1.4.0&lt;/strong> is a release that builds trust — through greater visibility, more refined controls, and solid technical foundations.&lt;/p>
+&lt;p>Whether it’s security management, role-based permissions, or user-facing transparency: This update lays the groundwork for even more robust data infrastructures in organizations that take encryption seriously.&lt;/p></description><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</guid><category>cryptomator</category><category>hub</category></item><item><title>Spring Sale: 25%* Off Cryptomator – Until World Backup Day!</title><description>&lt;p>Spring is here – and so is our Spring Sale! From March 20 to 31, get 25%* off all paid Cryptomator versions and the Supporter Certificate.&lt;/p>
+&lt;p>Get &lt;a href="https://staging.cryptomator.org/for-individuals/">Cryptomator&lt;/a> now – for only €14.99!*&lt;/p>
+&lt;p>&lt;a href="https://staging.cryptomator.org/for-teams/">Cryptomator Hub&lt;/a> is also 25%* off for the first year! Contact us for more details or check out our &lt;a href="https://staging.cryptomator.org/pricing/">pricing&lt;/a>.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/spring-2025-sale.png" alt="25% Off Cryptomator" />
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="why-now-is-the-best-time">Why Now Is the Best Time&lt;/h2>
+&lt;p>March 31 is World Backup Day – the perfect opportunity to not only back up your data but also encrypt it! After all, a backup alone won’t protect you from unauthorized access. Only strong encryption truly safeguards your privacy.&lt;/p>
+&lt;p>Take World Backup Day as an opportunity to level up your data security!&lt;/p>
+&lt;h3 id="why-cryptomator">Why Cryptomator?&lt;/h3>
+&lt;ul>
+&lt;li>Simple end-to-end encryption for cloud services like Dropbox, Google Drive, OneDrive, and iCloud Drive.&lt;/li>
+&lt;li>Open source for full transparency and security.&lt;/li>
+&lt;li>Available on Windows, macOS, Linux, Android, and iOS.&lt;/li>
+&lt;li>No subscription, no hidden costs – pay once, use forever!&lt;/li>
+&lt;/ul>
+&lt;h3 id="why-cryptomator-hub">Why Cryptomator Hub?&lt;/h3>
+&lt;ul>
+&lt;li>Centralized management of encrypted vaults for teams and organizations.&lt;/li>
+&lt;li>Flexible access control – ideal for NGOs, research institutions, and companies.&lt;/li>
+&lt;li>Zero-knowledge architecture – no one but you can access your encrypted data.&lt;/li>
+&lt;/ul>
+&lt;h2 id="get-it-now-and-save">Get It Now and Save!&lt;/h2>
+&lt;p>The Spring Sale is the perfect opportunity to protect your cloud data – with a one-time purchase and no subscription model. Get Cryptomator for just €14.99* or enjoy 25%* off Cryptomator Hub for your team in the first year.&lt;/p>
+&lt;p>But hurry – this offer is only valid until March 31!&lt;/p></description><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/03/20/spring-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/03/20/spring-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Cryptomator 2.7.0 for iOS: Now with SharePoint Integration!</title><description>&lt;p>We’re excited to announce a major update for the Cryptomator iOS app: &lt;strong>Cryptomator now supports SharePoint!&lt;/strong> This means that businesses and organizations can now store their encrypted vaults directly in SharePoint. Additionally, &lt;strong>Microsoft Teams is also supported&lt;/strong>, as files in Teams are stored in SharePoint by default. With this integration, users can now protect their team documents with &lt;strong>end-to-end encryption&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://apps.apple.com/us/app/cryptomator/id1560822163" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/ios-2.7.0.png" srcset="https://staging.cryptomator.org/img/blog/ios-2.7.0.png 1x, https://staging.cryptomator.org/img/blog/ios-2.7.0@2x.png 2x" alt="Screenshot of Cryptomator for iOS showing the new SharePoint (incl. Microsoft Teams) entry" />
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="why-is-this-important">Why is this important?&lt;/h2>
+&lt;p>Companies, universities, and NGOs increasingly rely on cloud services like Microsoft 365 for flexible and efficient collaboration. With SharePoint integration, users can ensure that &lt;strong>sensitive documents are not only stored in the cloud but also protected with zero-knowledge encryption&lt;/strong>. Even Microsoft has no access to the unencrypted content.&lt;/p>
+&lt;h2 id="how-the-sharepoint-integration-works">How the SharePoint Integration Works&lt;/h2>
+&lt;p>Using Cryptomator with SharePoint is just as easy as with other cloud services:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Create a new vault or add an existing one&lt;/strong>: Select SharePoint as the storage location in the Cryptomator iOS app.&lt;/li>
+&lt;li>&lt;strong>Work securely with encrypted files in Microsoft 365&lt;/strong>: Access your protected documents within SharePoint or Microsoft Teams.&lt;/li>
+&lt;li>&lt;strong>Flexible access across all devices&lt;/strong>: Your encrypted files are available on both desktop and mobile devices.&lt;/li>
+&lt;/ul>
+&lt;h2 id="maximum-security-for-microsoft-365-users">Maximum Security for Microsoft 365 Users&lt;/h2>
+&lt;p>The integration of SharePoint in Cryptomator 2.7.0 is a &lt;strong>major step forward for businesses that prioritize data protection and compliance&lt;/strong>. With this solution, you can:&lt;/p>
+&lt;ul>
+&lt;li>Enhance the security of confidential data while continuing to benefit from Microsoft 365.&lt;/li>
+&lt;li>Meet compliance requirements such as &lt;strong>GDPR&lt;/strong> and &lt;strong>NIS-2&lt;/strong> more easily.&lt;/li>
+&lt;li>Maintain full control over your sensitive information, no matter where it is stored.&lt;/li>
+&lt;/ul>
+&lt;h2 id="try-it-now">Try It Now!&lt;/h2>
+&lt;p>The &lt;strong>new 2.7.0 update is now available &lt;a href="https://apps.apple.com/us/app/cryptomator/id1560822163">on the App Store&lt;/a>&lt;/strong>. Update your Cryptomator iOS app today and enjoy &lt;strong>secure SharePoint encryption in the cloud&lt;/strong>!&lt;/p>
+&lt;p>Do you have any questions or feedback? We’d love to hear from our community!&lt;/p></description><pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</guid><category>cryptomator</category><category>ios</category></item><item><title>Apple Bows to Pressure: UK Government Forces End-to-End Encryption Removal for iCloud Service</title><description>&lt;p>In a world where digital communication and cloud services dominate our daily lives, protecting personal data is crucial. Many companies promise secure encryption, but recent events show that this protection is often insufficient or compromised by government mandates.&lt;/p>
+&lt;h2 id="apple-complies-with-uk-government-demand">Apple Complies with UK Government Demand&lt;/h2>
+&lt;p>Apple has announced that it will no longer offer its &amp;ldquo;Advanced Data Protection&amp;rdquo; (ADP) service, which provides enhanced end-to-end encryption for iCloud data, in the United Kingdom. This decision follows an order from the UK government under the &amp;ldquo;Investigatory Powers Act&amp;rdquo; of 2016, which requires Apple to provide access to encrypted user data.&lt;/p>
+&lt;p>Rather than implementing a direct backdoor for the government, Apple has chosen to make ADP unavailable to UK users. This means that files stored in iCloud, iMessage chats, and photos will no longer be protected with the highest available encryption standard. Apple has justified this step as a necessary response to legal requirements—highlighting that even major tech corporations cannot escape regulatory pressure.&lt;/p>
+&lt;p>In an official statement, Apple reiterated that the company has &amp;ldquo;never created a backdoor or a master key to any of our products or services […].&amp;rdquo; Similar measures are not planned for the future. Furthermore, Apple emphasized that it is &amp;ldquo;more urgent than ever&amp;rdquo; to secure cloud files with end-to-end encryption. The company hopes to reintroduce the feature in the UK in the future.&lt;/p>
+&lt;p>Existing users in the UK must now disable end-to-end encryption, while new users will no longer be able to enable the feature. Apple itself cannot deactivate the encryption, as doing so would contradict the principles of end-to-end security. However, certain cloud services such as passwords, health data, and payment information will remain end-to-end encrypted.&lt;/p>
+&lt;p>This development sends a strong signal: Those who want to keep their data truly private should not rely solely on cloud providers&amp;rsquo; promises but instead take independent action.&lt;/p>
+&lt;h2 id="why-you-should-take-data-encryption-into-your-own-hands">Why You Should Take Data Encryption Into Your Own Hands&lt;/h2>
+&lt;p>The Apple case demonstrates that even well-intentioned security measures can be quickly undermined. The implications of such government demands are far-reaching:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Provider Access to Data:&lt;/strong> Apple may be forced to make further concessions regarding data security in the future.&lt;/li>
+&lt;li>&lt;strong>Apple Sets a Precedent:&lt;/strong> The UK may be a single case for now, but other governments could follow suit with similar demands.&lt;/li>
+&lt;li>&lt;strong>Data Breaches and Hacks:&lt;/strong> Even if a provider does not introduce intentional backdoors, new infrastructure requirements can create unintended vulnerabilities.&lt;/li>
+&lt;/ul>
+&lt;p>To mitigate these risks, users should take responsibility for encrypting their data before uploading it to the cloud.&lt;/p>
+&lt;h3 id="practical-steps-for-your-own-encryption">Practical Steps for Your Own Encryption&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Encrypt Data Before Uploading:&lt;/strong> Tools like Cryptomator consistently use end-to-end encryption, securing your files locally before they are uploaded to the cloud. This ensures that you retain control over your data—even if your cloud provider no longer offers end-to-end encryption, as is now the case with iCloud in the UK.&lt;/li>
+&lt;li>&lt;strong>Use Trusted Open-Source Software:&lt;/strong> Open-source programs like Cryptomator allow independent security audits and offer transparency that proprietary software often lacks.&lt;/li>
+&lt;li>&lt;strong>Regular Updates and Security Checks:&lt;/strong> Keep your software up to date and conduct regular backups to prevent security vulnerabilities.&lt;/li>
+&lt;/ul>
+&lt;h2 id="the-political-dimension-data-privacy-under-siege">The Political Dimension: Data Privacy Under Siege&lt;/h2>
+&lt;p>The UK government’s demands on Apple are not an isolated case. Governments worldwide are attempting to weaken encrypted communication:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>The EU and Client-Side Scanning:&lt;/strong> The European Commission is discussing &amp;ldquo;client-side scanning&amp;rdquo; (CSS), where content is analyzed on user devices before being encrypted. This could pave the way for widespread surveillance.&lt;/li>
+&lt;li>&lt;strong>The US and the FBI:&lt;/strong> In the United States, the FBI has long pushed for access to encrypted devices and cloud services. Such &amp;ldquo;backdoors&amp;rdquo; could be exploited not only by authorities but also by cybercriminals and authoritarian regimes. Recent reports indicate that the FBI has intensified its warnings about security vulnerabilities in iPhones and Android devices, emphasizing the need for greater control over encryption to combat emerging cyber threats.&lt;/li>
+&lt;li>&lt;strong>Australia and the Decryption Law:&lt;/strong> Australia&amp;rsquo;s &amp;ldquo;Telecommunications and Other Legislation Amendment (Assistance and Access) Act&amp;rdquo; requires companies to provide technical solutions for decryption upon government request. This law could set a global precedent for weakened security standards.&lt;/li>
+&lt;/ul>
+&lt;h2 id="conclusion-personal-responsibility-is-the-best-protection">Conclusion: Personal Responsibility is the Best Protection&lt;/h2>
+&lt;p>These recent developments make it clear that users should not blindly trust cloud providers&amp;rsquo; security promises. Taking responsibility for your own encryption is the only way to ensure that private data remains truly private.&lt;/p>
+&lt;p>With the right tools and methods, anyone can effectively protect their data from unauthorized access—and reclaim a piece of digital sovereignty.&lt;/p></description><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</guid><category>cryptomator</category></item><item><title>Cryptomator 1.15.0 is here!</title><description>&lt;p>We are excited to introduce the latest version of Cryptomator, version 1.15.0! This update not only brings a redesigned user interface but also new features and many improvements. Let’s take a closer look at the highlights of this release.&lt;/p>
+&lt;h2 id="whats-new">What’s New?&lt;/h2>
+&lt;h3 id="improved-user-interface">Improved User Interface&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Redesigned Main Window&lt;/strong>: The main window has been revamped to better integrate the app into the system and its design. Additionally, the new layout enhances navigation and groups essential functions so that they are more easily accessible to users.&lt;/li>
+&lt;li>&lt;strong>Compact Vault List&lt;/strong>: The vault list now offers a compact view, which can be enabled in the settings. In this mode, only the vault name is displayed—especially useful for those managing multiple vaults!&lt;/li>
+&lt;/ul>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/create-vault.png" srcset="https://staging.cryptomator.org/img/blog/create-vault.png 1x, https://staging.cryptomator.org/img/blog/create-vault@2x.png 2x" alt="Screenshot of creating a vault in the Cryptomator app" />
+&lt;/figure>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/compact-vault-list.png" srcset="https://staging.cryptomator.org/img/blog/compact-vault-list.png 1x, https://staging.cryptomator.org/img/blog/compact-vault-list@2x.png 2x" alt="Screenshot showing the new Compact List View" />
+&lt;/figure>
+&lt;h3 id="enhanced-compatibility--new-features">Enhanced Compatibility &amp;amp; New Features&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>New Language&lt;/strong>: Cryptomator is now available in Uyghur! A huge thank you to our community for this contribution. If you’d like to help with translations, visit us &lt;a href="https://translate.cryptomator.org">here&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Zero Dependency AppImage&lt;/strong>: The AppImage no longer requires libfuse (version 2) to start. This makes the AppImage fully self-contained and compatible with almost all Linux systems.&lt;/li>
+&lt;li>&lt;strong>Certificate Store&lt;/strong>: Cryptomator now uses the system’s certificate stores (macOS, Windows) or a custom PKCS12 file (Linux) for HTTPS connections. This change ensures better compatibility with enterprise environments where custom certificates are used.&lt;/li>
+&lt;li>&lt;strong>Improved Error Handling When Unlocking&lt;/strong>: If a vault is read-only, this is now indicated to the user, and a retry in read-only mode is possible. This ensures greater transparency, prevents unexpected issues, and allows access to files even in restricted environments.&lt;/li>
+&lt;/ul>
+&lt;h2 id="bugfixes">Bugfixes&lt;/h2>
+&lt;ul>
+&lt;li>A bug in the &lt;strong>cryptographic file system&lt;/strong> has been fixed. In very rare cases, the cryptographic content of a file became corrupted when writing and truncating simultaneously. The bug was discovered through our automated tests and was quickly resolved.&lt;/li>
+&lt;li>&lt;strong>Supporter Certificate Management&lt;/strong>: It is now possible to manage the supporter certificate. Once entered, it is hidden if valid and can only be removed. This prevents easy marking and copying, enhancing certificate security.&lt;/li>
+&lt;li>Vaults can be added to &lt;strong>Dolphin’s Quick Access&lt;/strong> again. This makes navigation and access to encrypted files easier for KDE users.&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-changes">Other Changes&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Updated to JDK 23&lt;/strong> and &lt;strong>JavaFX 23.0.1&lt;/strong> for better performance and stability, ensuring compatibility with modern development standards.&lt;/li>
+&lt;li>&lt;strong>Updated translations&lt;/strong> for many supported languages, ensuring a better user experience across different regions.&lt;/li>
+&lt;/ul>
+&lt;h2 id="update-now">Update Now!&lt;/h2>
+&lt;p>Cryptomator 1.15.0 is now available! Download the latest version directly from our download page and enjoy the new features and improvements.&lt;/p>
+&lt;p>As always, we appreciate your feedback and support! If you have any questions or encounter any issues, feel free to visit our &lt;a href="https://community.cryptomator.org/">community forum&lt;/a> or check out our &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.15.0">GitHub repository&lt;/a>.&lt;/p>
+&lt;p>Enjoy the new version! 🎉&lt;/p></description><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/02/05/release-1.15.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/02/05/release-1.15.0/</guid><category>cryptomator</category></item></channel></rss>
