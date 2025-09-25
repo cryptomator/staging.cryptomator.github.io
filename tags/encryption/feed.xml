@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/encryption/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/encryption/</link></image><lastBuildDate>Tue, 09 Sep 2025 16:17:22 +0000</lastBuildDate><generator>Hugo</generator><item><title>Our Roadmap to Post-Quantum Cryptography</title><description>&lt;p>If you&amp;rsquo;re reading this, chances are you&amp;rsquo;ve heard about quantum computers and how they may eventually break some traditional ciphers. In this article, we outline how this affects Cryptomator and what our plan is to become fully quantum-secure.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/encryption/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/encryption/</link></image><lastBuildDate>Thu, 25 Sep 2025 14:20:59 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Autumn Sale: Protect Your Data – and Your Wallet!</title><description>&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/autumn-2025-sale.png" alt="25% Off Cryptomator" />
+&lt;/a>
+&lt;/figure>
+&lt;p>When the days get shorter and the leaves fall, it&amp;rsquo;s time to refresh not only your wardrobe but also your digital security. Our fall offer helps you keep your data well protected throughout the darker months of the year.&lt;/p>
+&lt;p>From &lt;strong>September 22&lt;/strong> to &lt;strong>30&lt;/strong>, the &lt;strong>Cryptomator Autumn Sale&lt;/strong> is live – and that means:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>25 % off&lt;/strong> &lt;a href="https://cryptomator.org">Cryptomator&lt;/a>&lt;br>
+With Cryptomator, you can encrypt your files locally before they go to the cloud—no complicated configuration or additional accounts required.&lt;/li>
+&lt;li>&lt;strong>25 % off&lt;/strong> &lt;a href="https://cryptomator.org/hub">Cryptomator Hub&lt;/a> for the first year&lt;br>
+Cryptomator Hub enables centralized management, user roles, and audit logs—perfect for NGOs, educational institutions, and companies that take data protection seriously.&lt;/li>
+&lt;/ul>
+&lt;p>Whether you&amp;rsquo;re looking to encrypt your &lt;strong>personal cloud&lt;/strong> or secure &lt;strong>sensitive data in your organization&lt;/strong> – now is the perfect time to get started.&lt;/p>
+&lt;p>📦 The discount applies to &lt;strong>all editions&lt;/strong> – including &lt;strong>team and business solutions&lt;/strong>.&lt;br>
+📅 Act fast! The offer is only available for a &lt;strong>limited time&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Get the deal now!&lt;/strong>&lt;/p>
+&lt;p>Stay safe. Stay encrypted.&lt;br>
+&lt;strong>Your Cryptomator Team&lt;/strong>&lt;/p></description><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Our Roadmap to Post-Quantum Cryptography</title><description>&lt;p>If you&amp;rsquo;re reading this, chances are you&amp;rsquo;ve heard about quantum computers and how they may eventually break some traditional ciphers. In this article, we outline how this affects Cryptomator and what our plan is to become fully quantum-secure.&lt;/p>
 &lt;h2 id="cryptographic-breakdown">Cryptographic Breakdown&lt;/h2>
 &lt;p>First, let&amp;rsquo;s take a look at the ciphers involved in Cryptomator:&lt;/p>
 &lt;figure class="text-center">
@@ -469,38 +487,4 @@ Starting now, you can unlock your vaults on &lt;strong>Mac&lt;/strong> easily wi
 &lt;/ul>
 &lt;h2 id="conclusion-personal-responsibility-is-the-best-protection">Conclusion: Personal Responsibility is the Best Protection&lt;/h2>
 &lt;p>These recent developments make it clear that users should not blindly trust cloud providers&amp;rsquo; security promises. Taking responsibility for your own encryption is the only way to ensure that private data remains truly private.&lt;/p>
-&lt;p>With the right tools and methods, anyone can effectively protect their data from unauthorized access—and reclaim a piece of digital sovereignty.&lt;/p></description><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</guid><category>cryptomator</category></item><item><title>Cryptomator 1.15.0 is here!</title><description>&lt;p>We are excited to introduce the latest version of Cryptomator, version 1.15.0! This update not only brings a redesigned user interface but also new features and many improvements. Let’s take a closer look at the highlights of this release.&lt;/p>
-&lt;h2 id="whats-new">What’s New?&lt;/h2>
-&lt;h3 id="improved-user-interface">Improved User Interface&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Redesigned Main Window&lt;/strong>: The main window has been revamped to better integrate the app into the system and its design. Additionally, the new layout enhances navigation and groups essential functions so that they are more easily accessible to users.&lt;/li>
-&lt;li>&lt;strong>Compact Vault List&lt;/strong>: The vault list now offers a compact view, which can be enabled in the settings. In this mode, only the vault name is displayed—especially useful for those managing multiple vaults!&lt;/li>
-&lt;/ul>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/create-vault.png" srcset="https://staging.cryptomator.org/img/blog/create-vault.png 1x, https://staging.cryptomator.org/img/blog/create-vault@2x.png 2x" alt="Screenshot of creating a vault in the Cryptomator app" />
-&lt;/figure>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/compact-vault-list.png" srcset="https://staging.cryptomator.org/img/blog/compact-vault-list.png 1x, https://staging.cryptomator.org/img/blog/compact-vault-list@2x.png 2x" alt="Screenshot showing the new Compact List View" />
-&lt;/figure>
-&lt;h3 id="enhanced-compatibility--new-features">Enhanced Compatibility &amp;amp; New Features&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>New Language&lt;/strong>: Cryptomator is now available in Uyghur! A huge thank you to our community for this contribution. If you’d like to help with translations, visit us &lt;a href="https://translate.cryptomator.org">here&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Zero Dependency AppImage&lt;/strong>: The AppImage no longer requires libfuse (version 2) to start. This makes the AppImage fully self-contained and compatible with almost all Linux systems.&lt;/li>
-&lt;li>&lt;strong>Certificate Store&lt;/strong>: Cryptomator now uses the system’s certificate stores (macOS, Windows) or a custom PKCS12 file (Linux) for HTTPS connections. This change ensures better compatibility with enterprise environments where custom certificates are used.&lt;/li>
-&lt;li>&lt;strong>Improved Error Handling When Unlocking&lt;/strong>: If a vault is read-only, this is now indicated to the user, and a retry in read-only mode is possible. This ensures greater transparency, prevents unexpected issues, and allows access to files even in restricted environments.&lt;/li>
-&lt;/ul>
-&lt;h2 id="bugfixes">Bugfixes&lt;/h2>
-&lt;ul>
-&lt;li>A bug in the &lt;strong>cryptographic file system&lt;/strong> has been fixed. In very rare cases, the cryptographic content of a file became corrupted when writing and truncating simultaneously. The bug was discovered through our automated tests and was quickly resolved.&lt;/li>
-&lt;li>&lt;strong>Supporter Certificate Management&lt;/strong>: It is now possible to manage the supporter certificate. Once entered, it is hidden if valid and can only be removed. This prevents easy marking and copying, enhancing certificate security.&lt;/li>
-&lt;li>Vaults can be added to &lt;strong>Dolphin’s Quick Access&lt;/strong> again. This makes navigation and access to encrypted files easier for KDE users.&lt;/li>
-&lt;/ul>
-&lt;h2 id="other-changes">Other Changes&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Updated to JDK 23&lt;/strong> and &lt;strong>JavaFX 23.0.1&lt;/strong> for better performance and stability, ensuring compatibility with modern development standards.&lt;/li>
-&lt;li>&lt;strong>Updated translations&lt;/strong> for many supported languages, ensuring a better user experience across different regions.&lt;/li>
-&lt;/ul>
-&lt;h2 id="update-now">Update Now!&lt;/h2>
-&lt;p>Cryptomator 1.15.0 is now available! Download the latest version directly from our download page and enjoy the new features and improvements.&lt;/p>
-&lt;p>As always, we appreciate your feedback and support! If you have any questions or encounter any issues, feel free to visit our &lt;a href="https://community.cryptomator.org/">community forum&lt;/a> or check out our &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.15.0">GitHub repository&lt;/a>.&lt;/p>
-&lt;p>Enjoy the new version! 🎉&lt;/p></description><pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/02/05/release-1.15.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/02/05/release-1.15.0/</guid><category>cryptomator</category></item></channel></rss>
+&lt;p>With the right tools and methods, anyone can effectively protect their data from unauthorized access—and reclaim a piece of digital sovereignty.&lt;/p></description><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</guid><category>cryptomator</category></item></channel></rss>
