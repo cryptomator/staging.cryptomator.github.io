@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/cryptomator/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/cryptomator/</link></image><lastBuildDate>Thu, 25 Sep 2025 15:02:03 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Autumn Sale: Protect Your Data – and Your Wallet!</title><description>&lt;figure class="text-center">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/cryptomator/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/cryptomator/</link></image><lastBuildDate>Fri, 26 Sep 2025 12:34:25 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Desktop 1.18.0 Beta – Try it now!</title><description>&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1-18-0.png" alt="Cryptomator Desktop 1.18.0 Beta" />
+&lt;/figure>
+&lt;p>The next release of Cryptomator Desktop is right around the corner – and before we publish the final version, we&amp;rsquo;d like to invite you to test the beta of version 1.18.0. Along with useful new features and important bug fixes, this release also comes with a special call to our community.&lt;/p>
+&lt;h2 id="new-features--fixes">New Features &amp;amp; Fixes&lt;/h2>
+&lt;p>With Cryptomator Desktop 1.18.0, we’re once again bringing improvements and bug fixes across all platforms:&lt;/p>
+&lt;h4 id="new-feature">New Feature&lt;/h4>
+&lt;ul>
+&lt;li>Remember Last Vault Location&lt;br>
+When creating a new vault, Cryptomator will now automatically suggest the last chosen storage location. This makes setup more convenient, especially if you manage multiple vaults in similar folder structures.&lt;/li>
+&lt;/ul>
+&lt;h4 id="fixes">Fixes&lt;/h4>
+&lt;ul>
+&lt;li>Linux/KDE: QuickAccess Entries&lt;br>
+On KDE, each unlock process created a new QuickAccess entry in the Dolphin file manager, even if one already existed (e.g., after an unexpected app crash). This is now fixed – existing entries are reused, and no manual cleanup is needed.&lt;/li>
+&lt;li>Prevention of Huge Log Files&lt;br>
+On Windows, log files could in rare cases grow extremely large, causing system issues. The existing size limit of log files was bypassed in those cases. This has been fixed, so the app can safely run in the background without issues.&lt;/li>
+&lt;li>macOS: Stability When Saving Vault Passwords&lt;br>
+Some users experienced app crashes when trying to save a vault password. This bug has now been fixed, so password saving on macOS works reliably.&lt;/li>
+&lt;li>macOS: macFUSE Detection on macOS 26&lt;br>
+In the upcoming macOS version 26, macFUSE was sometimes not detected, leading to problems when mounting vaults. This issue is fixed to ensure Cryptomator works smoothly on the latest macOS releases.&lt;/li>
+&lt;/ul>
+&lt;div class="text-center">
+&lt;a href="https://staging.cryptomator.org/downloads/">&lt;i class="fa-solid fa-download">&lt;/i> Download the Beta 1.18.0 here&lt;/a>
+&lt;/div>
+&lt;h2 id="we-need-your-support">We Need Your Support!&lt;/h2>
+&lt;p>In addition to these updates, there’s something special this time:&lt;br>
+Our Windows installer is now signed with a new certificate. Since this certificate is not yet widely recognized in Microsoft’s trust network, Windows may display a security prompt when installing the beta version.&lt;/p>
+&lt;p>The more people install the beta, the faster the certificate will gain trust – and the security dialog will disappear. Don’t worry: the installer is still safe and signed by us. Windows just needs to “learn” that the new certificate is trustworthy.&lt;/p>
+&lt;h2 id="final-words">Final Words&lt;/h2>
+&lt;p>With version 1.18.0, we’re making Cryptomator more convenient, stable, and future-proof. The beta is an important step – not only to test the new features and fixes, but also to establish our new certificate in the Windows ecosystem.&lt;/p>
+&lt;p>We’re grateful for every bit of support from the community:&lt;/p>
+&lt;ul>
+&lt;li>Install the beta and try out the updates.&lt;/li>
+&lt;li>Share your feedback if you notice anything.&lt;/li>
+&lt;li>Help us make the final release as stable and user-friendly as possible.&lt;/li>
+&lt;/ul>
+&lt;p>Your feedback makes Cryptomator stronger – and ensures we can all keep our data securely encrypted.&lt;/p>
+&lt;p>Thank you for your support – we can’t wait for the final release of 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item><item><title>Cryptomator Autumn Sale: Protect Your Data – and Your Wallet!</title><description>&lt;figure class="text-center">
 &lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/autumn-2025-sale.png" alt="25% Off Cryptomator" />
 &lt;/a>
@@ -457,34 +495,4 @@ Starting now, you can unlock your vaults on &lt;strong>Mac&lt;/strong> easily wi
 &lt;/ul>
 &lt;h2 id="try-it-now">Try It Now!&lt;/h2>
 &lt;p>The &lt;strong>new 2.7.0 update is now available &lt;a href="https://apps.apple.com/us/app/cryptomator/id1560822163">on the App Store&lt;/a>&lt;/strong>. Update your Cryptomator iOS app today and enjoy &lt;strong>secure SharePoint encryption in the cloud&lt;/strong>!&lt;/p>
-&lt;p>Do you have any questions or feedback? We’d love to hear from our community!&lt;/p></description><pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</guid><category>cryptomator</category><category>ios</category></item><item><title>Apple Bows to Pressure: UK Government Forces End-to-End Encryption Removal for iCloud Service</title><description>&lt;p>In a world where digital communication and cloud services dominate our daily lives, protecting personal data is crucial. Many companies promise secure encryption, but recent events show that this protection is often insufficient or compromised by government mandates.&lt;/p>
-&lt;h2 id="apple-complies-with-uk-government-demand">Apple Complies with UK Government Demand&lt;/h2>
-&lt;p>Apple has announced that it will no longer offer its &amp;ldquo;Advanced Data Protection&amp;rdquo; (ADP) service, which provides enhanced end-to-end encryption for iCloud data, in the United Kingdom. This decision follows an order from the UK government under the &amp;ldquo;Investigatory Powers Act&amp;rdquo; of 2016, which requires Apple to provide access to encrypted user data.&lt;/p>
-&lt;p>Rather than implementing a direct backdoor for the government, Apple has chosen to make ADP unavailable to UK users. This means that files stored in iCloud, iMessage chats, and photos will no longer be protected with the highest available encryption standard. Apple has justified this step as a necessary response to legal requirements—highlighting that even major tech corporations cannot escape regulatory pressure.&lt;/p>
-&lt;p>In an official statement, Apple reiterated that the company has &amp;ldquo;never created a backdoor or a master key to any of our products or services […].&amp;rdquo; Similar measures are not planned for the future. Furthermore, Apple emphasized that it is &amp;ldquo;more urgent than ever&amp;rdquo; to secure cloud files with end-to-end encryption. The company hopes to reintroduce the feature in the UK in the future.&lt;/p>
-&lt;p>Existing users in the UK must now disable end-to-end encryption, while new users will no longer be able to enable the feature. Apple itself cannot deactivate the encryption, as doing so would contradict the principles of end-to-end security. However, certain cloud services such as passwords, health data, and payment information will remain end-to-end encrypted.&lt;/p>
-&lt;p>This development sends a strong signal: Those who want to keep their data truly private should not rely solely on cloud providers&amp;rsquo; promises but instead take independent action.&lt;/p>
-&lt;h2 id="why-you-should-take-data-encryption-into-your-own-hands">Why You Should Take Data Encryption Into Your Own Hands&lt;/h2>
-&lt;p>The Apple case demonstrates that even well-intentioned security measures can be quickly undermined. The implications of such government demands are far-reaching:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Provider Access to Data:&lt;/strong> Apple may be forced to make further concessions regarding data security in the future.&lt;/li>
-&lt;li>&lt;strong>Apple Sets a Precedent:&lt;/strong> The UK may be a single case for now, but other governments could follow suit with similar demands.&lt;/li>
-&lt;li>&lt;strong>Data Breaches and Hacks:&lt;/strong> Even if a provider does not introduce intentional backdoors, new infrastructure requirements can create unintended vulnerabilities.&lt;/li>
-&lt;/ul>
-&lt;p>To mitigate these risks, users should take responsibility for encrypting their data before uploading it to the cloud.&lt;/p>
-&lt;h3 id="practical-steps-for-your-own-encryption">Practical Steps for Your Own Encryption&lt;/h3>
-&lt;ul>
-&lt;li>&lt;strong>Encrypt Data Before Uploading:&lt;/strong> Tools like Cryptomator consistently use end-to-end encryption, securing your files locally before they are uploaded to the cloud. This ensures that you retain control over your data—even if your cloud provider no longer offers end-to-end encryption, as is now the case with iCloud in the UK.&lt;/li>
-&lt;li>&lt;strong>Use Trusted Open-Source Software:&lt;/strong> Open-source programs like Cryptomator allow independent security audits and offer transparency that proprietary software often lacks.&lt;/li>
-&lt;li>&lt;strong>Regular Updates and Security Checks:&lt;/strong> Keep your software up to date and conduct regular backups to prevent security vulnerabilities.&lt;/li>
-&lt;/ul>
-&lt;h2 id="the-political-dimension-data-privacy-under-siege">The Political Dimension: Data Privacy Under Siege&lt;/h2>
-&lt;p>The UK government’s demands on Apple are not an isolated case. Governments worldwide are attempting to weaken encrypted communication:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>The EU and Client-Side Scanning:&lt;/strong> The European Commission is discussing &amp;ldquo;client-side scanning&amp;rdquo; (CSS), where content is analyzed on user devices before being encrypted. This could pave the way for widespread surveillance.&lt;/li>
-&lt;li>&lt;strong>The US and the FBI:&lt;/strong> In the United States, the FBI has long pushed for access to encrypted devices and cloud services. Such &amp;ldquo;backdoors&amp;rdquo; could be exploited not only by authorities but also by cybercriminals and authoritarian regimes. Recent reports indicate that the FBI has intensified its warnings about security vulnerabilities in iPhones and Android devices, emphasizing the need for greater control over encryption to combat emerging cyber threats.&lt;/li>
-&lt;li>&lt;strong>Australia and the Decryption Law:&lt;/strong> Australia&amp;rsquo;s &amp;ldquo;Telecommunications and Other Legislation Amendment (Assistance and Access) Act&amp;rdquo; requires companies to provide technical solutions for decryption upon government request. This law could set a global precedent for weakened security standards.&lt;/li>
-&lt;/ul>
-&lt;h2 id="conclusion-personal-responsibility-is-the-best-protection">Conclusion: Personal Responsibility is the Best Protection&lt;/h2>
-&lt;p>These recent developments make it clear that users should not blindly trust cloud providers&amp;rsquo; security promises. Taking responsibility for your own encryption is the only way to ensure that private data remains truly private.&lt;/p>
-&lt;p>With the right tools and methods, anyone can effectively protect their data from unauthorized access—and reclaim a piece of digital sovereignty.&lt;/p></description><pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/02/25/apple-bows-to-pressure-by-uk-government/</guid><category>cryptomator</category></item></channel></rss>
+&lt;p>Do you have any questions or feedback? We’d love to hear from our community!&lt;/p></description><pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</guid><category>cryptomator</category><category>ios</category></item></channel></rss>
