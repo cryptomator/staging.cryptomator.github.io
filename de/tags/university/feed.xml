@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/university/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/university/</link></image><lastBuildDate>Wed, 22 Oct 2025 13:12:10 +0000</lastBuildDate><generator>Hugo</generator><item><title>OneDrive-Sicherheitslücke zeigt: Warum Zero-Knowledge zählt</title><description>&lt;p>Im &lt;strong>Mai 2025&lt;/strong> veröffentlichte das Sicherheitsteam von &lt;strong>Oasis Security&lt;/strong> eine &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">Analyse&lt;/a>, die in der Cloud-Welt für Aufsehen sorgte: Über eine &lt;strong>Schwachstelle im OneDrive File Picker&lt;/strong> konnten Drittanbieter-Anwendungen auf Dateien zugreifen, für die eigentlich keine Zugriffsrechte bestanden. Betroffen waren &lt;strong>Millionen Nutzer:innen&lt;/strong> – sowohl privat als auch in Unternehmen.&lt;/p>
+&lt;p>Was genau ist passiert, warum ist dieser Vorfall so brisant – und was kannst du daraus lernen, um deine eigenen Daten besser zu schützen?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/onedrive-security-breach.png" alt="OneDrive-Sicherheitslücke zeigt: Zero-Knowledge-Verschlüsselung ist unverzichtbar" />
+&lt;/figure>
+&lt;h2 id="was-ist-beim-onedrive-file-picker-schiefgelaufen">Was ist beim OneDrive File Picker schiefgelaufen?&lt;/h2>
+&lt;p>OneDrive File Picker ist eine beliebte Schnittstelle, mit der Apps auf Dateien aus dem persönlichen Cloud-Speicher zugreifen können. Doch Oasis Security fand heraus, dass &lt;strong>bestimmte Konfigurationsfehler&lt;/strong> es ermöglichten, dass Anwendungen Dateien einsehen und herunterladen konnten, auf die sie offiziell keinen Zugriff hatten – selbst sensible Inhalte wie Steuerunterlagen, Projektpläne oder vertrauliche Gesprächsprotokolle.&lt;/p>
+&lt;p>Schlimmer noch: Die betroffenen Anwendungen mussten nicht einmal einen Exploit verwenden – es reichte, den File Picker korrekt (oder besser gesagt: falsch) zu nutzen. &lt;strong>Das Problem war kein gezielter Hack, sondern ein Konstruktionsfehler im System.&lt;/strong>&lt;/p>
+&lt;h2 id="die-wahre-lektion-vertrauen-ist-kein-sicherheitskonzept">Die wahre Lektion: Vertrauen ist kein Sicherheitskonzept&lt;/h2>
+&lt;p>Viele Nutzer:innen vertrauen darauf, dass Cloud-Anbieter wie Microsoft, Google oder Apple ihre Daten zuverlässig absichern. Doch der Vorfall zeigt: Auch große Plattformen machen Fehler – mit weitreichenden Folgen.&lt;/p>
+&lt;p>Das &lt;strong>eigentliche Problem&lt;/strong> liegt tiefer:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zugriffsrechte&lt;/strong> werden im Backend verwaltet, nicht durch den oder die Nutzer:in selbst.&lt;/li>
+&lt;li>Dateien liegen oft &lt;strong>unverschlüsselt&lt;/strong> auf den Servern – oder nur mit einem Schlüssel, den der Anbieter selbst kontrolliert.&lt;/li>
+&lt;li>&lt;strong>Sicherheitslücken in Drittanbieter-Apps oder Webinterfaces&lt;/strong> können ausgenutzt werden, ohne dass Betroffene es merken.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Kurz gesagt&lt;/strong>: Wer seine Daten ausschließlich dem Sicherheitsversprechen von Cloud-Anbietern überlässt, gibt die Kontrolle aus der Hand.&lt;/p>
+&lt;h2 id="die-lösung-zero-knowledge-verschlüsselung-mit-cryptomator">Die Lösung: Zero-Knowledge-Verschlüsselung mit Cryptomator&lt;/h2>
+&lt;p>Cryptomator setzt auf einen grundlegend anderen Ansatz: Die &lt;strong>Dateien werden lokal auf deinem Gerät verschlüsselt, bevor sie in die Cloud hochgeladen werden&lt;/strong>. So bleiben deine Daten selbst dann geschützt, wenn der Cloud-Anbieter kompromittiert wird – oder wie im Fall von OneDrive schlichtweg Fehler macht.&lt;/p>
+&lt;p>Das bedeutet:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Niemand außer dir&lt;/strong> kann deine Dateien lesen – nicht Microsoft, nicht Google, nicht wir.&lt;/li>
+&lt;li>&lt;strong>Zugriffsrechte&lt;/strong> sind zweitrangig, denn ohne den Schlüssel bleiben alle Daten unlesbar.&lt;/li>
+&lt;li>Selbst &lt;strong>kompromittierte&lt;/strong> APIs oder Drittanbieter-Apps bekommen nur verschlüsselten Datenmüll zu Gesicht.&lt;/li>
+&lt;/ul>
+&lt;p>Für Teams, Organisationen und Unternehmen bietet &lt;strong>Cryptomator Hub&lt;/strong> die ideale Erweiterung:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zentrale Verwaltung von verschlüsselten Tresoren (Vaults)&lt;/strong>&lt;br>
+IT-Admins können Vaults vorkonfigurieren und gezielt mit Nutzer:innen teilen – alles Ende-zu-Ende verschlüsselt.&lt;/li>
+&lt;li>&lt;strong>Rollenbasierte Zugriffskontrolle&lt;/strong>&lt;br>
+Dank des rollenbasierten Systems legen Sie exakt fest, wer Vaults erstellen, öffnen oder verwalten darf – ohne zentrale Schlüsselverteilung.&lt;/li>
+&lt;li>&lt;strong>Web of Trust für sichere Zusammenarbeit&lt;/strong>&lt;br>
+Teammitglieder verifizieren sich gegenseitig, wodurch eine vertrauenswürdige Umgebung entsteht – ganz ohne externe Zertifikatsstellen.&lt;/li>
+&lt;li>&lt;strong>Nahtlose Integration in bestehende Cloud-Workflows&lt;/strong>&lt;br>
+Cryptomator Hub lässt sich bequem mit bestehenden Cloudspeichern wie OneDrive, Google Drive oder Dropbox kombinieren.&lt;/li>
+&lt;/ul>
+&lt;p>So ermöglicht Cryptomator Hub eine &lt;strong>hochsichere und zugleich praxisnahe Cloud-Nutzung im Team&lt;/strong>, ohne die üblichen Kompromisse bei Datenschutz und Compliance. Besonders für Organisationen mit erhöhten Anforderungen – etwa &lt;strong>NGOs, Forschungseinrichtungen oder Unternehmen in regulierten Branchen&lt;/strong> – ist das eine zukunftssichere Lösung.&lt;/p>
+&lt;h2 id="was-du-jetzt-tun-kannst">Was du jetzt tun kannst&lt;/h2>
+&lt;p>Ob du OneDrive, Dropbox oder einen anderen Cloud-Dienst nutzt – der Vorfall zeigt, dass es &lt;strong>keine 100%ige Sicherheit&lt;/strong> durch Anbieter alleine geben kann. Doch mit wenigen Schritten kannst du deine Risiken drastisch reduzieren:&lt;/p>
+&lt;ul>
+&lt;li>Nutze &lt;strong>Client-seitige Verschlüsselung&lt;/strong> mit Tools wie Cryptomator.&lt;/li>
+&lt;li>Speichere besonders sensible Dokumente nicht unverschlüsselt in der Cloud.&lt;/li>
+&lt;li>&lt;strong>Sensibilisiere deine Teammitglieder&lt;/strong> oder Kolleg:innen für das Thema Cloud-Zugriffsrechte.&lt;/li>
+&lt;li>Überprüfe, welche Drittanbieter-Apps Zugriff auf deine Cloud haben.&lt;/li>
+&lt;/ul>
+&lt;h2 id="fazit-sicherheit-beginnt-mit-kontrolle">Fazit: Sicherheit beginnt mit Kontrolle&lt;/h2>
+&lt;p>Die OneDrive-Sicherheitslücke ist kein Einzelfall – sondern ein Symptom eines Systems, das auf Vertrauen statt auf echte Kontrolle baut. Doch wer seine &lt;strong>Dateien bereits vor dem Upload verschlüsselt&lt;/strong>, bleibt selbst im Fall schwerwiegender Sicherheitslücken geschützt.&lt;/p>
+&lt;p>Mit Cryptomator behalten Sie die volle Kontrolle – über Ihre Daten, Ihre Privatsphäre und Ihre digitale Sicherheit.&lt;/p></description><pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/10/17/onedrive-security-breach/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/10/17/onedrive-security-breach/</guid><category>cryptomator</category><category>onedrive</category></item><item><title>Zurück in den Hörsaal – Datensicherheit für Universitäten</title><description>&lt;p>Mit dem Start des neuen Wintersemesters füllen sich wieder die Hörsäle – und auch die &lt;strong>digitalen Plattformen der Hochschulen&lt;/strong>. Lernmanagementsysteme, Forschungsplattformen, Cloud-Speicherlösungen und digitale Verwaltungsprozesse gehören längst zum Alltag an Universitäten. Doch während die Digitalisierung neue Möglichkeiten eröffnet, birgt sie auch Risiken: &lt;strong>Cyberangriffe, Datenschutzverletzungen und unzureichend geschützte Cloud-Daten&lt;/strong> gefährden die Integrität und Vertraulichkeit hochsensibler Informationen. In diesem Beitrag zeigen wir, warum Verschlüsselung für Universitäten essenziell ist – und wie sie dabei hilft, &lt;strong>Forschung, Lehre und Verwaltung sicherer zu machen&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/back-to-school.png" alt="Zurück in den Hörsaal – Datensicherheit für Universitäten" />
+&lt;/figure>
+&lt;h3 id="warum-universitäten-ein-lukratives-ziel-für-cyberangriffe-sind">Warum Universitäten ein lukratives Ziel für Cyberangriffe sind&lt;/h3>
+&lt;p>Universitäten und Hochschulen verarbeiten eine große Bandbreite an sensiblen Daten:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Persönliche Daten&lt;/strong> von Studierenden, Forschenden und Mitarbeitenden (z. B. Matrikelnummern, Zeugnisse, Gesundheitsinformationen).&lt;/li>
+&lt;li>&lt;strong>Forschungsdaten&lt;/strong>, oft mit Bezug zu Drittmitteln oder staatlich geförderten Projekten.&lt;/li>
+&lt;li>&lt;strong>Internationale Kooperationen&lt;/strong>, bei denen auch Compliance-Vorgaben anderer Länder (z. B. FERPA, GDPR) beachtet werden müssen.&lt;/li>
+&lt;li>&lt;strong>Login-Daten und Zugangsschlüssel&lt;/strong> zu Lernplattformen, E-Mail-Diensten und digitalen Ressourcen.&lt;/li>
+&lt;/ul>
+&lt;p>Immer mehr Angriffe zielen auf Universitäten, etwa durch Ransomware, Phishing oder Cloud-Leaks. Laut dem &lt;a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Lageberichte/Lagebericht2024.html">BSI-Lagebericht 2024&lt;/a> zählen Bildungseinrichtungen zu den kritischen Bereichen mit stark gestiegener Bedrohungslage. Umso wichtiger ist es, dass Hochschulen ihre digitalen Strukturen resilient und verschlüsselt gestalten.&lt;/p>
+&lt;h3 id="verschlüsselung-die-digitale-geheimtinte-der-hochschule">Verschlüsselung: Die digitale Geheimtinte der Hochschule&lt;/h3>
+&lt;p>Datenverschlüsselung schützt Informationen durch mathematische Verfahren – sie sind nur mit einem passenden Schlüssel lesbar. Für Hochschulen bedeutet das konkret:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Vertraulichkeit von Forschungsergebnissen&lt;/strong>&lt;br>
+Besonders bei sensibler Grundlagenforschung oder Kooperationsprojekten mit Unternehmen ist es entscheidend, dass nur berechtigte Personen Zugang zu Dateien erhalten. Eine Ende-zu-Ende-Verschlüsselung schützt diese Daten, selbst wenn ein Cloud-Anbieter kompromittiert wird.&lt;/li>
+&lt;li>&lt;strong>Datenschutz für Studierende und Lehrende&lt;/strong>&lt;br>
+Mit der EU-DSGVO sind Hochschulen verpflichtet, personenbezogene Daten umfassend zu schützen. Verschlüsselung ermöglicht hier die datenschutzkonforme Verarbeitung – auch bei Cloud-Nutzung, Homeoffice oder BYOD-Modellen.&lt;/li>
+&lt;li>&lt;strong>Sicherung vor Ransomware &amp;amp; Datenverlust&lt;/strong>&lt;br>
+Mit verschlüsselten Backups und geschützten Speichersystemen lässt sich die Wirkung von Ransomware-Angriffen stark begrenzen. Angreifer haben keinen Zugriff auf unverschlüsselte Originaldaten, und Wiederherstellung kann ohne Zahlung erfolgen.&lt;/li>
+&lt;/ol>
+&lt;h3 id="praktische-anwendung-wo-verschlüsselung-sinnvoll-ist">Praktische Anwendung: Wo Verschlüsselung sinnvoll ist&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Einsatzbereich&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Empfohlene Lösung&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Cloud-Speicher (z.B. Nextcloud, OneDrive)&lt;/td>
+&lt;td>Clientseitige Verschlüsselung mit Tools wie Cryptomator&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Forschungsdaten-Archivierung&lt;/td>
+&lt;td>Zero-Knowledge-Cloud oder verschlüsselte Tresore&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Verwaltungsdokumente&lt;/td>
+&lt;td>Passwortschutz und strukturierte Zugriffskontrollen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Mobile Nutzung &amp;amp; Homeoffice&lt;/td>
+&lt;td>Container-basierte Verschlüsselung auf mobilen Geräten&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="fazit-jetzt-die-weichen-für-ein-sicheres-semester-stellen">Fazit: Jetzt die Weichen für ein sicheres Semester stellen&lt;/h3>
+&lt;p>Die Digitalisierung der Hochschulwelt ist nicht aufzuhalten – aber auch nicht schutzlos. Wer heute verschlüsselt, schützt morgen die Autonomie von Forschung und Lehre. Universitäten, die auf einfache, sichere und datenschutzkonforme Verschlüsselungslösungen setzen, schaffen Vertrauen bei Studierenden, Mitarbeitenden und Partnerinstitutionen.&lt;/p>
+&lt;p>Jetzt ist der ideale Zeitpunkt, um bestehende Systeme zu evaluieren, Aufklärungsarbeit zu leisten und Verschlüsselungslösungen nachhaltig zu integrieren.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item><item><title>Cryptomator Desktop 1.18.0 Beta – Jetzt testen!</title><description>&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0-beta.png" alt="Cryptomator Desktop 1.18.0 Beta" />
+&lt;/figure>
+&lt;p>Die nächste Version von Cryptomator Desktop steht in den Startlöchern – und bevor wir das finale Release veröffentlichen, laden wir euch ein, die Beta von Version 1.18.0 auszuprobieren. Neben praktischen neuen Features und wichtigen Bugfixes gibt es diesmal auch einen besonderen Aufruf an unsere Community.&lt;/p>
+&lt;h2 id="neue-features--fixes">Neue Features &amp;amp; Fixes&lt;/h2>
+&lt;p>Mit Cryptomator Desktop 1.18.0 bringen wir wieder einige Verbesserungen und Bugfixes für alle Plattformen:&lt;/p>
+&lt;h4 id="neues-feature">Neues Feature&lt;/h4>
+&lt;ul>
+&lt;li>Merken des letzten Tresor-Speicherorts&lt;br>
+Wenn ihr einen neuen Tresor erstellt, schlägt Cryptomator nun automatisch den zuletzt gewählten Speicherort vor. Das macht die Einrichtung komfortabler, besonders wenn ihr mehrere Tresore in ähnlichen Ordnerstrukturen ablegt.&lt;/li>
+&lt;/ul>
+&lt;h4 id="fixes">Fixes&lt;/h4>
+&lt;ul>
+&lt;li>Linux/KDE: QuickAccess-Einträge&lt;br>
+Unter KDE wurden bei jedem Entsperrvorgang ein neuer QuickAccess Eintrag im Dolphin Dateimanager erstellt, auch wenn ein Eintrag schon existierte (z.B. durch ein unerwartetes Schließen der App). Dieses Verhalten ist nun behoben – alte Einträge werden wieder verwendet und es ist kein manuelles Aufräumen nötig.&lt;/li>
+&lt;li>Vermeidung riesiger Logfiles&lt;br>
+Unter Windows konnte in seltenen Fällen Logdateien der App extrem groß werden, was zu Systemproblemen führte. Die existierende Größenbegrenzung der Logdateien wurde dabei umgangen. Dies ist behoben, sodass die App ohne Probleme im Hintergrund ausgeführt werden kann.&lt;/li>
+&lt;li>macOS: Stabilität beim Speichern von Tresor-Passwörtern&lt;br>
+Einige Nutzer:innen erlebten einen App-Crash, wenn sie das Tresor-Passwort speichern wollten. Dieser Fehler ist nun behoben, sodass die Passwortspeicherung unter macOS zuverlässig funktioniert.&lt;/li>
+&lt;li>macOS: Erkennung von macFUSE unter macOS 26&lt;br>
+Unter der kommenden macOS-Version 26 wurde macFUSE teilweise nicht erkannt, was zu Problemen beim Einbinden von Tresoren führen konnte. Dieses Problem ist behoben, damit Cryptomator auch auf den neuesten macOS-Versionen reibungslos läuft.&lt;/li>
+&lt;/ul>
+&lt;div class="text-center">
+&lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.18.0-beta1/">&lt;i class="fa-solid fa-download">&lt;/i> Beta 1.18.0 herunterladen&lt;/a>
+&lt;/div>
+&lt;h2 id="wir-brauchen-eure-unterstützung">Wir brauchen eure Unterstützung!&lt;/h2>
+&lt;p>Neben diesen Neuerungen gibt es diesmal noch eine Besonderheit:&lt;br>
+Unser Windows-Installer ist ab sofort mit einem neuen Zertifikat signiert. Da dieses Zertifikat im Microsoft-Trust-Netzwerk noch nicht bekannt ist, kann es vorkommen, dass Windows beim Installieren der Beta-Version einen Sicherheitsdialog anzeigt.&lt;/p>
+&lt;p>Je mehr Personen die Beta installieren, desto schneller wird das Zertifikat akzeptiert – und der Dialog verschwindet. Keine Sorge: Der Installer ist weiterhin sicher und von uns signiert. Windows muss lediglich „lernen“, dass das neue Zertifikat vertrauenswürdig ist.&lt;/p>
+&lt;h2 id="schlusswort">Schlusswort&lt;/h2>
+&lt;p>Mit Version 1.18.0 machen wir Cryptomator wieder ein Stück komfortabler, stabiler und zukunftssicherer. Die Beta ist dabei ein wichtiger Schritt – nicht nur, um die neuen Features und Fixes zu testen, sondern auch, um unser neues Zertifikat im Windows-Ökosystem zu etablieren.&lt;/p>
+&lt;p>Wir freuen uns über jede Unterstützung aus der Community:&lt;/p>
+&lt;ul>
+&lt;li>Installiert die Beta und probiert die Neuerungen aus.&lt;/li>
+&lt;li>Gebt uns Feedback, wenn euch etwas auffällt.&lt;/li>
+&lt;li>Helft uns, die finale Version gemeinsam so stabil und nutzerfreundlich wie möglich zu machen.&lt;/li>
+&lt;/ul>
+&lt;p>Euer Feedback macht Cryptomator stärker – und sorgt dafür, dass wir alle unsere Daten sicher verschlüsseln können.&lt;/p>
+&lt;p>Vielen Dank für eure Mithilfe – wir freuen uns schon auf das finale Release von 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item><item><title>Cryptomator Herbst-Sale: Schütze deine Daten – und deinen Geldbeutel!</title><description>&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/de/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/autumn-2025-sale.png" alt="25 % Rabatt auf Cryptomator" />
+&lt;/a>
+&lt;/figure>
+&lt;p>Wenn die Tage kürzer werden und die Blätter fallen, ist es an der Zeit, nicht nur den Kleiderschrank, sondern auch die digitale Sicherheit aufzufrischen. Unser Herbstangebot hilft dir dabei, deine Daten gut geschützt durch die dunklere Jahreszeit zu bringen.&lt;/p>
+&lt;p>Vom &lt;strong>22. bis 30. September&lt;/strong> läuft der &lt;strong>Cryptomator Herbst-Sale&lt;/strong> – und das bedeutet für dich:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>25 % Rabatt&lt;/strong> auf &lt;a href="https://cryptomator.org">Cryptomator&lt;/a>&lt;br>
+Mit Cryptomator verschlüsselst du deine Dateien lokal, bevor sie in die Cloud wandern – ganz ohne komplizierte Konfiguration oder zusätzliche Konten.&lt;/li>
+&lt;li>&lt;strong>25 % Rabatt&lt;/strong> auf &lt;a href="https://cryptomator.org/hub">Cryptomator Hub&lt;/a> im ersten Jahr&lt;br>
+Cryptomator Hub ermöglicht zentrale Verwaltung, Benutzerrollen und Audit-Logs – perfekt für NGOs, Bildungseinrichtungen und Unternehmen, die Datenschutz ernst nehmen.&lt;/li>
+&lt;/ul>
+&lt;p>Egal, ob du deine &lt;strong>private Cloud verschlüsseln&lt;/strong> oder &lt;strong>sensible Teamdaten absichern&lt;/strong> möchtest – jetzt ist der perfekte Zeitpunkt, um loszulegen.&lt;/p>
+&lt;p>📦 Das Angebot gilt für &lt;strong>alle Editionen&lt;/strong> – einschließlich &lt;strong>Team- und Businesslösungen&lt;/strong>.&lt;br>
+📅 Schnell sein lohnt sich: Die Aktion ist nur für eine &lt;strong>begrenzte Zeit&lt;/strong> verfügbar!&lt;/p>
+&lt;p>&lt;strong>Jetzt Angebot sichern!&lt;/strong>&lt;/p>
+&lt;p>Bleib sicher. Bleib verschlüsselt.&lt;br>
+&lt;strong>Dein Cryptomator-Team&lt;/strong>&lt;/p></description><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/09/22/autumn-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/09/22/autumn-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Unser Fahrplan zur Post-Quanten-Kryptografie</title><description>&lt;p>Wenn du dies liest, hast du wahrscheinlich schon von Quantencomputern gehört und davon, dass sie eines Tages einige traditionelle Verschlüsselungsverfahren brechen könnten. In diesem Artikel erklären wir, wie sich dies auf Cryptomator auswirkt und was unser Plan ist, um vollständig quantensicher zu werden.&lt;/p>
+&lt;h2 id="derzeit-verwendete-algorithmen">Derzeit verwendete Algorithmen&lt;/h2>
+&lt;p>Werfen wir zunächst einen Blick auf die in Cryptomator verwendeten Verschlüsselungsverfahren:&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/traditional-cipher-breakdown.svg" alt="Diagramm, das das Wachstum von 2^n im Vergleich zu n^2 zeigt" />
+&lt;figcaption>Kryptografische Algorithmen in Cryptomator &amp; Cryptomator Hub&lt;/figcaption>
+&lt;/figure>
+&lt;p>Wie du sehen kannst, verlassen wir uns hauptsächlich auf AES- und EC-basierte Algorithmen. Dies sind traditionelle Algorithmen, deren Sicherheitsannahmen in einer Welt klassischer (nicht-quantenbasierter) Computer gelten. Die Grundidee ist, dass Berechnungen effizient sind, wenn man den richtigen Schlüssel kennt, aber ohne ihn praktisch unmöglich. Wenn ich „praktisch unmöglich“ sage, meine ich auf traditionellen Computern, da die Berechnungen einfach „zu komplex“ sind.&lt;/p>
+&lt;h2 id="ein-paar-worte-zur-komplexität">Ein paar Worte zur Komplexität&lt;/h2>
+&lt;p>Während wir Komplexität vermeiden, wenn es um Benutzerfreundlichkeit oder Code-Lesbarkeit geht, gibt es eine bestimmte Art von Komplexität, die wir anstreben. Lass mich das erklären:&lt;/p>
+&lt;p>Wenn wir ausdrücken wollen, wie viele Schritte eine bestimmte Berechnung erfordert, kategorisieren wir Algorithmen in Klassen von Rechenkomplexität. Zur Veranschaulichung hier ein paar Beispiele mit Hunden:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Komplexitätsklasse&lt;/th>
+&lt;th>Beispiel&lt;/th>
+&lt;th>O‑Notation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Konstante Zeit&lt;/td>
+&lt;td>Eine Hundepfeife zu nutzen, dauert immer gleich lang, egal wie viele Hunde zuhören.&lt;/td>
+&lt;td>O(1)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Logarithmische Zeit&lt;/td>
+&lt;td>Die Telefonnummer einer Tierklinik im Telefonbuch zu finden ist einfach, da es alphabetisch sortiert ist und man die Seiten schnell eingrenzen kann.&lt;/td>
+&lt;td>O(log n)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Lineare Zeit&lt;/td>
+&lt;td>Jeden Hund streicheln. Wenn jeder Hund gleich viel Aufmerksamkeit bekommt, dauert es genau n-mal so lange, wenn du n Hunde hast.&lt;/td>
+&lt;td>O(n)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Polynomielle Zeit&lt;/td>
+&lt;td>Wenn jeder Hund auf einer Party jeden anderen Hund beschnuppern und begrüßen will. Hund 1 schnuppert an Hund 2, 3, 4, &amp;hellip; Hund 2 schnuppert an Hund 3, 4, &amp;hellip; und so weiter.&lt;/td>
+&lt;td>O(nᵏ)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Exponentielle Zeit&lt;/td>
+&lt;td>Jeder Hund bekommt 4 Welpen. Das ergibt 16 Hunde nach zwei Generationen, 64 nach drei und 256 nach vier Generationen.&lt;/td>
+&lt;td>O(kⁿ)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Um sicherzustellen, dass das Knacken eines Verschlüsselungsverfahrens extrem viel Zeit und Energie benötigt, beruhen kryptografische Algorithmen auf schwer berechenbaren Problemen – wir bewegen uns also auf der komplexeren Seite des Spektrums.&lt;/p>
+&lt;p>Das wohl anschaulichste Beispiel ist das Faktorisierungsproblem: Bestimme die Primfaktoren von 8633. Die Lösung ist einfach zu überprüfen (89 × 97), aber die Faktoren aus dem Produkt zu ermitteln, ist sehr schwer – &lt;a href="https://en.wikipedia.org/wiki/General_number_field_sieve">schwerer als polynomiell, aber subexponentiell&lt;/a>. Genau darauf basiert das RSA-Verschlüsselungsverfahren (nur mit viel größeren Zahlen), wobei der öffentliche Schlüssel das Produkt zweier geheimer Primzahlen enthält, die zur Berechnung des privaten Schlüssels erforderlich sind.&lt;/p>
+&lt;h2 id="wie-quantencomputer-verschlüsselungen-schwächen">Wie Quantencomputer Verschlüsselungen schwächen&lt;/h2>
+&lt;h3 id="asymmetrische-kryptografie">Asymmetrische Kryptografie&lt;/h3>
+&lt;p>Quantencomputer sind nicht grundsätzlich schneller, aber sie ermöglichen die Ausführung eine andere Klasse von Algorithmen. Ein Problem, das auf klassischen Computern als komplex gilt, kann auf einem Quantencomputer deutlich einfacher sein.&lt;/p>
+&lt;p>Ein besonders bekanntes Beispiel ist der &lt;a href="https://de.wikipedia.org/wiki/Shor-Algorithmus">Shor-Algorithmus&lt;/a>, der das Faktorisierungsproblem in polynomieller Zeit löst. Auch wenn polynomieller Zeit nur eine Zeile über exponentieller Zeit in der obigen Tabelle steht, macht das einen gewaltigen Unterschied. Die folgende Grafik veranschaulicht die Auswirkung einer zunehmenden Problemgröße auf die beiden Komplexitätsklassen:&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/pqc-complexity-classes.svg" alt="Diagramm, das das Wachstum von 2^n im Vergleich zu n^2 zeigt" />
+&lt;figcaption>Wachstumskurven von polynomiellen und exponentiellen Funktionen&lt;/figcaption>
+&lt;/figure>
+&lt;p>Wenn ein Quantencomputer gebaut werden kann, der Shors Algorithmus auf große Zahlen anwendet, würde das die meisten heute verwendeten Public-Key-Verfahren – einschließlich ECDH – brechen.&lt;/p>
+&lt;h3 id="symmetrische-kryptografie">Symmetrische Kryptografie&lt;/h3>
+&lt;p>Stell dir ein Zahlenschloss mit vier Ziffern vor. Um die richtige Kombination zu erraten, müsste ein herkömmlicher Computer jede Möglichkeit überprüfen, beginnend mit 0000 und endend mit 9999. Im Durchschnitt würde dies 5.000 Versuche erfordern. Was wenn ich dir sagen würde, dass ein Quantencomputer dies mit nur 100 Versuchen schaffen könnte? Klingt wie Zauberei? Genau das kann der Grover-Algorithmus leisten.&lt;/p>
+&lt;p>Allgemeiner gesagt: Wenn ein herkömmlicher Algorithmus durchschnittlich \(n/2\) Schritte benötigt, braucht ein Quantencomputer nur \(\sqrt n\) Versuche – eine Beschleunigung, die laut dem BBBV-Theorem das absolute Optimum darstellt. Wenn du verstehen möchtest, wie das funktioniert, gibt es &lt;a href="https://www.youtube.com/watch?v=RQWpF2Gb-gU">ein großartiges Video von 3Blue1Brown über Grovers Algorithmus&lt;/a>.&lt;/p>
+&lt;p>Diese „Magie&amp;quot; gilt für jedes Problem, bei dem sich eine vermutete Lösung effizient überprüfen lässt. Das ist natürlich etwas ärgerlich, wenn du nicht möchtest, dass ein Angreifer deinen geheimen Schlüssel errät. Glücklicherweise ist die Abwehr einfach: Erhöhe \(n\) auf eine Größe, bei der selbst \(\sqrt n\) groß genug wird, um Grovers Algorithmus unpraktikabel zu machen.&lt;/p>
+&lt;div class="admonition question">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>&lt;/svg>
+&lt;span>Warum ist AES-256 quantensicher?&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>Hast du dich jemals gefragt, warum wir AES-256 anstelle von AES-128 verwenden?&lt;/p>
+&lt;p>Die „256” bezieht sich auf die Anzahl der Schlüsselbits, was zu \(2^{256}\) möglichen Schlüsseln führt. Das Erraten des richtigen Schlüssels würde daher \(2^{256} / 2 = 2^{255}\) Versuche auf einem herkömmlichen Computer und \(\sqrt{2^{256}} = 2^{128}\) Versuche mit Grovers Algorithmus erfordern.&lt;/p>
+&lt;p>\(2^{128}\) Versuche sind schlichtweg zu viele. Daher reicht AES-128 bei Angriffen mit herkömmlichen Computern, während die Post-Quanten-Welt AES-256 erforderlich macht.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;h2 id="eine-neue-ära-der-verschlüsselung">Eine neue Ära der Verschlüsselung&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" srcset="https://staging.cryptomator.org/img/blog/cryptobot-crystals.webp, https://staging.cryptomator.org/img/blog/cryptobot-crystals@2x.webp 2x" src="https://staging.cryptomator.org/img/blog/cryptobot-crystals.webp" alt="Cryptobot trägt Jedi-Roben und lässt einen Kyber-Kristall und einen Dilithium-Kristall mit der Macht schweben" />
+&lt;figcaption>Kyber und Dilithium&lt;/figcaption>
+&lt;/figure>
+&lt;p>Während also für AES ein ausreichend großer Schlüsselraum genügt, müssen unsere asymmetrischen Verschlüsselungsverfahren ersetzt werden, um Angriffen durch Quantencomputer standhalten zu können. Im Jahr 2016 startete das National Institute of Standards and Technology (NIST) einen Wettbewerb zur Ermittlung quantenresistenter kryptografischer Algorithmen.&lt;/p>
+&lt;p>Die Auswahl von Algorithmen im Rahmen eines Wettbewerbs hat sich bereits in der Vergangenheit bewährt, wie beispielsweise bei AES und SHA-3. Dieser Ansatz stößt bei Experten auf großes Interesse, die ihr Bestes geben, um Schwachstellen aufzudecken.&lt;/p>
+&lt;p>Im Jahr 2022, nach mehreren Runden, in denen Dutzende von Kandidaten ausgeschieden waren, gab das NIST &lt;a href="https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms">die Gewinner bekannt&lt;/a>. Kyber und Dilithium – benannt nach Kristallen aus Star Wars bzw. Star Trek – wurden die ersten standardisierten Post-Quanten-Algorithmen für Verschlüsselung und digitale Signaturen. Sie erhielten offiziell die Namen ML-KEM und ML-DSA.&lt;/p>
+&lt;div class="admonition tip">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">&lt;path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c0 0 0 0 0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c0 0 0 0 0 0c19.8 27.1 39.7 54.4 49.2 86.2l160 0zM192 512c44.2 0 80-35.8 80-80l0-16-160 0 0 16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/>&lt;/svg>
+&lt;span>Tipp&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>Hier ist noch einmal ein &lt;a href="https://www.youtube.com/watch?v=K026C5YaB3A">tolles Video, das die zugrunde liegende Mathematik der ML-basierten Kryptografie erklärt&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;p>Perfekt! Integrieren wir also ML-KEM und ML-DSA in Cryptomator Hub:&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/pqc-cipher-breakdown.svg" alt="Diagramm der kryptografischen Architektur mit Post-Quanten-Verschlüsselung" />
+&lt;figcaption>Cryptomator Hub mit Post-Quanten-Kryptografie&lt;/figcaption>
+&lt;/figure>
+&lt;p>Jetzt sagst du sicher: „Aber Moment mal, da ist doch noch ECDH drin!?&amp;quot;. Und du hast recht. Obwohl die neuen Verschlüsselungsalgorithmen sehr vielversprechend sind, müssen wir uns der Tatsache stellen, dass es sie einfach noch nicht lange gibt. Wir wissen aufgrund der Neuargikeit einfach noch nicht, welche Arten von Angriffen in Zukunft entdeckt werden könnten – und ob diese Algorithmen sich wirklich bewähren.&lt;/p>
+&lt;p>Um besonders vorsichtig zu sein, kombinieren wir daher eine traditionelle Verschlüsselung mit einer post-quantenbasierten. Stell dir das wie eine Tür mit zwei Schlössern vor: Wenn eines aufgebrochen wird, schützt das andere weiterhin den Inhalt. Es ist ein einfaches Design, das sicherstellt, dass das System nicht schwächer ist als seine einzelnen Komponenten. Diese Post-Quanten-/Traditionelle (PQ/T)-Hybridverschlüsselung wird &lt;em>X-Wing&lt;/em> genannt.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" srcset="https://staging.cryptomator.org/img/blog/cryptobot-xwing.webp, https://staging.cryptomator.org/img/blog/cryptobot-xwing@2x.webp 2x" src="https://staging.cryptomator.org/img/blog/cryptobot-xwing.webp" alt="Cryptobot sitzt im Droidensockel eines X-Wing-Jägers und hat großen Spaß beim Flug durch den Weltraum" />
+&lt;figcaption>Cryptomator wird X-Wing verwenden&lt;/figcaption>
+&lt;/figure>
+&lt;p>X-Wing befindet sich noch in Entwicklung. Ich habe die RFC-Autoren – Deirdre Connolly, Peter Schwabe und Bas Westerbaan – gefragt, wann die finale Spezifikation veröffentlicht wird. Zehn Minuten später kam folgende Antwort von Bas:&lt;/p>
+&lt;div class="admonition quote">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
+&lt;span>Zitat&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>X-Wing is final and being shipped by Google and Apple presumably in hardware. &lt;br>
+(X-Wing ist final und wird bereits von Google und Apple implementiert, voraussichtlich in Hardware.)&lt;/p>
+&lt;p>— Bas Westerbaan&lt;/p>
+&lt;/div>
+&lt;/div>&lt;p>Zur Sicherheit fragte ich noch, ob Änderungen an der aktuellen Spezifikation geplant seien:&lt;/p>
+&lt;div class="admonition quote">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
+&lt;span>Zitat&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>No significant changes, no changes planned or expected at all. &lt;br>
+(Keine signifikanten Änderungen, nichts geplant oder erwartet.)&lt;/p>
+&lt;p>— Deirdre Connolly&lt;/p>
+&lt;/div>
+&lt;/div>&lt;p>Dies bestätigte unsere Überzeugung, dass jetzt der perfekte Zeitpunkt ist, um X-Wing als zukünftigen Standard für die Schlüsselkapselung einzuführen.&lt;/p>
+&lt;div class="admonition question">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>&lt;/svg>
+&lt;span>Was ist mit einem PQ/T-Hybrid für Signaturen?&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>Ja, es gibt auch &lt;a href="https://datatracker.ietf.org/doc/draft-prabel-jose-pq-composite-sigs/02/">Bemühungen, eine Kombination aus ML-DSA und ECDSA zu standardisieren&lt;/a>. Im Gegensatz zu X-Wing befindet sich dies jedoch in einer früheren Phase. Wir verfolgen die Entwicklungen in diesem Bereich genau und werden dieses Schema wahrscheinlich nutzen, sobald es bereit ist.&lt;/p>
+&lt;/div>
+&lt;/div>&lt;h2 id="standardisierung-der-kryptografie">Standardisierung der Kryptografie&lt;/h2>
+&lt;h3 id="warum-standards-wichtig-sind">Warum Standards wichtig sind&lt;/h3>
+&lt;p>In jeder Branche spielt Standardisierung eine wichtige Rolle. Sie gewährleistet Kompatibilität, fördert Interoperabilität und senkt Kosten, indem sie es verschiedenen Systemen und Organisationen ermöglicht, mithilfe gemeinsamer Protokolle und Spezifikationen zusammenzuarbeiten – und dabei Konsistenz und Zuverlässigkeit zu gewährleisten.&lt;/p>
+&lt;p>In der IT-Sicherheit ist Standardisierung sogar noch wichtiger. Algorithmen, Protokolle und Datenformate müssen nicht nur über heterogene Systeme hinweg zuverlässig funktionieren, sondern auch strengen Prüfungen standhalten. Je mehr Experten einen Standard begutachten, desto besser. Wie bei den zuvor erwähnten NIST-Wettbewerben können solche Prüfungen Schwachstellen aufdecken, &lt;em>bevor&lt;/em> eine Verschlüsselung produktiv eingesetzt wird. Durch die Einhaltung etablierter, transparenter Standards profitieren sowohl Entwickler als auch Anwender von einem stärkeren, vertrauenswürdigeren Schutz – insbesondere angesichts der sich stetig weiterentwickelnden Bedrohungslandschaft, wie z.B. aufgrund von Quantencomputern.&lt;/p>
+&lt;p>Das Ignorieren solcher Standards – manchmal Bequemlichkeit oder für vermeintliche Geschwindigkeitsvorteile – führt auf einen Pfad, der mit versteckten Mängeln gepflastert sein kann. Selbst die kleinste Änderung kann schwerwiegende Schwachstellen mit sich bringen, die ohne gründliche Peer-Reviews wahrscheinlich zuerst von jemandem entdeckt werden, der klüger ist und weniger gute Absichten hat.&lt;/p>
+&lt;p>Bei Cryptomator haben wir uns immer gegen „Security through Obscurity” ausgesprochen (was auch der Grund ist, &lt;a href="https://staging.cryptomator.org/de/guides/open-source/">warum Open Source so wichtig ist&lt;/a>). Selbstverständlich haben wir nie selbst entwickelte Chiffren verwendet – ein absolutes No-Go. Und je weiter verbreitet ein Algorithmus oder Protokoll ist, desto einfacher wird es, das System als Ganzes zu verstehen, zu überprüfen und zu auditieren.&lt;/p>
+&lt;h3 id="ein-starkes-fundament">Ein starkes Fundament&lt;/h3>
+&lt;p>Viele Standards bauen auf anderen auf. Ohne ML-KEM gäbe es kein X-Wing. Nun, da X-Wing kurz vor der Einführung steht, was können wir damit machen? Es in einem weiteren Standard verwenden: &lt;a href="https://www.rfc-editor.org/rfc/rfc9180.html">HPKE&lt;/a>.&lt;/p>
+&lt;p>HPKE steht für Hybrid Public Key Encryption – und um genau zu sein, hängt es überhaupt nicht von X-Wing ab. Stattdessen definiert es, wie drei verschiedene kryptografische Komponenten – KEM, KDF und AEAD – auf eine bestimmte Weise kombiniert werden, um klar definierte Sicherheitseigenschaften zu gewährleisten. Und X-Wing kann als eine dieser Komponenten (KEM) dienen.&lt;/p>
+&lt;p>Ein weiterer Standard, den wir schätzen gelernt haben, ist JWE, ein Datenformat für den Austausch verschlüsselter Nutzdaten. Und glücklicherweise arbeitet grade eine Gruppe Experten daran, &lt;a href="https://datatracker.ietf.org/doc/html/draft-reddy-cose-jose-pqc-hybrid-hpke-07">die Verwendung von X-Wing-basiertem HPKE in JWE zu standardisieren&lt;/a>. Genau das wollen wir in Cryptomator Hub übernehmen und damit die aktuellen ECDH-basierten JWEs ersetzen.&lt;/p>
+&lt;p>Über die oben genannten Vorteile von Peer-Reviews hinaus bietet die Verwendung standardisierter Formate gegenüber proprietären Formaten mehrere zusätzliche Vorteile:&lt;/p>
+&lt;ul>
+&lt;li>Gemeinsame APIs erleichtern den Austausch von Implementierungen – beispielsweise bleibt die Verwendung von HPKE unabhängig von den zugrunde liegenden Algorithmen gleich.&lt;/li>
+&lt;li>Breite Verfügbarkeit etablierter Bibliotheken. So gibt es beispielsweise Dutzende von JWE/JWT-Bibliotheken.&lt;/li>
+&lt;li>Offizielle Testvektoren ermöglichen es uns, Tests zu schreiben, die den Build frühzeitig abbrechen, wenn etwas schief geht.&lt;/li>
+&lt;li>Schnellere Erkennung von Schwachstellen: Wenn ein Fehler in einem weit verbreiteten Standard entdeckt wird, wird er wahrscheinlich schnell gemeldet – während eine einzelne proprietäre Implementierung möglicherweise viel länger unbemerkt bleibt.&lt;/li>
+&lt;/ul>
+&lt;p>Sowohl JWE als auch HPKE unterstützen austauschbare interne Algorithmen bei gleichbleibender externer Schnittstelle. Dies ermöglicht es uns, die Gesamtstruktur beizubehalten und interne Komponenten schnell zu ersetzen, wenn Schwachstellen auftreten.&lt;/p>
+&lt;div class="admonition quote">
+&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
+&lt;span>Zitat&lt;/span>
+&lt;/div>
+&lt;div class="admonition-content">
+&lt;p>The moral is the need for cryptographic agility. It’s not enough to implement a single standard; it’s vital that our systems be able to easily swap in new algorithms when required. &lt;br>
+(Die Moral von der Geschichte ist die Notwendigkeit kryptografischer Agilität. Es reicht nicht aus, einen einzigen Standard zu implementieren; es ist entscheidend, dass unsere Systeme bei Bedarf problemlos neue Algorithmen einbinden können.)&lt;/p>
+&lt;p>— &lt;a href="https://www.schneier.com/blog/archives/2022/08/nists-post-quantum-cryptography-standards.html">Bruce Schneier&lt;/a>&lt;/p>
+&lt;/div>
+&lt;/div>&lt;h2 id="standardisierung-des-tresorformats">Standardisierung des Tresorformats&lt;/h2>
+&lt;p>Wenn also alle in Cryptomator-Produkten verwendeten Verschlüsselungsalgorithmen – sowie der Austausch von Geheimnissen im Cryptomator Hub – auf Standards basieren, wie sieht es dann mit dem Tresorformat aus?&lt;/p>
+&lt;p>Wir verwenden zwar bewährte Kryptografie, aber die Dateiformate selbst sind unsere eigenen. Das möchten wir jedoch ändern. Vor einiger Zeit haben wir uns mit den Entwicklern von Cyberduck, gocryptfs und rclone zusammengetan, um ein gemeinsames Format für verschlüsselte Verzeichnisse zu entwickeln und so die Interoperabilität unserer Tools sicherzustellen. Das Format befindet sich zwar noch in der Entwicklung, aber wir hoffen, in ein paar Monaten weitere Details mitteilen zu können. In der Zwischenzeit bist du natürlich herzlich eingeladen, das Format zu überprüfen und Verbesserungsvorschläge auf &lt;a href="https://github.com/encryption-alliance/unified-vault-format">GitHub&lt;/a> einzureichen.&lt;/p>
+&lt;p>Ein wesentlicher Vorteil dieses &lt;em>Unified Vault Format&lt;/em> ist, dass es eine Schlüsselrotation ermöglicht, was wiederum zwei wesentliche Vorteile mit sich bringt:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Zugriffssperre&lt;/strong>: Nach der Rotation der Schlüssel können ehemalige Mitglieder des Tresors keine Dateien mehr entschlüsseln, die nach dem Widerruf ihres Zugriffs hinzugefügt wurden. Was bei ACL-basierter Zugriffskontrolle trivial ist, erfordert besondere Sorgfalt, wenn wir dies kryptografisch forcieren wollen.&lt;/li>
+&lt;li>&lt;strong>Flexibilität bei der Verschlüsselung&lt;/strong>: Bis zu einem gewissen Grad ermöglicht es Verschlüsselungs-Upgrades. Wenn beispielsweise eine Schwachstelle in einem Algorithmus gefunden wird, können wir einen Schalter umlegen und zu einem neuen JWE-Algorithmus übergehen – wodurch alle neu hinzugefügten Dateien sofort geschützt sind.&lt;/li>
+&lt;/ol>
+&lt;h2 id="kurz-gesagt-wo-stehen-wir">Kurz gesagt: Wo stehen wir?&lt;/h2>
+&lt;h3 id="cryptomator">Cryptomator&lt;/h3>
+&lt;p>Wie oben erläutert, ist Cryptomator bereits quantensicher. Da es ausschließlich symmetrische Verschlüsselungsalgorithmen mit ausreichend großen Schlüsselräumen verwendet, stellen Quantencomputer derzeit keine bekannte Bedrohung dar.&lt;/p>
+&lt;h3 id="cryptomator-hub">Cryptomator Hub&lt;/h3>
+&lt;p>Cryptomator Hub muss hingegen auf andere Algorithmen umgestellt werden. Dies sind die Schritte, die wir unternehmen:&lt;/p>
+&lt;ol>
+&lt;li>&lt;em>(In Bearbeitung)&lt;/em> Implementierung von X-Wing: Als auf Open Source fokussiertes Unternehmen haben wir schon immer zu anderen Projekten beigetragen. Wie bereits erwähnt, stehen wir in Kontakt mit den Autoren des &lt;a href="https://datatracker.ietf.org/doc/draft-connolly-cfrg-xwing-kem/">X-Wing RFC&lt;/a> und auch mit dem JDK Security Team, um &lt;a href="https://github.com/openjdk/jdk/pull/26032">X-Wing-Unterstützung zum OpenJDK&lt;/a> hinzuzufügen.&lt;/li>
+&lt;li>&lt;em>(In Bearbeitung)&lt;/em> Implementierung von HPKE in JWE-Bibliotheken: Seit den Anfängen von Cryptomator haben wir zu einer der am weitesten verbreiteten &lt;a href="https://connect2id.com/products/nimbus-jose-jwt">JOSE-Bibliotheken für Java&lt;/a> beigetragen. Es liegt daher nahe, dass wir HPKE-Unterstützung (und anschließend X-Wing-basierte HPKE) gemäß dem &lt;a href="https://datatracker.ietf.org/doc/html/draft-reddy-cose-jose-pqc-hybrid-hpke-07">JOSE HPKE RFC&lt;/a> hinzuzufügen. Die Autoren des RFC (von denen wir einen persönlich kennen) sind bereits gespannt auf unser Feedback.&lt;/li>
+&lt;li>Migration der in Cryptomator Hub verwendeten JWEs von traditioneller Kryptographie zu PQ/T-Hybriden. Wir möchten damit beginnen, sobald die Standards final veröffentlicht sind und die oben genannten Implementierungen in Upstream-Bibliotheken gemerged werden können.&lt;/li>
+&lt;li>Einführung eines neuen Tresorformats, das die Cipher Agility verbessert und weitere Vorteile für Cryptomator Hub-Benutzer bietet.&lt;/li>
+&lt;/ol>
+&lt;p>Wie du siehst, handelt es sich hierbei um ein projektübergreifendes Unterfangen. All dies, um gemeinsam eine robuste Grundlage für die kommenden Jahre zu schaffen.&lt;/p></description><pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/07/24/post-quantum-roadmap/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/07/24/post-quantum-roadmap/</guid><category>cryptomator</category><category>encryption</category></item><item><title>Cryptomator 1.17.0 ist da: Windows, sag "Hello"!</title><description>&lt;p>Mit dem neuen Update auf &lt;strong>Version 1.17.0&lt;/strong> machen wir Cryptomator wieder ein Stück besser – stabiler, kompatibler und benutzerfreundlicher. In diesem Blogpost werfen wir einen Blick auf die spannendsten Neuerungen des Updates und zeigen, warum sich das Upgrade lohnt.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/de/downloads/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.17.0.png" alt="Cryptomator Release 1.17.0" />
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="was-gibt-es-neues">Was gibt es Neues?&lt;/h2>
+&lt;p>&lt;strong>Windows Hello Integration&lt;/strong>&lt;/p>
+&lt;p>Ab sofort kannst du unter Windows deine Tresore ganz einfach mit &lt;strong>Windows Hello&lt;/strong> entsperren – sei es per Gesichtserkennung, Fingerabdruck oder PIN. Die zusätzliche Sicherheit trifft hier auf maximalen Komfort. Auch hier ein großes Dankeschön an &lt;a href="https://github.com/purejava">Ralph (purejava auf GitHub)&lt;/a> für seine Mithilfe!&lt;/p>
+&lt;p>&lt;strong>Doppelklick = Tresor entsperren&lt;/strong>&lt;/p>
+&lt;p>Ab jetzt kannst du deine Tresore direkt durch einen &lt;strong>Doppelklick&lt;/strong> auf die Datei vault.cryptomator entsperren – ganz ohne Umweg über die App-Oberfläche. Das erleichtert den Zugriff auf häufig genutzte Tresore enorm.&lt;/p>
+&lt;p>&lt;strong>JavaFX 24: Grafisches Framework aktualisiert&lt;/strong>&lt;/p>
+&lt;p>Unter der Haube wurde Cryptomators grafisches Fundament auf &lt;strong>JavaFX 24&lt;/strong> aktualisiert. Das sorgt nicht nur für mehr Stabilität, sondern verbessert auch die Kompatibilität mit modernen Systemen.&lt;/p>
+&lt;h2 id="was-wurde-behoben">Was wurde behoben?&lt;/h2>
+&lt;p>&lt;strong>WinFsp-Update: Blue Screen unter Windows behoben&lt;/strong>&lt;/p>
+&lt;p>Eines der wichtigsten Updates betrifft den &lt;strong>Windowstreiber WinFsp&lt;/strong>, den Cryptomator für die Einbindung der Tresore nutzt. Durch das Upgrade auf die neueste Version wurde ein kritischer Fehler behoben, der in Kombination mit bestimmten Sicherheitsprodukten von Trend Micro zu Bluescreens führen konnte.&lt;/p>
+&lt;p>&lt;strong>Legacy-Tresore lassen sich wieder importieren&lt;/strong>&lt;/p>
+&lt;p>Ein nerviger Bug wurde behoben: &lt;strong>Das Importieren älterer (Legacy-)Tresore funktioniert jetzt wieder reibungslos.&lt;/strong> Wer also noch ältere Backups hat, kann diese nun problemlos in die aktuelle Version übernehmen.&lt;/p>
+&lt;p>Alle weiteren Änderungen findet ihr wie immer im &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.17.0">Changelog&lt;/a> bei GitHub!&lt;/p>
+&lt;h3 id="und-was-ist-mit-windows-arm">Und was ist mit Windows ARM?&lt;/h3>
+&lt;p>Leider muss die native ARM-App für Windows aufgrund eines Fehlers im JDK-Framework verschoben werden. Wir arbeiten an einer Lösung, können aber noch kein Veröffentlichungsdatum nennen.&lt;/p>
+&lt;h2 id="jetzt-aktualisieren">Jetzt aktualisieren!&lt;/h2>
+&lt;p>Cryptomator 1.17.0 steht wie gewohnt über unsere Download-Seite zur Verfügung. Wir empfehlen allen Nutzer:innen das Update, insbesondere Windows-Usern mit Trend Micro oder ARM64-Geräten.&lt;/p>
+&lt;p>Wie immer freuen wir uns über Feedback – sei es über &lt;a href="https://github.com/cryptomator">GitHub&lt;/a>, &lt;a href="https://www.facebook.com/Cryptomator">Facebook&lt;/a>, &lt;a href="https://www.instagram.com/cryptomator/">Instagram&lt;/a>, &lt;a href="https://mastodon.online/@cryptomator">Mastodon&lt;/a> oder unser &lt;a href="https://community.cryptomator.org">Support-Forum&lt;/a>.&lt;/p></description><pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/06/25/desktop-1.17.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/06/25/desktop-1.17.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Summer Sale: 25 % Rabatt auf Cryptomator – den ganzen Juni!</title><description>&lt;p>Der Sommer steht vor der Tür – und mit ihm unser &lt;strong>Summer Sale&lt;/strong>! Vom &lt;strong>1. bis 30. Juni&lt;/strong> erhaltet ihr &lt;strong>25 % Rabatt&lt;/strong> auf alle kostenpflichtigen Cryptomator-Versionen sowie auf das &lt;strong>Supporter-Zertifikat&lt;/strong>.&lt;/p>
+&lt;p>☀️ Jetzt &lt;a href="https://staging.cryptomator.org/de/for-individuals/">Cryptomator&lt;/a> sichern – für nur &lt;strong>14,99 €&lt;/strong>*!&lt;/p>
+&lt;p>Auch &lt;a href="https://staging.cryptomator.org/de/for-teams/">Cryptomator Hub&lt;/a> ist für das erste Jahr &lt;strong>25 % günstiger&lt;/strong> – perfekt für Unternehmen, die ihre Sicherheitsbudgets noch bis zur Jahresmitte sinnvoll einsetzen wollen.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/de/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/summer-2025-sale.png" alt="25 % Rabatt auf Cryptomator" />
+&lt;/a>
+&lt;/figure>
+&lt;h3 id="sommerzeit--budgetzeit">Sommerzeit = Budgetzeit?&lt;/h3>
+&lt;p>Gerade für Organisationen und Unternehmen bietet sich jetzt die Chance, verbleibende IT-Budgets vor der Halbjahresgrenze gezielt zu investieren – und zwar in &lt;strong>Datenschutz, der bleibt&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub&lt;/strong> ist die ideale Lösung für Teams, NGOs, Forschungseinrichtungen und Unternehmen, die ihre &lt;strong>sensiblen Daten verschlüsselt und zentral verwaltbar in der Cloud speichern möchten&lt;/strong>.&lt;/p>
+&lt;p>Jetzt &lt;strong>25 % günstiger im ersten Jahr&lt;/strong> – und bereit für den produktiven Einsatz.&lt;/p>
+&lt;h3 id="was-cryptomator-bietet">Was Cryptomator bietet&lt;/h3>
+&lt;ul role="list" class="not-prose fa-ul text-sm md:text-base ml-7 md:ml-8">
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Ende-zu-Ende-Verschlüsselung&lt;/strong> für Cloud-Dienste wie Dropbox, Google Drive, OneDrive oder iCloud&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Open Source&lt;/strong> für maximale Transparenz&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Plattformübergreifend nutzbar&lt;/strong> auf Windows, macOS, Linux, iOS und Android&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Kein Abo, keine versteckten Kosten&lt;/strong> – nur einmal zahlen&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="cryptomator-hub--ideal-für-teams-und-organisationen">Cryptomator Hub – ideal für Teams und Organisationen&lt;/h3>
+&lt;ul role="list" class="not-prose fa-ul text-sm md:text-base ml-7 md:ml-8">
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Zentrale Verwaltung verschlüsselter Tresore&lt;/strong> – einfach, sicher und effizient &lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Rollenbasierte Zugriffssteuerung&lt;/strong> für unterschiedliche Teamstrukturen&lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>&lt;strong>Zero-Knowledge-Architektur&lt;/strong> – niemand außer euch hat Zugriff auf die verschlüsselten Daten &lt;/span>
+&lt;/li>
+&lt;li class="pl-1.5 my-1 md:my-2">
+&lt;span class="fa-li">&lt;i class="fa-solid fa-check-circle text-primary">&lt;/i>&lt;/span>
+&lt;span>Perfekt für NGOs, Forschungseinrichtungen, Bildungseinrichtungen und Unternehmen&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;p>Ihr möchtet &lt;strong>Cryptomator Hub&lt;/strong> in eurer Organisation nutzen? Kontaktiert uns für genauere Konditionen oder werft einen Blick in unsere &lt;a href="https://staging.cryptomator.org/de/pricing/#for-teams">Preisliste&lt;/a>.&lt;/p>
+&lt;h3 id="jetzt-sparen--bis-30-juni">Jetzt sparen – bis 30. Juni!&lt;/h3>
+&lt;p>Ob Einzelperson oder Unternehmen: Wenn euch Datenschutz wichtig ist, nutzt diese Gelegenheit.&lt;/p>
+&lt;p>&lt;strong>Sichert euch Cryptomator jetzt für nur 14,99 €&lt;/strong> oder startet mit Cryptomator Hub – &lt;strong>25 % günstiger im ersten Jahr&lt;/strong>.&lt;/p></description><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/06/01/summer-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/06/01/summer-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Warum starke Passwörter heute wichtiger sind denn je</title><description>&lt;p>&lt;strong>Passwörter sind der erste Schutzschild unserer digitalen Identität – und doch werden sie oft vernachlässigt.&lt;/strong> Von simplen Zahlenreihen bis hin zu mehrfach genutzten Logins: Schwache Passwörter gehören nach wie vor zu den Hauptursachen für Datenpannen. In einer Zeit, in der Cyberangriffe zunehmen und Datenlecks fast zur Tagesordnung gehören, ist es höchste Zeit, unser Sicherheitsbewusstsein zu stärken.&lt;/p>
+&lt;h2 id="die-realität-123456-ist-noch-immer-ein-klassiker">Die Realität: „123456“ ist noch immer ein Klassiker&lt;/h2>
+&lt;p>Laut dem Passwort-Report von &lt;a href="https://nordpass.com/de/most-common-passwords-list/">NordPass 2024&lt;/a> ist „123456“ weltweit erneut das meistgenutzte Passwort. In Deutschland führt „admin“ die Liste an. Millionen Menschen setzen also noch immer auf extrem leicht zu erratende Zugangsdaten – mit fatalen Folgen.&lt;/p>
+&lt;p>Cyberkriminelle nutzen automatisierte Tools, um schwache Passwörter in Sekunden zu knacken. Kommt es zu einem Datenleck, wird das Passwort häufig auch für andere Konten ausprobiert – ein Problem, wenn man dasselbe Passwort mehrfach verwendet.&lt;/p>
+&lt;h2 id="ich-habe-doch-nichts-zu-verbergen--wirklich">„Ich habe doch nichts zu verbergen“ – wirklich?&lt;/h2>
+&lt;p>Dieser Gedanke ist weit verbreitet, aber täuschend. Auch wenn deine Daten auf den ersten Blick &amp;ldquo;uninteressant&amp;rdquo; erscheinen, können Angreifer sie missbrauchen, um:&lt;/p>
+&lt;ul>
+&lt;li>deine Identität zu stehlen,&lt;/li>
+&lt;li>in deinem Namen E-Mails zu versenden,&lt;/li>
+&lt;li>Zugriff auf weitere verknüpfte Konten zu erhalten,&lt;/li>
+&lt;li>dich oder dein Umfeld zu erpressen oder zu betrügen.&lt;/li>
+&lt;/ul>
+&lt;p>Es geht also nicht nur um deine privaten Fotos oder Chats, sondern um deine gesamte digitale Identität und dein Vertrauen in digitale Dienste.&lt;/p>
+&lt;h2 id="drei-alltagsbeispiele-die-zeigen-wie-schnell-es-gehen-kann">Drei Alltagsbeispiele, die zeigen, wie schnell es gehen kann&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Der kompromittierte Streaming-Account&lt;/strong>&lt;br>
+Dein Passwort für einen Streamingdienst wurde geleakt. Angreifer nutzen ihn weiter, um Phishing-Mails zu verschicken oder weitere Zugänge zu testen.&lt;/li>
+&lt;li>&lt;strong>Das mehrfach genutzte Passwort&lt;/strong>&lt;br>
+Du verwendest dasselbe Passwort für deine private E-Mail und dein Firmenkonto. Wird eines davon gehackt, ist gleich beides betroffen.&lt;/li>
+&lt;li>&lt;strong>Social Engineering durch schwache Passwörter&lt;/strong>&lt;br>
+Ein Angreifer errät dein Passwort anhand öffentlich zugänglicher Informationen (z. B. Geburtsdatum + Name deines Haustiers) und verschafft sich Zugriff auf deine Cloud.&lt;/li>
+&lt;/ol>
+&lt;h2 id="wenn-es-richtig-teuer-wird-drei-reale-szenarien">Wenn es richtig teuer wird: Drei reale Szenarien&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Gehackte E-Mail führt zu Identitätsdiebstahl&lt;/strong>&lt;br>
+Ein Angreifer verschafft sich über ein schwaches Passwort Zugriff auf dein E-Mail-Konto.&lt;/p>
+&lt;ul>
+&lt;li>Er setzt Passwörter bei anderen Diensten zurück&lt;/li>
+&lt;li>Nutzt deine Adresse für Betrug oder Phishing&lt;/li>
+&lt;li>Bestellt Waren auf deinen Namen&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Folge:&lt;/strong> Finanzieller Schaden, Imageschaden, mühsame Wiederherstellung&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Zugriff auf Onlinebanking durch Passwort-Recycling&lt;/strong>&lt;br>
+Ein geleaktes Passwort aus einem Forum wird auch fürs Onlinebanking verwendet. Ein Bot prüft automatisch gängige Banking-Seiten.&lt;/p>
+&lt;p>&lt;strong>Folge:&lt;/strong> Konto leergeräumt, eventuelle Haftungsprobleme, Anzeige notwendig&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Ransomware in der Firma durch schwaches Admin-Passwort&lt;/strong>&lt;br>
+Ein VPN-Zugang wird durch ein schwaches Passwort kompromittiert. Angreifer installieren Schadsoftware.&lt;br>
+&lt;strong>Folge:&lt;/strong> Betriebsstillstand, Lösegeldforderung, Datenverlust, DSGVO-Meldung&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="passwort-check-wie-sicher-bist-du-unterwegs">Passwort-Check: Wie sicher bist du unterwegs?&lt;/h2>
+&lt;p>Mach den Selbsttest:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Ich nutze für jedes Konto ein eigenes Passwort.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Meine Passwörter bestehen aus mind. 12 Zeichen, Zahlen &amp;amp; Sonderzeichen.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ich verwende einen Passwort-Manager.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ich habe Zwei-Faktor-Authentifizierung (2FA) aktiviert.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ich habe meine Passwörter in den letzten 12 Monaten überprüft.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Tipp:&lt;/strong> Finde heraus, ob deine Daten schon einmal in einem Leak aufgetaucht sind: &lt;a href="https://haveibeenpwned.com/">haveibeenpwned.com&lt;/a>&lt;/p>
+&lt;h2 id="tools-statt-kopfzerbrechen-passwort-manager-nutzen">Tools statt Kopfzerbrechen: Passwort-Manager nutzen&lt;/h2>
+&lt;p>Niemand kann sich Dutzende komplexe Passwörter merken – muss man auch nicht. &lt;strong>Passwort-Manager&lt;/strong> wie Bitwarden, 1Password oder KeePass helfen dabei, sichere Kennwörter zu erstellen, zu speichern und automatisch einzufügen.&lt;/p>
+&lt;p>&lt;strong>Der große Vorteil&lt;/strong>: Man braucht sich nur noch ein einziges Master-Passwort merken – alles andere übernimmt die App.&lt;/p>
+&lt;h2 id="extra-schutz-durch-zwei-faktor-authentifizierung">Extra-Schutz durch Zwei-Faktor-Authentifizierung&lt;/h2>
+&lt;p>Selbst das stärkste Passwort kann theoretisch in einem Datenleck landen. Deshalb gilt: &lt;strong>Immer, wenn möglich, Zwei-Faktor-Authentifizierung (2FA) aktivieren.&lt;/strong> Dabei wird neben dem Passwort ein zweiter Faktor abgefragt, etwa ein Code per App oder SMS.&lt;/p>
+&lt;p>Das macht es Angreifern deutlich schwerer, auf deine Konten zuzugreifen – selbst wenn sie dein Passwort kennen.&lt;/p>
+&lt;h2 id="fazit-passwortsicherheit-ist-kein-nice-to-have">Fazit: Passwortsicherheit ist kein „Nice-to-have“&lt;/h2>
+&lt;p>Der Aufwand für starke Passwörter ist gering – der Nutzen dagegen enorm. Wer einfache Gewohnheiten ändert, schützt sich vor realen Bedrohungen und gewinnt langfristig an digitaler Sicherheit.&lt;/p>
+&lt;p>&lt;strong>Jetzt ist der beste Zeitpunkt, um schwache Passwörter zu ändern, einen Passwort-Manager einzurichten und 2FA zu aktivieren.&lt;/strong> &lt;em>Deine digitale Zukunft wird es dir danken.&lt;/em>&lt;/p></description><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/05/01/world-password-day/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/05/01/world-password-day/</guid><category>event</category></item><item><title>Cryptomator 1.16.0 ist da – mit praktischen neuen Features!</title><description>&lt;p>Die neueste Version unserer Desktop-App ist veröffentlicht! &lt;strong>Cryptomator 1.16.0&lt;/strong> bringt einige spannende Neuerungen mit sich, die eure tägliche Arbeit mit verschlüsselten Dateien noch komfortabler machen. Im Mittelpunkt stehen diesmal neue Funktionen, die mehr Transparenz und Kontrolle über eure Tresore ermöglichen – und sogar &lt;strong>biometrisches Entsperren&lt;/strong> auf dem Mac!&lt;/p>
+&lt;h3 id="was-ist-neu">Was ist neu?&lt;/h3>
+&lt;p>&lt;strong>EventView: Überblick über wichtige Tresor-Ereignisse&lt;/strong>&lt;br>
+Ihr wollt wissen, ob es beim Entsperren eines Tresors zu Konflikten kam oder ob beschädigte Dateien erkannt wurden? Mit dem neuen &lt;strong>EventView&lt;/strong> habt ihr nun eine Übersicht über relevante Ereignisse innerhalb eines entsperrten Tresors – wie z. B. Konfliktlösungen oder Hinweise auf beschädigte Dateien. So bleibt ihr immer auf dem Laufenden, was in eurem Tresor passiert.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[430px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-eventview.png" alt="EventView in Cryptomator 1.16.0" />
+&lt;/figure>
+&lt;p>&lt;strong>Dateinamen entschlüsseln&lt;/strong>&lt;br>
+Mit der neuen Funktion &lt;strong>Decrypt File Name&lt;/strong> könnt ihr verschlüsselte Dateien innerhalb eines Tresors auswählen und euch deren ursprüngliche, unverschlüsselte Dateinamen anzeigen lassen – ohne die Datei selbst öffnen zu müssen. Ein praktisches Tool für alle, die einen schnellen Überblick brauchen!&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[449px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-decryptfilenames.png" alt="Dateinamen entschlüsseln in Cryptomator 1.16.0" />
+&lt;/figure>
+&lt;p>&lt;strong>Touch ID-Unterstützung für macOS&lt;/strong>&lt;br>
+Ab sofort könnt ihr eure Tresore auf dem &lt;strong>Mac&lt;/strong> ganz bequem mit &lt;strong>Touch ID&lt;/strong> entsperren! Das macht die Nutzung nicht nur schneller, sondern auch komfortabler und sicherer – gerade auf Geräten mit biometrischer Authentifizierung. Vielen Dank an &lt;a href="https://github.com/purejava">Ralph (purejava auf GitHub)&lt;/a> für die großartige Unterstützung!&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[408px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-touchid.png" alt="Touch ID-Unterstützung in Cryptomator 1.16.0" />
+&lt;/figure>
+&lt;h3 id="was-wurde-behoben">Was wurde behoben?&lt;/h3>
+&lt;p>Natürlich haben wir auch einige &lt;strong>Bugs beseitigt&lt;/strong> – hier ein kurzer Überblick:&lt;/p>
+&lt;ul>
+&lt;li>Das &lt;strong>Hauptfenster&lt;/strong> wird unter Windows nun wieder korrekt angezeigt.&lt;/li>
+&lt;li>Das &lt;strong>Tray-Icon&lt;/strong> passt sich unter Linux jetzt zuverlässig dem OS-Theme an. Danke auch hier an Ralph für die Mithilfe!&lt;/li>
+&lt;li>Die App beendet sich jetzt wie erwartet, wenn das Hauptfenster geschlossen wird (sofern kein Tray aktiv ist).&lt;/li>
+&lt;li>&lt;strong>Supporter-Zertifikate&lt;/strong> können nun wieder ordnungsgemäß entfernt werden&lt;/li>
+&lt;li>Bei &lt;strong>Dateikonflikten&lt;/strong> bleiben die ursprünglichen Suffixe des Cloudanbieters jetzt größtenteils erhalten – statt einer einfachen Durchnummerierung wird der ursprüngliche Zusatz bewahrt.&lt;/li>
+&lt;/ul>
+&lt;h3 id="alle-änderungen-auf-github">Alle Änderungen auf GitHub&lt;/h3>
+&lt;p>Neben den oben genannten Highlights gab es noch &lt;strong>weitere kleinere Verbesserungen und Aktualisierungen&lt;/strong> – z. B. in den Vault-Einstellungen, bei der Symbol-Optik unter Linux und bei der Übersetzungsqualität. Den vollständigen Überblick über alle Änderungen findet ihr wie immer im &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.16.0">&lt;strong>Changelog&lt;/strong>&lt;/a> auf GitHub.&lt;/p>
+&lt;p>&lt;strong>Danke an alle Mitwirkenden&lt;/strong> aus der Community – und &lt;strong>viel Spaß&lt;/strong> mit dem neuen Update!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Cryptomator Hub 1.4.0: Mehr Vertrauen, mehr Kontrolle, mehr Transparenz</title><description>&lt;p>Mit dem Release 1.4.0 erhält &lt;strong>Cryptomator Hub&lt;/strong> ein umfassendes Funktions-Upgrade, das mehr Kontrolle und Transparenz bietet – und dabei gleichzeitig die Nutzerfreundlichkeit weiter verbessert.&lt;/p>
+&lt;p>Im Mittelpunkt stehen ein neues &lt;strong>„Web of Trust“&lt;/strong>, feinere &lt;strong>Berechtigungsmechanismen&lt;/strong>, ein erweitertes &lt;strong>Audit-Logging&lt;/strong> sowie mehr &lt;strong>Einblick ins Benutzerprofil&lt;/strong>.&lt;/p>
+&lt;p>Schauen wir uns die Neuerungen im Detail an!&lt;/p>
+&lt;h2 id="web-of-trust-gegenseitige-verifikation-für-mehr-sicherheit">Web of Trust: Gegenseitige Verifikation für mehr Sicherheit&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-wot.png" alt="Hub 1.4.0 WoT" />
+&lt;/figure>
+&lt;p>Ein Highlight dieses Releases ist das neue &lt;strong>Web of Trust (WoT)&lt;/strong>. Nutzer:innen können sich ab sofort gegenseitig verifizieren, indem sie die Schlüsselidentität anderer bestätigen.&lt;br>
+Auf diese Weise entsteht ein Vertrauensnetzwerk, das sich vor allem gegen die Einschleusung von manipulierten oder gefälschten öffentlichen Schlüsseln absichert.&lt;/p>
+&lt;p>Dieses Feature adressiert gezielt sogenannte &lt;strong>„Key Injection“-Risiken&lt;/strong> und verbessert den Schutz sensibler Daten in Organisationen.&lt;/p>
+&lt;p>Die gegenseitige Verifikation basiert auf einem einfachen, aber wirksamen Prinzip: &lt;strong>Nur wenn der öffentliche Schlüssel einer Person von vertrauenswürdigen Kolleg:innen bestätigt wurde, gilt die Identität als verifiziert.&lt;/strong>&lt;/p>
+&lt;p>Admins können die Anzahl benötigter Bestätigungen konfigurieren.&lt;/p>
+&lt;h2 id="neue-rolle-für-tresor-erstellung-wer-darf-was">Neue Rolle für Tresor-Erstellung: Wer darf was?&lt;/h2>
+&lt;p>Mit der Einführung der &lt;code>create-vaults&lt;/code>-Rolle lässt sich ab sofort steuern, wer innerhalb einer Organisation neue Tresore erstellen darf.&lt;/p>
+&lt;p>Bisher war diese Berechtigung standardmäßig allen Nutzer:innen vorbehalten – nun können Admins gezielt festlegen, ob z. B. nur bestimmte Teams, Einzelpersonen oder weiterhin alle dafür zuständig sein sollen.&lt;/p>
+&lt;p>Gerade in größeren Organisationen mit vielen Nutzer:innen ist dies ein wichtiger Schritt zu mehr Ordnung und kontrollierterem Wachstum der Infrastruktur.&lt;/p>
+&lt;h2 id="audit-log-noch-präzisere-nachverfolgung-von-ereignissen">Audit-Log: Noch präzisere Nachverfolgung von Ereignissen&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[553px]" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-auditlog.png" alt="Hub 1.4.0 Audit Log" />
+&lt;/figure>
+&lt;p>Die Überwachung von sicherheitsrelevanten Aktivitäten gehört zu den zentralen Aufgaben im IT-Betrieb. Mit Version 1.4.0 von Cryptomator Hub wird das &lt;strong>Audit-Log&lt;/strong> noch leistungsfähiger:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Filter nach Ereignistypen:&lt;/strong> Jetzt lassen sich Audit-Einträge gezielt nach Typen filtern – etwa nach Schlüsseländerungen, Zugriffsversuchen oder Account-Aktivitäten. So können Admins bei Vorfällen schneller die relevanten Daten herausfiltern.&lt;/li>
+&lt;li>&lt;strong>Neue Ereignisse:&lt;/strong> Es wurden mehrere zusätzliche &lt;a href="https://docs.cryptomator.org/hub/admin/#event-types">Event-Typen&lt;/a> eingeführt, um sicherheitskritische Aktionen noch besser sichtbar zu machen.
+&lt;ul>
+&lt;li>&lt;strong>Register Device&lt;/strong> - Ein Benutzer hat ein neues Gerät registriert. Dies kann z.B. eine Cryptomator-App (Desktop/Mobile) sein, um einen Tresor zu entsperren oder ein Webbrowser, um auf den Cryptomator Hub zuzugreifen.&lt;/li>
+&lt;li>&lt;strong>Remove Device&lt;/strong> - Ein Benutzer hat ein Gerät entfernt.&lt;/li>
+&lt;li>&lt;strong>Signed Identity&lt;/strong> - Ein Benutzer hat die Identität eines anderen Benutzers signiert.&lt;/li>
+&lt;li>&lt;strong>Account Key Changed&lt;/strong> - Ein Benutzer hat den Account Key neu generiert. Dies protokolliert auch die Änderung von Benutzerschlüsseln, da eine Änderung des Kontoschlüssels auch Teile der Benutzerschlüssel ändert.&lt;/li>
+&lt;li>&lt;strong>Reset User Account&lt;/strong> – Ein Benutzer hat sein Konto zurückgesetzt.&lt;/li>
+&lt;li>&lt;strong>User Keys Change&lt;/strong> – Ein Benutzer hat seine Schlüssel geändert. Dies geschieht z. B., wenn der Benutzer die Einrichtung seines Kontos abgeschlossen hat oder wenn sich der Kontoschlüssel geändert hat.&lt;/li>
+&lt;li>&lt;strong>Claim Vault Ownership&lt;/strong> - Ein Benutzer hat das Eigentum an einem Tresor beansprucht. Dieses Ereignis wird protokolliert, wenn ein Tresor, der mit Hub vor Version 1.3.0 erstellt wurde, vom Ersteller des Tresors mit dem Vault Admin Password beansprucht wird.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Retrieve Vault Key erweitert:&lt;/strong> Dieses Audit-Event enthält nun zusätzlich die &lt;strong>IP-Adresse und Geräte-ID&lt;/strong> – eine wichtige Erweiterung zur Nachvollziehbarkeit bei der Tresorentschlüsselung. So lässt sich ermitteln, welche Person mit welchem Gerät den Tresor entsperrt hat.&lt;/li>
+&lt;/ul>
+&lt;h2 id="mehr-transparenz-im-nutzerprofil">Mehr Transparenz im Nutzerprofil&lt;/h2>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-profile.png" alt="Hub 1.4.0 Profil-Ansicht" />
+&lt;/figure>
+&lt;p>Auch die Benutzeroberfläche wurde erweitert, um mehr Einblick in die eigenen Geräte und Zugriffe zu bieten:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Legacy Devices anzeigen:&lt;/strong> Nutzer:innen sehen nun auf einen Blick, ob sie noch Geräte im Einsatz haben, die mit einer älteren Hub-Version erstellt wurden. Das erleichtert Migrationsentscheidungen um das seit Hub 1.3.0 verwendete User-Key-basierte Schlüsselverfahren mit allen Geräten zu verwenden.&lt;/li>
+&lt;li>&lt;strong>Letzte IP-Adresse und letzter Tresor-Zugriff:&lt;/strong> In der Geräteübersicht werden nun auch die &lt;strong>letzte bekannte IP-Adresse&lt;/strong> und der &lt;strong>Zeitpunkt des letzten Tresorzugriffs&lt;/strong> pro Gerät angezeigt – ideal zur Erkennung verdächtiger Aktivitäten.&lt;/li>
+&lt;/ul>
+&lt;h2 id="neue-sprachen-und-verbesserte-nutzerfreundlichkeit">Neue Sprachen und verbesserte Nutzerfreundlichkeit&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Sprachvielfalt wächst:&lt;/strong> Cryptomator Hub unterstützt jetzt auch &lt;strong>Niederländisch, Französisch, Italienisch, Koreanisch, Portugiesisch und Türkisch&lt;/strong>. Damit wird die Plattform für internationale Teams noch zugänglicher.&lt;/li>
+&lt;li>&lt;strong>Spracheinstellung bleibt erhalten:&lt;/strong> Die gewählte Spracheinstellung wird nun im Nutzerkonto gespeichert – und muss nicht bei jedem Login neu gewählt werden.&lt;/li>
+&lt;/ul>
+&lt;h2 id="provenance-attestation-für-container-images">Provenance Attestation für Container-Images&lt;/h2>
+&lt;p>Ein oft übersehener, aber sicherheitskritischer Bereich: &lt;strong>die Authentizität von Softwarecontainern&lt;/strong>. Ab Version 1.4.0 veröffentlichen wir eine &lt;strong>Provenance Attestation&lt;/strong> für unsere Container-Images.&lt;/p>
+&lt;p>Diese Attestierung dokumentiert die Herkunft und Unveränderbarkeit unserer Images und bietet so zusätzliche Absicherung für automatisierte Deployments und CI/CD-Pipelines.&lt;/p>
+&lt;h2 id="alle-änderungen-im-überblick">Alle Änderungen im Überblick&lt;/h2>
+&lt;p>Alle technischen Details, Fixes und Verbesserungen sind in den &lt;a href="https://github.com/cryptomator/hub/releases/tag/1.4.0">Release-Notes&lt;/a> und dem neuen &lt;a href="https://github.com/cryptomator/hub/blob/1.4.0/CHANGELOG.md">CHANGELOG&lt;/a> zu finden.&lt;/p>
+&lt;h2 id="schlusswort">Schlusswort&lt;/h2>
+&lt;p>&lt;strong>Cryptomator Hub 1.4.0&lt;/strong> ist ein Release, das Vertrauen schafft – durch mehr Sichtbarkeit, feinere Steuerung und technische Verlässlichkeit.&lt;/p>
+&lt;p>Ob im Sicherheitsmanagement, in der Rollenvergabe oder in der Benutzerführung: Dieses Update legt den Grundstein für noch robustere Dateninfrastrukturen in Organisationen, die Verschlüsselung ernst nehmen.&lt;/p></description><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/</guid><category>cryptomator</category><category>hub</category></item></channel></rss>

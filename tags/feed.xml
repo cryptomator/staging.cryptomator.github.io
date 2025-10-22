@@ -1,5 +1,104 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/</link></image><lastBuildDate>Thu, 02 Oct 2025 15:24:52 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Desktop 1.18.0 Beta – Try it now!</title><description>&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1-18-0.png" alt="Cryptomator Desktop 1.18.0 Beta" />
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/</link></image><lastBuildDate>Wed, 22 Oct 2025 13:12:09 +0000</lastBuildDate><generator>Hugo</generator><item><title>OneDrive Security Breach Shows: Why Zero-Knowledge Matters</title><description>&lt;p>In &lt;strong>May 2025&lt;/strong>, the &lt;strong>Oasis Security&lt;/strong> published an &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">analysis&lt;/a> that caused a stir in the cloud world: &lt;strong>a vulnerability in OneDrive File Picker&lt;/strong> allowed third-party applications to access files for which they did not actually have access rights. &lt;strong>Millions of users&lt;/strong> were affected, both private individuals and companies.&lt;/p>
+&lt;p>What exactly happened, why is this incident so explosive, and what can you learn from it to better protect your own data?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/onedrive-security-breach.png" alt="OneDrive Security Breach Shows: Why Zero-Knowledge Matters" />
+&lt;/figure>
+&lt;h2 id="what-went-wrong-with-onedrive-file-picker">What Went Wrong With OneDrive File Picker?&lt;/h2>
+&lt;p>OneDrive File Picker is a popular interface that allows apps to access files from personal cloud storage. However, Oasis Security discovered that &lt;strong>certain configuration&lt;/strong> errors allowed applications to view and download files that they did not officially have access to – even sensitive content such as tax documents, project plans, or confidential meeting minutes.&lt;/p>
+&lt;p>Worse still, the affected applications did not even need to use an exploit – all they had to do was use the File Picker correctly (or rather, incorrectly). &lt;strong>The problem was not a targeted hack, but a design flaw in the system.&lt;/strong>&lt;/p>
+&lt;h2 id="the-real-lesson-trust-is-not-a-security-concept">The Real Lesson: Trust Is Not a Security Concept&lt;/h2>
+&lt;p>Many users trust cloud providers such as Microsoft, Google, and Apple to keep their data secure. But this incident shows that even large platforms make mistakes—with far-reaching consequences.&lt;/p>
+&lt;p>The &lt;strong>real problem&lt;/strong> runs deeper:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Access rights&lt;/strong> are managed in the backend, not by the user(s) themselves.&lt;/li>
+&lt;li>Files are often stored &lt;strong>unencrypted&lt;/strong> on servers—or only with a key that the provider itself controls.&lt;/li>
+&lt;li>&lt;strong>Security vulnerabilities in third-party apps or web interfaces&lt;/strong> can be exploited without those affected even noticing.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>In short&lt;/strong>: anyone who entrusts their data exclusively to the security promises of cloud providers is relinquishing control.&lt;/p>
+&lt;h2 id="the-solution-zero-knowledge-encryption-with-cryptomator">The Solution: Zero-Knowledge Encryption With Cryptomator&lt;/h2>
+&lt;p>Cryptomator takes a fundamentally different approach: &lt;strong>files are encrypted locally on your device before being uploaded to the cloud&lt;/strong>. This means your data remains protected even if the cloud provider is compromised—or, as in the case of OneDrive, simply makes a mistake.&lt;/p>
+&lt;p>This means:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>No one&lt;/strong> but you can read your files—not Microsoft, not Google, not us.&lt;/li>
+&lt;li>&lt;strong>Access rights&lt;/strong> are secondary, because without the key, all data remains unreadable.&lt;/li>
+&lt;li>Even &lt;strong>compromised&lt;/strong> APIs or third-party apps only see encrypted garbage data.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Cryptomator Hub&lt;/strong> offers the ideal extension for teams, organizations, and companies:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Centralized management of encrypted vaults&lt;/strong>&lt;br>
+IT administrators can preconfigure vaults and share them with specific users—all with end-to-end encryption.&lt;/li>
+&lt;li>&lt;strong>Role-based access control&lt;/strong>&lt;br>
+Thanks to the role-based system, you can specify exactly who is allowed to create, open, or manage vaults—without central key distribution.&lt;/li>
+&lt;li>&lt;strong>Web of trust for secure collaboration&lt;/strong>&lt;br>
+Team members verify each other, creating a trustworthy environment—without the need for external certificate authorities.&lt;/li>
+&lt;li>&lt;strong>Seamless integration into existing cloud workflows&lt;/strong>&lt;br>
+Cryptomator Hub can be easily combined with existing cloud storage solutions such as OneDrive, Google Drive, or Dropbox.&lt;/li>
+&lt;/ul>
+&lt;p>Cryptomator Hub enables &lt;strong>highly secure and practical cloud usage within teams&lt;/strong> without the usual compromises in data protection and compliance. This is a future-proof solution, especially for organizations with increased requirements, such as &lt;strong>NGOs, research institutions, or companies in regulated industries&lt;/strong>.&lt;/p>
+&lt;h2 id="what-you-can-do-now">What You Can Do Now&lt;/h2>
+&lt;p>Whether you use OneDrive, Dropbox, or another cloud service, this incident shows that &lt;strong>no provider can offer 100% security&lt;/strong> on its own. However, you can drastically reduce your risks by taking a few simple steps:&lt;/p>
+&lt;ul>
+&lt;li>Use &lt;strong>client-side encryption&lt;/strong> with tools such as Cryptomator.&lt;/li>
+&lt;li>Do not store particularly sensitive documents unencrypted in the cloud.&lt;/li>
+&lt;li>&lt;strong>Raise awareness among your team members&lt;/strong> or colleagues about cloud access rights.&lt;/li>
+&lt;li>Check which third-party apps have access to your cloud.&lt;/li>
+&lt;/ul>
+&lt;h2 id="conclusion-safety-begins-with-control">Conclusion: Safety Begins With Control&lt;/h2>
+&lt;p>The OneDrive security breach is not an isolated incident—it is a symptom of a system that relies on trust rather than real control. But if you &lt;strong>encrypt your files before uploading them&lt;/strong>, you remain protected even in the event of serious security breaches.&lt;/p>
+&lt;p>With Cryptomator, you retain full control over your data, your privacy, and your digital security.&lt;/p></description><pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/10/17/onedrive-security-breach/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/10/17/onedrive-security-breach/</guid><category>cryptomator</category><category>onedrive</category></item><item><title>Back to School – Data Security for Universities</title><description>&lt;p>With the start of the new winter semester, lecture halls are filling up again—as are the &lt;strong>digital platforms of universities&lt;/strong>. Learning management systems, research platforms, cloud storage solutions, and digital administrative processes have long been part of everyday life at universities. But while digitalization opens up new opportunities, it also carries risks: &lt;strong>cyberattacks, data breaches, and inadequately protected cloud data&lt;/strong> jeopardize the integrity and confidentiality of highly sensitive information. In this article, we show why encryption is essential for universities – and how it helps make &lt;strong>research, teaching, and administration more secure&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/back-to-school.png" alt="Back to School – Data Security for Universities" />
+&lt;/figure>
+&lt;h2 id="why-universities-are-a-lucrative-target-for-cyberattacks">Why Universities Are a Lucrative Target for Cyberattacks&lt;/h2>
+&lt;p>Universities and colleges process a wide range of sensitive data:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Personal data&lt;/strong> of students, researchers, and employees (e.g., student ID numbers, transcripts, health information).&lt;/li>
+&lt;li>&lt;strong>Research data&lt;/strong>, often related to third-party funding or government-funded projects.&lt;/li>
+&lt;li>&lt;strong>International collaborations&lt;/strong>, which also require compliance with the regulations of other countries (e.g., FERPA, GDPR).&lt;/li>
+&lt;li>&lt;strong>Login details and access keys&lt;/strong> for learning platforms, email services, and digital resources.&lt;/li>
+&lt;/ul>
+&lt;p>More and more attacks are targeting universities, for example through ransomware, phishing, or cloud leaks. According to the &lt;a href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Securitysituation/IT-Security-Situation-in-Germany-2024.html">BSI Situation Report 2024&lt;/a>, educational institutions are among the critical areas with a sharply increased threat level. This makes it all the more important for universities to make their digital structures resilient and encrypted.&lt;/p>
+&lt;h3 id="encryption-the-universitys-digital-invisible-ink">Encryption: The University’s Digital Invisible Ink&lt;/h3>
+&lt;p>Data encryption protects information using mathematical methods—it can only be read with the right key. For universities, this means:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Confidentiality of research results&lt;/strong>&lt;br>
+Particularly in the case of sensitive basic research or cooperation projects with companies, it is crucial that only authorized persons have access to files. End-to-end encryption protects this data even if a cloud provider is compromised.&lt;/li>
+&lt;li>&lt;strong>Data protection for students and teachers&lt;/strong>&lt;br>
+The EU GDPR requires universities to comprehensively protect personal data. Encryption enables data processing that complies with data protection regulations—even when using the cloud, working from home, or using BYOD models.&lt;/li>
+&lt;li>&lt;strong>Protection against ransomware and data loss&lt;/strong>&lt;br>
+Encrypted backups and protected storage systems can greatly limit the impact of ransomware attacks. Attackers have no access to unencrypted original data, and recovery can take place without payment.&lt;/li>
+&lt;/ol>
+&lt;h2 id="practical-application-where-encryption-makes-sense">Practical Application: Where Encryption Makes Sense&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Field of application&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Recommended solution&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Cloud storage (e.g., Nextcloud, OneDrive)&lt;/td>
+&lt;td>Client-side encryption with tools such as Cryptomator&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Research data archiving&lt;/td>
+&lt;td>Zero-knowledge cloud or encrypted vaults&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Administrative documents&lt;/td>
+&lt;td>Password protection and structured access controls&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Mobile use &amp;amp; working from home&lt;/td>
+&lt;td>Container-based encryption on mobile devices&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="conclusion-set-the-course-now-for-a-safe-semester">Conclusion: Set the Course Now for a Safe Semester&lt;/h2>
+&lt;p>The digitization of higher education is unstoppable—but it is not defenseless. Those who encrypt today will protect the autonomy of research and teaching tomorrow. Universities that rely on simple, secure, and privacy-compliant encryption solutions build trust among students, employees, and partner institutions.&lt;/p>
+&lt;p>Now is the ideal time to evaluate existing systems, raise awareness, and integrate encryption solutions for the long term.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item><item><title>Cryptomator Desktop 1.18.0 Beta – Try it now!</title><description>&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0-beta.png" alt="Cryptomator Desktop 1.18.0 Beta" />
 &lt;/figure>
 &lt;p>The next release of Cryptomator Desktop is right around the corner – and before we publish the final version, we&amp;rsquo;d like to invite you to test the beta of version 1.18.0. Along with useful new features and important bug fixes, this release also comes with a special call to our community.&lt;/p>
 &lt;h2 id="new-features--fixes">New Features &amp;amp; Fixes&lt;/h2>
@@ -445,54 +544,4 @@ Starting now, you can unlock your vaults on &lt;strong>Mac&lt;/strong> easily wi
 &lt;p>All technical details, fixes, and improvements can be found in the &lt;a href="https://github.com/cryptomator/hub/releases/tag/1.4.0">release notes&lt;/a> and the new &lt;a href="https://github.com/cryptomator/hub/blob/1.4.0/CHANGELOG.md">CHANGELOG&lt;/a> file.&lt;/p>
 &lt;h2 id="closing-remarks">Closing Remarks&lt;/h2>
 &lt;p>&lt;strong>Cryptomator Hub 1.4.0&lt;/strong> is a release that builds trust — through greater visibility, more refined controls, and solid technical foundations.&lt;/p>
-&lt;p>Whether it’s security management, role-based permissions, or user-facing transparency: This update lays the groundwork for even more robust data infrastructures in organizations that take encryption seriously.&lt;/p></description><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</guid><category>cryptomator</category><category>hub</category></item><item><title>Spring Sale: 25%* Off Cryptomator – Until World Backup Day!</title><description>&lt;p>Spring is here – and so is our Spring Sale! From March 20 to 31, get 25%* off all paid Cryptomator versions and the Supporter Certificate.&lt;/p>
-&lt;p>Get &lt;a href="https://staging.cryptomator.org/for-individuals/">Cryptomator&lt;/a> now – for only €14.99!*&lt;/p>
-&lt;p>&lt;a href="https://staging.cryptomator.org/for-teams/">Cryptomator Hub&lt;/a> is also 25%* off for the first year! Contact us for more details or check out our &lt;a href="https://staging.cryptomator.org/pricing/">pricing&lt;/a>.&lt;/p>
-&lt;figure class="text-center">
-&lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/spring-2025-sale.png" alt="25% Off Cryptomator" />
-&lt;/a>
-&lt;/figure>
-&lt;h2 id="why-now-is-the-best-time">Why Now Is the Best Time&lt;/h2>
-&lt;p>March 31 is World Backup Day – the perfect opportunity to not only back up your data but also encrypt it! After all, a backup alone won’t protect you from unauthorized access. Only strong encryption truly safeguards your privacy.&lt;/p>
-&lt;p>Take World Backup Day as an opportunity to level up your data security!&lt;/p>
-&lt;h3 id="why-cryptomator">Why Cryptomator?&lt;/h3>
-&lt;ul>
-&lt;li>Simple end-to-end encryption for cloud services like Dropbox, Google Drive, OneDrive, and iCloud Drive.&lt;/li>
-&lt;li>Open source for full transparency and security.&lt;/li>
-&lt;li>Available on Windows, macOS, Linux, Android, and iOS.&lt;/li>
-&lt;li>No subscription, no hidden costs – pay once, use forever!&lt;/li>
-&lt;/ul>
-&lt;h3 id="why-cryptomator-hub">Why Cryptomator Hub?&lt;/h3>
-&lt;ul>
-&lt;li>Centralized management of encrypted vaults for teams and organizations.&lt;/li>
-&lt;li>Flexible access control – ideal for NGOs, research institutions, and companies.&lt;/li>
-&lt;li>Zero-knowledge architecture – no one but you can access your encrypted data.&lt;/li>
-&lt;/ul>
-&lt;h2 id="get-it-now-and-save">Get It Now and Save!&lt;/h2>
-&lt;p>The Spring Sale is the perfect opportunity to protect your cloud data – with a one-time purchase and no subscription model. Get Cryptomator for just €14.99* or enjoy 25%* off Cryptomator Hub for your team in the first year.&lt;/p>
-&lt;p>But hurry – this offer is only valid until March 31!&lt;/p></description><pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/03/20/spring-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/03/20/spring-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Cryptomator 2.7.0 for iOS: Now with SharePoint Integration!</title><description>&lt;p>We’re excited to announce a major update for the Cryptomator iOS app: &lt;strong>Cryptomator now supports SharePoint!&lt;/strong> This means that businesses and organizations can now store their encrypted vaults directly in SharePoint. Additionally, &lt;strong>Microsoft Teams is also supported&lt;/strong>, as files in Teams are stored in SharePoint by default. With this integration, users can now protect their team documents with &lt;strong>end-to-end encryption&lt;/strong>.&lt;/p>
-&lt;figure class="text-center">
-&lt;a href="https://apps.apple.com/us/app/cryptomator/id1560822163" target="_blank" rel="noopener">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/ios-2.7.0.png" srcset="https://staging.cryptomator.org/img/blog/ios-2.7.0.png 1x, https://staging.cryptomator.org/img/blog/ios-2.7.0@2x.png 2x" alt="Screenshot of Cryptomator for iOS showing the new SharePoint (incl. Microsoft Teams) entry" />
-&lt;/a>
-&lt;/figure>
-&lt;h2 id="why-is-this-important">Why is this important?&lt;/h2>
-&lt;p>Companies, universities, and NGOs increasingly rely on cloud services like Microsoft 365 for flexible and efficient collaboration. With SharePoint integration, users can ensure that &lt;strong>sensitive documents are not only stored in the cloud but also protected with zero-knowledge encryption&lt;/strong>. Even Microsoft has no access to the unencrypted content.&lt;/p>
-&lt;h2 id="how-the-sharepoint-integration-works">How the SharePoint Integration Works&lt;/h2>
-&lt;p>Using Cryptomator with SharePoint is just as easy as with other cloud services:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Create a new vault or add an existing one&lt;/strong>: Select SharePoint as the storage location in the Cryptomator iOS app.&lt;/li>
-&lt;li>&lt;strong>Work securely with encrypted files in Microsoft 365&lt;/strong>: Access your protected documents within SharePoint or Microsoft Teams.&lt;/li>
-&lt;li>&lt;strong>Flexible access across all devices&lt;/strong>: Your encrypted files are available on both desktop and mobile devices.&lt;/li>
-&lt;/ul>
-&lt;h2 id="maximum-security-for-microsoft-365-users">Maximum Security for Microsoft 365 Users&lt;/h2>
-&lt;p>The integration of SharePoint in Cryptomator 2.7.0 is a &lt;strong>major step forward for businesses that prioritize data protection and compliance&lt;/strong>. With this solution, you can:&lt;/p>
-&lt;ul>
-&lt;li>Enhance the security of confidential data while continuing to benefit from Microsoft 365.&lt;/li>
-&lt;li>Meet compliance requirements such as &lt;strong>GDPR&lt;/strong> and &lt;strong>NIS-2&lt;/strong> more easily.&lt;/li>
-&lt;li>Maintain full control over your sensitive information, no matter where it is stored.&lt;/li>
-&lt;/ul>
-&lt;h2 id="try-it-now">Try It Now!&lt;/h2>
-&lt;p>The &lt;strong>new 2.7.0 update is now available &lt;a href="https://apps.apple.com/us/app/cryptomator/id1560822163">on the App Store&lt;/a>&lt;/strong>. Update your Cryptomator iOS app today and enjoy &lt;strong>secure SharePoint encryption in the cloud&lt;/strong>!&lt;/p>
-&lt;p>Do you have any questions or feedback? We’d love to hear from our community!&lt;/p></description><pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/03/19/ios-2.7.0/</guid><category>cryptomator</category><category>ios</category></item></channel></rss>
+&lt;p>Whether it’s security management, role-based permissions, or user-facing transparency: This update lays the groundwork for even more robust data infrastructures in organizations that take encryption seriously.&lt;/p></description><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</guid><category>cryptomator</category><category>hub</category></item></channel></rss>
