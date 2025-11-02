@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/sponsors/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/sponsors/</link></image><lastBuildDate>Thu, 30 Oct 2025 11:35:16 +0000</lastBuildDate><generator>Hugo</generator><item><title>OneDrive-Sicherheitslücke zeigt: Warum Zero-Knowledge zählt</title><description>&lt;p>Im &lt;strong>Mai 2025&lt;/strong> veröffentlichte das Sicherheitsteam von &lt;strong>Oasis Security&lt;/strong> eine &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">Analyse&lt;/a>, die in der Cloud-Welt für Aufsehen sorgte: Über eine &lt;strong>Schwachstelle im OneDrive File Picker&lt;/strong> konnten Drittanbieter-Anwendungen auf Dateien zugreifen, für die eigentlich keine Zugriffsrechte bestanden. Betroffen waren &lt;strong>Millionen Nutzer:innen&lt;/strong> – sowohl privat als auch in Unternehmen.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/sponsors/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/sponsors/</link></image><lastBuildDate>Sun, 02 Nov 2025 11:50:46 +0000</lastBuildDate><generator>Hugo</generator><item><title>Zwei Jahre Cryptomator Hub – Teamverschlüsselung neu gedacht</title><description>&lt;p>Am &lt;strong>2. November 2023&lt;/strong> erschien &lt;strong>Cryptomator Hub 1.0&lt;/strong> – unsere Lösung für sichere, verschlüsselte Zusammenarbeit in der Cloud. &lt;strong>Zwei Jahre&lt;/strong> später hat sich Cryptomator Hub zu einem zentralen Werkzeug für Unternehmen, Universitäten und NGOs entwickelt, die ihre sensiblen Daten schützen und gleichzeitig effizient im Team arbeiten wollen.&lt;/p>
+&lt;p>Zum Jubiläum blicken wir auf zwei spannende Jahre voller Weiterentwicklungen, Beta-Features, neuer Einsatzbereiche – und auf das, was noch kommt.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025.png" alt="Zwei Jahre Cryptomator Hub – Teamverschlüsselung neu gedacht" />
+&lt;/figure>
+&lt;h2 id="was-ist-cryptomator-hub">Was ist Cryptomator Hub?&lt;/h2>
+&lt;p>Cryptomator Hub ist die &lt;strong>zentrale Plattform zur Verwaltung und gemeinsamen Nutzung verschlüsselter Tresore.&lt;/strong>&lt;/p>
+&lt;p>Während die klassische Cryptomator-App Einzelpersonen den Schutz ihrer Cloud-Dateien ermöglicht, überträgt der Hub dieses Prinzip auf Teams und Organisationen.&lt;/p>
+&lt;p>Cryptomator Hub bietet ein webbasiertes Dashboard, über das Admins und Teammitglieder &lt;strong>Nutzer:innen verwalten&lt;/strong>, &lt;strong>Rollen zuweisen&lt;/strong> und &lt;strong>Zugriffsrechte kontrollieren&lt;/strong> können – vollständig verschlüsselt und DSGVO-konform.&lt;/p>
+&lt;p>Damit bildet Cryptomator Hub die Brücke zwischen starker &lt;strong>Ende-zu-Ende-Verschlüsselung&lt;/strong> und benutzerfreundlicher Teamarbeit.&lt;/p>
+&lt;h3 id="funktionen-die-den-unterschied-machen">Funktionen, die den Unterschied machen&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Zentrale Verwaltung von Nutzer:innen und Rechten&lt;/strong>&lt;br>
+Ob kleines Team oder große Organisation – Admins behalten jederzeit den Überblick, wer Zugriff auf welche Tresore hat. Rollenbasierte Rechte machen das Management einfach und nachvollziehbar.&lt;/li>
+&lt;li>&lt;strong>Web of Trust&lt;/strong>&lt;br>
+Dieses Sicherheitsmodell ermöglicht den sicheren Schlüsselaustausch zwischen Mitglieder:innen des Teams über digitale Vertrauensbeziehungen. Kein unverschlüsselter Datenaustausch und keine komplizierten Schlüsseldateien, da Vertrauen technisch abgebildet wird.&lt;/li>
+&lt;li>&lt;strong>Create-Vault Role&lt;/strong>&lt;br>
+Teams können eigenständig neue Tresore erstellen, ohne dass Admins jeden Schritt begleiten müssen. Damit bleibt die Zusammenarbeit flexibel – bei gleichbleibend hoher Sicherheit.&lt;/li>
+&lt;li>&lt;strong>Self-Hosting &amp;amp; Datenschutz by Design&lt;/strong>&lt;br>
+Datenschutz ist kein Add-on, sondern Kernprinzip: Cryptomator Hub kann lokal (on-prem) oder in privaten Cloud-Umgebungen betrieben werden. Unternehmen und Institutionen behalten damit die vollständige Kontrolle über ihre Infrastruktur und Daten.&lt;/li>
+&lt;li>&lt;strong>Integration mit gängigen Cloud-Diensten&lt;/strong>&lt;br>
+Ob OneDrive, Google Drive, Dropbox oder Nextcloud – Cryptomator Hub fügt sich nahtlos in bestehende Arbeitsumgebungen ein und schützt Daten unabhängig vom Anbietenden.&lt;/li>
+&lt;/ol>
+&lt;h2 id="typische-einsatzbereiche">Typische Einsatzbereiche&lt;/h2>
+&lt;h3 id="unternehmen-und-behörden">Unternehmen und Behörden&lt;/h3>
+&lt;p>Unternehmen nutzen Cryptomator Hub, um Zero-Trust-Sicherheitsstrategien umzusetzen. Besonders &lt;strong>Branchen mit hohen Compliance-Anforderungen&lt;/strong> – etwa Gesundheitswesen, öffentliche Verwaltung oder Rechtsdienstleistungen – profitieren von DSGVO-konformer Cloud-Verschlüsselung.&lt;/p>
+&lt;p>Unternehmen wie &lt;a href="">Walbusch GmbH &amp;amp; Co. KG&lt;/a> setzen Cryptomator Hub bereits erfolgreich ein und können eine durchweg positive Bilanz ziehen:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Mit Cryptomator Hub können wir sensible Unternehmensdaten sicher verwalten und gleichzeitig unseren Mitarbeitenden eine unkomplizierte Nutzung ermöglichen.&lt;/strong>&lt;/p>
+&lt;p>&lt;em>Andreas Cofalla, Application Manager IT, Walbusch GmbH &amp;amp; Co. KG&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h3 id="universitäten-und-forschungseinrichtungen">Universitäten und Forschungseinrichtungen&lt;/h3>
+&lt;p>Forschungsteams sichern ihre Projektdaten mit Hub, ohne auf Cloud-Kollaboration zu verzichten. &lt;strong>Sensible Forschungsdaten&lt;/strong> bleiben geschützt, während die Zusammenarbeit über Abteilungen oder Länder hinweg funktioniert.&lt;/p>
+&lt;h3 id="ngos-und-nonprofits">NGOs und Nonprofits&lt;/h3>
+&lt;p>Für Organisationen, die weltweit tätig sind, bietet Cryptomator Hub eine sichere Möglichkeit, &lt;strong>vertrauliche Dokumente&lt;/strong> zu teilen – von Förderprojekten bis hin zu Personaldaten – selbst bei begrenzten IT-Ressourcen.&lt;/p>
+&lt;h3 id="it-teams-und-datenschutzbeauftragte">IT-Teams und Datenschutzbeauftragte&lt;/h3>
+&lt;p>Hub vereinfacht Audits, Rollenmanagement und den Nachweis datenschutzkonformer Arbeitsweisen – ein klarer Vorteil bei internen und externen Sicherheitsprüfungen.&lt;/p>
+&lt;h2 id="zwei-jahre-weiterentwicklung--und-die-zukunft-im-blick">Zwei Jahre Weiterentwicklung – und die Zukunft im Blick&lt;/h2>
+&lt;p>Seit dem Launch in 2023 hat sich Cryptomator Hub rasant entwickelt.&lt;/p>
+&lt;p>Das &lt;a href="https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/">Update 1.4.0&lt;/a> im April 2025 brachte mit dem &lt;strong>Web of Trust&lt;/strong> und der &lt;strong>Create-Vault-Rolle&lt;/strong> zwei entscheidende Meilensteine. Weiterhin steht alles im Zeichen von Optimierung, Skalierung und Zukunftssicherheit – insbesondere mit Blick auf die kommenden Standards der &lt;a href="https://staging.cryptomator.org/de/blog/2025/07/24/post-quantum-roadmap/">Post-Quantum-Kryptografie&lt;/a>.&lt;/p>
+&lt;p>Doch wir ruhen uns nicht auf Erfolgen aus. &lt;strong>Drei neue Features&lt;/strong> stehen bereits in den Startlöchern, um Cryptomator Hub noch leistungsfähiger und benutzerfreundlicher zu machen.&lt;/p>
+&lt;h3 id="usergroup-management">User/Group Management&lt;/h3>
+&lt;p>Die &lt;strong>Verwaltung von Nutzenden und Gruppen&lt;/strong> wird künftig deutlich komfortabler. Mit dem neuen, &lt;strong>integrierten User/Group Management&lt;/strong> können kleinere Unternehmen und Organisationen ihre Teamstrukturen direkt im Hub anlegen und verwalten – intuitiv, klar und ohne Umwege.&lt;/p>
+&lt;p>Im Hintergrund setzen wir weiterhin auf &lt;strong>Keycloak&lt;/strong> – eine bewährte, leistungsstarke Lösung für Identitäts- und Zugriffsverwaltung.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-user-management-preview.png" alt="Cryptomator Hub – User/Group Management Vorschau" />
+&lt;/figure>
+&lt;h3 id="emergency-access">Emergency Access&lt;/h3>
+&lt;p>In Unternehmen kann es immer vorkommen, dass Mitarbeitende ausscheiden und dadurch der Zugriff auf wichtige Daten verloren geht.&lt;/p>
+&lt;p>Das kommende &lt;strong>Emergency-Access-Feature&lt;/strong> schafft hier Abhilfe: Es ermöglicht, &lt;strong>eine festgelegte Gruppe autorisierter Personen&lt;/strong> zu bestimmen, die im Notfall gemeinsam oder teilweise den Zugriff auf einen Tresor wiederherstellen kann.&lt;/p>
+&lt;p>&lt;strong>Selbst in kritischen Situationen oder bei personellen Veränderungen&lt;/strong> bleibt das Unternehmen handlungsfähig.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-emergency-access-preview.png" alt="Cryptomator Hub – Emergency Access Vorschau" />
+&lt;/figure>
+&lt;h3 id="files-in-use-in-der-desktop-app">Files-in-Use (in der Desktop-App)&lt;/h3>
+&lt;p>Ein häufig geäußerter Wunsch unserer Hub-Kund:innen: &lt;strong>bessere Unterstützung bei der Zusammenarbeit an Office-Dateien.&lt;/strong>&lt;/p>
+&lt;p>Während beispielsweise &lt;strong>LibreOffice&lt;/strong> bereits ein eingebautes Sperrsystem für geöffnete Dateien besitzt, fehlte dieses bislang bei &lt;strong>Microsoft Office&lt;/strong>. Daher entwickeln wir derzeit in der &lt;strong>Cryptomator-Desktop-App&lt;/strong> ein eigenes „&lt;strong>Locking-System&lt;/strong>“, das erkennt, wenn eine Datei bereits geöffnet ist, und andere Nutzer:innen darüber informiert.&lt;/p>
+&lt;p>Damit wird das gemeinsame Arbeiten an Dokumenten &lt;strong>konfliktfreier, transparenter und sicherer&lt;/strong> – ein weiterer Schritt hin zu reibungsloser Teamarbeit.&lt;/p>
+&lt;h2 id="zwei-jahre-vertrauen-zusammenarbeit-und-sicherheit">Zwei Jahre Vertrauen, Zusammenarbeit und Sicherheit&lt;/h2>
+&lt;p>In zwei Jahren hat sich Cryptomator Hub von einer Idee zu einer verlässlichen Plattform für sichere Teamarbeit entwickelt.&lt;/p>
+&lt;p>Wir danken allen Nutzer:innen, Administrator:innen und Tester:innen, die mit ihrem Feedback geholfen haben, Cryptomator Hub weiterzuentwickeln – und freuen uns auf das nächste Kapitel.&lt;/p></description><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/02/hub-anniversary/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/02/hub-anniversary/</guid><category>cryptomator</category><category>hub</category><category>anniversary</category></item><item><title>OneDrive-Sicherheitslücke zeigt: Warum Zero-Knowledge zählt</title><description>&lt;p>Im &lt;strong>Mai 2025&lt;/strong> veröffentlichte das Sicherheitsteam von &lt;strong>Oasis Security&lt;/strong> eine &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">Analyse&lt;/a>, die in der Cloud-Welt für Aufsehen sorgte: Über eine &lt;strong>Schwachstelle im OneDrive File Picker&lt;/strong> konnten Drittanbieter-Anwendungen auf Dateien zugreifen, für die eigentlich keine Zugriffsrechte bestanden. Betroffen waren &lt;strong>Millionen Nutzer:innen&lt;/strong> – sowohl privat als auch in Unternehmen.&lt;/p>
 &lt;p>Was genau ist passiert, warum ist dieser Vorfall so brisant – und was kannst du daraus lernen, um deine eigenen Daten besser zu schützen?&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/onedrive-security-breach.png" alt="OneDrive-Sicherheitslücke zeigt: Zero-Knowledge-Verschlüsselung ist unverzichtbar" />
@@ -491,61 +550,4 @@ Ab sofort könnt ihr eure Tresore auf dem &lt;strong>Mac&lt;/strong> ganz bequem
 &lt;/ul>
 &lt;h3 id="alle-änderungen-auf-github">Alle Änderungen auf GitHub&lt;/h3>
 &lt;p>Neben den oben genannten Highlights gab es noch &lt;strong>weitere kleinere Verbesserungen und Aktualisierungen&lt;/strong> – z. B. in den Vault-Einstellungen, bei der Symbol-Optik unter Linux und bei der Übersetzungsqualität. Den vollständigen Überblick über alle Änderungen findet ihr wie immer im &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.16.0">&lt;strong>Changelog&lt;/strong>&lt;/a> auf GitHub.&lt;/p>
-&lt;p>&lt;strong>Danke an alle Mitwirkenden&lt;/strong> aus der Community – und &lt;strong>viel Spaß&lt;/strong> mit dem neuen Update!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Cryptomator Hub 1.4.0: Mehr Vertrauen, mehr Kontrolle, mehr Transparenz</title><description>&lt;p>Mit dem Release 1.4.0 erhält &lt;strong>Cryptomator Hub&lt;/strong> ein umfassendes Funktions-Upgrade, das mehr Kontrolle und Transparenz bietet – und dabei gleichzeitig die Nutzerfreundlichkeit weiter verbessert.&lt;/p>
-&lt;p>Im Mittelpunkt stehen ein neues &lt;strong>„Web of Trust“&lt;/strong>, feinere &lt;strong>Berechtigungsmechanismen&lt;/strong>, ein erweitertes &lt;strong>Audit-Logging&lt;/strong> sowie mehr &lt;strong>Einblick ins Benutzerprofil&lt;/strong>.&lt;/p>
-&lt;p>Schauen wir uns die Neuerungen im Detail an!&lt;/p>
-&lt;h2 id="web-of-trust-gegenseitige-verifikation-für-mehr-sicherheit">Web of Trust: Gegenseitige Verifikation für mehr Sicherheit&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-wot.png" alt="Hub 1.4.0 WoT" />
-&lt;/figure>
-&lt;p>Ein Highlight dieses Releases ist das neue &lt;strong>Web of Trust (WoT)&lt;/strong>. Nutzer:innen können sich ab sofort gegenseitig verifizieren, indem sie die Schlüsselidentität anderer bestätigen.&lt;br>
-Auf diese Weise entsteht ein Vertrauensnetzwerk, das sich vor allem gegen die Einschleusung von manipulierten oder gefälschten öffentlichen Schlüsseln absichert.&lt;/p>
-&lt;p>Dieses Feature adressiert gezielt sogenannte &lt;strong>„Key Injection“-Risiken&lt;/strong> und verbessert den Schutz sensibler Daten in Organisationen.&lt;/p>
-&lt;p>Die gegenseitige Verifikation basiert auf einem einfachen, aber wirksamen Prinzip: &lt;strong>Nur wenn der öffentliche Schlüssel einer Person von vertrauenswürdigen Kolleg:innen bestätigt wurde, gilt die Identität als verifiziert.&lt;/strong>&lt;/p>
-&lt;p>Admins können die Anzahl benötigter Bestätigungen konfigurieren.&lt;/p>
-&lt;h2 id="neue-rolle-für-tresor-erstellung-wer-darf-was">Neue Rolle für Tresor-Erstellung: Wer darf was?&lt;/h2>
-&lt;p>Mit der Einführung der &lt;code>create-vaults&lt;/code>-Rolle lässt sich ab sofort steuern, wer innerhalb einer Organisation neue Tresore erstellen darf.&lt;/p>
-&lt;p>Bisher war diese Berechtigung standardmäßig allen Nutzer:innen vorbehalten – nun können Admins gezielt festlegen, ob z. B. nur bestimmte Teams, Einzelpersonen oder weiterhin alle dafür zuständig sein sollen.&lt;/p>
-&lt;p>Gerade in größeren Organisationen mit vielen Nutzer:innen ist dies ein wichtiger Schritt zu mehr Ordnung und kontrollierterem Wachstum der Infrastruktur.&lt;/p>
-&lt;h2 id="audit-log-noch-präzisere-nachverfolgung-von-ereignissen">Audit-Log: Noch präzisere Nachverfolgung von Ereignissen&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm max-h-[553px]" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-auditlog.png" alt="Hub 1.4.0 Audit Log" />
-&lt;/figure>
-&lt;p>Die Überwachung von sicherheitsrelevanten Aktivitäten gehört zu den zentralen Aufgaben im IT-Betrieb. Mit Version 1.4.0 von Cryptomator Hub wird das &lt;strong>Audit-Log&lt;/strong> noch leistungsfähiger:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Filter nach Ereignistypen:&lt;/strong> Jetzt lassen sich Audit-Einträge gezielt nach Typen filtern – etwa nach Schlüsseländerungen, Zugriffsversuchen oder Account-Aktivitäten. So können Admins bei Vorfällen schneller die relevanten Daten herausfiltern.&lt;/li>
-&lt;li>&lt;strong>Neue Ereignisse:&lt;/strong> Es wurden mehrere zusätzliche &lt;a href="https://docs.cryptomator.org/hub/admin/#event-types">Event-Typen&lt;/a> eingeführt, um sicherheitskritische Aktionen noch besser sichtbar zu machen.
-&lt;ul>
-&lt;li>&lt;strong>Register Device&lt;/strong> - Ein Benutzer hat ein neues Gerät registriert. Dies kann z.B. eine Cryptomator-App (Desktop/Mobile) sein, um einen Tresor zu entsperren oder ein Webbrowser, um auf den Cryptomator Hub zuzugreifen.&lt;/li>
-&lt;li>&lt;strong>Remove Device&lt;/strong> - Ein Benutzer hat ein Gerät entfernt.&lt;/li>
-&lt;li>&lt;strong>Signed Identity&lt;/strong> - Ein Benutzer hat die Identität eines anderen Benutzers signiert.&lt;/li>
-&lt;li>&lt;strong>Account Key Changed&lt;/strong> - Ein Benutzer hat den Account Key neu generiert. Dies protokolliert auch die Änderung von Benutzerschlüsseln, da eine Änderung des Kontoschlüssels auch Teile der Benutzerschlüssel ändert.&lt;/li>
-&lt;li>&lt;strong>Reset User Account&lt;/strong> – Ein Benutzer hat sein Konto zurückgesetzt.&lt;/li>
-&lt;li>&lt;strong>User Keys Change&lt;/strong> – Ein Benutzer hat seine Schlüssel geändert. Dies geschieht z. B., wenn der Benutzer die Einrichtung seines Kontos abgeschlossen hat oder wenn sich der Kontoschlüssel geändert hat.&lt;/li>
-&lt;li>&lt;strong>Claim Vault Ownership&lt;/strong> - Ein Benutzer hat das Eigentum an einem Tresor beansprucht. Dieses Ereignis wird protokolliert, wenn ein Tresor, der mit Hub vor Version 1.3.0 erstellt wurde, vom Ersteller des Tresors mit dem Vault Admin Password beansprucht wird.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Retrieve Vault Key erweitert:&lt;/strong> Dieses Audit-Event enthält nun zusätzlich die &lt;strong>IP-Adresse und Geräte-ID&lt;/strong> – eine wichtige Erweiterung zur Nachvollziehbarkeit bei der Tresorentschlüsselung. So lässt sich ermitteln, welche Person mit welchem Gerät den Tresor entsperrt hat.&lt;/li>
-&lt;/ul>
-&lt;h2 id="mehr-transparenz-im-nutzerprofil">Mehr Transparenz im Nutzerprofil&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-profile.png" alt="Hub 1.4.0 Profil-Ansicht" />
-&lt;/figure>
-&lt;p>Auch die Benutzeroberfläche wurde erweitert, um mehr Einblick in die eigenen Geräte und Zugriffe zu bieten:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Legacy Devices anzeigen:&lt;/strong> Nutzer:innen sehen nun auf einen Blick, ob sie noch Geräte im Einsatz haben, die mit einer älteren Hub-Version erstellt wurden. Das erleichtert Migrationsentscheidungen um das seit Hub 1.3.0 verwendete User-Key-basierte Schlüsselverfahren mit allen Geräten zu verwenden.&lt;/li>
-&lt;li>&lt;strong>Letzte IP-Adresse und letzter Tresor-Zugriff:&lt;/strong> In der Geräteübersicht werden nun auch die &lt;strong>letzte bekannte IP-Adresse&lt;/strong> und der &lt;strong>Zeitpunkt des letzten Tresorzugriffs&lt;/strong> pro Gerät angezeigt – ideal zur Erkennung verdächtiger Aktivitäten.&lt;/li>
-&lt;/ul>
-&lt;h2 id="neue-sprachen-und-verbesserte-nutzerfreundlichkeit">Neue Sprachen und verbesserte Nutzerfreundlichkeit&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Sprachvielfalt wächst:&lt;/strong> Cryptomator Hub unterstützt jetzt auch &lt;strong>Niederländisch, Französisch, Italienisch, Koreanisch, Portugiesisch und Türkisch&lt;/strong>. Damit wird die Plattform für internationale Teams noch zugänglicher.&lt;/li>
-&lt;li>&lt;strong>Spracheinstellung bleibt erhalten:&lt;/strong> Die gewählte Spracheinstellung wird nun im Nutzerkonto gespeichert – und muss nicht bei jedem Login neu gewählt werden.&lt;/li>
-&lt;/ul>
-&lt;h2 id="provenance-attestation-für-container-images">Provenance Attestation für Container-Images&lt;/h2>
-&lt;p>Ein oft übersehener, aber sicherheitskritischer Bereich: &lt;strong>die Authentizität von Softwarecontainern&lt;/strong>. Ab Version 1.4.0 veröffentlichen wir eine &lt;strong>Provenance Attestation&lt;/strong> für unsere Container-Images.&lt;/p>
-&lt;p>Diese Attestierung dokumentiert die Herkunft und Unveränderbarkeit unserer Images und bietet so zusätzliche Absicherung für automatisierte Deployments und CI/CD-Pipelines.&lt;/p>
-&lt;h2 id="alle-änderungen-im-überblick">Alle Änderungen im Überblick&lt;/h2>
-&lt;p>Alle technischen Details, Fixes und Verbesserungen sind in den &lt;a href="https://github.com/cryptomator/hub/releases/tag/1.4.0">Release-Notes&lt;/a> und dem neuen &lt;a href="https://github.com/cryptomator/hub/blob/1.4.0/CHANGELOG.md">CHANGELOG&lt;/a> zu finden.&lt;/p>
-&lt;h2 id="schlusswort">Schlusswort&lt;/h2>
-&lt;p>&lt;strong>Cryptomator Hub 1.4.0&lt;/strong> ist ein Release, das Vertrauen schafft – durch mehr Sichtbarkeit, feinere Steuerung und technische Verlässlichkeit.&lt;/p>
-&lt;p>Ob im Sicherheitsmanagement, in der Rollenvergabe oder in der Benutzerführung: Dieses Update legt den Grundstein für noch robustere Dateninfrastrukturen in Organisationen, die Verschlüsselung ernst nehmen.&lt;/p></description><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/</guid><category>cryptomator</category><category>hub</category></item></channel></rss>
+&lt;p>&lt;strong>Danke an alle Mitwirkenden&lt;/strong> aus der Community – und &lt;strong>viel Spaß&lt;/strong> mit dem neuen Update!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item></channel></rss>

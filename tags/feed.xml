@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/</link></image><lastBuildDate>Thu, 30 Oct 2025 11:35:16 +0000</lastBuildDate><generator>Hugo</generator><item><title>OneDrive Security Breach Shows: Why Zero-Knowledge Matters</title><description>&lt;p>In &lt;strong>May 2025&lt;/strong>, the &lt;strong>Oasis Security&lt;/strong> published an &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">analysis&lt;/a> that caused a stir in the cloud world: &lt;strong>a vulnerability in OneDrive File Picker&lt;/strong> allowed third-party applications to access files for which they did not actually have access rights. &lt;strong>Millions of users&lt;/strong> were affected, both private individuals and companies.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/</link></image><lastBuildDate>Sun, 02 Nov 2025 11:50:46 +0000</lastBuildDate><generator>Hugo</generator><item><title>Two Years of Cryptomator Hub – Team Encryption Reimagined</title><description>&lt;p>On &lt;strong>November 2, 2023&lt;/strong>, &lt;strong>Cryptomator Hub 1.0&lt;/strong> was released—our solution for secure, encrypted collaboration in the cloud. &lt;strong>Two years&lt;/strong> later, Cryptomator Hub has become a central tool for companies, universities, and NGOs that want to protect their sensitive data while working efficiently as a team.&lt;/p>
+&lt;p>On this anniversary, we look back on two exciting years full of further developments, beta features, new areas of application—and what&amp;rsquo;s yet to come.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025.png" alt="Two Years of Cryptomator Hub – Team Encryption Reimagined" />
+&lt;/figure>
+&lt;h2 id="what-is-cryptomator-hub">What is Cryptomator Hub?&lt;/h2>
+&lt;p>Cryptomator Hub is the &lt;strong>central platform for managing and sharing encrypted vaults&lt;/strong>.&lt;/p>
+&lt;p>While the classic Cryptomator app allows individuals to protect their cloud files, the Hub extends this principle to teams and organizations.&lt;/p>
+&lt;p>Cryptomator Hub offers a web-based dashboard that administrators and team members can use to &lt;strong>manage users, assign roles, and control access rights&lt;/strong>—all fully encrypted and GDPR-compliant.&lt;/p>
+&lt;p>Cryptomator Hub thus bridges the gap between strong &lt;strong>end-to-end encryption&lt;/strong> and user-friendly teamwork.&lt;/p>
+&lt;h2 id="features-that-make-the-difference">Features That Make the Difference&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Centralized Management of Users and Permissions&lt;/strong>&lt;br>
+Whether you&amp;rsquo;re a small team or a large organization, administrators can always keep track of who has access to which vaults. Role-based permissions make management easy and transparent.&lt;/li>
+&lt;li>&lt;strong>Web of Trust&lt;/strong>&lt;br>
+This security model enables secure key exchange between team members via digital trust relationships. No unencrypted data exchange and no complicated key files, as trust is mapped technically.&lt;/li>
+&lt;li>&lt;strong>Create Vault Role&lt;/strong>&lt;br>
+Teams can independently create new vaults without administrators having to accompany each step. This keeps collaboration flexible while maintaining a high level of security.&lt;/li>
+&lt;li>&lt;strong>Self-Hosting &amp;amp; Data Protection by Design&lt;/strong>&lt;br>
+Data protection is not an add-on, but a core principle: Cryptomator Hub can be operated locally (on-prem) or in private cloud environments. This gives companies and institutions complete control over their infrastructure and data.&lt;/li>
+&lt;li>&lt;strong>Integration with Popular Cloud Services&lt;/strong>&lt;br>
+Whether OneDrive, Google Drive, Dropbox, or Nextcloud, Cryptomator Hub integrates seamlessly into existing work environments and protects data regardless of the provider.&lt;/li>
+&lt;/ol>
+&lt;h2 id="typical-areas-of-application">Typical Areas of Application&lt;/h2>
+&lt;h3 id="companies-and-public-authorities">Companies and Public Authorities&lt;/h3>
+&lt;p>Companies use Cryptomator Hub to implement zero-trust security strategies. &lt;strong>Industries with high compliance requirements&lt;/strong>—such as healthcare, public administration, and legal services—benefit particularly from GDPR-compliant cloud encryption.&lt;/p>
+&lt;p>Companies such as &lt;a href="">Walbusch GmbH &amp;amp; Co. KG&lt;/a> are already successfully using Cryptomator Hub and can report consistently positive results:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>With Cryptomator Hub, we can securely manage sensitive company data while making it easy for our employees to use.&lt;/strong>&lt;/p>
+&lt;p>&lt;em>Andreas Cofalla, Application Manager IT, Walbusch GmbH &amp;amp; Co. KG&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h3 id="universities-and-research-institutions">Universities and Research Institutions&lt;/h3>
+&lt;p>Research teams secure their project data with Hub without sacrificing cloud collaboration. &lt;strong>Sensitive research data&lt;/strong> remains protected while collaboration across departments or countries continues to function.&lt;/p>
+&lt;h3 id="ngos-and-nonprofits">NGOs and Nonprofits&lt;/h3>
+&lt;p>For organizations operating globally, Cryptomator Hub offers a secure way to share &lt;strong>confidential documents&lt;/strong>—from grant proposals to personnel data—even with limited IT resources.&lt;/p>
+&lt;h3 id="it-teams-and-data-protection-officers">IT Teams and Data Protection Officers&lt;/h3>
+&lt;p>Hub simplifies audits, role management, and verification of data protection-compliant working practices—a clear advantage in internal and external security audits.&lt;/p>
+&lt;h2 id="two-years-of-further-development--and-looking-to-the-future">Two Years of Further Development – And Looking to the Future&lt;/h2>
+&lt;p>Since its launch in 2023, Cryptomator Hub has developed rapidly.&lt;/p>
+&lt;p>The &lt;a href="https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/">1.4.0 update&lt;/a> in April 2025 brought two decisive milestones with the &lt;strong>Web of Trust&lt;/strong> and the &lt;strong>Create Vault role&lt;/strong>. Furthermore, everything is focused on optimization, scaling, and future-proofing—especially with regard to the upcoming standards of &lt;a href="https://staging.cryptomator.org/blog/2025/07/24/post-quantum-roadmap/">post-quantum cryptography&lt;/a>.&lt;/p>
+&lt;p>But we are not resting on our laurels. &lt;strong>Three new features&lt;/strong> are already in the pipeline to make Cryptomator Hub even more powerful and user-friendly.&lt;/p>
+&lt;h3 id="usergroup-management">User/Group Management&lt;/h3>
+&lt;p>&lt;strong>User and group management&lt;/strong> will become much more convenient in the future. With the new, &lt;strong>integrated user/group management&lt;/strong>, smaller companies and organizations can create and manage their team structures directly in the hub—intuitively, clearly, and without detours.&lt;/p>
+&lt;p>In the background, we continue to rely on &lt;strong>Keycloak&lt;/strong>—a proven, powerful solution for identity and access management.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-user-management-preview.png" alt="Cryptomator Hub – User/Group Management Preview" />
+&lt;/figure>
+&lt;h3 id="emergency-access">Emergency Access&lt;/h3>
+&lt;p>In companies, it can always happen that employees leave and access to important data is lost as a result.&lt;/p>
+&lt;p>The upcoming &lt;strong>Emergency Access&lt;/strong> feature provides a remedy here: it allows you to &lt;strong>designate a specific group of authorized persons&lt;/strong> who can restore access to a vault, either collectively or partially, in an emergency.&lt;/p>
+&lt;p>&lt;strong>Even in critical situations or in the event of personnel changes&lt;/strong>, the company remains capable of acting.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-emergency-access-preview.png" alt="Cryptomator Hub – Emergency Access Preview" />
+&lt;/figure>
+&lt;h3 id="files-in-use-in-the-desktop-app">Files in Use (in the Desktop App)&lt;/h3>
+&lt;p>A frequently expressed wish of our Hub customers: &lt;strong>better support for collaborating on Office files.&lt;/strong>&lt;/p>
+&lt;p>While &lt;strong>LibreOffice&lt;/strong>, for example, already has a built-in locking system for open files, this has been missing in &lt;strong>Microsoft Office&lt;/strong> until now. That&amp;rsquo;s why we are currently developing our own &lt;strong>“locking system”&lt;/strong> in the &lt;strong>Cryptomator desktop app&lt;/strong> that recognizes when a file is already open and informs other users.&lt;/p>
+&lt;p>This makes collaborating on documents more conflict-free, transparent, and secure—another step toward smooth teamwork.&lt;/p>
+&lt;h2 id="two-years-of-trust-cooperation-and-security">Two Years of Trust, Cooperation, and Security&lt;/h2>
+&lt;p>In two years, Cryptomator Hub has evolved from an idea into a reliable platform for secure teamwork.&lt;/p>
+&lt;p>We would like to thank all users, administrators, and testers who have helped to further develop Cryptomator Hub with their feedback—and we look forward to the next chapter.&lt;/p></description><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/11/02/hub-anniversary/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/11/02/hub-anniversary/</guid><category>cryptomator</category><category>hub</category><category>anniversary</category></item><item><title>OneDrive Security Breach Shows: Why Zero-Knowledge Matters</title><description>&lt;p>In &lt;strong>May 2025&lt;/strong>, the &lt;strong>Oasis Security&lt;/strong> published an &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">analysis&lt;/a> that caused a stir in the cloud world: &lt;strong>a vulnerability in OneDrive File Picker&lt;/strong> allowed third-party applications to access files for which they did not actually have access rights. &lt;strong>Millions of users&lt;/strong> were affected, both private individuals and companies.&lt;/p>
 &lt;p>What exactly happened, why is this incident so explosive, and what can you learn from it to better protect your own data?&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/onedrive-security-breach.png" alt="OneDrive Security Breach Shows: Why Zero-Knowledge Matters" />
@@ -488,60 +547,4 @@ Starting now, you can unlock your vaults on &lt;strong>Mac&lt;/strong> easily wi
 &lt;/ul>
 &lt;h3 id="full-changelog-on-github">Full Changelog on GitHub&lt;/h3>
 &lt;p>In addition to the highlights mentioned above, there are also &lt;strong>several smaller improvements and updates&lt;/strong> – such as enhancements to vault settings, better symbolic icon support on Linux, and translation updates. You can find the complete list of changes as always in the &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.16.0">&lt;strong>Changelog&lt;/strong>&lt;/a> on GitHub.&lt;/p>
-&lt;p>&lt;strong>Thanks to all contributors&lt;/strong> from the community – and &lt;strong>enjoy the new update&lt;/strong>!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Cryptomator Hub 1.4.0: More Trust, More Control, More Transparency</title><description>&lt;p>With the release of version 1.4.0, &lt;strong>Cryptomator Hub&lt;/strong> receives a major feature upgrade that offers more control and transparency — while also improving the overall user experience.&lt;/p>
-&lt;p>At the heart of this release are a new &lt;strong>Web of Trust&lt;/strong>, finer-grained &lt;strong>permission management&lt;/strong>, extended &lt;strong>audit logging&lt;/strong>, and deeper &lt;strong>insights into user profiles&lt;/strong>.&lt;/p>
-&lt;p>Let’s take a closer look at what’s new!&lt;/p>
-&lt;h2 id="web-of-trust-mutual-verification-for-better-security">Web of Trust: Mutual Verification for Better Security&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-wot.png" alt="Hub 1.4.0 WoT" />
-&lt;/figure>
-&lt;p>One of the highlights of this release is the new &lt;strong>Web of Trust (WoT)&lt;/strong>. Users can now mutually verify each other&amp;rsquo;s identities by signing public keys. This creates a network of trust that protects against the injection of manipulated or forged public keys.&lt;/p>
-&lt;p>This feature directly addresses so-called &lt;strong>&amp;ldquo;key injection&amp;rdquo; risks&lt;/strong> and strengthens the protection of sensitive data across organizations.&lt;/p>
-&lt;p>The verification process is based on a simple but effective principle: &lt;strong>Only when a person’s public key is confirmed by trusted peers is their identity considered verified.&lt;/strong>&lt;/p>
-&lt;p>Admins can configure how many verifications are required.&lt;/p>
-&lt;h2 id="new-create-vaults-role-granular-permissions-for-vault-creation">New Create-Vaults Role: Granular Permissions for Vault Creation&lt;/h2>
-&lt;p>With the introduction of the new &lt;code>create-vaults&lt;/code> role, admins now have full control over who is allowed to create new vaults within the organization.&lt;/p>
-&lt;p>Previously, this permission was available to all users by default — now, admins can specify whether only certain teams, individuals, or everyone should have access to this feature.&lt;/p>
-&lt;p>Especially in large organizations, this is a key improvement for maintaining order and managing infrastructure growth in a more controlled way.&lt;/p>
-&lt;h2 id="audit-log-even-more-precise-activity-tracking">Audit Log: Even More Precise Activity Tracking&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm max-h-[553px]" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-auditlog.png" alt="Hub 1.4.0 Audit Log" />
-&lt;/figure>
-&lt;p>Monitoring security-relevant actions is a key responsibility in IT operations. With version 1.4.0, the &lt;strong>audit log&lt;/strong> becomes even more powerful:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Filter by event type:&lt;/strong> You can now filter audit log entries by type — such as key changes, access attempts, or account activity — to quickly isolate relevant data during incidents.&lt;/li>
-&lt;li>&lt;strong>New events:&lt;/strong> Several new &lt;a href="https://docs.cryptomator.org/hub/admin/#event-types">event types&lt;/a> were added to better capture security-critical actions.
-&lt;ul>
-&lt;li>&lt;strong>Register Device&lt;/strong> – A user registered a new device, e.g., Cryptomator app or browser session.&lt;/li>
-&lt;li>&lt;strong>Remove Device&lt;/strong> – A user removed a device.&lt;/li>
-&lt;li>&lt;strong>Signed Identity&lt;/strong> – A user signed another user’s identity.&lt;/li>
-&lt;li>&lt;strong>Account Key Changed&lt;/strong> – A user regenerated their account key, which also affects user keys.&lt;/li>
-&lt;li>&lt;strong>Reset User Account&lt;/strong> – A user reset their account.&lt;/li>
-&lt;li>&lt;strong>User Keys Change&lt;/strong> – A user changed their keys, e.g., during initial setup or account key updates.&lt;/li>
-&lt;li>&lt;strong>Claim Vault Ownership&lt;/strong> – A user claimed ownership of a vault that was created with a Hub version prior to 1.3.0 using the Vault Admin Password.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>Retrieve Vault Key event enhanced:&lt;/strong> This audit event now includes the &lt;strong>IP address and device ID&lt;/strong> — making it easier to trace who unlocked a vault and from which device.&lt;/li>
-&lt;/ul>
-&lt;h2 id="more-transparency-in-user-profile">More Transparency in User Profile&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-1.4.0-profile.png" alt="Hub 1.4.0 Profile View" />
-&lt;/figure>
-&lt;p>The user interface has also been updated to offer more transparency about devices and access patterns:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Legacy devices:&lt;/strong> Users can now see if they’re still using devices linked to vaults created with older versions of the Hub. This helps with migrations to the current user-key-based encryption introduced in version 1.3.0.&lt;/li>
-&lt;li>&lt;strong>Last IP and vault access timestamp:&lt;/strong> The device overview now shows the &lt;strong>last known IP address&lt;/strong> and the &lt;strong>most recent vault access timestamp&lt;/strong> for each device — ideal for identifying suspicious activity.&lt;/li>
-&lt;/ul>
-&lt;h2 id="new-languages-and-improved-usability">New Languages and Improved Usability&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>More language support:&lt;/strong> Cryptomator Hub is now available in &lt;strong>Dutch, French, Italian, Korean, Portuguese, and Turkish&lt;/strong> — making it even more accessible for international teams.&lt;/li>
-&lt;li>&lt;strong>Language preference is preserved:&lt;/strong> Your selected language setting is now saved in your user profile and no longer resets after logout.&lt;/li>
-&lt;/ul>
-&lt;h2 id="provenance-attestation-for-container-images">Provenance Attestation for Container Images&lt;/h2>
-&lt;p>A frequently overlooked but critical area of security is the &lt;strong>authenticity of software containers&lt;/strong>. Starting with version 1.4.0, we now publish &lt;strong>provenance attestations&lt;/strong> for our container images.&lt;/p>
-&lt;p>These attestations document the origin and integrity of our images and provide additional assurance for automated deployments and CI/CD pipelines.&lt;/p>
-&lt;h2 id="full-changelog">Full Changelog&lt;/h2>
-&lt;p>All technical details, fixes, and improvements can be found in the &lt;a href="https://github.com/cryptomator/hub/releases/tag/1.4.0">release notes&lt;/a> and the new &lt;a href="https://github.com/cryptomator/hub/blob/1.4.0/CHANGELOG.md">CHANGELOG&lt;/a> file.&lt;/p>
-&lt;h2 id="closing-remarks">Closing Remarks&lt;/h2>
-&lt;p>&lt;strong>Cryptomator Hub 1.4.0&lt;/strong> is a release that builds trust — through greater visibility, more refined controls, and solid technical foundations.&lt;/p>
-&lt;p>Whether it’s security management, role-based permissions, or user-facing transparency: This update lays the groundwork for even more robust data infrastructures in organizations that take encryption seriously.&lt;/p></description><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/15/hub-1.4.0/</guid><category>cryptomator</category><category>hub</category></item></channel></rss>
+&lt;p>&lt;strong>Thanks to all contributors&lt;/strong> from the community – and &lt;strong>enjoy the new update&lt;/strong>!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item></channel></rss>
