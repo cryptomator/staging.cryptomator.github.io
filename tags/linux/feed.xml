@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/linux/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/linux/</link></image><lastBuildDate>Tue, 18 Nov 2025 08:50:56 +0000</lastBuildDate><generator>Hugo</generator><item><title>Two Years of Cryptomator Hub – Team Encryption Reimagined</title><description>&lt;p>On &lt;strong>November 2, 2023&lt;/strong>, &lt;strong>Cryptomator Hub 1.0&lt;/strong> was released—our solution for secure, encrypted collaboration in the cloud. &lt;strong>Two years&lt;/strong> later, Cryptomator Hub has become a central tool for companies, universities, and NGOs that want to protect their sensitive data while working efficiently as a team.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/linux/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/linux/</link></image><lastBuildDate>Wed, 19 Nov 2025 10:20:47 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Desktop 1.18.0 is here!</title><description>&lt;p>We are pleased to announce the &lt;strong>official release of Cryptomator Desktop version 1.18.0&lt;/strong>. Following the &lt;a href="https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/">beta phase&lt;/a>, this version brings the full package of improvements, new features, and stability enhancements—now available for all supported platforms.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0.png" alt="Cryptomator Desktop 1.18.0" />
+&lt;/figure>
+&lt;h2 id="new-features-whats-new-in-1180">New Features: What’s New in 1.18.0?&lt;/h2>
+&lt;h3 id="restoring-the-vault-configuration-file">Restoring the Vault Configuration File&lt;/h3>
+&lt;p>The &lt;strong>recovery key&lt;/strong> has been part of Cryptomator for some time, but with version 1.18.0, it is now significantly more powerful: You can now &lt;strong>completely restore lost or damaged master key files and vault configuration files&lt;/strong> using your existing recovery key.&lt;/p>
+&lt;p>Whether accidentally deleted, overwritten due to a backup problem, or damaged by a memory error, the vault can now be &lt;strong>reliably reconstructed&lt;/strong>.&lt;/p>
+&lt;p>This makes the recovery key a real emergency tool that secures access to the vault in case of an emergency and prevents complete data loss.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/recover-vault-config.png" srcset="https://staging.cryptomator.org/img/blog/recover-vault-config.png 1x, https://staging.cryptomator.org/img/blog/recover-vault-config@2x.png 2x" alt="Restoring the vault configuration file" />
+&lt;/figure>
+&lt;h3 id="new-signature-certificates-for-windows">New Signature Certificates for Windows&lt;/h3>
+&lt;p>The Windows installer and all binary files are &lt;strong>signed with a new certificate&lt;/strong>. The old certificate is no longer valid, and the new certificate ensures smooth installation on modern Windows systems without disruptive warning dialogs.&lt;/p>
+&lt;h3 id="remembering-the-last-vault-location">Remembering the Last Vault Location&lt;/h3>
+&lt;p>When creating a new vault, Cryptomator now automatically suggests the &lt;strong>last location used&lt;/strong>. Users who create multiple vaults in similar folder structures benefit from a &lt;strong>significantly faster setup process&lt;/strong>.&lt;/p>
+&lt;h2 id="bug-fixes--platform-improvements">Bug Fixes &amp;amp; Platform Improvements&lt;/h2>
+&lt;h3 id="macos-26-correct-display-of-the-app-icon--and-no-squircle-jail-for-cryptomator">macOS 26: Correct Display of the App Icon – And No &amp;ldquo;Squircle Jail&amp;rdquo; for Cryptomator&lt;/h3>
+&lt;p>On macOS 26 (codename &amp;ldquo;Tahoe&amp;rdquo;), the &lt;strong>Cryptomator icon&lt;/strong> was put inside a generic grey squircle, which didn&amp;rsquo;t look right. This issue has been fixed in version 1.18.0, so the icon now appears as it should.&lt;/p>
+&lt;p>With Tahoe, Apple now enforces squircle-shaped icons for all macOS apps—similar to the strict guidelines that have always applied to iOS. Previously, macOS apps could escape the squircle more freely, and many apps used this playfully as part of their visual identity. But now, app icons must conform to the squircle shape. We&amp;rsquo;re joining the &lt;strong>squircle resistance&lt;/strong> alongside other app developers who are keeping their distinctive icon designs instead of conforming to this new guideline.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/squircle-jail-resistance.png" srcset="https://staging.cryptomator.org/img/blog/squircle-jail-resistance.png 1x, https://staging.cryptomator.org/img/blog/squircle-jail-resistance@2x.png 2x" alt="macOS 26: Correct Display of the App Icon – And No 'Squircle Jail' for Cryptomator" />
+&lt;/figure>
+&lt;h3 id="macfuse-detection-on-macos-26">macFUSE Detection on macOS 26&lt;/h3>
+&lt;p>Some users experienced problems integrating vaults because macFUSE was not always recognized on macOS 26. This bug has now been fixed, so vaults can be opened reliably again.&lt;/p>
+&lt;h3 id="windows-control-over-log-file-sizes">Windows: Control Over Log File Sizes&lt;/h3>
+&lt;p>In rare cases, log files on Windows could grow enormously and cause system problems. The size limit of the log files has been corrected so that Cryptomator runs reliably and conserves resources in the background again.&lt;/p>
+&lt;h3 id="linuxkde-cleaning-up-quickaccess-entries">Linux/KDE: Cleaning Up QuickAccess Entries&lt;/h3>
+&lt;p>Under KDE, the Dolphin file manager created a new QuickAccess entry every time a vault was unlocked—even if one already existed, for example after the app was unexpectedly closed. This behavior has now been corrected. Existing entries are reused, and unnecessary duplications are a thing of the past.&lt;/p>
+&lt;h2 id="further-changes--technical-updates">Further Changes &amp;amp; Technical Updates&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Update of the UI framework to JavaFX 25&lt;/strong>: improved performance, modern graphics display, and long-term compatibility.&lt;/li>
+&lt;li>&lt;strong>New “Share” entry in the context menu&lt;/strong> that explains how to share vaults.&lt;/li>
+&lt;li>Various &lt;strong>security and library updates&lt;/strong> (including nimbus-jose-jwt, logback, commons-lang3, dagger) to keep the software up to date and secure.&lt;/li>
+&lt;/ul>
+&lt;h2 id="why-this-update-is-important">Why This Update Is Important&lt;/h2>
+&lt;p>Version 1.18.0 makes Cryptomator Desktop &lt;strong>more robust, user-friendly, and better prepared for future operating system versions&lt;/strong>. The new recovery feature protects in critical scenarios (e.g., damaged configuration files), while UI and system improvements make everyday use of Cryptomator smoother.&lt;/p>
+&lt;h2 id="what-you-can-do-now">What You Can Do Now&lt;/h2>
+&lt;ul>
+&lt;li>Install Cryptomator Desktop 1.18.0 for your operating system.&lt;/li>
+&lt;li>If you have been using the &lt;strong>beta version&lt;/strong>, please be sure to update to the final release!&lt;/li>
+&lt;li>For businesses and security-conscious users, it&amp;rsquo;s worth taking a look at the &lt;strong>new Windows certificate&lt;/strong>.&lt;/li>
+&lt;li>And remember: &lt;strong>keep your vault recovery key safe&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="closing-remarks">Closing Remarks&lt;/h2>
+&lt;p>&lt;strong>Thank you&lt;/strong> to everyone in the community who tested the beta. Your &lt;strong>feedback&lt;/strong> directly contributed to making 1.18.0 a strong, stable release. With this update, Cryptomator Desktop is more reliable than ever!&lt;/p>
+&lt;p>Thank you for using Cryptomator—and thank you for securely encrypting your data.&lt;br>
+We look forward to your feedback on the new release!&lt;/p>
+&lt;p>Your Cryptomator Team&lt;/p></description><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/11/19/desktop-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/11/19/desktop-1.18.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Two Years of Cryptomator Hub – Team Encryption Reimagined</title><description>&lt;p>On &lt;strong>November 2, 2023&lt;/strong>, &lt;strong>Cryptomator Hub 1.0&lt;/strong> was released—our solution for secure, encrypted collaboration in the cloud. &lt;strong>Two years&lt;/strong> later, Cryptomator Hub has become a central tool for companies, universities, and NGOs that want to protect their sensitive data while working efficiently as a team.&lt;/p>
 &lt;p>On this anniversary, we look back on two exciting years full of further developments, beta features, new areas of application—and what&amp;rsquo;s yet to come.&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025.png" alt="Two Years of Cryptomator Hub – Team Encryption Reimagined" />
@@ -519,32 +567,4 @@ A VPN login is compromised due to a weak password. Attackers install ransomware.
 &lt;p>This makes it much harder for attackers to access your accounts – even if they have your password.&lt;/p>
 &lt;h2 id="conclusion-password-security-isnt-a-nice-to-have">Conclusion: Password Security Isn’t a “Nice-to-Have”&lt;/h2>
 &lt;p>The effort required for strong passwords is small – but the benefits are huge. By changing a few habits, you protect yourself from real threats and ensure long-term digital safety.&lt;/p>
-&lt;p>&lt;strong>Now is the best time to update weak passwords, start using a password manager, and enable 2FA.&lt;/strong> &lt;em>Your digital future will thank you.&lt;/em>&lt;/p></description><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</guid><category>event</category></item><item><title>Cryptomator 1.16.0 is here - with practical new features!</title><description>&lt;p>The latest version of our desktop app has been released! &lt;strong>Cryptomator 1.16.0&lt;/strong> introduces several exciting new features that make working with encrypted files even more convenient. This update focuses on new functions that provide greater transparency and control over your vaults – and even &lt;strong>biometric unlocking&lt;/strong> on Mac!&lt;/p>
-&lt;h3 id="whats-new">What&amp;rsquo;s New?&lt;/h3>
-&lt;p>&lt;strong>EventView: Overview of Important Vault Events&lt;/strong>&lt;br>
-Want to know if any conflicts occurred when unlocking a vault or if corrupted files were detected? With the new &lt;strong>EventView&lt;/strong>, you now get a clear overview of relevant events within an unlocked vault – such as conflict resolutions or notifications about corrupted files. This way, you always stay informed about what&amp;rsquo;s happening inside your vault.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm max-h-[430px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-eventview.png" alt="EventView in Cryptomator 1.16.0" />
-&lt;/figure>
-&lt;p>&lt;strong>Decrypt File Names&lt;/strong>&lt;br>
-With the new &lt;strong>Decrypt File Name&lt;/strong> feature, you can select encrypted files within a vault and retrieve their original, unencrypted filenames – without needing to open the file itself. A handy tool for anyone needing a quick overview!&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm max-h-[449px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-decryptfilenames.png" alt="Decrypt file names in Cryptomator 1.16.0" />
-&lt;/figure>
-&lt;p>&lt;strong>Touch ID Support for macOS&lt;/strong>&lt;br>
-Starting now, you can unlock your vaults on &lt;strong>Mac&lt;/strong> easily with &lt;strong>Touch ID&lt;/strong>! This makes using Cryptomator not only faster but also more convenient and secure – especially on devices with biometric authentication. Thanks to &lt;a href="https://github.com/purejava">Ralph (purejava on GitHub)&lt;/a> for the great support!&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm max-h-[408px]" src="https://staging.cryptomator.org/img/blog/desktop-1.16.0-touchid.png" alt="Touch ID support in Cryptomator 1.16.0" />
-&lt;/figure>
-&lt;h3 id="bugfixes">Bugfixes&lt;/h3>
-&lt;p>Of course, we also &lt;strong>fixed several bugs&lt;/strong> – here’s a quick overview:&lt;/p>
-&lt;ul>
-&lt;li>The &lt;strong>main window&lt;/strong> is now displayed correctly again on Windows.&lt;/li>
-&lt;li>The &lt;strong>tray icon&lt;/strong> now reliably adapts to the OS theme on Linux. Thanks again to Ralph for the help!&lt;/li>
-&lt;li>The app now properly quits when the main window is closed (if no tray is active).&lt;/li>
-&lt;li>&lt;strong>Supporter certificates&lt;/strong> can now be properly removed again.&lt;/li>
-&lt;li>In case of &lt;strong>filename conflicts&lt;/strong>, the original suffixes provided by your cloud service are now largely preserved – instead of being replaced by a simple numbering system.&lt;/li>
-&lt;/ul>
-&lt;h3 id="full-changelog-on-github">Full Changelog on GitHub&lt;/h3>
-&lt;p>In addition to the highlights mentioned above, there are also &lt;strong>several smaller improvements and updates&lt;/strong> – such as enhancements to vault settings, better symbolic icon support on Linux, and translation updates. You can find the complete list of changes as always in the &lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.16.0">&lt;strong>Changelog&lt;/strong>&lt;/a> on GitHub.&lt;/p>
-&lt;p>&lt;strong>Thanks to all contributors&lt;/strong> from the community – and &lt;strong>enjoy the new update&lt;/strong>!&lt;/p></description><pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/04/29/desktop-1.16.0/</guid><category>cryptomator</category><category>desktop</category></item></channel></rss>
+&lt;p>&lt;strong>Now is the best time to update weak passwords, start using a password manager, and enable 2FA.&lt;/strong> &lt;em>Your digital future will thank you.&lt;/em>&lt;/p></description><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</guid><category>event</category></item></channel></rss>
