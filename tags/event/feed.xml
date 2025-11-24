@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/event/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/event/</link></image><lastBuildDate>Wed, 19 Nov 2025 10:30:10 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Desktop 1.18.0 is here!</title><description>&lt;p>We are pleased to announce the &lt;strong>official release of Cryptomator Desktop version 1.18.0&lt;/strong>. Following the &lt;a href="https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/">beta phase&lt;/a>, this version brings the full package of improvements, new features, and stability enhancements—now available for all supported platforms.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/event/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/event/</link></image><lastBuildDate>Mon, 24 Nov 2025 13:59:37 +0000</lastBuildDate><generator>Hugo</generator><item><title>Confidentiality Is a Must: Why Works Councils Need Encryption</title><description>&lt;p>Works councils play a central role in companies when it comes to &lt;strong>protecting the interests of employees&lt;/strong>. In doing so, they process &lt;strong>particularly sensitive data&lt;/strong> on a daily basis: personal complaints, election results, meeting minutes, or confidential agreements with trade unions. All of this information is not only subject to a &lt;strong>moral obligation of confidentiality&lt;/strong>—it also falls under the strict requirements of the &lt;a href="https://staging.cryptomator.org/compliance/gdpr/">&lt;strong>GDPR&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>But how can a works council fulfill this responsibility in the digital age, when documents are often stored, shared, and edited collaboratively in the cloud? The answer lies in a combination of &lt;strong>technical security, organizational processes&lt;/strong>, and &lt;strong>the right tools&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/encryption-for-works-councils.png" alt="Why Works Councils Need Encryption More Than Ever" />
+&lt;/figure>
+&lt;h2 id="sensitive-data-requires-special-protective-measures">Sensitive Data Requires Special Protective Measures&lt;/h2>
+&lt;p>Personnel data, sick notes, conflict discussions, internal processes—&lt;strong>works councils have deep insights into the innermost workings of the company&lt;/strong>. This information concerns not only labor law disputes or restructuring, but also very personal situations in the lives of employees.&lt;/p>
+&lt;p>The GDPR requires such personal data to be protected with appropriate technical and organizational measures. This explicitly includes &lt;strong>encryption&lt;/strong>. This measure is not an optional extra, but a &lt;strong>central component of works council work&lt;/strong> that complies with data protection regulations.&lt;/p>
+&lt;h2 id="why-encryption-is-not-always-the-same">Why Encryption Is Not Always the Same&lt;/h2>
+&lt;p>Many companies today already rely on &lt;strong>cloud-based systems such as Microsoft 365 or Google Workspace&lt;/strong>. These solutions advertise built-in security and encryption. However, what many people don&amp;rsquo;t know is that this often involves &lt;strong>server-side encryption&lt;/strong>, which means that although the data is encrypted, the provider or administrator has the keys. Anyone who has access to the system can also access the data. This applies in particular to internal company administrators or external service providers.&lt;/p>
+&lt;p>This is not sufficient for particularly sensitive information, such as that processed by works councils. &lt;strong>End-to-end encryption&lt;/strong> is required here: only authorized persons can access the content – even cloud providers or central IT departments have no access. The key to access remains exclusively with the works council.&lt;/p>
+&lt;h2 id="digital-sovereignty-with-cryptomator-hub">Digital Sovereignty With Cryptomator Hub&lt;/h2>
+&lt;p>&lt;a href="https://staging.cryptomator.org/for-teams/">&lt;strong>Cryptomator Hub&lt;/strong>&lt;/a> provides works councils with a tool that meets precisely these requirements. The solution enables the creation of encrypted data rooms (known as vaults) that can be used on any common cloud platform – while &lt;strong>remaining entirely under the control of the council&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Vaults can be structured according to topics, roles, or working groups&lt;/strong> – for example, for minutes, election documents, complaints, or legal advice. &lt;strong>Access rights can be assigned granularly&lt;/strong> via a clear interface. For example, only the election committee is authorized to access election documents, while other members have access to general meeting minutes.&lt;/p>
+&lt;p>Another advantage: the &lt;strong>Web of Trust&lt;/strong> principle allows the committee to integrate new devices and members on a trust basis – &lt;strong>without any central IT management or external administration&lt;/strong>. This is how digital self-administration becomes a reality.&lt;/p>
+&lt;h2 id="integration-without-it-dependency">Integration Without IT Dependency&lt;/h2>
+&lt;p>A &lt;strong>common obstacle&lt;/strong> for works councils is their &lt;strong>dependence on their employer&amp;rsquo;s IT infrastructure&lt;/strong>. What if the company itself provides the cloud platform? Or what if the works council does not operate its own technical infrastructure?&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub works independently of the underlying cloud&lt;/strong>. This means that even if the company provides Dropbox, OneDrive, or Nextcloud, the works council can securely encrypt its content without the employer having access. &lt;strong>Control over the key and access structure remains exclusively with the committee&lt;/strong>.&lt;/p>
+&lt;p>It can also be used on &lt;strong>private devices&lt;/strong>, which is an important factor for smaller works councils or committees without their own office infrastructure.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>Confidentiality is not a nice-to-have, but a legal obligation and a responsibility that must be upheld. Works councils facing digital transformation &lt;strong>should view the protection of sensitive data as a key requirement&lt;/strong>—not only to comply with legal requirements, but also to maintain the trust of the workforce.&lt;/p>
+&lt;p>With end-to-end encryption and independent tools such as Cryptomator Hub, works councils can fulfill this obligation &lt;strong>securely, easily, and independently&lt;/strong>. And in doing so, they can send an important message: for digital maturity, for data protection, and for modern co-determination on an equal footing.&lt;/p></description><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/11/24/encryption-for-works-councils/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/11/24/encryption-for-works-councils/</guid><category>cryptomator</category><category>hub</category></item><item><title>Cryptomator Desktop 1.18.0 is here!</title><description>&lt;p>We are pleased to announce the &lt;strong>official release of Cryptomator Desktop version 1.18.0&lt;/strong>. Following the &lt;a href="https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/">beta phase&lt;/a>, this version brings the full package of improvements, new features, and stability enhancements—now available for all supported platforms.&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0.png" alt="Cryptomator Desktop 1.18.0" />
 &lt;/figure>
@@ -504,67 +525,4 @@ Cryptomator Hub enables centralized management, user roles, and audit logs—per
 &lt;p>Want to use &lt;strong>Cryptomator Hub&lt;/strong> in your organization? Contact us for more details or check out our &lt;a href="https://staging.cryptomator.org/pricing/#for-teams">pricing&lt;/a>.&lt;/p>
 &lt;h3 id="save-now--until-june-30">Save Now – Until June 30!&lt;/h3>
 &lt;p>Whether you&amp;rsquo;re an individual or an organization: If data privacy matters to you, this is your chance.&lt;/p>
-&lt;p>&lt;strong>Get Cryptomator now for only €14.99&lt;/strong> or start with &lt;strong>Cryptomator Hub – 25% off for the first year.&lt;/strong>&lt;/p></description><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/06/01/summer-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/06/01/summer-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Why Strong Passwords Matter More Than Ever</title><description>&lt;p>&lt;strong>Passwords are the first line of defense for our digital identity – and yet, they&amp;rsquo;re often neglected.&lt;/strong> From simple number sequences to reused logins: weak passwords remain one of the leading causes of data breaches. In an age of increasing cyberattacks and near-daily data leaks, it&amp;rsquo;s more important than ever to raise awareness for better password hygiene.&lt;/p>
-&lt;h2 id="the-reality-123456-is-still-a-classic">The Reality: “123456” is Still a Classic&lt;/h2>
-&lt;p>According to the &lt;a href="https://nordpass.com/most-common-passwords-list">NordPass 2024 password report&lt;/a>, “123456” is once again the most commonly used password worldwide. In Germany, “admin” tops the list. Millions of people still rely on passwords that are easy to guess – with serious consequences.&lt;/p>
-&lt;p>Cybercriminals use automated tools to crack weak passwords in seconds. When a data breach occurs, these passwords are often tested across multiple platforms – a huge problem if you&amp;rsquo;ve reused them.&lt;/p>
-&lt;h2 id="i-have-nothing-to-hide--really">“I have nothing to hide” – Really?&lt;/h2>
-&lt;p>This belief is common, but dangerously misleading. Even if your data seems “unimportant” at first glance, attackers can abuse it to:&lt;/p>
-&lt;ul>
-&lt;li>Steal your identity&lt;/li>
-&lt;li>Send emails in your name&lt;/li>
-&lt;li>Access other linked accounts&lt;/li>
-&lt;li>Extort or scam you or your contacts&lt;/li>
-&lt;/ul>
-&lt;p>It&amp;rsquo;s not just about private photos or chats – it’s about your entire digital identity and your trust in online services.&lt;/p>
-&lt;h2 id="three-everyday-examples-that-show-how-quickly-it-can-happen">Three Everyday Examples That Show How Quickly It Can Happen&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>The compromised streaming account&lt;/strong>&lt;br>
-Your streaming service password was leaked. Attackers use it to send phishing emails or test access to other services.&lt;/li>
-&lt;li>&lt;strong>The reused password&lt;/strong>&lt;br>
-You use the same password for your personal email and your work account. If one gets hacked, both are compromised.&lt;/li>
-&lt;li>&lt;strong>Social engineering with weak passwords&lt;/strong>&lt;br>
-An attacker guesses your password using public info (e.g., birthdate + pet’s name) and gains access to your cloud storage.&lt;/li>
-&lt;/ol>
-&lt;h2 id="when-it-gets-expensive-three-real-world-scenarios">When It Gets Expensive: Three Real-World Scenarios&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Hacked email leads to identity theft&lt;/strong>&lt;br>
-An attacker gains access to your email via a weak password.&lt;/p>
-&lt;ul>
-&lt;li>Resets your other account passwords&lt;/li>
-&lt;li>Uses your email for scams or phishing&lt;/li>
-&lt;li>Orders goods in your name&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Outcome:&lt;/strong> Financial loss, damage to reputation, tedious recovery process&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Online banking access through password recycling&lt;/strong>&lt;br>
-A leaked password from a forum is reused for online banking. A bot tests major banking sites.&lt;br>
-&lt;strong>Outcome:&lt;/strong> Drained account, legal issues, possible criminal report&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Ransomware in a company via weak admin password&lt;/strong>&lt;br>
-A VPN login is compromised due to a weak password. Attackers install ransomware.&lt;br>
-&lt;strong>Outcome:&lt;/strong> Business shutdown, ransom demand, data loss, GDPR breach&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="password-check-how-safe-are-you">Password Check: How Safe Are You?&lt;/h2>
-&lt;p>Run a quick self-check:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> I use a unique password for each account&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> My passwords are at least 12 characters long and include numbers &amp;amp; symbols&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> I use a password manager&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> I have activated two-factor authentication (2FA)&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> I reviewed or changed my passwords in the last 12 months&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Tip:&lt;/strong> Check if your data has been exposed in a breach: &lt;a href="https://haveibeenpwned.com">haveibeenpwned.com&lt;/a>&lt;/p>
-&lt;h2 id="tools-instead-of-headaches-use-a-password-manager">Tools Instead of Headaches: Use a Password Manager&lt;/h2>
-&lt;p>Nobody can remember dozens of complex passwords – and they don’t have to. &lt;strong>Password managers&lt;/strong> like Bitwarden, 1Password or KeePass help you generate, store and autofill strong passwords.&lt;/p>
-&lt;p>The biggest advantage: You only need to remember one master password – the app takes care of the rest.&lt;/p>
-&lt;h2 id="extra-protection-with-two-factor-authentication">Extra Protection With Two-Factor Authentication&lt;/h2>
-&lt;p>Even the strongest password could end up in a data leak. That’s why you should &lt;strong>always enable two-factor authentication (2FA)&lt;/strong> wherever possible. In addition to your password, you’ll enter a code sent via app or SMS.&lt;/p>
-&lt;p>This makes it much harder for attackers to access your accounts – even if they have your password.&lt;/p>
-&lt;h2 id="conclusion-password-security-isnt-a-nice-to-have">Conclusion: Password Security Isn’t a “Nice-to-Have”&lt;/h2>
-&lt;p>The effort required for strong passwords is small – but the benefits are huge. By changing a few habits, you protect yourself from real threats and ensure long-term digital safety.&lt;/p>
-&lt;p>&lt;strong>Now is the best time to update weak passwords, start using a password manager, and enable 2FA.&lt;/strong> &lt;em>Your digital future will thank you.&lt;/em>&lt;/p></description><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/05/01/world-password-day/</guid><category>event</category></item></channel></rss>
+&lt;p>&lt;strong>Get Cryptomator now for only €14.99&lt;/strong> or start with &lt;strong>Cryptomator Hub – 25% off for the first year.&lt;/strong>&lt;/p></description><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/06/01/summer-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/06/01/summer-sale/</guid><category>cryptomator</category><category>sale</category></item></channel></rss>

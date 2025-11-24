@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/cryptomator/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/cryptomator/</link></image><lastBuildDate>Wed, 19 Nov 2025 10:30:11 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cryptomator Desktop 1.18.0 ist da!</title><description>&lt;p>Wir freuen uns, die &lt;strong>offizielle Veröffentlichung von Cryptomator Desktop Version 1.18.0&lt;/strong> bekanntzugeben. Nach der &lt;a href="https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/">Beta-Phase&lt;/a> bringt diese Version das vollständige Paket an Verbesserungen, neuen Funktionen und Stabilitätsverbesserungen – jetzt für alle unterstützten Plattformen verfügbar.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/cryptomator/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/cryptomator/</link></image><lastBuildDate>Mon, 24 Nov 2025 13:59:37 +0000</lastBuildDate><generator>Hugo</generator><item><title>Vertraulichkeit ist Pflicht: Warum Betriebsräte Verschlüsselung brauchen</title><description>&lt;p>Betriebsräte nehmen eine zentrale Rolle im Unternehmen ein, wenn es um die &lt;strong>Wahrung der Interessen der Mitarbeitenden&lt;/strong> geht. Dabei verarbeiten sie täglich &lt;strong>besonders schützenswerte Daten&lt;/strong>: persönliche Beschwerden, Wahlergebnisse, Sitzungsprotokolle oder vertrauliche Absprachen mit Gewerkschaften. All diese Informationen unterliegen nicht nur einer &lt;strong>moralischen Verpflichtung zur Vertraulichkeit&lt;/strong> – sie fallen auch unter die strengen Vorgaben der &lt;a href="https://staging.cryptomator.org/de/compliance/gdpr/">&lt;strong>DSGVO&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Doch wie kann ein Betriebsrat dieser Verantwortung im digitalen Zeitalter gerecht werden, in dem Dokumente oft in der Cloud gespeichert, geteilt und gemeinsam bearbeitet werden? Die Antwort liegt in einer Kombination aus &lt;strong>technischer Absicherung, organisatorischen Prozessen&lt;/strong> – und dem &lt;strong>richtigen Werkzeug&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/encryption-for-works-councils.png" alt="Warum Betriebsräte mehr denn je Verschlüsselung brauchen" />
+&lt;/figure>
+&lt;h2 id="sensible-daten-brauchen-besondere-schutzmaßnahmen">Sensible Daten brauchen besondere Schutzmaßnahmen&lt;/h2>
+&lt;p>Personaldaten, Krankmeldungen, Konfliktgespräche, interne Abläufe – &lt;strong>Betriebsräte haben tiefe Einblicke in die innersten Vorgänge des Unternehmens&lt;/strong>. Diese Informationen betreffen nicht nur arbeitsrechtliche Auseinandersetzungen oder Umstrukturierungen, sondern auch sehr persönliche Lebenssituationen der Mitarbeitenden.&lt;/p>
+&lt;p>Die DSGVO verpflichtet dazu, solche personenbezogenen Daten mit geeigneten technischen und organisatorischen Maßnahmen zu schützen. Dazu zählt explizit auch die &lt;strong>Verschlüsselung&lt;/strong>. Diese Maßnahme ist kein optionales Extra, sondern ein &lt;strong>zentraler Bestandteil datenschutzkonformer Betriebsratsarbeit&lt;/strong>.&lt;/p>
+&lt;h2 id="warum-verschlüsselung-nicht-gleich-verschlüsselung-ist">Warum Verschlüsselung nicht gleich Verschlüsselung ist&lt;/h2>
+&lt;p>Viele Unternehmen setzen heute bereits auf &lt;strong>cloudbasierte Systeme wie Microsoft 365 oder Google Workspace&lt;/strong>. Diese Lösungen werben mit eingebauter Sicherheit und Verschlüsselung. Was viele jedoch nicht wissen: Häufig handelt es sich dabei um &lt;strong>Server-seitige Verschlüsselung&lt;/strong> – das bedeutet, die Daten werden zwar verschlüsselt, aber der Anbieter oder Administrator besitzt die Schlüssel. Wer Zugriff auf das System hat, kann auch auf die Daten zugreifen. Das gilt insbesondere für unternehmensinterne Admins oder externe Dienstleistende.&lt;/p>
+&lt;p>Bei besonders sensiblen Informationen, wie sie Betriebsräte verarbeiten, reicht das nicht aus. Hier ist &lt;strong>Ende-zu-Ende-Verschlüsselung&lt;/strong> gefragt: Nur die berechtigten Personen können auf die Inhalte zugreifen – selbst Cloud-Anbieter oder zentrale IT-Abteilungen haben keine Einsicht. Der Schlüssel zum Zugriff bleibt ausschließlich beim Betriebsrat.&lt;/p>
+&lt;h2 id="digitale-souveränität-durch-cryptomator-hub">Digitale Souveränität durch Cryptomator Hub&lt;/h2>
+&lt;p>Mit &lt;a href="https://staging.cryptomator.org/de/for-teams/">&lt;strong>Cryptomator Hub&lt;/strong>&lt;/a> steht Betriebsräten ein Werkzeug zur Verfügung, das genau diese Anforderungen erfüllt. Die Lösung ermöglicht die Erstellung verschlüsselter Datenräume (sogenannter Tresore), die auf jeder gängigen Cloud-Plattform genutzt werden können – aber dabei &lt;strong>vollständig unter der Kontrolle des Gremiums&lt;/strong> bleiben.&lt;/p>
+&lt;p>&lt;strong>Tresore können nach Themen, Rollen oder Arbeitsgruppen&lt;/strong> strukturiert werden – etwa für Protokolle, Wahlunterlagen, Beschwerden oder rechtliche Beratung. Über ein übersichtliches Interface lassen sich &lt;strong>Zugriffsrechte&lt;/strong> granular vergeben. So ist beispielsweise nur der Wahlvorstand berechtigt, auf Wahlunterlagen zuzugreifen, während andere Mitglieder Zugriff auf allgemeine Sitzungsprotokolle haben.&lt;/p>
+&lt;p>Ein weiterer Vorteil: Das &lt;strong>Web-of-Trust-Prinzip&lt;/strong> erlaubt es dem Gremium, neue Geräte und Mitglieder vertrauensbasiert einzubinden – &lt;strong>ganz ohne zentrale IT-Verwaltung oder externe Administration&lt;/strong>. So wird digitale Selbstverwaltung Realität.&lt;/p>
+&lt;h2 id="integration-ohne-it-abhängigkeit">Integration ohne IT-Abhängigkeit&lt;/h2>
+&lt;p>Ein &lt;strong>häufiges Hindernis&lt;/strong> für Betriebsräte ist die &lt;strong>Abhängigkeit von der IT-Infrastruktur&lt;/strong> des Arbeitgebenden. Was, wenn das Unternehmen selbst die Cloud-Plattform stellt? Oder wenn der Betriebsrat keine eigene technische Infrastruktur betreibt?&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub funktioniert unabhängig von der darunterliegenden Cloud&lt;/strong>. Das bedeutet: Auch wenn das Unternehmen Dropbox, OneDrive oder eine Nextcloud bereitstellt, kann der Betriebsrat seine Inhalte darin sicher verschlüsseln – ohne dass der Arbeitgebende Einblick hat. Die &lt;strong>Kontrolle über den Schlüssel und die Zugriffsstruktur&lt;/strong> verbleibt ausschließlich beim Gremium.&lt;/p>
+&lt;p>Auch auf &lt;strong>privaten Endgeräten&lt;/strong> ist die Nutzung möglich – ein wichtiger Faktor für kleinere Betriebsräte oder Gremien ohne eigene Büro-Infrastruktur.&lt;/p>
+&lt;h2 id="fazit">Fazit&lt;/h2>
+&lt;p>Vertraulichkeit ist kein Nice-to-have, sondern gesetzliche Pflicht und gelebte Verantwortung. Wer sich als Betriebsrat dem digitalen Wandel stellt, sollte &lt;strong>den Schutz sensibler Daten als zentrale Voraussetzung begreifen&lt;/strong> – nicht nur, um rechtlichen Vorgaben gerecht zu werden, sondern auch um das Vertrauen der Belegschaft zu wahren.&lt;/p>
+&lt;p>Mit Ende-zu-Ende-Verschlüsselung und unabhängigen Tools wie Cryptomator Hub können Betriebsräte dieser Pflicht gerecht werden – &lt;strong>sicher, einfach und unabhängig&lt;/strong>. Und sie können dabei ein wichtiges Zeichen setzen: für digitale Mündigkeit, für Datenschutz, und für eine moderne Mitbestimmung auf Augenhöhe.&lt;/p></description><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/24/encryption-for-works-councils/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/24/encryption-for-works-councils/</guid><category>cryptomator</category><category>hub</category></item><item><title>Cryptomator Desktop 1.18.0 ist da!</title><description>&lt;p>Wir freuen uns, die &lt;strong>offizielle Veröffentlichung von Cryptomator Desktop Version 1.18.0&lt;/strong> bekanntzugeben. Nach der &lt;a href="https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/">Beta-Phase&lt;/a> bringt diese Version das vollständige Paket an Verbesserungen, neuen Funktionen und Stabilitätsverbesserungen – jetzt für alle unterstützten Plattformen verfügbar.&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0.png" alt="Cryptomator Desktop 1.18.0" />
 &lt;/figure>
@@ -507,67 +528,4 @@ Cryptomator Hub ermöglicht zentrale Verwaltung, Benutzerrollen und Audit-Logs �
 &lt;p>Ihr möchtet &lt;strong>Cryptomator Hub&lt;/strong> in eurer Organisation nutzen? Kontaktiert uns für genauere Konditionen oder werft einen Blick in unsere &lt;a href="https://staging.cryptomator.org/de/pricing/#for-teams">Preisliste&lt;/a>.&lt;/p>
 &lt;h3 id="jetzt-sparen--bis-30-juni">Jetzt sparen – bis 30. Juni!&lt;/h3>
 &lt;p>Ob Einzelperson oder Unternehmen: Wenn euch Datenschutz wichtig ist, nutzt diese Gelegenheit.&lt;/p>
-&lt;p>&lt;strong>Sichert euch Cryptomator jetzt für nur 14,99 €&lt;/strong> oder startet mit Cryptomator Hub – &lt;strong>25 % günstiger im ersten Jahr&lt;/strong>.&lt;/p></description><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/06/01/summer-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/06/01/summer-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Warum starke Passwörter heute wichtiger sind denn je</title><description>&lt;p>&lt;strong>Passwörter sind der erste Schutzschild unserer digitalen Identität – und doch werden sie oft vernachlässigt.&lt;/strong> Von simplen Zahlenreihen bis hin zu mehrfach genutzten Logins: Schwache Passwörter gehören nach wie vor zu den Hauptursachen für Datenpannen. In einer Zeit, in der Cyberangriffe zunehmen und Datenlecks fast zur Tagesordnung gehören, ist es höchste Zeit, unser Sicherheitsbewusstsein zu stärken.&lt;/p>
-&lt;h2 id="die-realität-123456-ist-noch-immer-ein-klassiker">Die Realität: „123456“ ist noch immer ein Klassiker&lt;/h2>
-&lt;p>Laut dem Passwort-Report von &lt;a href="https://nordpass.com/de/most-common-passwords-list/">NordPass 2024&lt;/a> ist „123456“ weltweit erneut das meistgenutzte Passwort. In Deutschland führt „admin“ die Liste an. Millionen Menschen setzen also noch immer auf extrem leicht zu erratende Zugangsdaten – mit fatalen Folgen.&lt;/p>
-&lt;p>Cyberkriminelle nutzen automatisierte Tools, um schwache Passwörter in Sekunden zu knacken. Kommt es zu einem Datenleck, wird das Passwort häufig auch für andere Konten ausprobiert – ein Problem, wenn man dasselbe Passwort mehrfach verwendet.&lt;/p>
-&lt;h2 id="ich-habe-doch-nichts-zu-verbergen--wirklich">„Ich habe doch nichts zu verbergen“ – wirklich?&lt;/h2>
-&lt;p>Dieser Gedanke ist weit verbreitet, aber täuschend. Auch wenn deine Daten auf den ersten Blick &amp;ldquo;uninteressant&amp;rdquo; erscheinen, können Angreifer sie missbrauchen, um:&lt;/p>
-&lt;ul>
-&lt;li>deine Identität zu stehlen,&lt;/li>
-&lt;li>in deinem Namen E-Mails zu versenden,&lt;/li>
-&lt;li>Zugriff auf weitere verknüpfte Konten zu erhalten,&lt;/li>
-&lt;li>dich oder dein Umfeld zu erpressen oder zu betrügen.&lt;/li>
-&lt;/ul>
-&lt;p>Es geht also nicht nur um deine privaten Fotos oder Chats, sondern um deine gesamte digitale Identität und dein Vertrauen in digitale Dienste.&lt;/p>
-&lt;h2 id="drei-alltagsbeispiele-die-zeigen-wie-schnell-es-gehen-kann">Drei Alltagsbeispiele, die zeigen, wie schnell es gehen kann&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>Der kompromittierte Streaming-Account&lt;/strong>&lt;br>
-Dein Passwort für einen Streamingdienst wurde geleakt. Angreifer nutzen ihn weiter, um Phishing-Mails zu verschicken oder weitere Zugänge zu testen.&lt;/li>
-&lt;li>&lt;strong>Das mehrfach genutzte Passwort&lt;/strong>&lt;br>
-Du verwendest dasselbe Passwort für deine private E-Mail und dein Firmenkonto. Wird eines davon gehackt, ist gleich beides betroffen.&lt;/li>
-&lt;li>&lt;strong>Social Engineering durch schwache Passwörter&lt;/strong>&lt;br>
-Ein Angreifer errät dein Passwort anhand öffentlich zugänglicher Informationen (z. B. Geburtsdatum + Name deines Haustiers) und verschafft sich Zugriff auf deine Cloud.&lt;/li>
-&lt;/ol>
-&lt;h2 id="wenn-es-richtig-teuer-wird-drei-reale-szenarien">Wenn es richtig teuer wird: Drei reale Szenarien&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Gehackte E-Mail führt zu Identitätsdiebstahl&lt;/strong>&lt;br>
-Ein Angreifer verschafft sich über ein schwaches Passwort Zugriff auf dein E-Mail-Konto.&lt;/p>
-&lt;ul>
-&lt;li>Er setzt Passwörter bei anderen Diensten zurück&lt;/li>
-&lt;li>Nutzt deine Adresse für Betrug oder Phishing&lt;/li>
-&lt;li>Bestellt Waren auf deinen Namen&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Folge:&lt;/strong> Finanzieller Schaden, Imageschaden, mühsame Wiederherstellung&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Zugriff auf Onlinebanking durch Passwort-Recycling&lt;/strong>&lt;br>
-Ein geleaktes Passwort aus einem Forum wird auch fürs Onlinebanking verwendet. Ein Bot prüft automatisch gängige Banking-Seiten.&lt;/p>
-&lt;p>&lt;strong>Folge:&lt;/strong> Konto leergeräumt, eventuelle Haftungsprobleme, Anzeige notwendig&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Ransomware in der Firma durch schwaches Admin-Passwort&lt;/strong>&lt;br>
-Ein VPN-Zugang wird durch ein schwaches Passwort kompromittiert. Angreifer installieren Schadsoftware.&lt;br>
-&lt;strong>Folge:&lt;/strong> Betriebsstillstand, Lösegeldforderung, Datenverlust, DSGVO-Meldung&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="passwort-check-wie-sicher-bist-du-unterwegs">Passwort-Check: Wie sicher bist du unterwegs?&lt;/h2>
-&lt;p>Mach den Selbsttest:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> Ich nutze für jedes Konto ein eigenes Passwort.&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Meine Passwörter bestehen aus mind. 12 Zeichen, Zahlen &amp;amp; Sonderzeichen.&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Ich verwende einen Passwort-Manager.&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Ich habe Zwei-Faktor-Authentifizierung (2FA) aktiviert.&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Ich habe meine Passwörter in den letzten 12 Monaten überprüft.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Tipp:&lt;/strong> Finde heraus, ob deine Daten schon einmal in einem Leak aufgetaucht sind: &lt;a href="https://haveibeenpwned.com/">haveibeenpwned.com&lt;/a>&lt;/p>
-&lt;h2 id="tools-statt-kopfzerbrechen-passwort-manager-nutzen">Tools statt Kopfzerbrechen: Passwort-Manager nutzen&lt;/h2>
-&lt;p>Niemand kann sich Dutzende komplexe Passwörter merken – muss man auch nicht. &lt;strong>Passwort-Manager&lt;/strong> wie Bitwarden, 1Password oder KeePass helfen dabei, sichere Kennwörter zu erstellen, zu speichern und automatisch einzufügen.&lt;/p>
-&lt;p>&lt;strong>Der große Vorteil&lt;/strong>: Man braucht sich nur noch ein einziges Master-Passwort merken – alles andere übernimmt die App.&lt;/p>
-&lt;h2 id="extra-schutz-durch-zwei-faktor-authentifizierung">Extra-Schutz durch Zwei-Faktor-Authentifizierung&lt;/h2>
-&lt;p>Selbst das stärkste Passwort kann theoretisch in einem Datenleck landen. Deshalb gilt: &lt;strong>Immer, wenn möglich, Zwei-Faktor-Authentifizierung (2FA) aktivieren.&lt;/strong> Dabei wird neben dem Passwort ein zweiter Faktor abgefragt, etwa ein Code per App oder SMS.&lt;/p>
-&lt;p>Das macht es Angreifern deutlich schwerer, auf deine Konten zuzugreifen – selbst wenn sie dein Passwort kennen.&lt;/p>
-&lt;h2 id="fazit-passwortsicherheit-ist-kein-nice-to-have">Fazit: Passwortsicherheit ist kein „Nice-to-have“&lt;/h2>
-&lt;p>Der Aufwand für starke Passwörter ist gering – der Nutzen dagegen enorm. Wer einfache Gewohnheiten ändert, schützt sich vor realen Bedrohungen und gewinnt langfristig an digitaler Sicherheit.&lt;/p>
-&lt;p>&lt;strong>Jetzt ist der beste Zeitpunkt, um schwache Passwörter zu ändern, einen Passwort-Manager einzurichten und 2FA zu aktivieren.&lt;/strong> &lt;em>Deine digitale Zukunft wird es dir danken.&lt;/em>&lt;/p></description><pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/05/01/world-password-day/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/05/01/world-password-day/</guid><category>event</category></item></channel></rss>
+&lt;p>&lt;strong>Sichert euch Cryptomator jetzt für nur 14,99 €&lt;/strong> oder startet mit Cryptomator Hub – &lt;strong>25 % günstiger im ersten Jahr&lt;/strong>.&lt;/p></description><pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/06/01/summer-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/06/01/summer-sale/</guid><category>cryptomator</category><category>sale</category></item></channel></rss>
