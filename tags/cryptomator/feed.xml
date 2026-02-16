@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/cryptomator/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/cryptomator/</link></image><lastBuildDate>Tue, 10 Feb 2026 11:32:13 +0000</lastBuildDate><generator>Hugo</generator><item><title>Digital Independence Day: Why Digital Independence Is Important</title><description>&lt;p>&lt;strong>Every first Sunday of the month&lt;/strong> this year, people around the world take a moment to reflect on their digital habits. The occasion is &lt;strong>Digital Independence Day&lt;/strong> — a day of action for digital self-determination, privacy, and independence from tech monopolies.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/cryptomator/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/cryptomator/</link></image><lastBuildDate>Mon, 16 Feb 2026 07:14:25 +0000</lastBuildDate><generator>Hugo</generator><item><title>BitLocker, the FBI, and the Illusion of Control</title><description>&lt;p>When it recently became known that &lt;strong>Microsoft had helped the FBI decrypt BitLocker-encrypted data carriers&lt;/strong>, there was widespread outrage. People were quick to talk about “backdoors,” broken encryption, and how BitLocker was clearly unreliable. But as is so often the case, the real problem lies less in the technology itself than in &lt;strong>who has control over the encryption key&lt;/strong>.&lt;/p>
+&lt;p>This case is a good opportunity to take a closer look: What really happened? Why was access possible? And what does this say about &lt;strong>our understanding of encryption and cloud services&lt;/strong>?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/microsoft-bitlocker.png" alt="BitLocker, the FBI, and the Illusion of Control" />
+&lt;/figure>
+&lt;h2 id="what-happened">What Happened?&lt;/h2>
+&lt;p>The case that came to light involved a &lt;strong>criminal investigation&lt;/strong> in which the FBI seized several laptops. These devices were encrypted with &lt;strong>BitLocker&lt;/strong>, the &lt;strong>hard disk encryption feature integrated into Windows&lt;/strong>.&lt;/p>
+&lt;p>The FBI was still able to decrypt the data &lt;strong>because Microsoft was able to provide the corresponding recovery keys&lt;/strong>. These keys were &lt;strong>stored in the Microsoft account of the person&lt;/strong> concerned. Microsoft was legally obliged to disclose this information by court order.&lt;/p>
+&lt;p>It is important to clarify one thing: &lt;strong>Microsoft did not “crack” BitLocker&lt;/strong>. There was no security breach, no secret master key, and no technical backdoor into the encryption itself. &lt;strong>Microsoft was able to help because they had the keys.&lt;/strong>&lt;/p>
+&lt;h2 id="bitlocker-is-securebut-not-automatically-private">Bitlocker Is Secure—But Not Automatically Private&lt;/h2>
+&lt;p>BitLocker is technically considered a &lt;strong>robust encryption solution&lt;/strong>. The data on a device cannot be read without the appropriate key. The problem does not arise with encryption, but with &lt;strong>key management&lt;/strong>.&lt;/p>
+&lt;p>By default, &lt;strong>Windows offers to save the BitLocker recovery key in your Microsoft account&lt;/strong>. This is convenient because if you forget your password or change your hardware, you can simply retrieve the key online.&lt;/p>
+&lt;p>However, &lt;strong>this convenience has a consequence&lt;/strong>: if Microsoft holds the key, Microsoft also has the ability to pass it on—for example, to law enforcement agencies with the appropriate warrant.&lt;/p>
+&lt;p>Encryption therefore only fully protects data from third parties if the key remains exclusively under the control of the user.&lt;/p>
+&lt;h2 id="the-real-misunderstanding-encryption--key-control">The Real Misunderstanding: Encryption ≠ Key Control&lt;/h2>
+&lt;p>Many users equate encryption with complete control. In practice, however, this is often not the case.&lt;/p>
+&lt;p>A rough distinction can be made between:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Client-side encryption with external key management&lt;/strong>. This means that the provider has access to the key.&lt;/li>
+&lt;li>&lt;strong>Zero-knowledge encryption&lt;/strong>. Here, the provider has no technical access to the key.&lt;/li>
+&lt;/ul>
+&lt;p>BitLocker with a cloud-backed recovery key clearly falls into the first category. The &lt;strong>data is encrypted, but not exclusively for the owner.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>The Microsoft case therefore does not demonstrate a failure of BitLocker&lt;/strong>, but rather a &lt;strong>structural problem with modern cloud ecosystems&lt;/strong>. Convenience features often undermine data sovereignty without anyone noticing.&lt;/p>
+&lt;h2 id="why-many-are-surprised">Why Many Are Surprised&lt;/h2>
+&lt;p>The strong reaction to this case shows one thing above all else: &lt;strong>many people do not know where their encryption keys are stored.&lt;/strong>&lt;/p>
+&lt;p>Cloud backups, automatic synchronization, and preset security options are standard today. They lower the barrier to entry, increase user-friendliness, and quietly shift responsibility from the user to the provider.&lt;/p>
+&lt;p>This leads to a misleading assumption:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>“My data is encrypted, so no one can access it.”&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>Technically correct would be:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>“My data is encrypted, but someone else has the spare key.”&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h2 id="access-by-authorities-is-not-a-special-case">Access by Authorities Is Not a Special Case&lt;/h2>
+&lt;p>Another important point: &lt;strong>Access by authorities is not an unusual scenario.&lt;/strong>&lt;/p>
+&lt;p>If providers have access to keys or unencrypted data, they are &lt;strong>legally obliged&lt;/strong> in many countries to hand them over if ordered to do so. &lt;strong>This applies not only to Microsoft, but also to other major cloud providers.&lt;/strong>&lt;/p>
+&lt;p>The crucial question is therefore not:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>“Do I trust Microsoft?”&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>But rather:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>“Do I want to give a provider the technical ability to decrypt my data?”&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h2 id="what-users-can-learn-from-this">What Users Can Learn From This&lt;/h2>
+&lt;p>&lt;strong>The case offers a valuable lesson&lt;/strong> – regardless of the specific product:&lt;/p>
+&lt;ul>
+&lt;li>Encryption is only as strong as key management&lt;/li>
+&lt;li>Cloud backups of keys always mean a loss of control&lt;/li>
+&lt;li>Security is not a default setting, but a conscious decision&lt;/li>
+&lt;li>If you want maximum privacy, you also have to take responsibility for keys&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>This does not mean that cloud services are fundamentally insecure&lt;/strong>. But it does mean that you should understand which security model you are using and what compromises it entails.&lt;/p>
+&lt;h2 id="how-cryptomator-helps-in-such-cases-zero-knowledge-instead-of-key-storage">How Cryptomator Helps in Such Cases: Zero Knowledge Instead of Key Storage&lt;/h2>
+&lt;p>This is precisely where solutions such as &lt;strong>Cryptomator and Cryptomator Hub&lt;/strong> come in. Unlike many integrated encryption functions, Cryptomator consistently follows a &lt;strong>zero-knowledge principle&lt;/strong>.&lt;/p>
+&lt;p>This means that &lt;strong>data is encrypted locally on the device&lt;/strong> before it can even be uploaded to the cloud. The key difference lies in key management. &lt;strong>Cryptomator does not store passwords, recovery keys, or master keys.&lt;/strong>&lt;/p>
+&lt;p>Neither cloud providers nor Cryptomator itself have technical access to the encrypted content or the keys required to decrypt it. Even if a cloud service—such as Microsoft OneDrive, Google Drive, or Dropbox—were required to disclose data, &lt;strong>it would only contain unreadable, encrypted files&lt;/strong>.&lt;/p>
+&lt;p>The &lt;strong>difference is particularly clear&lt;/strong> in the context of the BitLocker case:&lt;/p>
+&lt;ul>
+&lt;li>With BitLocker and a cloud-backed recovery key, the provider can issue the key&lt;/li>
+&lt;li>With Cryptomator, this key only exists with the user themselves&lt;/li>
+&lt;li>Access by third parties is technically impossible, not just organizationally&lt;/li>
+&lt;/ul>
+&lt;p>This &lt;strong>deliberately shifts responsibility back to the users&lt;/strong>. It requires a little &lt;strong>more personal responsibility&lt;/strong>—for example, when it comes to handling passwords securely—but in return &lt;strong>offers a significantly higher degree of control and privacy.&lt;/strong>&lt;/p>
+&lt;p>This model is particularly important for sensitive data of any kind. You can&amp;rsquo;t pass on something you don&amp;rsquo;t own yourself.&lt;/p>
+&lt;h2 id="conclusion-encryption-is-not-a-feature-but-a-responsibility">Conclusion: Encryption Is Not a Feature, but a Responsibility&lt;/h2>
+&lt;p>The BitLocker-FBI case &lt;strong>does not reveal a secret backdoor or a breach of modern cryptography&lt;/strong>. It reveals something much more fundamental: how easily we trade control for convenience – often without even realizing it.&lt;/p>
+&lt;p>True data sovereignty does not come from encryption alone, but from exclusive control over the keys. Anyone who relinquishes this control should at least be aware of what that means.&lt;/p>
+&lt;p>Or to put it another way: &lt;strong>Do you know who has your encryption key?&lt;/strong>&lt;/p></description><pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2026/02/15/bitlocker-fbi-and-the-illusion-of-control/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2026/02/15/bitlocker-fbi-and-the-illusion-of-control/</guid><category>cryptomator</category><category>microsoft</category><category>bitlocker</category></item><item><title>Digital Independence Day: Why Digital Independence Is Important</title><description>&lt;p>&lt;strong>Every first Sunday of the month&lt;/strong> this year, people around the world take a moment to reflect on their digital habits. The occasion is &lt;strong>Digital Independence Day&lt;/strong> — a day of action for digital self-determination, privacy, and independence from tech monopolies.&lt;/p>
 &lt;p>But what does &lt;strong>digital independence&lt;/strong> actually mean? And more importantly: How can you take your first steps without completely changing your digital everyday life or investing a lot of time and energy?&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/digital-independence-day-2026.png" alt="Digital Independence Day 2026" />
@@ -351,172 +416,4 @@ Cryptomator Hub enables centralized management, user roles, and audit logs—per
 📅 Act fast! The offer is only available for a &lt;strong>limited time&lt;/strong>.&lt;/p>
 &lt;p>&lt;strong>Get the deal now!&lt;/strong>&lt;/p>
 &lt;p>Stay safe. Stay encrypted.&lt;br>
-&lt;strong>Your Cryptomator Team&lt;/strong>&lt;/p></description><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Our Roadmap to Post-Quantum Cryptography</title><description>&lt;p>If you&amp;rsquo;re reading this, chances are you&amp;rsquo;ve heard about quantum computers and how they may eventually break some traditional ciphers. In this article, we outline how this affects Cryptomator and what our plan is to become fully quantum-secure.&lt;/p>
-&lt;h2 id="cryptographic-breakdown">Cryptographic Breakdown&lt;/h2>
-&lt;p>First, let&amp;rsquo;s take a look at the ciphers involved in Cryptomator:&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/traditional-cipher-breakdown.svg" alt="Plot showing the growth of 2^n compared to n^2" />
-&lt;figcaption>Cryptographic Breakdown of Cryptomator &amp; Cryptomator Hub&lt;/figcaption>
-&lt;/figure>
-&lt;p>As you can see, we mostly rely on AES- and EC-based algorithms. These are traditional algorithms whose security assumptions apply in a world of classical (non-quantum) computers. The general idea is that computations are efficient if you know the right key but practically impossible without. When I say &amp;ldquo;practically impossible&amp;rdquo; I mean on traditional computers, as the computations are just &amp;ldquo;too complex&amp;rdquo;.&lt;/p>
-&lt;h2 id="a-few-words-about-complexity">A Few Words About Complexity&lt;/h2>
-&lt;p>While we aim to avoid complexity when it comes to usability or code legibility, there is a specific kind of complexity that we strive for. Let me explain:&lt;/p>
-&lt;p>When we want to express how many steps a certain computation requires, we categorize algorithms into classes of computational complexity. To illustrate this concept, here are some dog-related examples:&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Complexity Class&lt;/th>
-&lt;th>Example&lt;/th>
-&lt;th>Big O&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>Constant Time&lt;/td>
-&lt;td>Blowing the dog whistle always takes the same time, regardless of how many dogs are listening.&lt;/td>
-&lt;td>O(1)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Logarithmic Time&lt;/td>
-&lt;td>Finding the phone number of a pet clinic is easy with a telephone book, as it&amp;rsquo;s sorted alphabetically and allows you to quickly narrow down the pages.&lt;/td>
-&lt;td>O(log n)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Linear Time&lt;/td>
-&lt;td>Petting every dog. If every dog gets the same attention, it takes exactly n times longer, if you have n dogs.&lt;/td>
-&lt;td>O(n)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Polynomial Time&lt;/td>
-&lt;td>If every dog at a party wants to sniff and greet every other dog. Dog 1 sniffs dog 2, 3, 4, &amp;hellip; Dog 2 sniffs dog 3, 4, &amp;hellip; and so on.&lt;/td>
-&lt;td>O(nᵏ)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>Exponential Time&lt;/td>
-&lt;td>Every dog has 4 puppies. That makes 16 dogs after two generations, 64 after three generations and 256 after four generations.&lt;/td>
-&lt;td>O(kⁿ)&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>To ensure that breaking a cipher requires an insane amount of time and energy, cryptographic algorithms rely on hard-to-compute problems—i.e., we&amp;rsquo;re operating on the more complex side of the spectrum.&lt;/p>
-&lt;p>The most illustrative example for this is the factorization problem: Determine the prime factors of 8633. The result is easy to verify through a simple multiplication (89 × 97), but finding the factors from the product is hard; &lt;a href="https://en.wikipedia.org/wiki/General_number_field_sieve">harder than polynomial but subexponential&lt;/a>. This is exactly what the RSA crypto scheme is based on (except with some &lt;em>very&lt;/em> large numbers), where the public key includes the product of two secret primes that are required to compute the private key.&lt;/p>
-&lt;h2 id="how-quantum-computers-weaken-ciphers">How Quantum Computers Weaken Ciphers&lt;/h2>
-&lt;h3 id="asymmetric-cryptography">Asymmetric Cryptography&lt;/h3>
-&lt;p>Quantum computers are not inherently faster, but they allow for a different set of algorithms to run. So, while a problem may be hard-to-compute for traditional algorithms, it could be far less complex when solved with quantum algorithms.&lt;/p>
-&lt;p>One of the most infamous examples is &lt;a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm">Shor&amp;rsquo;s algorithm&lt;/a>, which solves the factorization problem in polynomial time. While polynomial time is just one row above exponential time in the table above, it makes all the difference. The following graph illustrates the effect of an increasing problem size on the two complexity classes:&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/pqc-complexity-classes.svg" alt="Plot showing the growth of 2^n compared to n^2" />
-&lt;figcaption>Growth curves of polynomial and exponential functions&lt;/figcaption>
-&lt;/figure>
-&lt;p>If a quantum computer can be built that is capable of running Shor&amp;rsquo;s algorithm on large numbers, it would break most of today&amp;rsquo;s public-key cryptography—including ECDH.&lt;/p>
-&lt;h3 id="symmetric-cryptography">Symmetric Cryptography&lt;/h3>
-&lt;p>Imagine a number lock with four digits. To guess the correct combination, a traditional computer would have to check every possibility, starting with 0000 and ending with 9999. On average, it would take 5,000 guesses. Now, what if I told you that a quantum computer could do it in just 100 guesses? Sounds like magic? That is exactly what Grover&amp;rsquo;s algorithm can achieve.&lt;/p>
-&lt;p>More generally, when a traditional algorithm takes \(n/2\) steps on average, a quantum computer only needs \(\sqrt n\) attempts—a speed-up that the BBBV theorem proves to be the best possible solution. If you want to understand how this works, there&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=RQWpF2Gb-gU">a great video by 3Blue1Brown about Grover&amp;rsquo;s Algorithm&lt;/a>.&lt;/p>
-&lt;p>This &amp;ldquo;magic&amp;rdquo; applies to any problem where it&amp;rsquo;s efficient to check if a guessed solution is correct. That&amp;rsquo;s obviously a problem if you don&amp;rsquo;t want an attacker to guess your secret key. Fortunately, the defense is simple: increase \(n\) to a size where even \(\sqrt n\) becomes large enough to make Grover&amp;rsquo;s algorithm impractical.&lt;/p>
-&lt;div class="admonition question">
-&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>&lt;/svg>
-&lt;span>Why is AES-256 quantum-secure?&lt;/span>
-&lt;/div>
-&lt;div class="admonition-content">
-&lt;p>Ever wondered why we use AES-256 instead of AES-128?&lt;/p>
-&lt;p>The &amp;ldquo;256&amp;rdquo; refers to the number of key bits, resulting in \(2^{256}\) possible keys. Guessing the correct key would therefore take \(2^{256} / 2 = 2^{255}\) attempts on a traditional computer and \(\sqrt{2^{256}} = 2^{128}\) attempts using Grover&amp;rsquo;s algorithm.&lt;/p>
-&lt;p>Making \(2^{128}\) guesses is simply unfeasible. So, while AES-128 suffices on traditional computers, the post-quantum world demands for AES-256.&lt;/p>
-&lt;/div>
-&lt;/div>&lt;h2 id="a-new-era-of-ciphers">A New Era of Ciphers&lt;/h2>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" srcset="https://staging.cryptomator.org/img/blog/cryptobot-crystals.webp, https://staging.cryptomator.org/img/blog/cryptobot-crystals@2x.webp 2x" src="https://staging.cryptomator.org/img/blog/cryptobot-crystals.webp" alt="Cryptobot wearing Jedi robes and levitating a Kyber crystal and a Dilithium crystal using the force" />
-&lt;figcaption>Kyber and Dilithium&lt;/figcaption>
-&lt;/figure>
-&lt;p>So, while a sufficiently large key space is enough for AES, our asymmetric ciphers need to be replaced to withstand attacks from quantum computers. In 2016, the National Institute of Standards and Technology (NIST) launched a competition to identify quantum-resistant cryptographic algorithms.&lt;/p>
-&lt;p>Electing algorithms through a competition has already proven successful in the past, as with AES and SHA-3. This approach attracts significant attention from experts, who do their best to uncover weaknesses.&lt;/p>
-&lt;p>In 2022, after several rounds of eliminating dozens of candidates, NIST &lt;a href="https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms">announced the winners&lt;/a>. Kyber and Dilithium—named after crystals from Star Wars and Star Trek, respectively—became the first standardized post-quantum algorithms for encryption and digital signatures. They were officially named ML-KEM and ML-DSA.&lt;/p>
-&lt;div class="admonition tip">
-&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">&lt;path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c0 0 0 0 0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c0 0 0 0 0 0c19.8 27.1 39.7 54.4 49.2 86.2l160 0zM192 512c44.2 0 80-35.8 80-80l0-16-160 0 0 16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/>&lt;/svg>
-&lt;span>Tip&lt;/span>
-&lt;/div>
-&lt;div class="admonition-content">
-&lt;p>Again, here is a &lt;a href="https://www.youtube.com/watch?v=K026C5YaB3A">great video explaining the underlying math of ML-based cryptography&lt;/a>.&lt;/p>
-&lt;/div>
-&lt;/div>&lt;p>Great! So let&amp;rsquo;s integrate ML-KEM and ML-DSA into Cryptomator Hub:&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/pqc-cipher-breakdown.svg" alt="Plot showing the growth of 2^n compared to n^2" />
-&lt;figcaption>Cryptomator Hub with Post-Quantum Cryptography&lt;/figcaption>
-&lt;/figure>
-&lt;p>&amp;ldquo;But wait, there is still ECDH in it!?&amp;rdquo; I hear you say. And you&amp;rsquo;re right. Despite the new ciphers being very promising, we have to face the fact that they simply haven&amp;rsquo;t been around for long. We just don&amp;rsquo;t know yet what kinds of attacks might be discovered in the future—or whether these algorithms will truly stand the test of time.&lt;/p>
-&lt;p>So, to be extra cautious, we combine a traditional cipher and a post-quantum one. Think of it like a door with two locks: if one is broken, the other still protects what&amp;rsquo;s inside. It&amp;rsquo;s a simple design that ensures the system is no weaker than its individual components. This post-quantum/traditional (PQ/T) hybrid is called &lt;em>X-Wing&lt;/em>.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" srcset="https://staging.cryptomator.org/img/blog/cryptobot-xwing.webp, https://staging.cryptomator.org/img/blog/cryptobot-xwing@2x.webp 2x" src="https://staging.cryptomator.org/img/blog/cryptobot-xwing.webp" alt="Cryptobot sitting in the droid socket of an X-Wing fighter, having great fun flying through space" />
-&lt;figcaption>Cryptomator will use X-Wing&lt;/figcaption>
-&lt;/figure>
-&lt;p>X-Wing is still a work in progress, but I reached out to the RFC authors—Deirdre Connolly, Peter Schwabe, and Bas Westerbaan—to ask when we can expect the final specification to be published. Just ten minutes later, Bas replied:&lt;/p>
-&lt;div class="admonition quote">
-&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
-&lt;span>Quote&lt;/span>
-&lt;/div>
-&lt;div class="admonition-content">
-&lt;p>X-Wing is final and being shipped by Google and Apple presumably in hardware.&lt;/p>
-&lt;p>— Bas Westerbaan&lt;/p>
-&lt;/div>
-&lt;/div>&lt;p>To be sure, I followed up and asked whether they expect any further changes to the current RFC draft—which they don&amp;rsquo;t:&lt;/p>
-&lt;div class="admonition quote">
-&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
-&lt;span>Quote&lt;/span>
-&lt;/div>
-&lt;div class="admonition-content">
-&lt;p>No significant changes, no changes planned or expected at all.&lt;/p>
-&lt;p>— Deirdre Connolly&lt;/p>
-&lt;/div>
-&lt;/div>&lt;p>This confirmed our belief that now is the perfect time to begin adopting X-Wing as the future standard for key encapsulation.&lt;/p>
-&lt;div class="admonition question">
-&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">&lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>&lt;/svg>
-&lt;span>If PQ/T hybrids are preferable, what about a hybrid signature scheme?&lt;/span>
-&lt;/div>
-&lt;div class="admonition-content">
-&lt;p>Yes, there are also &lt;a href="https://datatracker.ietf.org/doc/draft-prabel-jose-pq-composite-sigs/02/">efforts to standardize a combination of ML-DSA and ECDSA&lt;/a>. Other than X-Wing, this is in an earlier phase, though. We are closely following developments in this area and will probably make use of this scheme once it is ready.&lt;/p>
-&lt;/div>
-&lt;/div>&lt;h2 id="standardizing-cryptography">Standardizing Cryptography&lt;/h2>
-&lt;h3 id="benefits-of-standardization">Benefits of Standardization&lt;/h3>
-&lt;p>In every industry, standardization plays a key role. It ensures compatibility, promotes interoperability, and reduces costs by enabling different systems and organizations to work together using common protocols and specifications—maintaining consistency and reliability.&lt;/p>
-&lt;p>In the security sector, standardization is even more critical. Algorithms, protocols, and data formats must not only function reliably across heterogeneous systems—they must also withstand rigorous scrutiny. The more experts peer review a standard, the better. As with the NIST competitions mentioned earlier, such scrutiny can uncover weaknesses &lt;em>before&lt;/em> a cipher is deployed in production. By adhering to established, transparent standards, both developers and users benefit from stronger, more trustworthy protection—especially as the threat landscape evolves with technologies like quantum computing.&lt;/p>
-&lt;p>Ignoring such standards—sometimes in the name of speed or convenience—sets you on a path that may be paved with hidden flaws. Even the smallest change can introduce serious vulnerabilities that, without thorough peer reviews, are likely to be discovered first by someone smarter and less well-intentioned.&lt;/p>
-&lt;p>At Cryptomator, we&amp;rsquo;ve always stood against &amp;ldquo;security through obscurity&amp;rdquo; (which is also &lt;a href="https://staging.cryptomator.org/guides/open-source/">why open source matters&lt;/a>). Needless to say, we&amp;rsquo;ve never used home-cooked ciphers—that would pose a serious risk. And the more widely used an algorithm or protocol is, the easier it becomes to understand, verify, and audit the system as a whole.&lt;/p>
-&lt;h3 id="a-strong-foundation">A Strong Foundation&lt;/h3>
-&lt;p>Many standards are built upon others. Without ML-KEM, there would be no X-Wing. Now that X-Wing is around the corner, what can we do with it? Use it in yet another standard: &lt;a href="https://www.rfc-editor.org/rfc/rfc9180.html">HPKE&lt;/a>.&lt;/p>
-&lt;p>HPKE stands for Hybrid Public Key Encryption—and to be precise, it doesn&amp;rsquo;t depend on X-Wing at all. Instead, it defines how to combine three different cryptographic ingredients—KEM, KDF, and AEAD—in a specific way that ensures well-defined security properties. And X-Wing can serve as one of these ingredients (the KEM).&lt;/p>
-&lt;p>Another standard that we&amp;rsquo;ve come to love is JWE, a data format for exchanging encrypted payloads. And guess what—there are people working on &lt;a href="https://datatracker.ietf.org/doc/html/draft-reddy-cose-jose-pqc-hybrid-hpke-07">standardizing the use of X-Wing-based HPKE in JWE&lt;/a>. That&amp;rsquo;s exactly what we want to adopt in Cryptomator Hub, replacing the current ECDH-based JWEs.&lt;/p>
-&lt;p>Beyond the aforementioned benefits of peer reviews, adopting standardized formats over proprietary ones provides several additional advantages:&lt;/p>
-&lt;ul>
-&lt;li>Common APIs make it easy to swap out implementations—for example, HPKE usage remains the same regardless of the underlying algorithms.&lt;/li>
-&lt;li>Wide availability of well-established libraries. For instance, there are dozens of JWE/JWT libraries.&lt;/li>
-&lt;li>Official test vectors allows us to write tests that fail the build early if something goes wrong.&lt;/li>
-&lt;li>Faster vulnerabilities awareness: If a flaw is discovered in a widely used standard, it will likely be reported quickly—whereas a single proprietary implementation may go unnoticed for much longer.&lt;/li>
-&lt;/ul>
-&lt;p>Both JWE and HPKE support interchangeable internal algorithms while maintaining a consistent external interface. This allows us to retain the overall structure and quickly replace internal components if vulnerabilities arise.&lt;/p>
-&lt;div class="admonition quote">
-&lt;div class="admonition-header">&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">&lt;path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/>&lt;/svg>
-&lt;span>Quote&lt;/span>
-&lt;/div>
-&lt;div class="admonition-content">
-&lt;p>The moral is the need for cryptographic agility. It’s not enough to implement a single standard; it’s vital that our systems be able to easily swap in new algorithms when required.&lt;/p>
-&lt;p>— &lt;a href="https://www.schneier.com/blog/archives/2022/08/nists-post-quantum-cryptography-standards.html">Bruce Schneier&lt;/a>&lt;/p>
-&lt;/div>
-&lt;/div>&lt;h3 id="standardizing-the-vault-format">Standardizing the Vault Format&lt;/h3>
-&lt;p>So, if all the ciphers used in Cryptomator products—as well as the exchange of secrets in Cryptomator Hub—are based on standards, what about the vault format?&lt;/p>
-&lt;p>While we use well-established cryptography, the file formats themselves are our own. But we want to change that. Some time ago, we joined forces with developers of Cyberduck, gocryptfs, and rclone to derive a common format for encrypted directories—ensuring interoperability across our tools. Although the format is still a work in progress, we hope to share more details with you in a couple of months. In the meantime, you&amp;rsquo;re of course invited to review the format and contribute ideas for improvement on &lt;a href="https://github.com/encryption-alliance/unified-vault-format">GitHub&lt;/a>.&lt;/p>
-&lt;p>One key benefit of this &lt;em>Unified Vault Format&lt;/em> is that it enables key rotation—which itself brings two major advantages:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Access revocation&lt;/strong>: After rotating keys, former vault members can no longer decrypt files added after their access got revoked. What is trivial with access control lists requires special care when we want to enforce this cryptographically.&lt;/li>
-&lt;li>&lt;strong>Cipher agility&lt;/strong>: To some extent, it enables cipher upgrades. For example, if a vulnerability is found in one algorithm, we can flip a switch and transition to a new JWE algorithm—instantly protecting all newly added files.&lt;/li>
-&lt;/ol>
-&lt;h2 id="in-short-where-do-we-stand">In Short: Where Do We Stand?&lt;/h2>
-&lt;h3 id="cryptomator">Cryptomator&lt;/h3>
-&lt;p>As explained above, Cryptomator is already quantum-secure. Since it uses only symmetric ciphers with sufficiently large key spaces, quantum computers currently pose no known threat.&lt;/p>
-&lt;h3 id="cryptomator-hub">Cryptomator Hub&lt;/h3>
-&lt;p>Cryptomator Hub, on the other hand, will need to migrate to different algorithms. These are the steps we want to take:&lt;/p>
-&lt;ol>
-&lt;li>&lt;em>(In progress)&lt;/em> Implement X-Wing: As a 100% open-source company, we have always contributed to other libraries and projects. As mentioned before, we&amp;rsquo;re in contact with the authors of the &lt;a href="https://datatracker.ietf.org/doc/draft-connolly-cfrg-xwing-kem/">X-Wing RFC&lt;/a> and also with the JDK security team in order to add &lt;a href="https://github.com/openjdk/jdk/pull/26032">X-Wing support in the OpenJDK&lt;/a>.&lt;/li>
-&lt;li>&lt;em>(In progress)&lt;/em> Implement HPKE in JWE libraries: We have been contributing to one of the most widely used &lt;a href="https://connect2id.com/products/nimbus-jose-jwt">JOSE libraries for Java&lt;/a> from the very beginning of Cryptomator. Unsurprisingly, it is therefore in our interest to add HPKE support (and then X-Wing based HPHKE) as defined in &lt;a href="https://datatracker.ietf.org/doc/html/draft-reddy-cose-jose-pqc-hybrid-hpke-07">JOSE HPKE RFC&lt;/a>. The RFC authors (one of whom we know personally) are already eager to hear our feedback.&lt;/li>
-&lt;li>Migrate the JWEs used in Cryptomator Hub from traditional to PQ/T hybrid cryptography. We want to start this as soon as the standards are finalized and the aforementioned algorithm implementations can be published in upstream libraries.&lt;/li>
-&lt;li>Introduce a new vault format that will improve the cipher agility and has further benefits for Cryptomator Hub users.&lt;/li>
-&lt;/ol>
-&lt;p>As you can see this is a collaborative effort. All to build a resilient foundation for the years ahead.&lt;/p></description><pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/07/24/post-quantum-roadmap/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/07/24/post-quantum-roadmap/</guid><category>cryptomator</category><category>encryption</category></item></channel></rss>
+&lt;strong>Your Cryptomator Team&lt;/strong>&lt;/p></description><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</guid><category>cryptomator</category><category>sale</category></item></channel></rss>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/bitlocker/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/bitlocker/</link></image><lastBuildDate>Mon, 16 Feb 2026 07:14:26 +0000</lastBuildDate><generator>Hugo</generator><item><title>BitLocker, FBI und die Illusion von Kontrolle</title><description>&lt;p>Als kürzlich bekannt wurde, dass &lt;strong>Microsoft dem FBI dabei geholfen hat, mit BitLocker verschlüsselte Datenträger zu entschlüsseln&lt;/strong>, war die Empörung groß. Schnell war von „Hintertüren“ die Rede, von gebrochener Verschlüsselung und davon, dass man sich auf BitLocker offenbar nicht verlassen könne. Doch wie so oft liegt das &lt;strong>eigentliche Problem&lt;/strong> weniger in der Technik selbst, sondern darin, &lt;strong>wer die Kontrolle über den Recovery-Key hat.&lt;/strong>&lt;/p>
+&lt;p>Dieser Fall ist ein guter Anlass, genauer hinzusehen: Was ist wirklich passiert? Warum war der Zugriff möglich? Und was sagt das über &lt;strong>unser Verständnis von Verschlüsselung und Cloud-Diensten aus&lt;/strong>?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/microsoft-bitlocker.png" alt="BitLocker, FBI und die Illusion von Kontrolle" />
+&lt;/figure>
+&lt;h2 id="was-ist-passiert">Was ist passiert?&lt;/h2>
+&lt;p>In dem bekannt gewordenen Fall ging es um einen &lt;strong>strafrechtlichen Ermittlungsfall&lt;/strong>, bei dem das FBI mehrere Laptops sicherstellte. Diese Geräte waren mit &lt;strong>BitLocker&lt;/strong> verschlüsselt – &lt;strong>der in Windows integrierten Festplattenverschlüsselung.&lt;/strong>&lt;/p>
+&lt;p>Das FBI konnte die Daten dennoch entschlüsseln, &lt;strong>weil Microsoft die zugehörigen Recovery Keys bereitstellen konnte&lt;/strong>. Diese Schlüssel waren im &lt;strong>Microsoft-Account der betroffenen Person gespeichert&lt;/strong>. Mit richterlicher Anordnung war Microsoft rechtlich verpflichtet, diese Informationen herauszugeben.&lt;/p>
+&lt;p>Wichtig ist dabei eine klare Einordnung: &lt;strong>Microsoft hat BitLocker nicht „geknackt“&lt;/strong>. Es gab keine Sicherheitslücke, keinen geheimen Generalschlüssel und keinen technischen Hintereingriff in die Verschlüsselung selbst. &lt;strong>Microsoft konnte helfen, weil sie im Besitz der Schlüssel waren.&lt;/strong>&lt;/p>
+&lt;h2 id="bitlocker-ist-sicher--aber-nicht-automatisch-privat">BitLocker ist sicher – aber nicht automatisch privat&lt;/h2>
+&lt;p>BitLocker gilt technisch als &lt;strong>solide Verschlüsselungslösung&lt;/strong>. Die Daten auf einem Gerät sind ohne den passenden Schlüssel nicht lesbar. Das Problem entsteht nicht bei der Verschlüsselung, sondern beim &lt;strong>Schlüsselmanagement&lt;/strong>.&lt;/p>
+&lt;p>Standardmäßig bietet Windows an, &lt;strong>den BitLocker-Recovery-Key im Microsoft-Konto zu sichern&lt;/strong>. Das ist bequem, denn wenn man das Passwort vergisst oder die Hardware wechselt, kann man den Schlüssel einfach online abrufen.&lt;/p>
+&lt;p>&lt;strong>Diese Bequemlichkeit hat jedoch eine Konsequenz&lt;/strong>: Liegt der Schlüssel bei Microsoft, hat Microsoft auch die Möglichkeit, ihn weiterzugeben – etwa an Strafverfolgungsbehörden mit entsprechendem Beschluss.&lt;/p>
+&lt;p>Verschlüsselung schützt Daten also nur dann vollständig vor Dritten, wenn der Schlüssel ausschließlich unter der Kontrolle der Nutzer:innen bleibt.&lt;/p>
+&lt;h2 id="das-eigentliche-missverständnis-verschlüsselung--schlüsselkontrolle">Das eigentliche Missverständnis: Verschlüsselung ≠ Schlüsselkontrolle&lt;/h2>
+&lt;p>Viele Nutzer:innen setzen Verschlüsselung mit vollständiger Kontrolle gleich. In der Praxis ist das jedoch oft nicht der Fall.&lt;/p>
+&lt;p>Man kann grob unterscheiden zwischen:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Client-seitiger Verschlüsselung mit externer Schlüsselverwaltung&lt;/strong>. Das bedeutet, dass der Anbieter Zugriff auf den Schlüssel hat.&lt;/li>
+&lt;li>&lt;strong>Zero-Knowledge-Verschlüsselung&lt;/strong>. Hier hat der Anbieter technisch keinen Zugang zum Schlüssel.&lt;/li>
+&lt;/ul>
+&lt;p>BitLocker mit Cloud-gesichertem Recovery-Key fällt klar in die erste Kategorie. &lt;strong>Die Daten sind verschlüsselt, aber nicht ausschließlich für den Eigentümer.&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Der Microsoft-Fall zeigt damit kein Versagen von BitLocker&lt;/strong>, sondern &lt;strong>ein strukturelles Problem moderner Cloud-Ökosysteme&lt;/strong>. Komfortfunktionen untergraben oft unbemerkt die eigene Datensouveränität.&lt;/p>
+&lt;h2 id="warum-viele-überrascht-sind">Warum viele überrascht sind&lt;/h2>
+&lt;p>Die starke Reaktion auf den Fall zeigt vor allem eines: &lt;strong>Viele Menschen wissen nicht, wo ihre Verschlüsselungsschlüssel gespeichert sind.&lt;/strong>&lt;/p>
+&lt;p>Cloud-Backups, automatische Synchronisationen und voreingestellte Sicherheitsoptionen sind heute Standard. Sie senken die Einstiegshürde, erhöhen die Benutzerfreundlichkeit und verschieben Verantwortung stillschweigend vom Nutzer zum Anbieter.&lt;/p>
+&lt;p>Das führt zu einer &lt;strong>trügerischen Annahme&lt;/strong>:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>„Meine Daten sind verschlüsselt, also kann niemand darauf zugreifen.“&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>Technisch korrekt wäre eher:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>„Meine Daten sind verschlüsselt, aber jemand anderes verwahrt den Ersatzschlüssel.“&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h2 id="behördenzugriff-ist-kein-sonderfall">Behördenzugriff ist kein Sonderfall&lt;/h2>
+&lt;p>Ein weiterer wichtiger Punkt: &lt;strong>Der Zugriff durch Behörden ist kein außergewöhnliches Szenario.&lt;/strong>&lt;/p>
+&lt;p>Wenn Anbieter Zugriff auf Schlüssel oder unverschlüsselte Daten haben, sind sie in vielen Ländern &lt;strong>gesetzlich verpflichtet&lt;/strong>, diese bei entsprechender Anordnung herauszugeben. &lt;strong>Das betrifft nicht nur Microsoft, sondern ebenso andere große Cloud-Anbieter.&lt;/strong>&lt;/p>
+&lt;p>Die entscheidende Frage lautet daher nicht:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>„Vertraue ich Microsoft?“&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;p>Sondern:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>„Will ich einem Anbieter technisch die Möglichkeit geben, meine Daten zu entschlüsseln?“&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h2 id="was-nutzerinnen-daraus-lernen-können">Was Nutzer:innen daraus lernen können&lt;/h2>
+&lt;p>&lt;strong>Der Fall bietet eine wertvolle Lehre&lt;/strong> – unabhängig vom konkreten Produkt:&lt;/p>
+&lt;ul>
+&lt;li>Verschlüsselung ist nur so stark wie das Key-Management&lt;/li>
+&lt;li>Cloud-Backups von Schlüsseln bedeuten immer einen Kontrollverlust&lt;/li>
+&lt;li>Sicherheit ist keine Standardeinstellung, sondern eine bewusste Entscheidung&lt;/li>
+&lt;li>Wer maximale Privatsphäre möchte, muss auch Verantwortung für Schlüssel übernehmen&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Das bedeutet nicht, dass Cloud-Dienste grundsätzlich unsicher sind&lt;/strong>. Aber es bedeutet, dass man verstehen sollte, welches Sicherheitsmodell man nutzt und welche Kompromisse damit einhergehen.&lt;/p>
+&lt;h2 id="wie-cryptomator-in-solchen-fällen-hilft-zero-knowledge-statt-schlüsselhinterlegung">Wie Cryptomator in solchen Fällen hilft: Zero-Knowledge statt Schlüsselhinterlegung&lt;/h2>
+&lt;p>Genau an diesem Punkt setzen Lösungen wie &lt;strong>Cryptomator und Cryptomator Hub&lt;/strong> an. Im Gegensatz zu vielen integrierten Verschlüsselungsfunktionen verfolgt Cryptomator konsequent ein &lt;strong>Zero-Knowledge-Prinzip&lt;/strong>.&lt;/p>
+&lt;p>Das bedeutet, dass die Daten &lt;strong>lokal auf dem Gerät verschlüsselt werden&lt;/strong>, bevor sie überhaupt in eine Cloud hochgeladen werden können. Der entscheidende Unterschied liegt dabei im Schlüsselmanagement. &lt;strong>Cryptomator speichert nämlich keine Passwörter, keine Recovery-Keys und keine Master Keys.&lt;/strong>&lt;/p>
+&lt;p>Weder Cloud-Anbieter noch Cryptomator selbst haben technisch Zugriff auf die verschlüsselten Inhalte oder die dafür notwendigen Schlüssel. Selbst wenn ein Cloud-Dienst – etwa Microsoft OneDrive, Google Drive oder Dropbox – zur Herausgabe von Daten verpflichtet wäre, lägen dort &lt;strong>ausschließlich unlesbare, verschlüsselte Dateien&lt;/strong>.&lt;/p>
+&lt;p>Im Kontext des BitLocker-Falls wird &lt;strong>der Unterschied besonders deutlich&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Bei BitLocker mit Cloud-gesichertem Recovery-Key kann der Anbieter den Schlüssel herausgeben&lt;/li>
+&lt;li>Bei Cryptomator existiert dieser Schlüssel nur beim Nutzer selbst&lt;/li>
+&lt;li>Ein Zugriff durch Dritte ist technisch ausgeschlossen, nicht nur organisatorisch&lt;/li>
+&lt;/ul>
+&lt;p>Damit &lt;strong>verschiebt sich die Verantwortung bewusst zurück zu den Nutzer:innen&lt;/strong>. Das erfordert etwas &lt;strong>mehr Eigenverantwortung&lt;/strong> – etwa beim sicheren Umgang mit Passwörtern –, bietet aber im Gegenzug ein &lt;strong>deutlich höheres Maß an Kontrolle und Privatsphäre&lt;/strong>.&lt;/p>
+&lt;p>Gerade für sensible Daten jeglicher Art ist dieses Modell entscheidend. Was man selbst nicht besitzt, kann man auch nicht weitergeben.&lt;/p>
+&lt;h2 id="fazit-verschlüsselung-ist-kein-feature-sondern-verantwortung">Fazit: Verschlüsselung ist kein Feature, sondern Verantwortung&lt;/h2>
+&lt;p>Der BitLocker-FBI-Fall zeigt &lt;strong>keine heimliche Hintertür und keinen Bruch moderner Kryptografie&lt;/strong>. Er zeigt etwas viel Grundsätzlicheres: Wie leicht wir Kontrolle gegen Bequemlichkeit eintauschen – oft ohne es zu merken.&lt;/p>
+&lt;p>Echte Datensouveränität entsteht nicht allein durch Verschlüsselung, sondern durch exklusive Kontrolle über die Schlüssel. Wer diese Kontrolle abgibt, sollte sich zumindest bewusst sein, was das bedeutet.&lt;/p>
+&lt;p>Oder anders gefragt: &lt;strong>Weißt du, wer deinen Verschlüsselungsschlüssel besitzt?&lt;/strong>&lt;/p></description><pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2026/02/15/bitlocker-fbi-und-die-illusion-von-kontrolle/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2026/02/15/bitlocker-fbi-und-die-illusion-von-kontrolle/</guid><category>cryptomator</category><category>microsoft</category><category>bitlocker</category></item><item><title>Digital Independence Day: Warum digitale Unabhängigkeit wichtig ist</title><description>&lt;p>An &lt;strong>jedem ersten Sonntag im Monat&lt;/strong> in diesem Jahr nehmen sich Menschen weltweit einen Moment Zeit, um ihre &lt;strong>digitalen Gewohnheiten&lt;/strong> zu hinterfragen. Der Anlass dafür ist der &lt;strong>Digital Independence Day&lt;/strong>. Das ist ein Aktionstag für digitale Selbstbestimmung, Privatsphäre und Unabhängigkeit von Tech-Monopolen.&lt;/p>
+&lt;p>Doch was bedeutet &lt;strong>digitale Unabhängigkeit&lt;/strong> eigentlich genau? Und viel wichtiger: Wie kann man erste Schritte gehen, ohne den kompletten digitalen Alltag umzukrempeln oder viel Zeit und Energie zu investieren?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/digital-independence-day-2026.png" alt="Digital Independence Day 2026 - Digitale Unabhängigkeit" />
+&lt;/figure>
+&lt;h2 id="was-ist-der-digital-independence-day">Was ist der Digital Independence Day?&lt;/h2>
+&lt;p>Der Digital Independence Day ist eine Initiative, die dazu aufruft, &lt;strong>die eigene Abhängigkeit von großen, zentralisierten Tech-Plattformen zu reduzieren&lt;/strong> – insbesondere von solchen, deren Geschäftsmodelle auf Datensammlung, Lock-in-Effekten und Intransparenz basieren.&lt;/p>
+&lt;p>Statt radikale Veränderungen zu fordern, setzt die Bewegung bewusst auf &lt;strong>kleine, praktische Schritte, die für alle machbar sind&lt;/strong>.&lt;/p>
+&lt;p>Auf der &lt;strong>offiziellen Website des &lt;a href="https://di.day/">DID&lt;/a>&lt;/strong> findest du Ideen, Tools und einfache Anleitungen, um direkt loszulegen – von Kommunikation und Social Media bis hin zu Cloud-Speicherung und Online-Diensten.&lt;/p>
+&lt;p>Im Kern steht der Digital Independence Day für:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>weniger Abhängigkeit&lt;/strong> von Tech-Monopolen&lt;/li>
+&lt;li>&lt;strong>mehr Kontrolle&lt;/strong> über die eigenen Daten&lt;/li>
+&lt;li>&lt;strong>bewusste Nutzung&lt;/strong> datenschutzfreundlicher Alternativen&lt;/li>
+&lt;/ul>
+&lt;h2 id="warum-digitale-unabhängigkeit-wichtig-ist">Warum digitale Unabhängigkeit wichtig ist&lt;/h2>
+&lt;p>Unser digitales Leben spielt sich heute größtenteils auf wenigen Plattformen ab. Sie speichern unsere Dokumente, organisieren unsere Kommunikation und beeinflussen, welche Informationen wir sehen.&lt;/p>
+&lt;p>&lt;strong>Diese Konzentration von Macht hat Folgen&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Verlust von Datensouveränität&lt;/li>
+&lt;li>intransparente Datennutzung und Profilbildung&lt;/li>
+&lt;li>eingeschränkte Wahlfreiheit&lt;/li>
+&lt;li>politische und wirtschaftliche Abhängigkeiten&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Digitale Unabhängigkeit bedeutet nicht, Technologie abzulehnen&lt;/strong>. Sie bedeutet, &lt;strong>Handlungsspielraum zurückzugewinnen&lt;/strong> und Werkzeuge zu nutzen, die Nutzende respektieren, Offenheit fördern und echte Kontrolle über Daten ermöglichen.&lt;/p>
+&lt;h2 id="digitale-unabhängigkeit-muss-nicht-kompliziert-sein">Digitale Unabhängigkeit muss nicht kompliziert sein&lt;/h2>
+&lt;p>Oft entsteht der Eindruck, dass digitale Unabhängigkeit technisches Fachwissen oder stundenlange Recherche erfordert. In Wirklichkeit lassen sich viele &lt;strong>wirkungsvolle Schritte in wenigen Minuten umsetzen&lt;/strong>.&lt;/p>
+&lt;p>Hier einige Beispiele, inspiriert vom Digital Independence Day:&lt;/p>
+&lt;p>&lt;strong>1. Dezentrale soziale Netzwerke ausprobieren&lt;/strong>&lt;/p>
+&lt;p>Statt auf eine zentrale Plattform wie Facebook oder X zu setzen, kannst du &lt;strong>dezentrale Netzwerke wie Mastodon&lt;/strong> ausprobieren. Mastodon funktioniert ähnlich wie klassische soziale Netzwerke, wird aber nicht von einem einzelnen Unternehmen kontrolliert. Du kannst dir einen Anbieter aussuchen, bei Bedarf wechseln und trotzdem mit dem gesamten Netzwerk verbunden bleiben.&lt;/p>
+&lt;p>Auf der offiziellen Webseite des &lt;a href="https://di.day/category/rezepte/">Digital Independence Day&lt;/a> findest du einfache Einstiege und Erklärungen.&lt;/p>
+&lt;p>&lt;strong>2. Bewusster mit Cloud-Speicherung umgehen&lt;/strong>&lt;/p>
+&lt;p>Cloud-Dienste sind praktisch, bedeuten aber oft, dass &lt;strong>unverschlüsselte Daten bei Drittanbietern liegen&lt;/strong>. Ein einfacher erster Schritt Richtung digitale Unabhängigkeit ist &lt;strong>clientseitige Verschlüsselung&lt;/strong>: Deine Dateien werden verschlüsselt, bevor sie dein Gerät verlassen. Genau hier setzt &lt;strong>Cryptomator&lt;/strong> an.&lt;/p>
+&lt;p>Mit Cryptomator kannst du deinen bestehenden Cloud-Anbieter weiter nutzen und &lt;strong>behältst trotzdem die Kontrolle über deine Daten&lt;/strong>. Der Anbieter speichert nur verschlüsselte Dateien – die Schlüssel bleiben bei dir. Kein Wechsel des Anbieters. Keine komplizierte Einrichtung. Aber deutlich mehr Kontrolle.&lt;/p>
+&lt;p>&lt;strong>3. Ein Tool nach dem anderen ersetzen&lt;/strong>&lt;/p>
+&lt;p>Du musst nicht alles auf einmal ändern, sondern kannst dich erst einmal auf &lt;strong>einen Bereich fokussieren&lt;/strong>.&lt;/p>
+&lt;ul>
+&lt;li>Messenger&lt;/li>
+&lt;li>Cloud-Speicherung&lt;/li>
+&lt;li>Social Media&lt;/li>
+&lt;li>Passwortverwaltung&lt;/li>
+&lt;/ul>
+&lt;p>Ersetze nun ein einziges Tool durch eine &lt;strong>datenschutzfreundlichere Alternative&lt;/strong>. Das ist bereits ein sinnvoller Schritt. &lt;strong>Digitale Unabhängigkeit ist ein Prozess&lt;/strong> – keine To-do-Liste. Daher liegt der Fokus des DID auch darauf, kleine Schritte zu machen, die jeder im Alltag schnell erledigen kann.&lt;/p>
+&lt;h2 id="warum-wir-den-digital-independence-day-unterstützen">Warum wir den Digital Independence Day unterstützen&lt;/h2>
+&lt;p>Bei Cryptomator sind wir überzeugt: &lt;strong>Privatsphäre und Kontrolle dürfen kein Luxus sein&lt;/strong>. Sie sollten der Standard sein und für alle zugänglich. Der Digital Independence Day passt genau zu dieser Haltung: Er befähigt Menschen, informierte Entscheidungen zu treffen, ganz ohne Druck und ohne Angstmacherei.&lt;/p>
+&lt;p>Deshalb unterstützen wir die Initiative und laden unsere Community ein, mitzumachen – nicht nur an einem Tag, sondern dauerhaft.&lt;/p>
+&lt;h2 id="digital-independence-day-special--februar-edition">Digital Independence Day Special – Februar-Edition&lt;/h2>
+&lt;p>Um deinen ersten (oder nächsten) Schritt Richtung digitale Unabhängigkeit zu unterstützen, setzen wir unsere Aktion fort: &lt;strong>Am ersten Sonntag im Februar verschenken wir 100 Cryptomator-Gutscheincodes!&lt;/strong>&lt;/p>
+&lt;p>Die Codes werden über unsere Social-Media-Kanäle geteilt und gelten nach dem Prinzip first come, first served.&lt;/p>
+&lt;p>Unser Ziel: die Einstiegshürde senken und &lt;strong>digitale Selbstbestimmung für möglichst viele Menschen zugänglich machen&lt;/strong>.&lt;/p>
+&lt;h2 id="dein-nächster-schritt">Dein nächster Schritt&lt;/h2>
+&lt;p>Digitale Unabhängigkeit erfordert keine Perfektion. Sie beginnt mit Bewusstsein und wächst mit jeder bewussten Entscheidung. Wenn du Inspiration, praktische Anleitungen und einfache Alternativen suchst:&lt;br>
+Besuche die offizielle &lt;a href="https://di.day/">&lt;strong>Digital-Independence-Day-Website!&lt;/strong>&lt;/a>&lt;/p>
+&lt;p>Und wenn du heute schon die Kontrolle über deine Cloud-Daten übernehmen möchtest:&lt;br>
+Verschlüssele deine Dateien mit Cryptomator, bevor sie in die Cloud gehen.&lt;/p></description><pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2026/02/01/digital-independence-day-2026/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2026/02/01/digital-independence-day-2026/</guid><category>cryptomator</category><category>did</category></item><item><title>Der Winter naht: 50 % Rabatt auf Cryptomator</title><description>&lt;p>Der Winter naht – und diesmal bringt er nicht nur Kälte, sondern auch Datensicherheit zum halben Preis! Vom &lt;strong>1. bis 31. Dezember 2025&lt;/strong> läuft unser &lt;strong>Winter Sale&lt;/strong>, bei dem du Cryptomator mit &lt;strong>50 %* Rabatt&lt;/strong> erhältst.&lt;/p>
+&lt;p>Das heißt: &lt;strong>Nur 9,99 € statt 19,99 €&lt;/strong> – und das als dauerhafte Lizenz, kein Abo, keine monatlichen Kosten.&lt;/p>
+&lt;p>Auch &lt;a href="https://cryptomator.org/de/for-teams/">&lt;strong>Cryptomator Hub&lt;/strong>&lt;/a> gibt es für das erste Jahr &lt;strong>50 %* günstiger&lt;/strong>! Kontaktiert uns für genauere Konditionen oder werft einen Blick in unsere &lt;a href="https://cryptomator.org/de/pricing/">&lt;strong>Preisliste&lt;/strong>&lt;/a>.&lt;/p>
+&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/winter-2025-sale.png" alt="Cryptomator Winter-Sale 50 % Rabatt" />
+&lt;/a>
+&lt;/figure>
+&lt;h2 id="einmal-zahlen-dauerhaft-geschützt">Einmal zahlen, dauerhaft geschützt&lt;/h2>
+&lt;p>Bei Cryptomator sind wir davon überzeugt, dass Datenschutz &lt;strong>kein Abonnement&lt;/strong> erfordern sollte.&lt;br>
+Während viele Apps heute auf monatliche oder jährliche Gebühren setzen, bleibt Cryptomator seinem &lt;strong>Einmalkauf-Modell&lt;/strong> treu.&lt;/p>
+&lt;p>Einmal gekauft, kannst du Cryptomator dauerhaft nutzen, &lt;strong>ohne wiederkehrende Kosten oder versteckte Gebühren&lt;/strong>. Deine Daten bleiben geschützt – ganz ohne Abo-Falle.&lt;/p>
+&lt;h2 id="preisänderung-ab-2026">Preisänderung ab 2026&lt;/h2>
+&lt;p>Ab dem &lt;strong>1. Januar 2026&lt;/strong> steigt der Preis von Cryptomator auf &lt;strong>29,99 €&lt;/strong>.&lt;br>
+Damit investieren wir langfristig in &lt;strong>Sicherheitsstandards, Performance und neue Features&lt;/strong>, die dich auch in Zukunft zuverlässig schützen.&lt;/p>
+&lt;p>Wenn du also schon länger mit dem Gedanken spielst, Cryptomator zu holen: &lt;strong>Jetzt ist der perfekte Zeitpunkt.&lt;/strong> Sichere dir nicht nur 50 % Rabatt, sondern auch den &lt;strong>alten Preis&lt;/strong>, bevor der Winter vorbei ist.&lt;/p>
+&lt;h2 id="hol-dir-deinen-schutz-bevor-das-jahr-endet">Hol dir deinen Schutz, bevor das Jahr endet&lt;/h2>
+&lt;p>&lt;em>&lt;strong>„Winter is coming“&lt;/strong>&lt;/em> – aber deine Daten können vorbereitet sein. Nutze den Dezember, um deine digitalen Daten zu sichern und von unserem größten Rabatt des Jahres zu profitieren.&lt;/p>
+&lt;p>Nach dem 31. Dezember ist der Winter Sale vorbei – und der Preis steigt. &lt;strong>Jetzt kaufen und dauerhaft schützen&lt;/strong>.&lt;/p></description><pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/12/01/winter-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/12/01/winter-sale/</guid><category>cryptomator</category><category>sale</category></item><item><title>Vertraulichkeit ist Pflicht: Warum Betriebsräte Verschlüsselung brauchen</title><description>&lt;p>Betriebsräte nehmen eine zentrale Rolle im Unternehmen ein, wenn es um die &lt;strong>Wahrung der Interessen der Mitarbeitenden&lt;/strong> geht. Dabei verarbeiten sie täglich &lt;strong>besonders schützenswerte Daten&lt;/strong>: persönliche Beschwerden, Wahlergebnisse, Sitzungsprotokolle oder vertrauliche Absprachen mit Gewerkschaften. All diese Informationen unterliegen nicht nur einer &lt;strong>moralischen Verpflichtung zur Vertraulichkeit&lt;/strong> – sie fallen auch unter die strengen Vorgaben der &lt;a href="https://staging.cryptomator.org/de/compliance/gdpr/">&lt;strong>DSGVO&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Doch wie kann ein Betriebsrat dieser Verantwortung im digitalen Zeitalter gerecht werden, in dem Dokumente oft in der Cloud gespeichert, geteilt und gemeinsam bearbeitet werden? Die Antwort liegt in einer Kombination aus &lt;strong>technischer Absicherung, organisatorischen Prozessen&lt;/strong> – und dem &lt;strong>richtigen Werkzeug&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/encryption-for-works-councils.png" alt="Warum Betriebsräte mehr denn je Verschlüsselung brauchen" />
+&lt;/figure>
+&lt;h2 id="sensible-daten-brauchen-besondere-schutzmaßnahmen">Sensible Daten brauchen besondere Schutzmaßnahmen&lt;/h2>
+&lt;p>Personaldaten, Krankmeldungen, Konfliktgespräche, interne Abläufe – &lt;strong>Betriebsräte haben tiefe Einblicke in die innersten Vorgänge des Unternehmens&lt;/strong>. Diese Informationen betreffen nicht nur arbeitsrechtliche Auseinandersetzungen oder Umstrukturierungen, sondern auch sehr persönliche Lebenssituationen der Mitarbeitenden.&lt;/p>
+&lt;p>Die DSGVO verpflichtet dazu, solche personenbezogenen Daten mit geeigneten technischen und organisatorischen Maßnahmen zu schützen. Dazu zählt explizit auch die &lt;strong>Verschlüsselung&lt;/strong>. Diese Maßnahme ist kein optionales Extra, sondern ein &lt;strong>zentraler Bestandteil datenschutzkonformer Betriebsratsarbeit&lt;/strong>.&lt;/p>
+&lt;h2 id="warum-verschlüsselung-nicht-gleich-verschlüsselung-ist">Warum Verschlüsselung nicht gleich Verschlüsselung ist&lt;/h2>
+&lt;p>Viele Unternehmen setzen heute bereits auf &lt;strong>cloudbasierte Systeme wie Microsoft 365 oder Google Workspace&lt;/strong>. Diese Lösungen werben mit eingebauter Sicherheit und Verschlüsselung. Was viele jedoch nicht wissen: Häufig handelt es sich dabei um &lt;strong>Server-seitige Verschlüsselung&lt;/strong> – das bedeutet, die Daten werden zwar verschlüsselt, aber der Anbieter oder Administrator besitzt die Schlüssel. Wer Zugriff auf das System hat, kann auch auf die Daten zugreifen. Das gilt insbesondere für unternehmensinterne Admins oder externe Dienstleistende.&lt;/p>
+&lt;p>Bei besonders sensiblen Informationen, wie sie Betriebsräte verarbeiten, reicht das nicht aus. Hier ist &lt;strong>Ende-zu-Ende-Verschlüsselung&lt;/strong> gefragt: Nur die berechtigten Personen können auf die Inhalte zugreifen – selbst Cloud-Anbieter oder zentrale IT-Abteilungen haben keine Einsicht. Der Schlüssel zum Zugriff bleibt ausschließlich beim Betriebsrat.&lt;/p>
+&lt;h2 id="digitale-souveränität-durch-cryptomator-hub">Digitale Souveränität durch Cryptomator Hub&lt;/h2>
+&lt;p>Mit &lt;a href="https://staging.cryptomator.org/de/for-teams/">&lt;strong>Cryptomator Hub&lt;/strong>&lt;/a> steht Betriebsräten ein Werkzeug zur Verfügung, das genau diese Anforderungen erfüllt. Die Lösung ermöglicht die Erstellung verschlüsselter Datenräume (sogenannter Tresore), die auf jeder gängigen Cloud-Plattform genutzt werden können – aber dabei &lt;strong>vollständig unter der Kontrolle des Gremiums&lt;/strong> bleiben.&lt;/p>
+&lt;p>&lt;strong>Tresore können nach Themen, Rollen oder Arbeitsgruppen&lt;/strong> strukturiert werden – etwa für Protokolle, Wahlunterlagen, Beschwerden oder rechtliche Beratung. Über ein übersichtliches Interface lassen sich &lt;strong>Zugriffsrechte&lt;/strong> granular vergeben. So ist beispielsweise nur der Wahlvorstand berechtigt, auf Wahlunterlagen zuzugreifen, während andere Mitglieder Zugriff auf allgemeine Sitzungsprotokolle haben.&lt;/p>
+&lt;p>Ein weiterer Vorteil: Das &lt;strong>Web-of-Trust-Prinzip&lt;/strong> erlaubt es dem Gremium, neue Geräte und Mitglieder vertrauensbasiert einzubinden – &lt;strong>ganz ohne zentrale IT-Verwaltung oder externe Administration&lt;/strong>. So wird digitale Selbstverwaltung Realität.&lt;/p>
+&lt;h2 id="integration-ohne-it-abhängigkeit">Integration ohne IT-Abhängigkeit&lt;/h2>
+&lt;p>Ein &lt;strong>häufiges Hindernis&lt;/strong> für Betriebsräte ist die &lt;strong>Abhängigkeit von der IT-Infrastruktur&lt;/strong> des Arbeitgebenden. Was, wenn das Unternehmen selbst die Cloud-Plattform stellt? Oder wenn der Betriebsrat keine eigene technische Infrastruktur betreibt?&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub funktioniert unabhängig von der darunterliegenden Cloud&lt;/strong>. Das bedeutet: Auch wenn das Unternehmen Dropbox, OneDrive oder eine Nextcloud bereitstellt, kann der Betriebsrat seine Inhalte darin sicher verschlüsseln – ohne dass der Arbeitgebende Einblick hat. Die &lt;strong>Kontrolle über den Schlüssel und die Zugriffsstruktur&lt;/strong> verbleibt ausschließlich beim Gremium.&lt;/p>
+&lt;p>Auch auf &lt;strong>privaten Endgeräten&lt;/strong> ist die Nutzung möglich – ein wichtiger Faktor für kleinere Betriebsräte oder Gremien ohne eigene Büro-Infrastruktur.&lt;/p>
+&lt;h2 id="fazit">Fazit&lt;/h2>
+&lt;p>Vertraulichkeit ist kein Nice-to-have, sondern gesetzliche Pflicht und gelebte Verantwortung. Wer sich als Betriebsrat dem digitalen Wandel stellt, sollte &lt;strong>den Schutz sensibler Daten als zentrale Voraussetzung begreifen&lt;/strong> – nicht nur, um rechtlichen Vorgaben gerecht zu werden, sondern auch um das Vertrauen der Belegschaft zu wahren.&lt;/p>
+&lt;p>Mit Ende-zu-Ende-Verschlüsselung und unabhängigen Tools wie Cryptomator Hub können Betriebsräte dieser Pflicht gerecht werden – &lt;strong>sicher, einfach und unabhängig&lt;/strong>. Und sie können dabei ein wichtiges Zeichen setzen: für digitale Mündigkeit, für Datenschutz, und für eine moderne Mitbestimmung auf Augenhöhe.&lt;/p></description><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/24/encryption-for-works-councils/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/24/encryption-for-works-councils/</guid><category>cryptomator</category><category>hub</category></item><item><title>Cryptomator Desktop 1.18.0 ist da!</title><description>&lt;p>Wir freuen uns, die &lt;strong>offizielle Veröffentlichung von Cryptomator Desktop Version 1.18.0&lt;/strong> bekanntzugeben. Nach der &lt;a href="https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/">Beta-Phase&lt;/a> bringt diese Version das vollständige Paket an Verbesserungen, neuen Funktionen und Stabilitätsverbesserungen – jetzt für alle unterstützten Plattformen verfügbar.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0.png" alt="Cryptomator Desktop 1.18.0" />
+&lt;/figure>
+&lt;h2 id="neue-features-was-ist-neu-in-1180">Neue Features: Was ist neu in 1.18.0?&lt;/h2>
+&lt;h3 id="wiederherstellung-der-tresor-konfigurationsdatei">Wiederherstellung der Tresor-Konfigurationsdatei&lt;/h3>
+&lt;p>Der &lt;strong>Recovery Key&lt;/strong> ist schon länger Teil von Cryptomator, doch mit Version 1.18.0 wird er erstmals deutlich mächtiger: Ab sofort könnt ihr &lt;strong>verlorene oder&lt;/strong> &lt;strong>beschädigte Masterkey-Dateien sowie Vault-Konfigurationsdateien vollständig wiederherstellen&lt;/strong>, indem ihr euren bestehenden Recovery Key verwendet.&lt;/p>
+&lt;p>Ob versehentlich gelöscht, durch ein Backup-Problem überschrieben oder durch ein Speicherfehler beschädigt – der Tresor lässt sich jetzt &lt;strong>zuverlässig rekonstruieren&lt;/strong>.&lt;/p>
+&lt;p>Damit wird der Recovery Key zu einem echten Notfallwerkzeug, das im Ernstfall den Zugriff auf den Tresor sichert und einen vollständigen Datenverlust verhindert.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/recover-vault-config.png" srcset="https://staging.cryptomator.org/img/blog/recover-vault-config.png 1x, https://staging.cryptomator.org/img/blog/recover-vault-config@2x.png 2x" alt="Wiederherstellung der Tresor-Konfigurationsdatei" />
+&lt;/figure>
+&lt;h3 id="neue-signaturzertifikate-für-windows">Neue Signaturzertifikate für Windows&lt;/h3>
+&lt;p>Der Windows-Installer sowie alle Binärdateien sind mit einem &lt;strong>neuen Zertifikat signiert&lt;/strong>. Das alte Zertifikat ist nicht mehr gültig und mit dem neuen Zertifikat wird eine weiterhin reibungslose Installation auf modernen Windows-Systemen sichergestellt, ohne verstörende Warndialoge.&lt;/p>
+&lt;h3 id="merken-des-letzten-tresor-speicherorts">Merken des letzten Tresor-Speicherorts&lt;/h3>
+&lt;p>Beim Erstellen eines neuen Tresors schlägt Cryptomator jetzt automatisch den &lt;strong>zuletzt genutzten Speicherort&lt;/strong> vor. Nutzerinnen und Nutzer, die mehrere Tresore in ähnlichen Ordnerstrukturen anlegen, profitieren so von einem &lt;strong>deutlich schnelleren Einrichtungsprozess&lt;/strong>.&lt;/p>
+&lt;h2 id="bugfixes--plattform-verbesserungen">Bugfixes &amp;amp; Plattform-Verbesserungen&lt;/h2>
+&lt;h3 id="macos-26-korrekte-darstellung-des-app-icons--und-kein-squircle-jail-für-cryptomator">macOS 26: Korrekte Darstellung des App-Icons – und kein „Squircle Jail“ für Cryptomator&lt;/h3>
+&lt;p>Unter macOS 26 (Codename „Tahoe“) wurde das &lt;strong>Cryptomator-Icon&lt;/strong> in ein generisches graues „Squircle“ gesteckt, was nicht gut aussah. Mit Version 1.18.0 wurde dieses Problem behoben, sodass das Icon wieder so erscheint, wie es soll.&lt;/p>
+&lt;p>Mit Tahoe setzt Apple nun auch bei macOS die Squircle-Form für alle App-Icons durch – ähnlich den strengen Richtlinien, die für iOS schon immer galten. Zuvor konnten macOS-Apps die Squircle-Form freier verlassen, und viele Apps nutzten dies spielerisch als Teil ihrer visuellen Identität. Doch nun müssen App-Icons in die Squircle-Form passen. Wir schließen uns der &lt;strong>Squircle-Resistance&lt;/strong> an und behalten gemeinsam mit anderen App-Entwicklern unser charakteristisches Icon-Design, anstatt uns dieser neuen Richtlinie zu fügen.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/squircle-jail-resistance.png" srcset="https://staging.cryptomator.org/img/blog/squircle-jail-resistance.png 1x, https://staging.cryptomator.org/img/blog/squircle-jail-resistance@2x.png 2x" alt="macOS 26: Korrekte Darstellung des App-Icons – und kein ‚Squircle Jail‘ für Cryptomator" />
+&lt;/figure>
+&lt;h3 id="macfuse-erkennung-auf-macos-26">macFUSE-Erkennung auf macOS 26&lt;/h3>
+&lt;p>Einige Nutzerinnen und Nutzer erlebten Probleme beim Einbinden von Tresoren, da macFUSE unter macOS 26 teilweise nicht erkannt wurde. Dieser Fehler ist nun behoben, sodass Tresore wieder zuverlässig geöffnet werden können.&lt;/p>
+&lt;h3 id="windows-kontrolle-über-logdatei-größen">Windows: Kontrolle über Logdatei-Größen&lt;/h3>
+&lt;p>In seltenen Fällen konnten Logdateien auf Windows enorm anwachsen und dadurch Systemprobleme verursachen. Die Größenbegrenzung der Logfiles wurde korrigiert, sodass Cryptomator wieder zuverlässig und ressourcenschonend im Hintergrund läuft.&lt;/p>
+&lt;h3 id="linuxkde-aufräumen-von-quickaccess-einträgen">Linux/KDE: Aufräumen von QuickAccess-Einträgen&lt;/h3>
+&lt;p>Unter KDE legte der Datei­manager Dolphin bei jedem Entsperren eines Tresors einen neuen QuickAccess-Eintrag an – auch wenn bereits einer bestand, beispielsweise nach einem unerwarteten Schließen der App. Dieses Verhalten ist nun korrigiert. Bestehende Einträge werden wiederverwendet, unnötige Dopplungen gehören der Vergangenheit an.&lt;/p>
+&lt;h2 id="weitere-änderungen--technische-aktualisierungen">Weitere Änderungen &amp;amp; technische Aktualisierungen&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Aktualisierung des UI-Frameworks auf JavaFX 25&lt;/strong>: verbesserte Performance, moderne Grafikdarstellung und langfristige Kompatibilität.&lt;/li>
+&lt;li>&lt;strong>Neuer „Teilen“-Eintrag im Kontextmenü&lt;/strong>, der das Teilen von Tresoren erklärt.&lt;/li>
+&lt;li>Diverse &lt;strong>Sicherheits- und Bibliotheksupdates&lt;/strong> (u. a. nimbus-jose-jwt, logback, commons-lang3, dagger), um die Software aktuell und sicher zu halten.&lt;/li>
+&lt;/ul>
+&lt;h2 id="warum-dieses-update-wichtig-ist">Warum dieses Update wichtig ist&lt;/h2>
+&lt;p>Version 1.18.0 macht Cryptomator Desktop &lt;strong>robuster, benutzerfreundlicher und besser auf zukünftige Betriebssystem­versionen vorbereitet&lt;/strong>. Das neue Wiederherstellungs-Feature schützt in kritischen Szenarien (z. B. bei beschädigten Konfigurationsdateien), während die UI- und Systemverbesserungen den Alltag mit Cryptomator reibungsloser gestalten.&lt;/p>
+&lt;h2 id="was-ihr-jetzt-tun-könnt">Was ihr jetzt tun könnt&lt;/h2>
+&lt;ul>
+&lt;li>Installiert Cryptomator Desktop 1.18.0 für euer Betriebssystem.&lt;/li>
+&lt;li>Wenn ihr die &lt;strong>Beta&lt;/strong> genutzt habt: bitte unbedingt auf das finale Release aktualisieren!&lt;/li>
+&lt;li>Für Unternehmen und sicherheitsbewusste Nutzer lohnt sich ein Blick auf das &lt;strong>neue Windows-Zertifikat&lt;/strong>&lt;/li>
+&lt;li>Und denkt weiterhin daran: Bewahrt euren &lt;strong>Tresor-Recovery-Key&lt;/strong> sicher auf.&lt;/li>
+&lt;/ul>
+&lt;h2 id="schlussworte">Schlussworte&lt;/h2>
+&lt;p>&lt;strong>Vielen Dank&lt;/strong> an alle aus der Community, die die Beta getestet haben. Euer &lt;strong>Feedback&lt;/strong> hat direkt dazu beigetragen, 1.18.0 zu einem starken, stabilen Release zu machen. Mit diesem Update wird Cryptomator Desktop zuverlässiger denn je!&lt;/p>
+&lt;p>Vielen Dank, dass ihr Cryptomator nutzt – und danke fürs sichere Verschlüsseln eurer Daten.&lt;br>
+Wir freuen uns auf euer Feedback zum neuen Release!&lt;/p>
+&lt;p>Euer Cryptomator-Team&lt;/p></description><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/19/desktop-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/19/desktop-1.18.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Zwei Jahre Cryptomator Hub – Teamverschlüsselung neu gedacht</title><description>&lt;p>Am &lt;strong>2. November 2023&lt;/strong> erschien &lt;strong>Cryptomator Hub 1.0&lt;/strong> – unsere Lösung für sichere, verschlüsselte Zusammenarbeit in der Cloud. &lt;strong>Zwei Jahre&lt;/strong> später hat sich Cryptomator Hub zu einem zentralen Werkzeug für Unternehmen, Universitäten und NGOs entwickelt, die ihre sensiblen Daten schützen und gleichzeitig effizient im Team arbeiten wollen.&lt;/p>
+&lt;p>Zum Jubiläum blicken wir auf zwei spannende Jahre voller Weiterentwicklungen, Beta-Features, neuer Einsatzbereiche – und auf das, was noch kommt.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025.png" alt="Zwei Jahre Cryptomator Hub – Teamverschlüsselung neu gedacht" />
+&lt;/figure>
+&lt;h2 id="was-ist-cryptomator-hub">Was ist Cryptomator Hub?&lt;/h2>
+&lt;p>Cryptomator Hub ist die &lt;strong>zentrale Plattform zur Verwaltung und gemeinsamen Nutzung verschlüsselter Tresore.&lt;/strong>&lt;/p>
+&lt;p>Während die klassische Cryptomator-App Einzelpersonen den Schutz ihrer Cloud-Dateien ermöglicht, überträgt der Hub dieses Prinzip auf Teams und Organisationen.&lt;/p>
+&lt;p>Cryptomator Hub bietet ein webbasiertes Dashboard, über das Admins und Teammitglieder &lt;strong>Nutzer:innen verwalten&lt;/strong>, &lt;strong>Rollen zuweisen&lt;/strong> und &lt;strong>Zugriffsrechte kontrollieren&lt;/strong> können – vollständig verschlüsselt und DSGVO-konform.&lt;/p>
+&lt;p>Damit bildet Cryptomator Hub die Brücke zwischen starker &lt;strong>Ende-zu-Ende-Verschlüsselung&lt;/strong> und benutzerfreundlicher Teamarbeit.&lt;/p>
+&lt;h3 id="funktionen-die-den-unterschied-machen">Funktionen, die den Unterschied machen&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Zentrale Verwaltung von Nutzer:innen und Rechten&lt;/strong>&lt;br>
+Ob kleines Team oder große Organisation – Admins behalten jederzeit den Überblick, wer Zugriff auf welche Tresore hat. Rollenbasierte Rechte machen das Management einfach und nachvollziehbar.&lt;/li>
+&lt;li>&lt;strong>Web of Trust&lt;/strong>&lt;br>
+Dieses Sicherheitsmodell ermöglicht den sicheren Schlüsselaustausch zwischen Mitglieder:innen des Teams über digitale Vertrauensbeziehungen. Kein unverschlüsselter Datenaustausch und keine komplizierten Schlüsseldateien, da Vertrauen technisch abgebildet wird.&lt;/li>
+&lt;li>&lt;strong>Create-Vault Role&lt;/strong>&lt;br>
+Teams können eigenständig neue Tresore erstellen, ohne dass Admins jeden Schritt begleiten müssen. Damit bleibt die Zusammenarbeit flexibel – bei gleichbleibend hoher Sicherheit.&lt;/li>
+&lt;li>&lt;strong>Self-Hosting &amp;amp; Datenschutz by Design&lt;/strong>&lt;br>
+Datenschutz ist kein Add-on, sondern Kernprinzip: Cryptomator Hub kann lokal (on-prem) oder in privaten Cloud-Umgebungen betrieben werden. Unternehmen und Institutionen behalten damit die vollständige Kontrolle über ihre Infrastruktur und Daten.&lt;/li>
+&lt;li>&lt;strong>Integration mit gängigen Cloud-Diensten&lt;/strong>&lt;br>
+Ob OneDrive, Google Drive, Dropbox oder Nextcloud – Cryptomator Hub fügt sich nahtlos in bestehende Arbeitsumgebungen ein und schützt Daten unabhängig vom Anbietenden.&lt;/li>
+&lt;/ol>
+&lt;h2 id="typische-einsatzbereiche">Typische Einsatzbereiche&lt;/h2>
+&lt;h3 id="unternehmen-und-behörden">Unternehmen und Behörden&lt;/h3>
+&lt;p>Unternehmen nutzen Cryptomator Hub, um Zero-Trust-Sicherheitsstrategien umzusetzen. Besonders &lt;strong>Branchen mit hohen Compliance-Anforderungen&lt;/strong> – etwa Gesundheitswesen, öffentliche Verwaltung oder Rechtsdienstleistungen – profitieren von DSGVO-konformer Cloud-Verschlüsselung.&lt;/p>
+&lt;p>Unternehmen wie &lt;a href="">Walbusch GmbH &amp;amp; Co. KG&lt;/a> setzen Cryptomator Hub bereits erfolgreich ein und können eine durchweg positive Bilanz ziehen:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Mit Cryptomator Hub können wir sensible Unternehmensdaten sicher verwalten und gleichzeitig unseren Mitarbeitenden eine unkomplizierte Nutzung ermöglichen.&lt;/strong>&lt;/p>
+&lt;p>&lt;em>Andreas Cofalla, Application Manager IT, Walbusch GmbH &amp;amp; Co. KG&lt;/em>&lt;/p>&lt;/blockquote>
+&lt;h3 id="universitäten-und-forschungseinrichtungen">Universitäten und Forschungseinrichtungen&lt;/h3>
+&lt;p>Forschungsteams sichern ihre Projektdaten mit Hub, ohne auf Cloud-Kollaboration zu verzichten. &lt;strong>Sensible Forschungsdaten&lt;/strong> bleiben geschützt, während die Zusammenarbeit über Abteilungen oder Länder hinweg funktioniert.&lt;/p>
+&lt;h3 id="ngos-und-nonprofits">NGOs und Nonprofits&lt;/h3>
+&lt;p>Für Organisationen, die weltweit tätig sind, bietet Cryptomator Hub eine sichere Möglichkeit, &lt;strong>vertrauliche Dokumente&lt;/strong> zu teilen – von Förderprojekten bis hin zu Personaldaten – selbst bei begrenzten IT-Ressourcen.&lt;/p>
+&lt;h3 id="it-teams-und-datenschutzbeauftragte">IT-Teams und Datenschutzbeauftragte&lt;/h3>
+&lt;p>Hub vereinfacht Audits, Rollenmanagement und den Nachweis datenschutzkonformer Arbeitsweisen – ein klarer Vorteil bei internen und externen Sicherheitsprüfungen.&lt;/p>
+&lt;h2 id="zwei-jahre-weiterentwicklung--und-die-zukunft-im-blick">Zwei Jahre Weiterentwicklung – und die Zukunft im Blick&lt;/h2>
+&lt;p>Seit dem Launch in 2023 hat sich Cryptomator Hub rasant entwickelt.&lt;/p>
+&lt;p>Das &lt;a href="https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/">Update 1.4.0&lt;/a> im April 2025 brachte mit dem &lt;strong>Web of Trust&lt;/strong> und der &lt;strong>Create-Vault-Rolle&lt;/strong> zwei entscheidende Meilensteine. Weiterhin steht alles im Zeichen von Optimierung, Skalierung und Zukunftssicherheit – insbesondere mit Blick auf die kommenden Standards der &lt;a href="https://staging.cryptomator.org/de/blog/2025/07/24/post-quantum-roadmap/">Post-Quantum-Kryptografie&lt;/a>.&lt;/p>
+&lt;p>Doch wir ruhen uns nicht auf Erfolgen aus. &lt;strong>Drei neue Features&lt;/strong> stehen bereits in den Startlöchern, um Cryptomator Hub noch leistungsfähiger und benutzerfreundlicher zu machen.&lt;/p>
+&lt;h3 id="usergroup-management">User/Group Management&lt;/h3>
+&lt;p>Die &lt;strong>Verwaltung von Nutzenden und Gruppen&lt;/strong> wird künftig deutlich komfortabler. Mit dem neuen, &lt;strong>integrierten User/Group Management&lt;/strong> können kleinere Unternehmen und Organisationen ihre Teamstrukturen direkt im Hub anlegen und verwalten – intuitiv, klar und ohne Umwege.&lt;/p>
+&lt;p>Im Hintergrund setzen wir weiterhin auf &lt;strong>Keycloak&lt;/strong> – eine bewährte, leistungsstarke Lösung für Identitäts- und Zugriffsverwaltung.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-user-management-preview.png" alt="Cryptomator Hub – User/Group Management Vorschau" />
+&lt;/figure>
+&lt;h3 id="emergency-access">Emergency Access&lt;/h3>
+&lt;p>In Unternehmen kann es immer vorkommen, dass Mitarbeitende ausscheiden und dadurch der Zugriff auf wichtige Daten verloren geht.&lt;/p>
+&lt;p>Das kommende &lt;strong>Emergency-Access-Feature&lt;/strong> schafft hier Abhilfe: Es ermöglicht, &lt;strong>eine festgelegte Gruppe autorisierter Personen&lt;/strong> zu bestimmen, die im Notfall gemeinsam oder teilweise den Zugriff auf einen Tresor wiederherstellen kann.&lt;/p>
+&lt;p>&lt;strong>Selbst in kritischen Situationen oder bei personellen Veränderungen&lt;/strong> bleibt das Unternehmen handlungsfähig.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-emergency-access-preview.png" alt="Cryptomator Hub – Emergency Access Vorschau" />
+&lt;/figure>
+&lt;h3 id="files-in-use-in-der-desktop-app">Files-in-Use (in der Desktop-App)&lt;/h3>
+&lt;p>Ein häufig geäußerter Wunsch unserer Hub-Kund:innen: &lt;strong>bessere Unterstützung bei der Zusammenarbeit an Office-Dateien.&lt;/strong>&lt;/p>
+&lt;p>Während beispielsweise &lt;strong>LibreOffice&lt;/strong> bereits ein eingebautes Sperrsystem für geöffnete Dateien besitzt, fehlte dieses bislang bei &lt;strong>Microsoft Office&lt;/strong>. Daher entwickeln wir derzeit in der &lt;strong>Cryptomator-Desktop-App&lt;/strong> ein eigenes „&lt;strong>Locking-System&lt;/strong>“, das erkennt, wenn eine Datei bereits geöffnet ist, und andere Nutzer:innen darüber informiert.&lt;/p>
+&lt;p>Damit wird das gemeinsame Arbeiten an Dokumenten &lt;strong>konfliktfreier, transparenter und sicherer&lt;/strong> – ein weiterer Schritt hin zu reibungsloser Teamarbeit.&lt;/p>
+&lt;h2 id="zwei-jahre-vertrauen-zusammenarbeit-und-sicherheit">Zwei Jahre Vertrauen, Zusammenarbeit und Sicherheit&lt;/h2>
+&lt;p>In zwei Jahren hat sich Cryptomator Hub von einer Idee zu einer verlässlichen Plattform für sichere Teamarbeit entwickelt.&lt;/p>
+&lt;p>Wir danken allen Nutzer:innen, Administrator:innen und Tester:innen, die mit ihrem Feedback geholfen haben, Cryptomator Hub weiterzuentwickeln – und freuen uns auf das nächste Kapitel.&lt;/p></description><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/02/hub-anniversary/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/02/hub-anniversary/</guid><category>cryptomator</category><category>hub</category><category>anniversary</category></item><item><title>OneDrive-Sicherheitslücke zeigt: Warum Zero-Knowledge zählt</title><description>&lt;p>Im &lt;strong>Mai 2025&lt;/strong> veröffentlichte das Sicherheitsteam von &lt;strong>Oasis Security&lt;/strong> eine &lt;a href="https://www.oasis.security/blog/onedrive-file-picker-security-flaw-oasis-research">Analyse&lt;/a>, die in der Cloud-Welt für Aufsehen sorgte: Über eine &lt;strong>Schwachstelle im OneDrive File Picker&lt;/strong> konnten Drittanbieter-Anwendungen auf Dateien zugreifen, für die eigentlich keine Zugriffsrechte bestanden. Betroffen waren &lt;strong>Millionen Nutzer:innen&lt;/strong> – sowohl privat als auch in Unternehmen.&lt;/p>
+&lt;p>Was genau ist passiert, warum ist dieser Vorfall so brisant – und was kannst du daraus lernen, um deine eigenen Daten besser zu schützen?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/onedrive-security-breach.png" alt="OneDrive-Sicherheitslücke zeigt: Zero-Knowledge-Verschlüsselung ist unverzichtbar" />
+&lt;/figure>
+&lt;h2 id="was-ist-beim-onedrive-file-picker-schiefgelaufen">Was ist beim OneDrive File Picker schiefgelaufen?&lt;/h2>
+&lt;p>OneDrive File Picker ist eine beliebte Schnittstelle, mit der Apps auf Dateien aus dem persönlichen Cloud-Speicher zugreifen können. Doch Oasis Security fand heraus, dass &lt;strong>bestimmte Konfigurationsfehler&lt;/strong> es ermöglichten, dass Anwendungen Dateien einsehen und herunterladen konnten, auf die sie offiziell keinen Zugriff hatten – selbst sensible Inhalte wie Steuerunterlagen, Projektpläne oder vertrauliche Gesprächsprotokolle.&lt;/p>
+&lt;p>Schlimmer noch: Die betroffenen Anwendungen mussten nicht einmal einen Exploit verwenden – es reichte, den File Picker korrekt (oder besser gesagt: falsch) zu nutzen. &lt;strong>Das Problem war kein gezielter Hack, sondern ein Konstruktionsfehler im System.&lt;/strong>&lt;/p>
+&lt;h2 id="die-wahre-lektion-vertrauen-ist-kein-sicherheitskonzept">Die wahre Lektion: Vertrauen ist kein Sicherheitskonzept&lt;/h2>
+&lt;p>Viele Nutzer:innen vertrauen darauf, dass Cloud-Anbieter wie Microsoft, Google oder Apple ihre Daten zuverlässig absichern. Doch der Vorfall zeigt: Auch große Plattformen machen Fehler – mit weitreichenden Folgen.&lt;/p>
+&lt;p>Das &lt;strong>eigentliche Problem&lt;/strong> liegt tiefer:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zugriffsrechte&lt;/strong> werden im Backend verwaltet, nicht durch den oder die Nutzer:in selbst.&lt;/li>
+&lt;li>Dateien liegen oft &lt;strong>unverschlüsselt&lt;/strong> auf den Servern – oder nur mit einem Schlüssel, den der Anbieter selbst kontrolliert.&lt;/li>
+&lt;li>&lt;strong>Sicherheitslücken in Drittanbieter-Apps oder Webinterfaces&lt;/strong> können ausgenutzt werden, ohne dass Betroffene es merken.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Kurz gesagt&lt;/strong>: Wer seine Daten ausschließlich dem Sicherheitsversprechen von Cloud-Anbietern überlässt, gibt die Kontrolle aus der Hand.&lt;/p>
+&lt;h2 id="die-lösung-zero-knowledge-verschlüsselung-mit-cryptomator">Die Lösung: Zero-Knowledge-Verschlüsselung mit Cryptomator&lt;/h2>
+&lt;p>Cryptomator setzt auf einen grundlegend anderen Ansatz: Die &lt;strong>Dateien werden lokal auf deinem Gerät verschlüsselt, bevor sie in die Cloud hochgeladen werden&lt;/strong>. So bleiben deine Daten selbst dann geschützt, wenn der Cloud-Anbieter kompromittiert wird – oder wie im Fall von OneDrive schlichtweg Fehler macht.&lt;/p>
+&lt;p>Das bedeutet:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Niemand außer dir&lt;/strong> kann deine Dateien lesen – nicht Microsoft, nicht Google, nicht wir.&lt;/li>
+&lt;li>&lt;strong>Zugriffsrechte&lt;/strong> sind zweitrangig, denn ohne den Schlüssel bleiben alle Daten unlesbar.&lt;/li>
+&lt;li>Selbst &lt;strong>kompromittierte&lt;/strong> APIs oder Drittanbieter-Apps bekommen nur verschlüsselten Datenmüll zu Gesicht.&lt;/li>
+&lt;/ul>
+&lt;p>Für Teams, Organisationen und Unternehmen bietet &lt;strong>Cryptomator Hub&lt;/strong> die ideale Erweiterung:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zentrale Verwaltung von verschlüsselten Tresoren (Vaults)&lt;/strong>&lt;br>
+IT-Admins können Vaults vorkonfigurieren und gezielt mit Nutzer:innen teilen – alles Ende-zu-Ende verschlüsselt.&lt;/li>
+&lt;li>&lt;strong>Rollenbasierte Zugriffskontrolle&lt;/strong>&lt;br>
+Dank des rollenbasierten Systems legen Sie exakt fest, wer Vaults erstellen, öffnen oder verwalten darf – ohne zentrale Schlüsselverteilung.&lt;/li>
+&lt;li>&lt;strong>Web of Trust für sichere Zusammenarbeit&lt;/strong>&lt;br>
+Teammitglieder verifizieren sich gegenseitig, wodurch eine vertrauenswürdige Umgebung entsteht – ganz ohne externe Zertifikatsstellen.&lt;/li>
+&lt;li>&lt;strong>Nahtlose Integration in bestehende Cloud-Workflows&lt;/strong>&lt;br>
+Cryptomator Hub lässt sich bequem mit bestehenden Cloudspeichern wie OneDrive, Google Drive oder Dropbox kombinieren.&lt;/li>
+&lt;/ul>
+&lt;p>So ermöglicht Cryptomator Hub eine &lt;strong>hochsichere und zugleich praxisnahe Cloud-Nutzung im Team&lt;/strong>, ohne die üblichen Kompromisse bei Datenschutz und Compliance. Besonders für Organisationen mit erhöhten Anforderungen – etwa &lt;strong>NGOs, Forschungseinrichtungen oder Unternehmen in regulierten Branchen&lt;/strong> – ist das eine zukunftssichere Lösung.&lt;/p>
+&lt;h2 id="was-du-jetzt-tun-kannst">Was du jetzt tun kannst&lt;/h2>
+&lt;p>Ob du OneDrive, Dropbox oder einen anderen Cloud-Dienst nutzt – der Vorfall zeigt, dass es &lt;strong>keine 100%ige Sicherheit&lt;/strong> durch Anbieter alleine geben kann. Doch mit wenigen Schritten kannst du deine Risiken drastisch reduzieren:&lt;/p>
+&lt;ul>
+&lt;li>Nutze &lt;strong>Client-seitige Verschlüsselung&lt;/strong> mit Tools wie Cryptomator.&lt;/li>
+&lt;li>Speichere besonders sensible Dokumente nicht unverschlüsselt in der Cloud.&lt;/li>
+&lt;li>&lt;strong>Sensibilisiere deine Teammitglieder&lt;/strong> oder Kolleg:innen für das Thema Cloud-Zugriffsrechte.&lt;/li>
+&lt;li>Überprüfe, welche Drittanbieter-Apps Zugriff auf deine Cloud haben.&lt;/li>
+&lt;/ul>
+&lt;h2 id="fazit-sicherheit-beginnt-mit-kontrolle">Fazit: Sicherheit beginnt mit Kontrolle&lt;/h2>
+&lt;p>Die OneDrive-Sicherheitslücke ist kein Einzelfall – sondern ein Symptom eines Systems, das auf Vertrauen statt auf echte Kontrolle baut. Doch wer seine &lt;strong>Dateien bereits vor dem Upload verschlüsselt&lt;/strong>, bleibt selbst im Fall schwerwiegender Sicherheitslücken geschützt.&lt;/p>
+&lt;p>Mit Cryptomator behalten Sie die volle Kontrolle – über Ihre Daten, Ihre Privatsphäre und Ihre digitale Sicherheit.&lt;/p></description><pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/10/17/onedrive-security-breach/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/10/17/onedrive-security-breach/</guid><category>cryptomator</category><category>onedrive</category></item><item><title>Zurück in den Hörsaal – Datensicherheit für Universitäten</title><description>&lt;p>Mit dem Start des neuen Wintersemesters füllen sich wieder die Hörsäle – und auch die &lt;strong>digitalen Plattformen der Hochschulen&lt;/strong>. Lernmanagementsysteme, Forschungsplattformen, Cloud-Speicherlösungen und digitale Verwaltungsprozesse gehören längst zum Alltag an Universitäten. Doch während die Digitalisierung neue Möglichkeiten eröffnet, birgt sie auch Risiken: &lt;strong>Cyberangriffe, Datenschutzverletzungen und unzureichend geschützte Cloud-Daten&lt;/strong> gefährden die Integrität und Vertraulichkeit hochsensibler Informationen. In diesem Beitrag zeigen wir, warum Verschlüsselung für Universitäten essenziell ist – und wie sie dabei hilft, &lt;strong>Forschung, Lehre und Verwaltung sicherer zu machen&lt;/strong>.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/back-to-school.png" alt="Zurück in den Hörsaal – Datensicherheit für Universitäten" />
+&lt;/figure>
+&lt;h3 id="warum-universitäten-ein-lukratives-ziel-für-cyberangriffe-sind">Warum Universitäten ein lukratives Ziel für Cyberangriffe sind&lt;/h3>
+&lt;p>Universitäten und Hochschulen verarbeiten eine große Bandbreite an sensiblen Daten:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Persönliche Daten&lt;/strong> von Studierenden, Forschenden und Mitarbeitenden (z. B. Matrikelnummern, Zeugnisse, Gesundheitsinformationen).&lt;/li>
+&lt;li>&lt;strong>Forschungsdaten&lt;/strong>, oft mit Bezug zu Drittmitteln oder staatlich geförderten Projekten.&lt;/li>
+&lt;li>&lt;strong>Internationale Kooperationen&lt;/strong>, bei denen auch Compliance-Vorgaben anderer Länder (z. B. FERPA, GDPR) beachtet werden müssen.&lt;/li>
+&lt;li>&lt;strong>Login-Daten und Zugangsschlüssel&lt;/strong> zu Lernplattformen, E-Mail-Diensten und digitalen Ressourcen.&lt;/li>
+&lt;/ul>
+&lt;p>Immer mehr Angriffe zielen auf Universitäten, etwa durch Ransomware, Phishing oder Cloud-Leaks. Laut dem &lt;a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Lageberichte/Lagebericht2024.html">BSI-Lagebericht 2024&lt;/a> zählen Bildungseinrichtungen zu den kritischen Bereichen mit stark gestiegener Bedrohungslage. Umso wichtiger ist es, dass Hochschulen ihre digitalen Strukturen resilient und verschlüsselt gestalten.&lt;/p>
+&lt;h3 id="verschlüsselung-die-digitale-geheimtinte-der-hochschule">Verschlüsselung: Die digitale Geheimtinte der Hochschule&lt;/h3>
+&lt;p>Datenverschlüsselung schützt Informationen durch mathematische Verfahren – sie sind nur mit einem passenden Schlüssel lesbar. Für Hochschulen bedeutet das konkret:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Vertraulichkeit von Forschungsergebnissen&lt;/strong>&lt;br>
+Besonders bei sensibler Grundlagenforschung oder Kooperationsprojekten mit Unternehmen ist es entscheidend, dass nur berechtigte Personen Zugang zu Dateien erhalten. Eine Ende-zu-Ende-Verschlüsselung schützt diese Daten, selbst wenn ein Cloud-Anbieter kompromittiert wird.&lt;/li>
+&lt;li>&lt;strong>Datenschutz für Studierende und Lehrende&lt;/strong>&lt;br>
+Mit der EU-DSGVO sind Hochschulen verpflichtet, personenbezogene Daten umfassend zu schützen. Verschlüsselung ermöglicht hier die datenschutzkonforme Verarbeitung – auch bei Cloud-Nutzung, Homeoffice oder BYOD-Modellen.&lt;/li>
+&lt;li>&lt;strong>Sicherung vor Ransomware &amp;amp; Datenverlust&lt;/strong>&lt;br>
+Mit verschlüsselten Backups und geschützten Speichersystemen lässt sich die Wirkung von Ransomware-Angriffen stark begrenzen. Angreifer haben keinen Zugriff auf unverschlüsselte Originaldaten, und Wiederherstellung kann ohne Zahlung erfolgen.&lt;/li>
+&lt;/ol>
+&lt;h3 id="praktische-anwendung-wo-verschlüsselung-sinnvoll-ist">Praktische Anwendung: Wo Verschlüsselung sinnvoll ist&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Einsatzbereich&lt;/strong>&lt;/th>
+&lt;th>&lt;strong>Empfohlene Lösung&lt;/strong>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Cloud-Speicher (z.B. Nextcloud, OneDrive)&lt;/td>
+&lt;td>Clientseitige Verschlüsselung mit Tools wie Cryptomator&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Forschungsdaten-Archivierung&lt;/td>
+&lt;td>Zero-Knowledge-Cloud oder verschlüsselte Tresore&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Verwaltungsdokumente&lt;/td>
+&lt;td>Passwortschutz und strukturierte Zugriffskontrollen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Mobile Nutzung &amp;amp; Homeoffice&lt;/td>
+&lt;td>Container-basierte Verschlüsselung auf mobilen Geräten&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="fazit-jetzt-die-weichen-für-ein-sicheres-semester-stellen">Fazit: Jetzt die Weichen für ein sicheres Semester stellen&lt;/h3>
+&lt;p>Die Digitalisierung der Hochschulwelt ist nicht aufzuhalten – aber auch nicht schutzlos. Wer heute verschlüsselt, schützt morgen die Autonomie von Forschung und Lehre. Universitäten, die auf einfache, sichere und datenschutzkonforme Verschlüsselungslösungen setzen, schaffen Vertrauen bei Studierenden, Mitarbeitenden und Partnerinstitutionen.&lt;/p>
+&lt;p>Jetzt ist der ideale Zeitpunkt, um bestehende Systeme zu evaluieren, Aufklärungsarbeit zu leisten und Verschlüsselungslösungen nachhaltig zu integrieren.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item><item><title>Cryptomator Desktop 1.18.0 Beta – Jetzt testen!</title><description>&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0-beta.png" alt="Cryptomator Desktop 1.18.0 Beta" />
+&lt;/figure>
+&lt;p>Die nächste Version von Cryptomator Desktop steht in den Startlöchern – und bevor wir das finale Release veröffentlichen, laden wir euch ein, die Beta von Version 1.18.0 auszuprobieren. Neben praktischen neuen Features und wichtigen Bugfixes gibt es diesmal auch einen besonderen Aufruf an unsere Community.&lt;/p>
+&lt;h2 id="neue-features--fixes">Neue Features &amp;amp; Fixes&lt;/h2>
+&lt;p>Mit Cryptomator Desktop 1.18.0 bringen wir wieder einige Verbesserungen und Bugfixes für alle Plattformen:&lt;/p>
+&lt;h4 id="neues-feature">Neues Feature&lt;/h4>
+&lt;ul>
+&lt;li>Merken des letzten Tresor-Speicherorts&lt;br>
+Wenn ihr einen neuen Tresor erstellt, schlägt Cryptomator nun automatisch den zuletzt gewählten Speicherort vor. Das macht die Einrichtung komfortabler, besonders wenn ihr mehrere Tresore in ähnlichen Ordnerstrukturen ablegt.&lt;/li>
+&lt;/ul>
+&lt;h4 id="fixes">Fixes&lt;/h4>
+&lt;ul>
+&lt;li>Linux/KDE: QuickAccess-Einträge&lt;br>
+Unter KDE wurden bei jedem Entsperrvorgang ein neuer QuickAccess Eintrag im Dolphin Dateimanager erstellt, auch wenn ein Eintrag schon existierte (z.B. durch ein unerwartetes Schließen der App). Dieses Verhalten ist nun behoben – alte Einträge werden wieder verwendet und es ist kein manuelles Aufräumen nötig.&lt;/li>
+&lt;li>Vermeidung riesiger Logfiles&lt;br>
+Unter Windows konnte in seltenen Fällen Logdateien der App extrem groß werden, was zu Systemproblemen führte. Die existierende Größenbegrenzung der Logdateien wurde dabei umgangen. Dies ist behoben, sodass die App ohne Probleme im Hintergrund ausgeführt werden kann.&lt;/li>
+&lt;li>macOS: Stabilität beim Speichern von Tresor-Passwörtern&lt;br>
+Einige Nutzer:innen erlebten einen App-Crash, wenn sie das Tresor-Passwort speichern wollten. Dieser Fehler ist nun behoben, sodass die Passwortspeicherung unter macOS zuverlässig funktioniert.&lt;/li>
+&lt;li>macOS: Erkennung von macFUSE unter macOS 26&lt;br>
+Unter der kommenden macOS-Version 26 wurde macFUSE teilweise nicht erkannt, was zu Problemen beim Einbinden von Tresoren führen konnte. Dieses Problem ist behoben, damit Cryptomator auch auf den neuesten macOS-Versionen reibungslos läuft.&lt;/li>
+&lt;/ul>
+&lt;div class="text-center">
+&lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.18.0-beta1/">&lt;i class="fa-solid fa-download">&lt;/i> Beta 1.18.0 herunterladen&lt;/a>
+&lt;/div>
+&lt;h2 id="wir-brauchen-eure-unterstützung">Wir brauchen eure Unterstützung!&lt;/h2>
+&lt;p>Neben diesen Neuerungen gibt es diesmal noch eine Besonderheit:&lt;br>
+Unser Windows-Installer ist ab sofort mit einem neuen Zertifikat signiert. Da dieses Zertifikat im Microsoft-Trust-Netzwerk noch nicht bekannt ist, kann es vorkommen, dass Windows beim Installieren der Beta-Version einen Sicherheitsdialog anzeigt.&lt;/p>
+&lt;p>Je mehr Personen die Beta installieren, desto schneller wird das Zertifikat akzeptiert – und der Dialog verschwindet. Keine Sorge: Der Installer ist weiterhin sicher und von uns signiert. Windows muss lediglich „lernen“, dass das neue Zertifikat vertrauenswürdig ist.&lt;/p>
+&lt;h2 id="schlusswort">Schlusswort&lt;/h2>
+&lt;p>Mit Version 1.18.0 machen wir Cryptomator wieder ein Stück komfortabler, stabiler und zukunftssicherer. Die Beta ist dabei ein wichtiger Schritt – nicht nur, um die neuen Features und Fixes zu testen, sondern auch, um unser neues Zertifikat im Windows-Ökosystem zu etablieren.&lt;/p>
+&lt;p>Wir freuen uns über jede Unterstützung aus der Community:&lt;/p>
+&lt;ul>
+&lt;li>Installiert die Beta und probiert die Neuerungen aus.&lt;/li>
+&lt;li>Gebt uns Feedback, wenn euch etwas auffällt.&lt;/li>
+&lt;li>Helft uns, die finale Version gemeinsam so stabil und nutzerfreundlich wie möglich zu machen.&lt;/li>
+&lt;/ul>
+&lt;p>Euer Feedback macht Cryptomator stärker – und sorgt dafür, dass wir alle unsere Daten sicher verschlüsseln können.&lt;/p>
+&lt;p>Vielen Dank für eure Mithilfe – wir freuen uns schon auf das finale Release von 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item><item><title>Cryptomator Herbst-Sale: Schütze deine Daten – und deinen Geldbeutel!</title><description>&lt;figure class="text-center">
+&lt;a href="https://staging.cryptomator.org/de/pricing/" target="_blank" rel="noopener">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/autumn-2025-sale.png" alt="25 % Rabatt auf Cryptomator" />
+&lt;/a>
+&lt;/figure>
+&lt;p>Wenn die Tage kürzer werden und die Blätter fallen, ist es an der Zeit, nicht nur den Kleiderschrank, sondern auch die digitale Sicherheit aufzufrischen. Unser Herbstangebot hilft dir dabei, deine Daten gut geschützt durch die dunklere Jahreszeit zu bringen.&lt;/p>
+&lt;p>Vom &lt;strong>22. bis 30. September&lt;/strong> läuft der &lt;strong>Cryptomator Herbst-Sale&lt;/strong> – und das bedeutet für dich:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>25 % Rabatt&lt;/strong> auf &lt;a href="https://cryptomator.org">Cryptomator&lt;/a>&lt;br>
+Mit Cryptomator verschlüsselst du deine Dateien lokal, bevor sie in die Cloud wandern – ganz ohne komplizierte Konfiguration oder zusätzliche Konten.&lt;/li>
+&lt;li>&lt;strong>25 % Rabatt&lt;/strong> auf &lt;a href="https://cryptomator.org/hub">Cryptomator Hub&lt;/a> im ersten Jahr&lt;br>
+Cryptomator Hub ermöglicht zentrale Verwaltung, Benutzerrollen und Audit-Logs – perfekt für NGOs, Bildungseinrichtungen und Unternehmen, die Datenschutz ernst nehmen.&lt;/li>
+&lt;/ul>
+&lt;p>Egal, ob du deine &lt;strong>private Cloud verschlüsseln&lt;/strong> oder &lt;strong>sensible Teamdaten absichern&lt;/strong> möchtest – jetzt ist der perfekte Zeitpunkt, um loszulegen.&lt;/p>
+&lt;p>📦 Das Angebot gilt für &lt;strong>alle Editionen&lt;/strong> – einschließlich &lt;strong>Team- und Businesslösungen&lt;/strong>.&lt;br>
+📅 Schnell sein lohnt sich: Die Aktion ist nur für eine &lt;strong>begrenzte Zeit&lt;/strong> verfügbar!&lt;/p>
+&lt;p>&lt;strong>Jetzt Angebot sichern!&lt;/strong>&lt;/p>
+&lt;p>Bleib sicher. Bleib verschlüsselt.&lt;br>
+&lt;strong>Dein Cryptomator-Team&lt;/strong>&lt;/p></description><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/09/22/autumn-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/09/22/autumn-sale/</guid><category>cryptomator</category><category>sale</category></item></channel></rss>
