@@ -1,4 +1,128 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/installer/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/installer/</link></image><lastBuildDate>Fri, 06 Mar 2026 17:33:43 +0000</lastBuildDate><generator>Hugo</generator><item><title>BitLocker, the FBI, and the Illusion of Control</title><description>&lt;p>When it recently became known that &lt;strong>Microsoft had helped the FBI decrypt BitLocker-encrypted data carriers&lt;/strong>, there was widespread outrage. People were quick to talk about “backdoors,” broken encryption, and how BitLocker was clearly unreliable. But as is so often the case, the real problem lies less in the technology itself than in &lt;strong>who has control over the encryption key&lt;/strong>.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/installer/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/installer/</link></image><lastBuildDate>Fri, 06 Mar 2026 17:48:03 +0000</lastBuildDate><generator>Hugo</generator><item><title>10 years of Cryptomator – Thank you all</title><description>&lt;h2 id="today-cryptomator-turns-10">Today, Cryptomator Turns 10&lt;/h2>
+&lt;p>It feels surreal to read this sentence.&lt;/p>
+&lt;p>What once began as a small idea has become &lt;strong>a tool trusted by millions of people worldwide&lt;/strong>. People from very different backgrounds and walks of life: journalists protecting their sources. NGOs securing sensitive information. Researchers, students, freelancers, companies—&lt;strong>all united by a common need&lt;/strong>: to keep their data private in an increasingly connected world.&lt;/p>
+&lt;p>Today, we are not only celebrating an anniversary. We are looking back on the history of Cryptomator, saying thank you to all our supporters, and looking ahead to what the future holds for the Cryptomator project.&lt;/p>
+&lt;h2 id="how-it-all-began">How It All Began&lt;/h2>
+&lt;p>About ten years ago, &lt;strong>cloud storage&lt;/strong> became part of everyday life. Dropbox, Google Drive, OneDrive, and many others promised convenience: anytime access to files, easy sharing, seamless collaboration. And they delivered exactly that—but at a hidden price: the surrender of your privacy. Analyzing the uploaded data.&lt;/p>
+&lt;p>The only protection against this was encryption. But &lt;strong>encryption was either non-existent, optional, or so complicated&lt;/strong> that it was not a realistic option for many people. Using the cloud often meant &lt;strong>relinquishing control over your own data&lt;/strong>, often without really noticing.&lt;/p>
+&lt;p>Cryptomator was born out of this very tension.&lt;/p>
+&lt;blockquote>
+&lt;p>“As is often the case with FOSS, it all started with my own needs, because existing tools did not meet my requirements. My motivation then changed significantly when it became apparent that others also had this need for a transparent, cloud-compatible encryption solution and were also dissatisfied with the existing tools (at that time, mainly Boxcryptor).”&lt;/p>
+&lt;p>— Sebastian Stenzel, CTO&lt;/p>&lt;/blockquote>
+&lt;p>From the outset, Cryptomator was developed as &lt;strong>open-source software&lt;/strong>. Transparency was not a marketing promise, but a prerequisite. Anyone could understand how the encryption worked, check for vulnerabilities, and contribute improvements.&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;At the beginning, open source was actually our most important unique selling point compared to our main competitor Boxcryptor – I simply didn&amp;rsquo;t want to trust blindly. In theory, open source means that you don&amp;rsquo;t have to trust us at all. And new processes such as provenance attestation—i.e., cryptographic evidence of how a build was created—can also ensure the integrity of software that has already been compiled by the manufacturer in the future.&amp;rdquo;&lt;/p>
+&lt;p>— Sebastian Stenzel, CTO&lt;/p>&lt;/blockquote>
+&lt;h2 id="grown-with-the-cloud">Grown With the Cloud&lt;/h2>
+&lt;p>But time does not stand still. Over the past ten years, the world of work has changed fundamentally. &lt;strong>Remote work&lt;/strong> has become the norm since the COVID-19 pandemic. &lt;strong>International collaboration&lt;/strong> is now a matter of course. Entire organizations have &lt;strong>moved their processes to the cloud&lt;/strong>. At the same time, the risks have also grown: data leaks, ransomware, surveillance, increasing regulatory requirements.&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;Privacy has (unfortunately) become increasingly important: In the past, the main concerns were cybercrime and leaks – today, I am worried about the spread of authoritarian tendencies in so-called ‘democracies’. The demanded erosion of privacy can, in the wrong hands, become a means of control over us all; AI troll armies with access to private chats and data would be the most powerful propaganda tool in human history. If we allow this to happen, it will have serious consequences.&amp;rdquo;&lt;/p>
+&lt;p>— Sebastian Stenzel, CTO&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Privacy is no longer a “nice-to-have.”&lt;/strong> It is a necessity. Cryptomator has evolved to meet these challenges.&lt;/p>
+&lt;p>A &lt;strong>desktop application&lt;/strong> became a &lt;strong>cross-platform solution&lt;/strong>. Mobile apps were added. New use cases emerged. Feedback from the community has significantly shaped usability, performance, and features.&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub&lt;/strong> was the next step: secure collaboration for teams and organizations—without compromising on encryption or control.&lt;/p>
+&lt;p>Throughout all these developments, one thing has remained the same: &lt;strong>security and user-friendliness should not be mutually exclusive.&lt;/strong>&lt;/p>
+&lt;p>Below, we have compiled a &lt;strong>timeline&lt;/strong> showing the most important milestones of recent years.&lt;/p>
+&lt;h2 id="timeline">Timeline&lt;/h2>
+&lt;p>&lt;strong>2013–2014 – The idea is born, development begins&lt;/strong>&lt;br>
+The vision arises from a very practical need: to be able to use the cloud without entrusting plain text data to the provider. Active development begins in 2014, with a focus on local encryption and ease of use.&lt;/p>
+&lt;p>&lt;strong>2015 – First releases &amp;amp; initial recognition&lt;/strong>&lt;br>
+Cryptomator takes shape: early GitHub releases create a stable foundation. The &lt;strong>CeBIT Innovation Award (Usable Security &amp;amp; Privacy)&lt;/strong> gives the approach an early boost: security doesn&amp;rsquo;t have to be complicated.&lt;/p>
+&lt;p>&lt;strong>March 9, 2016 – Cryptomator 1.0: the official launch&lt;/strong>&lt;br>
+&lt;strong>Cryptomator 1.0&lt;/strong> is the first stable desktop version. Interest is so great that the website is temporarily overloaded on release day – an early sign of how great the demand for independent cloud encryption is.&lt;/p>
+&lt;p>&lt;strong>2017 – Growth in the ecosystem: integration, community, Android&lt;/strong>&lt;br>
+Cryptomator becomes more visible and suitable for everyday use: integration with &lt;strong>Cyberduck&lt;/strong> brings the project closer to existing workflows. The &lt;strong>community forum&lt;/strong> creates a central location for support and exchange. And with &lt;strong>Android 1.0&lt;/strong>, mobile encryption finally becomes suitable for the masses.&lt;/p>
+&lt;p>&lt;strong>2018 – Sustainability: the sponsor program&lt;/strong>&lt;br>
+To ensure that Cryptomator can continue to be developed in the long term, a &lt;strong>sponsor program&lt;/strong> is launched. It strengthens financing and enables open source to be operated professionally on a permanent basis – without abandoning the core values of the project.&lt;/p>
+&lt;p>&lt;strong>2020 – A milestone: 1 million downloads &amp;amp; a big leap for desktop&lt;/strong>&lt;br>
+Cryptomator reaches &lt;strong>1 million downloads&lt;/strong>. At the same time, a major update (including a new UI and vault format) marks the next level of maturity. At the end of the year, the &lt;strong>Android app&lt;/strong> also becomes completely &lt;strong>open source&lt;/strong> – a logical step towards transparency.&lt;/p>
+&lt;p>&lt;strong>2021–2023 – More open source, more teams: iOS &amp;amp; Cryptomator Hub&lt;/strong>&lt;br>
+The iOS app becomes open source and undergoes a fundamental technical overhaul with &lt;strong>Cryptomator 2.0.&lt;/strong> At the same time, demand from companies and organizations grows: &lt;strong>Cryptomator Hub 1.0 (2022)&lt;/strong> adds a solution for teams and institutions – including central administration and team vaults. Hub will be further expanded in subsequent versions (e.g., recovery keys).&lt;/p>
+&lt;p>&lt;strong>2024–2025 – Reach &amp;amp; future viability&lt;/strong>&lt;br>
+Cryptomator reaches new target groups through greater media presence and recommendations. At the same time, the focus is clearly on the future: The &lt;strong>post-quantum roadmap&lt;/strong> prepares for the long-term cryptographic future, and integrations (e.g., &lt;strong>Mountain Duck&lt;/strong>) strengthen the ecosystem around encrypted cloud workflows.&lt;/p>
+&lt;h2 id="logo-evolution-from-the-washing-machine-to-the-cryptobot">Logo Evolution: From the “Washing Machine” to the Cryptobot&lt;/h2>
+&lt;p>XXX&lt;/p>
+&lt;h2 id="whats-next--new-updates--features">What’s Next? – New Updates &amp;amp; Features&lt;/h2>
+&lt;h3 id="new-cryptomator-hub-features--beta--anniversary-launch">New Cryptomator Hub Features – Beta / Anniversary Launch&lt;/h3>
+&lt;p>As part of its 10th anniversary, &lt;strong>several key enhancements for Cryptomator Hub are entering a beta phase&lt;/strong> or being made publicly available for the first time. These are designed to give teams and organizations more control, security, and flexibility.&lt;/p>
+&lt;p>&lt;strong>User &amp;amp; Group Management&lt;/strong>&lt;/p>
+&lt;p>A key highlight of the new Hub version is &lt;strong>User &amp;amp; Group Management&lt;/strong>.&lt;br>
+This allows administrators to:&lt;/p>
+&lt;ul>
+&lt;li>Manage users in a targeted manner&lt;/li>
+&lt;li>Create groups and assign roles&lt;/li>
+&lt;li>Assign rights in a more structured and granular way&lt;/li>
+&lt;/ul>
+&lt;p>This enables &lt;strong>better control over access within teams and organizations&lt;/strong>, which is particularly important for larger groups or departments. This feature marks an important step from simple access control to true team and organizational role management.&lt;/p>
+&lt;p>&lt;strong>Emergency Access&lt;/strong>&lt;/p>
+&lt;p>Another big step: &lt;strong>Emergency Access&lt;/strong> is being introduced.&lt;br>
+This allows you to:&lt;/p>
+&lt;ul>
+&lt;li>Create security accounts for emergencies&lt;/li>
+&lt;li>Define trusted persons/administrators&lt;/li>
+&lt;li>Enable access in case of lost access data or keys&lt;/li>
+&lt;/ul>
+&lt;p>This &lt;strong>improves reliability, especially in organizational contexts&lt;/strong>, and ensures that no data access is lost, even if individuals are no longer available.&lt;/p>
+&lt;h3 id="cryptomator-desktop-and-ios">Cryptomator Desktop and iOS&lt;/h3>
+&lt;p>&lt;strong>Files in Use&lt;/strong>&lt;/p>
+&lt;p>The desktop application also has a new feature in &lt;strong>update 1.19.0&lt;/strong> that is important for Hub vaults: &lt;strong>“Files in Use.”&lt;/strong>&lt;/p>
+&lt;p>If a file is open in a Hub vault on one device, other users are notified when they open it on their devices.&lt;/p>
+&lt;p>This is particularly important for reducing conflicts or data loss when files are being edited simultaneously and improves collaboration in teams.&lt;/p>
+&lt;p>&lt;strong>New Cryptomator logo for iOS (desktop &amp;amp; mobile)&lt;/strong>&lt;/p>
+&lt;p>To mark its anniversary, Cryptomator is also getting a minor visual update: &lt;strong>A new Cryptomator logo is appearing on iOS&lt;/strong>—both in the &lt;strong>mobile app&lt;/strong> and in the **deskto&lt;/p>
+&lt;h2 id="voices-from-the-community">Voices From the Community&lt;/h2>
+&lt;blockquote>
+&lt;p>“Nowadays, I&amp;rsquo;m especially happy when I come across users in the wild or read reports.”&lt;br>
+— Sebastian Stenzel, CTO&lt;/p>&lt;/blockquote>
+&lt;p>Over the past 10 years, Cryptomator has become much more than just an encryption tool. For many people today, it is &lt;strong>an integral part of their daily work&lt;/strong> and security concept. Cryptomator gives you peace of mind when it comes to protecting your data. Here are some comments from our community:&lt;/p>
+&lt;blockquote>
+&lt;p>“I just wanted to say thank you for this great tool!”&lt;br>
+— Luke (@nuk3, Mastodon)&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>“This is why I love Cryptomator: the files are encrypted, and even if the cloud provider has a data leak, I know my files are safe.”&lt;br>
+— mbeddedDev (Mastodon)&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>Again, Cryptomator is free to use. So if you can support the program, you should definitely do so. It&amp;rsquo;s a great piece of software.&lt;br>
+— Techlore (YouTube)&lt;/p>&lt;/blockquote>
+&lt;p>For many users, it&amp;rsquo;s the &lt;strong>combination of transparency and user-friendliness&lt;/strong> that makes the difference:&lt;/p>
+&lt;blockquote>
+&lt;p>“Open source and widely used, tested and stable, with a beautiful and simple interface. It&amp;rsquo;s always my first general recommendation for cloud storage.”&lt;br>
+— Fit_Flower_8982 (Reddit)&lt;/p>&lt;/blockquote>
+&lt;p>Organizations and companies also rely on our encryption solution, especially &lt;strong>Cryptomator Hub&lt;/strong>:&lt;/p>
+&lt;blockquote>
+&lt;p>“With Cryptomator Hub, we can securely manage sensitive company data while making it easy for our employees to use.”&lt;br>
+— Andreas Cofalla, Application Manager IT, Walbusch GmbH &amp;amp; Co. KG&lt;/p>&lt;/blockquote>
+&lt;p>And for many users, Cryptomator has become part of their &lt;strong>everyday lives&lt;/strong>:&lt;/p>
+&lt;blockquote>
+&lt;p>“I sleep peacefully at night knowing that my files are private and secure, no matter where they are stored or backed up.”&lt;br>
+— @paired_electron (X)&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>“Everything works effortlessly on my iPad&amp;hellip; biometric login or password directly on the same screen is a great solution.”&lt;br>
+— Jack Ouzzi (App Store)&lt;/p>&lt;/blockquote>
+&lt;p>Whether on desktop or smartphone, privately or in business, the trust, feedback, and support of our community have made Cryptomator what it is today. Thanks a lot for that!&lt;/p>
+&lt;h2 id="10-years-of-cryptomator--join-our-live-ama">10 Years of Cryptomator – Join Our Live AMA&lt;/h2>
+&lt;p>As part of our 10th anniversary celebration, we are hosting an &lt;strong>Ask Me Anything (AMA) on Reddit!&lt;/strong> We would love for you to join us.&lt;/p>
+&lt;p>📅 March 9, 2026&lt;br>
+🕓 4:00 p.m. CET&lt;br>
+📍 r/Cryptomator&lt;/p>
+&lt;p>&lt;strong>Tobias Hagemann&lt;/strong> (CEO) and &lt;strong>Sebastian Stenzel&lt;/strong> (CTO) will answer your questions live.&lt;/p>
+&lt;p>After ten years of working on privacy-friendly open-source encryption software, we are convinced that transparency and open exchange are more important than ever.&lt;/p>
+&lt;p>This AMA is our way of saying thank you and looking ahead together with you.&lt;/p>
+&lt;p>Follow us on Reddit and join the discussion on r/Cryptomator.&lt;/p>
+&lt;p>&lt;strong>We look forward to your questions.&lt;/strong>&lt;/p>
+&lt;p>Can&amp;rsquo;t join us live? Don&amp;rsquo;t worry, &lt;strong>we&amp;rsquo;ll make the questions and answers available afterwards&lt;/strong>, and of course, we&amp;rsquo;re always available via email, social media, or the community forum if you still have a burning question.&lt;/p>
+&lt;h2 id="special-anniversary-sale">Special Anniversary Sale&lt;/h2>
+&lt;p>Ten years of Cryptomator would not have been possible without you. To mark this anniversary, we would like to &lt;strong>express our gratitude with a special thank you&lt;/strong>:&lt;/p>
+&lt;p>From &lt;strong>March 9 through March 18&lt;/strong>, our &lt;strong>mobile apps&lt;/strong> (iOS &amp;amp; Android) and the &lt;strong>Supporter Certificate&lt;/strong> will be available for only &lt;strong>€10&lt;/strong>*.&lt;/p>
+&lt;p>Whether you&amp;rsquo;ve been using Cryptomator since the early days or have only recently discovered it, now is the perfect time to support the project and secure your cloud on the go with client-side encryption.&lt;/p>
+&lt;p>&lt;em>*Note: The discount and price may vary depending on your region.&lt;/em>&lt;/p>
+&lt;h2 id="heres-to-the-next-ten-years-of-cryptomator">Here’s to the Next Ten Years of Cryptomator&lt;/h2>
+&lt;p>What began as an idea over ten years ago has now become a globally used solution for secure cloud encryption. Millions of people use Cryptomator to protect their data—privately, in organizations, and in companies.&lt;/p>
+&lt;p>But Cryptomator is &lt;strong>more than just software&lt;/strong>. It is an open-source project, a community, and a shared belief: &lt;strong>privacy is not optional, but the standard&lt;/strong>.&lt;/p>
+&lt;p>None of this would have been possible without you—without your support, your contributions, your feedback, and your enthusiasm for secure and transparent software.&lt;/p>
+&lt;p>As we look back on the past ten years, we are also looking ahead. New features, new ideas, and new developments are already waiting in the wings.&lt;/p>
+&lt;p>One thing remains unchanged: &lt;strong>our goal to make cloud storage more secure&lt;/strong>—and give people back control over their data.&lt;/p>
+&lt;p>&lt;strong>Thank you for being part of this amazing journey.&lt;/strong>&lt;/p></description><pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2026/03/06/10-years-cryptomator/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2026/03/06/10-years-cryptomator/</guid><category>cryptomator</category><category>anniversary</category></item><item><title>BitLocker, the FBI, and the Illusion of Control</title><description>&lt;p>When it recently became known that &lt;strong>Microsoft had helped the FBI decrypt BitLocker-encrypted data carriers&lt;/strong>, there was widespread outrage. People were quick to talk about “backdoors,” broken encryption, and how BitLocker was clearly unreliable. But as is so often the case, the real problem lies less in the technology itself than in &lt;strong>who has control over the encryption key&lt;/strong>.&lt;/p>
 &lt;p>This case is a good opportunity to take a closer look: What really happened? Why was access possible? And what does this say about &lt;strong>our understanding of encryption and cloud services&lt;/strong>?&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/microsoft-bitlocker.png" alt="BitLocker, the FBI, and the Illusion of Control" />
@@ -398,22 +522,4 @@ Our Windows installer is now signed with a new certificate. Since this certifica
 &lt;li>Help us make the final release as stable and user-friendly as possible.&lt;/li>
 &lt;/ul>
 &lt;p>Your feedback makes Cryptomator stronger – and ensures we can all keep our data securely encrypted.&lt;/p>
-&lt;p>Thank you for your support – we can’t wait for the final release of 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item><item><title>Cryptomator Autumn Sale: Protect Your Data – and Your Wallet!</title><description>&lt;figure class="text-center">
-&lt;a href="https://staging.cryptomator.org/pricing/" target="_blank" rel="noopener">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/autumn-2025-sale.png" alt="25% Off Cryptomator" />
-&lt;/a>
-&lt;/figure>
-&lt;p>When the days get shorter and the leaves fall, it&amp;rsquo;s time to refresh not only your wardrobe but also your digital security. Our fall offer helps you keep your data well protected throughout the darker months of the year.&lt;/p>
-&lt;p>From &lt;strong>September 22&lt;/strong> to &lt;strong>30&lt;/strong>, the &lt;strong>Cryptomator Autumn Sale&lt;/strong> is live – and that means:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>25 % off&lt;/strong> &lt;a href="https://cryptomator.org">Cryptomator&lt;/a>&lt;br>
-With Cryptomator, you can encrypt your files locally before they go to the cloud—no complicated configuration or additional accounts required.&lt;/li>
-&lt;li>&lt;strong>25 % off&lt;/strong> &lt;a href="https://cryptomator.org/hub">Cryptomator Hub&lt;/a> for the first year&lt;br>
-Cryptomator Hub enables centralized management, user roles, and audit logs—perfect for NGOs, educational institutions, and companies that take data protection seriously.&lt;/li>
-&lt;/ul>
-&lt;p>Whether you&amp;rsquo;re looking to encrypt your &lt;strong>personal cloud&lt;/strong> or secure &lt;strong>sensitive data in your organization&lt;/strong> – now is the perfect time to get started.&lt;/p>
-&lt;p>📦 The discount applies to &lt;strong>all editions&lt;/strong> – including &lt;strong>team and business solutions&lt;/strong>.&lt;br>
-📅 Act fast! The offer is only available for a &lt;strong>limited time&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Get the deal now!&lt;/strong>&lt;/p>
-&lt;p>Stay safe. Stay encrypted.&lt;br>
-&lt;strong>Your Cryptomator Team&lt;/strong>&lt;/p></description><pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/22/autumn-sale/</guid><category>cryptomator</category><category>sale</category></item></channel></rss>
+&lt;p>Thank you for your support – we can’t wait for the final release of 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item></channel></rss>
