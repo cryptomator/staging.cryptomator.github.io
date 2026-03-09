@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/desktop/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/desktop/</link></image><lastBuildDate>Mon, 09 Mar 2026 08:15:43 +0000</lastBuildDate><generator>Hugo</generator><item><title>10 Jahre Cryptomator – Danke an euch</title><description>&lt;h2 id="heute-wird-cryptomator-10-jahre-alt">Heute wird Cryptomator 10 Jahre alt&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/desktop/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/desktop/</link></image><lastBuildDate>Mon, 09 Mar 2026 08:23:18 +0000</lastBuildDate><generator>Hugo</generator><item><title>10 Jahre Cryptomator – Danke an euch</title><description>&lt;h2 id="heute-wird-cryptomator-10-jahre-alt">Heute wird Cryptomator 10 Jahre alt&lt;/h2>
 &lt;p>Es fühlt sich unwirklich an, diesen Satz zu lesen.&lt;/p>
 &lt;p>Was einst als kleine Idee begann, ist zu &lt;strong>einem Werkzeug&lt;/strong> geworden, dem &lt;strong>Millionen Menschen weltweit vertrauen&lt;/strong>. Menschen mit ganz unterschiedlichen Hintergründen und Geschichten: Journalist:innen, die ihre Quellen schützen. NGOs, die sensible Informationen sichern. Forschende, Studierende, Selbstständige, Unternehmen – alle &lt;strong>vereint durch ein gemeinsames Bedürfnis&lt;/strong>: ihre Daten in einer zunehmend vernetzten Welt privat zu halten.&lt;/p>
 &lt;p>Heute feiern wir nicht nur ein Jubiläum. Wir blicken zurück auf die Geschichte von Cryptomator, sagen Danke an alle Unterstützer:innen und schauen nach vorne, was die Zukunft für das Cryptomator-Projekt bereithält.&lt;/p>
@@ -28,7 +28,7 @@
 &lt;p>Im Folgenden haben wir euch eine &lt;strong>Timeline&lt;/strong> zusammengestellt, in der ihr die wichtigsten Meilensteine der letzten Jahre finden könnt.&lt;/p>
 &lt;h2 id="timeline">Timeline&lt;/h2>
 &lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/evolution-of-an-icon.png" alt="Evolution des Cryptomator-Icons von der frühen 'Waschmaschine' zum heutigen Cryptobot" />
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/10-years-evolution-of-an-icon.png" alt="Evolution des Cryptomator-Icons von der frühen 'Waschmaschine' zum heutigen Cryptobot" />
 &lt;figcaption>Evolution of an Icon: Von der „Waschmaschine" zum Cryptobot&lt;/figcaption>
 &lt;/figure>
 &lt;p>&lt;strong>2013–2014 – Die Idee entsteht, die Entwicklung startet&lt;/strong>&lt;br>
@@ -60,7 +60,7 @@ Damit können Administrator:innen:&lt;/p>
 &lt;/ul>
 &lt;p>Das ermöglicht eine &lt;strong>bessere Kontrolle über Zugriffe innerhalb von Teams und Organisationen&lt;/strong>, was besonders wichtig bei größeren Gruppen oder Abteilungen ist. Diese Funktion markiert einen wichtigen Schritt von einfacher Zugangskontrolle hin zu einer echten Team- und Organisations-Rolle-Verwaltung.&lt;/p>
 &lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-user-management-preview.png" alt="Cryptomator Hub – User/Group Management Vorschau" />
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/10-years-hub-user-management.png" alt="Cryptomator Hub – User/Group Management Vorschau" />
 &lt;/figure>
 &lt;p>&lt;strong>Emergency Access&lt;/strong>&lt;/p>
 &lt;p>Ein weiterer großer Schritt: &lt;strong>Emergency Access&lt;/strong> wird eingeführt.&lt;br>
@@ -72,7 +72,7 @@ Damit lassen sich:&lt;/p>
 &lt;/ul>
 &lt;p>Das &lt;strong>verbessert besonders in organisatorischen Kontexten die Ausfallsicherheit&lt;/strong> und stellt sicher, dass kein Datenzugriff verloren geht, selbst wenn Individuen nicht mehr verfügbar sind.&lt;/p>
 &lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-emergency-access-preview.png" alt="Cryptomator Hub – Emergency Access Vorschau" />
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/10-years-hub-emergency-access.png" alt="Cryptomator Hub – Emergency Access Vorschau" />
 &lt;/figure>
 &lt;h3 id="cryptomator-desktop-und-ios">Cryptomator Desktop und iOS&lt;/h3>
 &lt;p>&lt;strong>Files-in-Use (Dateien in Verwendung)&lt;/strong>&lt;/p>
@@ -82,7 +82,7 @@ Damit lassen sich:&lt;/p>
 &lt;p>&lt;strong>Neues Cryptomator-Logo für iOS (Desktop &amp;amp; Mobile)&lt;/strong>&lt;/p>
 &lt;p>Zum Jubiläum bekommt Cryptomator auch ein kleines visuelles Update: &lt;strong>Auf iOS erscheint ein neues Cryptomator-Logo&lt;/strong> – sowohl in der &lt;strong>mobilen App&lt;/strong> als auch in der &lt;strong>Desktop-Anwendung&lt;/strong>.&lt;/p>
 &lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/new-macos-ios-app-icons.png" alt="Neue Cryptomator App-Icons für macOS und iOS" />
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/10-years-new-app-icons.png" alt="Neue Cryptomator App-Icons für macOS und iOS" />
 &lt;figcaption>Neue Cryptomator App-Icons für macOS und iOS&lt;/figcaption>
 &lt;/figure>
 &lt;h2 id="stimmen-aus-der-community">Stimmen aus der Community&lt;/h2>
@@ -117,7 +117,7 @@ Damit lassen sich:&lt;/p>
 &lt;p>Egal ob auf Desktop oder Smartphone, privat oder im Unternehmen – das Vertrauen, das Feedback und die Unterstützung unserer Community haben Cryptomator zu dem gemacht, was es heute ist. Vielen Dank dafür!&lt;/p>
 &lt;h2 id="10-jahre-cryptomator--macht-mit-bei-unserem-live-ama">10 Jahre Cryptomator – Macht mit bei unserem Live-AMA&lt;/h2>
 &lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/ama.png" alt="Macht mit bei unserem 10-Jahres-Jubiläums-AMA auf Reddit" />
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/10-years-ama.png" alt="Macht mit bei unserem 10-Jahres-Jubiläums-AMA auf Reddit" />
 &lt;/figure>
 &lt;p>Im Rahmen unserer Feier zum 10-jährigen Jubiläum veranstalten wir ein &lt;strong>Ask Me Anything (AMA) auf Reddit&lt;/strong>! Wir würden uns freuen, wenn ihr dabei seid.&lt;/p>
 &lt;p>📅 9. März 2026&lt;br>
@@ -131,7 +131,7 @@ Damit lassen sich:&lt;/p>
 &lt;p>Ihr könnt nicht live dabei sein? Keine Sorge, wir stellen euch im &lt;strong>Nachhinein die Fragen &amp;amp; Antworten zur Verfügung&lt;/strong> und natürlich sind wir immer via E-Mail, Social Media oder im Community Forum erreichbar, wenn euch doch noch eine Frage auf der Seele brennt.&lt;/p>
 &lt;h2 id="besonderer-sale-zum-jubiläum">Besonderer Sale zum Jubiläum&lt;/h2>
 &lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/anniversary-sale.png" alt="10-Jahres-Jubiläums-Sale" />
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/10-years-sale.png" alt="10-Jahres-Jubiläums-Sale" />
 &lt;figcaption>* Der Rabatt und der Preis können je nach Region variieren.&lt;/figcaption>
 &lt;/figure>
 &lt;p>Zehn Jahre Cryptomator wären ohne euch nicht möglich gewesen. Zum Jubiläum möchten wir uns deshalb mit einem &lt;strong>besonderen Dankeschön&lt;/strong> erkenntlich zeigen:&lt;/p>
