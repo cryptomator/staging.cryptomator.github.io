@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/onedrive/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/onedrive/</link></image><lastBuildDate>Thu, 12 Mar 2026 15:05:21 +0000</lastBuildDate><generator>Hugo</generator><item><title>10 Jahre Cryptomator – Danke an euch</title><description>&lt;h2 id="heute-wird-cryptomator-10-jahre-alt">Heute wird Cryptomator 10 Jahre alt&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/onedrive/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/onedrive/</link></image><lastBuildDate>Fri, 13 Mar 2026 09:16:33 +0000</lastBuildDate><generator>Hugo</generator><item><title>Sicherheitslücke beim Entsperren von Hub-Tresoren: Update Erforderlich</title><description>&lt;p>Wir haben ein wichtiges Sicherheitsupdate für alle Cryptomator-Client-Apps veröffentlicht, das eine Schwachstelle behebt, die alle Nutzer betrifft, die Hub-verwaltete Tresore entsperren.&lt;/p>
+&lt;h2 id="erforderliche-maßnahme">Erforderliche Maßnahme&lt;/h2>
+&lt;p>Bitte aktualisiert umgehend alle Cryptomator-Client-Anwendungen, die auf Hub-verwaltete Tresore zugreifen, auf die korrigierten Versionen:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.19.1">Cryptomator 1.19.1 für Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cryptomator/android/releases/tag/1.12.3">Cryptomator 1.12.3 für Android&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cryptomator/ios/releases/tag/2.8.3">Cryptomator 2.8.3 für iOS&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Alle Downloads findet ihr auch auf unserer &lt;a href="https://staging.cryptomator.org/de/downloads/">Downloads-Seite&lt;/a>.&lt;/p>
+&lt;p>Nach dem Update zeigen Cryptomator-Clients, die sich mit selbst gehosteten Hub-Instanzen verbinden, einmalig einen „Diesem Host vertrauen?&amp;quot;-Dialog an, der individuell bestätigt werden muss. Bitte überprüft vor der Bestätigung, dass die angezeigte Hub-URL korrekt ist und mit eurer Cryptomator-Hub-Instanz übereinstimmt. Clients, die sich mit Cryptomator Hub Managed verbinden, sind von diesem Dialog nicht betroffen, da verwaltete Domains automatisch als vertrauenswürdig eingestuft werden.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[302px]" src="https://staging.cryptomator.org/img/blog/vault-unlock-tofu.png" alt="„Diesem Host vertrauen?"-Dialog mit einer Hub-URL, die überprüft werden muss" />
+&lt;/figure>
+&lt;h2 id="sind-meine-tresore-sicher">Sind meine Tresore sicher?&lt;/h2>
+&lt;p>Ja. Da Cryptomator Hub Ende-zu-Ende-Verschlüsselung verwendet, waren Tresordaten zu keinem Zeitpunkt in Gefahr.&lt;/p>
+&lt;h2 id="welche-tresore-sind-betroffen">Welche Tresore sind betroffen?&lt;/h2>
+&lt;p>Die Schwachstelle befindet sich im Entsperr-Workflow von Hub-verwalteten Tresoren. Lokale Tresore sind nicht betroffen.&lt;/p>
+&lt;h2 id="welche-daten-sind-gefährdet">Welche Daten sind gefährdet?&lt;/h2>
+&lt;p>Ein Angreifer mit Schreibzugriff auf die verschlüsselten Daten könnte den Tresor so manipulieren, dass Cryptomator ein Session-Token an einen bösartigen Server sendet. Das abgegriffene Token kann dann verwendet werden, um sich als Nutzer auszugeben und auf unverschlüsselte Informationen wie Benutzernamen, Tresornamen usw. in Hub zuzugreifen.&lt;/p>
+&lt;h2 id="wurde-die-schwachstelle-ausgenutzt">Wurde die Schwachstelle ausgenutzt?&lt;/h2>
+&lt;p>Zum jetzigen Zeitpunkt liegen uns keine Hinweise auf eine aktive Ausnutzung dieser Schwachstelle vor.&lt;/p>
+&lt;h2 id="sicherheitshinweise">Sicherheitshinweise&lt;/h2>
+&lt;p>Im Rahmen der verantwortungsvollen Offenlegung werden die vollständigen Sicherheitshinweise am 20. März veröffentlicht. Bis dahin sind die folgenden Links noch nicht erreichbar — das ist beabsichtigt:&lt;/p>
+&lt;ul>
+&lt;li>Desktop: &lt;a href="https://github.com/cryptomator/cryptomator/security/advisories/GHSA-34rf-rwr3-7g43">CVE-2026-32303&lt;/a>&lt;/li>
+&lt;li>Android: &lt;a href="https://github.com/cryptomator/android/security/advisories/GHSA-876q-q3mm-fcvj">CVE-2026-32317&lt;/a>&lt;/li>
+&lt;li>iOS: &lt;a href="https://github.com/cryptomator/ios/security/advisories/GHSA-g7fr-c82r-hm6j">CVE-2026-32318&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="wie-kann-ich-hilfe-erhalten">Wie kann ich Hilfe erhalten?&lt;/h2>
+&lt;p>Bei weiteren Fragen oder wenn ihr Unterstützung beim Update benötigt, zögert nicht, uns unter &lt;a href="mailto:hub-support@cryptomator.org">hub-support@cryptomator.org&lt;/a> zu kontaktieren.&lt;/p></description><pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2026/03/13/hub-vault-unlock-vulnerability/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2026/03/13/hub-vault-unlock-vulnerability/</guid><category>cryptomator</category><category>hub</category><category>vulnerability</category></item><item><title>10 Jahre Cryptomator – Danke an euch</title><description>&lt;h2 id="heute-wird-cryptomator-10-jahre-alt">Heute wird Cryptomator 10 Jahre alt&lt;/h2>
 &lt;p>Es fühlt sich unwirklich an, diesen Satz zu lesen.&lt;/p>
 &lt;p>Was einst als kleine Idee begann, ist zu &lt;strong>einem Werkzeug&lt;/strong> geworden, dem &lt;strong>Millionen Menschen weltweit vertrauen&lt;/strong>. Menschen mit ganz unterschiedlichen Hintergründen und Geschichten: Journalist:innen, die ihre Quellen schützen. NGOs, die sensible Informationen sichern. Forschende, Studierende, Selbstständige, Unternehmen – alle &lt;strong>vereint durch ein gemeinsames Bedürfnis&lt;/strong>: ihre Daten in einer zunehmend vernetzten Welt privat zu halten.&lt;/p>
 &lt;p>Heute feiern wir nicht nur ein Jubiläum. Wir blicken zurück auf die Geschichte von Cryptomator, sagen Danke an alle Unterstützer:innen und schauen nach vorne, was die Zukunft für das Cryptomator-Projekt bereithält.&lt;/p>
@@ -507,42 +536,4 @@ Mit verschlüsselten Backups und geschützten Speichersystemen lässt sich die W
 &lt;/table>
 &lt;h3 id="fazit-jetzt-die-weichen-für-ein-sicheres-semester-stellen">Fazit: Jetzt die Weichen für ein sicheres Semester stellen&lt;/h3>
 &lt;p>Die Digitalisierung der Hochschulwelt ist nicht aufzuhalten – aber auch nicht schutzlos. Wer heute verschlüsselt, schützt morgen die Autonomie von Forschung und Lehre. Universitäten, die auf einfache, sichere und datenschutzkonforme Verschlüsselungslösungen setzen, schaffen Vertrauen bei Studierenden, Mitarbeitenden und Partnerinstitutionen.&lt;/p>
-&lt;p>Jetzt ist der ideale Zeitpunkt, um bestehende Systeme zu evaluieren, Aufklärungsarbeit zu leisten und Verschlüsselungslösungen nachhaltig zu integrieren.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item><item><title>Cryptomator Desktop 1.18.0 Beta – Jetzt testen!</title><description>&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0-beta.png" alt="Cryptomator Desktop 1.18.0 Beta" />
-&lt;/figure>
-&lt;p>Die nächste Version von Cryptomator Desktop steht in den Startlöchern – und bevor wir das finale Release veröffentlichen, laden wir euch ein, die Beta von Version 1.18.0 auszuprobieren. Neben praktischen neuen Features und wichtigen Bugfixes gibt es diesmal auch einen besonderen Aufruf an unsere Community.&lt;/p>
-&lt;h2 id="neue-features--fixes">Neue Features &amp;amp; Fixes&lt;/h2>
-&lt;p>Mit Cryptomator Desktop 1.18.0 bringen wir wieder einige Verbesserungen und Bugfixes für alle Plattformen:&lt;/p>
-&lt;h4 id="neues-feature">Neues Feature&lt;/h4>
-&lt;ul>
-&lt;li>Merken des letzten Tresor-Speicherorts&lt;br>
-Wenn ihr einen neuen Tresor erstellt, schlägt Cryptomator nun automatisch den zuletzt gewählten Speicherort vor. Das macht die Einrichtung komfortabler, besonders wenn ihr mehrere Tresore in ähnlichen Ordnerstrukturen ablegt.&lt;/li>
-&lt;/ul>
-&lt;h4 id="fixes">Fixes&lt;/h4>
-&lt;ul>
-&lt;li>Linux/KDE: QuickAccess-Einträge&lt;br>
-Unter KDE wurden bei jedem Entsperrvorgang ein neuer QuickAccess Eintrag im Dolphin Dateimanager erstellt, auch wenn ein Eintrag schon existierte (z.B. durch ein unerwartetes Schließen der App). Dieses Verhalten ist nun behoben – alte Einträge werden wieder verwendet und es ist kein manuelles Aufräumen nötig.&lt;/li>
-&lt;li>Vermeidung riesiger Logfiles&lt;br>
-Unter Windows konnte in seltenen Fällen Logdateien der App extrem groß werden, was zu Systemproblemen führte. Die existierende Größenbegrenzung der Logdateien wurde dabei umgangen. Dies ist behoben, sodass die App ohne Probleme im Hintergrund ausgeführt werden kann.&lt;/li>
-&lt;li>macOS: Stabilität beim Speichern von Tresor-Passwörtern&lt;br>
-Einige Nutzer:innen erlebten einen App-Crash, wenn sie das Tresor-Passwort speichern wollten. Dieser Fehler ist nun behoben, sodass die Passwortspeicherung unter macOS zuverlässig funktioniert.&lt;/li>
-&lt;li>macOS: Erkennung von macFUSE unter macOS 26&lt;br>
-Unter der kommenden macOS-Version 26 wurde macFUSE teilweise nicht erkannt, was zu Problemen beim Einbinden von Tresoren führen konnte. Dieses Problem ist behoben, damit Cryptomator auch auf den neuesten macOS-Versionen reibungslos läuft.&lt;/li>
-&lt;/ul>
-&lt;div class="text-center">
-&lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.18.0-beta1/">&lt;i class="fa-solid fa-download">&lt;/i> Beta 1.18.0 herunterladen&lt;/a>
-&lt;/div>
-&lt;h2 id="wir-brauchen-eure-unterstützung">Wir brauchen eure Unterstützung!&lt;/h2>
-&lt;p>Neben diesen Neuerungen gibt es diesmal noch eine Besonderheit:&lt;br>
-Unser Windows-Installer ist ab sofort mit einem neuen Zertifikat signiert. Da dieses Zertifikat im Microsoft-Trust-Netzwerk noch nicht bekannt ist, kann es vorkommen, dass Windows beim Installieren der Beta-Version einen Sicherheitsdialog anzeigt.&lt;/p>
-&lt;p>Je mehr Personen die Beta installieren, desto schneller wird das Zertifikat akzeptiert – und der Dialog verschwindet. Keine Sorge: Der Installer ist weiterhin sicher und von uns signiert. Windows muss lediglich „lernen“, dass das neue Zertifikat vertrauenswürdig ist.&lt;/p>
-&lt;h2 id="schlusswort">Schlusswort&lt;/h2>
-&lt;p>Mit Version 1.18.0 machen wir Cryptomator wieder ein Stück komfortabler, stabiler und zukunftssicherer. Die Beta ist dabei ein wichtiger Schritt – nicht nur, um die neuen Features und Fixes zu testen, sondern auch, um unser neues Zertifikat im Windows-Ökosystem zu etablieren.&lt;/p>
-&lt;p>Wir freuen uns über jede Unterstützung aus der Community:&lt;/p>
-&lt;ul>
-&lt;li>Installiert die Beta und probiert die Neuerungen aus.&lt;/li>
-&lt;li>Gebt uns Feedback, wenn euch etwas auffällt.&lt;/li>
-&lt;li>Helft uns, die finale Version gemeinsam so stabil und nutzerfreundlich wie möglich zu machen.&lt;/li>
-&lt;/ul>
-&lt;p>Euer Feedback macht Cryptomator stärker – und sorgt dafür, dass wir alle unsere Daten sicher verschlüsseln können.&lt;/p>
-&lt;p>Vielen Dank für eure Mithilfe – wir freuen uns schon auf das finale Release von 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item></channel></rss>
+&lt;p>Jetzt ist der ideale Zeitpunkt, um bestehende Systeme zu evaluieren, Aufklärungsarbeit zu leisten und Verschlüsselungslösungen nachhaltig zu integrieren.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item></channel></rss>

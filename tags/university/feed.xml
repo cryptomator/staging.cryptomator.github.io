@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/university/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/university/</link></image><lastBuildDate>Thu, 12 Mar 2026 15:05:21 +0000</lastBuildDate><generator>Hugo</generator><item><title>10 Years of Cryptomator – Thank You All</title><description>&lt;h2 id="today-cryptomator-turns-10">Today, Cryptomator Turns 10&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/university/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/university/</link></image><lastBuildDate>Fri, 13 Mar 2026 09:16:32 +0000</lastBuildDate><generator>Hugo</generator><item><title>Security Vulnerability in Hub Vault Unlock: Update Required</title><description>&lt;p>We have released an important security fix for all Cryptomator client apps, which fixes a vulnerability affecting all users who unlock Hub-managed vaults.&lt;/p>
+&lt;h2 id="required-action">Required Action&lt;/h2>
+&lt;p>Please update all your Cryptomator client applications that access Hub-managed vaults immediately to the fixed versions:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.19.1">Cryptomator 1.19.1 for Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cryptomator/android/releases/tag/1.12.3">Cryptomator 1.12.3 for Android&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/cryptomator/ios/releases/tag/2.8.3">Cryptomator 2.8.3 for iOS&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>You can also find all downloads on our &lt;a href="https://staging.cryptomator.org/downloads/">downloads page&lt;/a>.&lt;/p>
+&lt;p>After the update, Cryptomator clients connecting to self-hosted Hub instances will show a one-time &amp;ldquo;Trust this host?&amp;rdquo; dialog that must be confirmed individually. Before accepting, please verify that the displayed Hub URL is correct and matches your Cryptomator Hub instance. Clients connecting to Cryptomator Hub Managed are not affected by this dialog, as managed domains are trusted automatically.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm max-h-[302px]" src="https://staging.cryptomator.org/img/blog/vault-unlock-tofu.png" alt="Trust this host? dialog showing a Hub URL that needs to be verified" />
+&lt;/figure>
+&lt;h2 id="are-my-vaults-safe">Are my vaults safe?&lt;/h2>
+&lt;p>Yes. Since Cryptomator Hub uses end-to-end encryption, vault data was never in danger.&lt;/p>
+&lt;h2 id="which-vaults-are-affected">Which vaults are affected?&lt;/h2>
+&lt;p>The vulnerability lies within the unlock workflow of Hub-managed vaults. Local vaults are unaffected.&lt;/p>
+&lt;h2 id="what-data-is-at-risk">What data is at risk?&lt;/h2>
+&lt;p>An attacker with write access to your encrypted data could tamper the vault in a way that makes Cryptomator send a session token to a malicious server. The exfiltrated token can then be used to impersonate a user to access unencrypted information like usernames, vault names, etc. in Hub.&lt;/p>
+&lt;h2 id="has-this-been-exploited">Has this been exploited?&lt;/h2>
+&lt;p>At this time, we have no evidence of active exploitation of this vulnerability.&lt;/p>
+&lt;h2 id="security-advisories">Security Advisories&lt;/h2>
+&lt;p>As part of responsible disclosure, the full security advisories will be published on March 20. Until then, the following links will not work yet — this is expected and intentional:&lt;/p>
+&lt;ul>
+&lt;li>Desktop: &lt;a href="https://github.com/cryptomator/cryptomator/security/advisories/GHSA-34rf-rwr3-7g43">CVE-2026-32303&lt;/a>&lt;/li>
+&lt;li>Android: &lt;a href="https://github.com/cryptomator/android/security/advisories/GHSA-876q-q3mm-fcvj">CVE-2026-32317&lt;/a>&lt;/li>
+&lt;li>iOS: &lt;a href="https://github.com/cryptomator/ios/security/advisories/GHSA-g7fr-c82r-hm6j">CVE-2026-32318&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-can-i-get-help">How can I get help?&lt;/h2>
+&lt;p>If you have any further questions or need assistance during updates, don&amp;rsquo;t hesitate to contact us at &lt;a href="mailto:hub-support@cryptomator.org">hub-support@cryptomator.org&lt;/a>.&lt;/p></description><pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2026/03/13/hub-vault-unlock-vulnerability/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2026/03/13/hub-vault-unlock-vulnerability/</guid><category>cryptomator</category><category>hub</category><category>vulnerability</category></item><item><title>10 Years of Cryptomator – Thank You All</title><description>&lt;h2 id="today-cryptomator-turns-10">Today, Cryptomator Turns 10&lt;/h2>
 &lt;p>It feels surreal to read this sentence.&lt;/p>
 &lt;p>What once began as a small idea has become &lt;strong>a tool trusted by millions of people worldwide&lt;/strong>. People from very different backgrounds and walks of life: journalists protecting their sources. NGOs securing sensitive information. Researchers, students, freelancers, companies—&lt;strong>all united by a common need&lt;/strong>: to keep their data private in an increasingly connected world.&lt;/p>
 &lt;p>Today, we are not only celebrating an anniversary. We are looking back on the history of Cryptomator, saying thank you to all our supporters, and looking ahead to what the future holds for the Cryptomator project.&lt;/p>
@@ -505,42 +534,4 @@ Encrypted backups and protected storage systems can greatly limit the impact of 
 &lt;/table>
 &lt;h2 id="conclusion-set-the-course-now-for-a-safe-semester">Conclusion: Set the Course Now for a Safe Semester&lt;/h2>
 &lt;p>The digitization of higher education is unstoppable—but it is not defenseless. Those who encrypt today will protect the autonomy of research and teaching tomorrow. Universities that rely on simple, secure, and privacy-compliant encryption solutions build trust among students, employees, and partner institutions.&lt;/p>
-&lt;p>Now is the ideal time to evaluate existing systems, raise awareness, and integrate encryption solutions for the long term.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item><item><title>Cryptomator Desktop 1.18.0 Beta – Try it now!</title><description>&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0-beta.png" alt="Cryptomator Desktop 1.18.0 Beta" />
-&lt;/figure>
-&lt;p>The next release of Cryptomator Desktop is right around the corner – and before we publish the final version, we&amp;rsquo;d like to invite you to test the beta of version 1.18.0. Along with useful new features and important bug fixes, this release also comes with a special call to our community.&lt;/p>
-&lt;h2 id="new-features--fixes">New Features &amp;amp; Fixes&lt;/h2>
-&lt;p>With Cryptomator Desktop 1.18.0, we’re once again bringing improvements and bug fixes across all platforms:&lt;/p>
-&lt;h4 id="new-feature">New Feature&lt;/h4>
-&lt;ul>
-&lt;li>Remember Last Vault Location&lt;br>
-When creating a new vault, Cryptomator will now automatically suggest the last chosen storage location. This makes setup more convenient, especially if you manage multiple vaults in similar folder structures.&lt;/li>
-&lt;/ul>
-&lt;h4 id="fixes">Fixes&lt;/h4>
-&lt;ul>
-&lt;li>Linux/KDE: QuickAccess Entries&lt;br>
-On KDE, each unlock process created a new QuickAccess entry in the Dolphin file manager, even if one already existed (e.g., after an unexpected app crash). This is now fixed – existing entries are reused, and no manual cleanup is needed.&lt;/li>
-&lt;li>Prevention of Huge Log Files&lt;br>
-On Windows, log files could in rare cases grow extremely large, causing system issues. The existing size limit of log files was bypassed in those cases. This has been fixed, so the app can safely run in the background without issues.&lt;/li>
-&lt;li>macOS: Stability When Saving Vault Passwords&lt;br>
-Some users experienced app crashes when trying to save a vault password. This bug has now been fixed, so password saving on macOS works reliably.&lt;/li>
-&lt;li>macOS: macFUSE Detection on macOS 26&lt;br>
-In the upcoming macOS version 26, macFUSE was sometimes not detected, leading to problems when mounting vaults. This issue is fixed to ensure Cryptomator works smoothly on the latest macOS releases.&lt;/li>
-&lt;/ul>
-&lt;div class="text-center">
-&lt;a href="https://github.com/cryptomator/cryptomator/releases/tag/1.18.0-beta1/">&lt;i class="fa-solid fa-download">&lt;/i> Download the Beta 1.18.0 here&lt;/a>
-&lt;/div>
-&lt;h2 id="we-need-your-support">We Need Your Support!&lt;/h2>
-&lt;p>In addition to these updates, there’s something special this time:&lt;br>
-Our Windows installer is now signed with a new certificate. Since this certificate is not yet widely recognized in Microsoft’s trust network, Windows may display a security prompt when installing the beta version.&lt;/p>
-&lt;p>The more people install the beta, the faster the certificate will gain trust – and the security dialog will disappear. Don’t worry: the installer is still safe and signed by us. Windows just needs to “learn” that the new certificate is trustworthy.&lt;/p>
-&lt;h2 id="final-words">Final Words&lt;/h2>
-&lt;p>With version 1.18.0, we’re making Cryptomator more convenient, stable, and future-proof. The beta is an important step – not only to test the new features and fixes, but also to establish our new certificate in the Windows ecosystem.&lt;/p>
-&lt;p>We’re grateful for every bit of support from the community:&lt;/p>
-&lt;ul>
-&lt;li>Install the beta and try out the updates.&lt;/li>
-&lt;li>Share your feedback if you notice anything.&lt;/li>
-&lt;li>Help us make the final release as stable and user-friendly as possible.&lt;/li>
-&lt;/ul>
-&lt;p>Your feedback makes Cryptomator stronger – and ensures we can all keep our data securely encrypted.&lt;/p>
-&lt;p>Thank you for your support – we can’t wait for the final release of 1.18.0! 🎉&lt;/p></description><pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/</guid><category>cryptomator</category><category>desktop</category><category>beta</category></item></channel></rss>
+&lt;p>Now is the ideal time to evaluate existing systems, raise awareness, and integrate encryption solutions for the long term.&lt;/p></description><pubDate>Fri, 10 Oct 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/10/10/back-to-school/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/10/10/back-to-school/</guid><category>cryptomator</category><category>university</category></item></channel></rss>
