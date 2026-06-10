@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/sale/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/sale/</link></image><lastBuildDate>Tue, 26 May 2026 09:38:10 +0000</lastBuildDate><generator>Hugo</generator><item><title>World Password Day 2026: Warum sichere Passwörter nicht mehr ausreichen</title><description>&lt;p>Der &lt;strong>World Password Day&lt;/strong> stand jahrelang für eine einfache Botschaft: sichere Passwörter verwenden, sie nicht mehrfach nutzen, einen Passwortmanager einsetzen und wo möglich Zwei-Faktor-Authentifizierung und Passkey aktivieren.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/de/tags/sale/</link><language>de</language><atom:link href="https://staging.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/de/tags/sale/</link></image><lastBuildDate>Wed, 10 Jun 2026 08:06:31 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cybercrime 2025: Was Unternehmen aus dem BKA-Bundeslagebild lernen können</title><description>&lt;p>&lt;strong>Cyberangriffe sind längst kein Ausnahmefall mehr&lt;/strong>. Sie gehören für Unternehmen, Organisationen und öffentliche Einrichtungen zur alltäglichen Bedrohungslage. Das zeigt auch das aktuelle &lt;a href="https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/Cybercrime/cybercrimeBundeslagebild2025.html?nn=28110">&lt;strong>Bundeslagebild Cybercrime 2025 des Bundeskriminalamts&lt;/strong>&lt;/a>. Die darin beschriebenen Entwicklungen machen deutlich: Cybercrime wird professioneller, skalierbarer und für Betroffene potenziell folgenreicher. Besonders &lt;strong>Ransomware&lt;/strong>, &lt;strong>Data Extortion&lt;/strong>, &lt;strong>Phishing&lt;/strong> und der missbräuchliche Einsatz künstlicher Intelligenz prägen die aktuelle Lage.&lt;/p>
+&lt;p>Für &lt;strong>Unternehmen&lt;/strong> ergibt sich daraus eine zentrale Frage: &lt;strong>Wie können sensible Daten geschützt werden&lt;/strong>, wenn Angriffe immer häufiger nicht nur auf Systeme, sondern gezielt auf Informationen selbst abzielen?&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/cybercrime-report-2025.png" alt="Cybercrime 2025: Was Unternehmen aus dem BKA-Bundeslagebild lernen können" />
+&lt;/figure>
+&lt;h2 id="cybercrime-bleibt-auf-hohem-niveau">Cybercrime bleibt auf hohem Niveau&lt;/h2>
+&lt;p>Das Bundeslagebild zeigt, dass Cybercrime in Deutschland weiterhin eine erhebliche Bedrohung darstellt. Für das Jahr 2025 weist das BKA &lt;strong>insgesamt 333.922 Cybercrime-Fälle&lt;/strong> aus, wenn Inlands- und Auslandstaten zusammen betrachtet werden. Besonders relevant ist dabei, dass die &lt;strong>Auslandstaten mit 207.888 Fällen&lt;/strong> die Inlandstaten deutlich übersteigen. Das verdeutlicht, wie stark Cyberangriffe grenzüberschreitend organisiert sind und wie schwierig ihre strafrechtliche Verfolgung sein kann.&lt;/p>
+&lt;p>Auch &lt;strong>die wirtschaftlichen Schäden sind enorm&lt;/strong>. Laut der im Bericht genannten Bitkom-Erhebung entstanden der deutschen Wirtschaft durch Cyberattacken &lt;strong>Schäden in Höhe von rund 202,4 Milliarden Euro&lt;/strong>. Damit machen Cyberangriffe einen erheblichen Anteil der Gesamtschäden aus, die Unternehmen durch Diebstahl, Spionage und Sabotage entstehen.&lt;/p>
+&lt;p>Diese Zahlen zeigen: &lt;strong>Cybersecurity ist nicht nur ein IT-Thema&lt;/strong>. Sie betrifft die gesamte Organisation – von der Geschäftsführung über die IT-Abteilung bis hin zu Fachbereichen, die täglich mit sensiblen Daten arbeiten.&lt;/p>
+&lt;h2 id="ransomware-bleibt-eine-zentrale-bedrohung">Ransomware bleibt eine zentrale Bedrohung&lt;/h2>
+&lt;p>Eine der &lt;strong>größten Gefahren bleibt Ransomware&lt;/strong>. Das BKA beschreibt Angriffe mit Verschlüsselungstrojanern weiterhin als zentrale Bedrohung für Unternehmen und öffentliche Einrichtungen. &lt;strong>2025 wurden deutschlandweit 1.041 Ransomware-Angriffe angezeigt&lt;/strong> – ein Anstieg um rund zehn Prozent im Vergleich zum Vorjahr.&lt;/p>
+&lt;p>Besonders auffällig ist, dass sich ein Großteil dieser Angriffe gegen Organisationen richtet: Laut Bericht betrafen rund &lt;strong>96 Prozent der Ransomware-Angriffe Unternehmen, Organisationen und Institutionen&lt;/strong>. Etwa &lt;strong>90 Prozent richteten sich gegen kleine und mittlere Unternehmen&lt;/strong>.&lt;/p>
+&lt;p>Das ist ein wichtiger Punkt. Cyberkriminelle greifen nicht nur große Konzerne mit riesigen IT-Budgets an. Gerade kleinere und mittlere Organisationen geraten zunehmend ins Visier, weil sie oft wertvolle Daten besitzen, aber nicht immer über die Ressourcen für komplexe Sicherheitsarchitekturen verfügen.&lt;/p>
+&lt;p>&lt;strong>Typische Ziele&lt;/strong> sind zum Beispiel:&lt;/p>
+&lt;ul>
+&lt;li>Daten von Kundinnen und Kunden&lt;/li>
+&lt;li>Vertragsunterlagen&lt;/li>
+&lt;li>Finanzdaten&lt;/li>
+&lt;li>Forschungsdaten&lt;/li>
+&lt;li>Personalakten&lt;/li>
+&lt;li>interne Strategie- und Projektdokumente&lt;/li>
+&lt;li>sensible Daten von Klient:innen, Patient:innen, Mitglieder:innen oder Partnerorganisationen&lt;/li>
+&lt;/ul>
+&lt;p>Für Angreifende sind solche Informationen besonders wertvoll. Und genau deshalb reicht es nicht mehr, nur Systeme abzusichern. Auch &lt;strong>die Daten selbst müssen geschützt werden&lt;/strong>.&lt;/p>
+&lt;h2 id="von-ransomware-zu-double-extortion">Von Ransomware zu Double Extortion&lt;/h2>
+&lt;p>Früher stand bei Ransomware vor allem die Verschlüsselung von Systemen im Vordergrund. Angreifende blockierten den Zugriff auf Dateien und verlangten Lösegeld für deren Wiederherstellung. Heute ist dieses Modell deutlich gefährlicher geworden.&lt;/p>
+&lt;p>Das BKA weist darauf hin, dass &lt;strong>ein großer Teil der Ransomware-Angriffe dem Modus Operandi Double Extortion zugeordnet werden kann&lt;/strong>. Dabei verschlüsseln Angreifende nicht nur Systeme, sondern kopieren vorher Daten aus der betroffenen Umgebung. Anschließend drohen sie damit, diese Informationen zu veröffentlichen oder zu verkaufen.&lt;/p>
+&lt;p>Für Unternehmen verschiebt sich dadurch das Risiko. Es geht nicht mehr nur darum, ob Daten aus einem Backup wiederhergestellt werden können. Es geht auch darum, ob sensible Informationen bereits abgeflossen sind – und ob Angreifende sie lesen, analysieren und gegen die Organisation verwenden können.&lt;/p>
+&lt;p>&lt;strong>Backups bleiben selbstverständlich wichtig&lt;/strong>. Sie helfen dabei, nach einem Angriff wieder arbeitsfähig zu werden. Aber &lt;strong>sie lösen nicht das Problem der Datenausleitung&lt;/strong>. Wenn vertrauliche Daten unverschlüsselt kopiert wurden, kann ein Backup den Reputationsschaden, rechtliche Risiken oder mögliche Datenschutzverletzungen nicht verhindern.&lt;/p>
+&lt;p>Genau &lt;strong>hier wird Verschlüsselung auf Datenebene entscheidend&lt;/strong>.&lt;/p>
+&lt;h2 id="data-extortion-gewinnt-an-bedeutung">Data Extortion gewinnt an Bedeutung&lt;/h2>
+&lt;p>Der Bericht macht deutlich, dass sich neben klassischer Ransomware ein weiterer Modus Operandi etabliert: &lt;strong>Data Extortion&lt;/strong>. Dabei verzichten Angreifende teilweise sogar auf die Verschlüsselung von Systemen und &lt;strong>konzentrieren sich stattdessen direkt auf die Ausleitung sensibler Daten&lt;/strong> und die anschließende Erpressung mit deren Veröffentlichung.&lt;/p>
+&lt;p>Das ist eine wichtige Entwicklung. Denn sie zeigt, dass Cyberkriminelle dort ansetzen, wo der Druck auf Unternehmen am größten ist: bei vertraulichen Informationen.&lt;/p>
+&lt;p>Wenn &lt;strong>sensible Daten&lt;/strong> in falsche Hände geraten, drohen nicht nur kurzfristige Betriebsunterbrechungen. Unternehmen müssen auch mit &lt;strong>langfristigen Folgen&lt;/strong> rechnen:&lt;/p>
+&lt;ul>
+&lt;li>Verlust von Vertrauen der Kundschaft&lt;/li>
+&lt;li>Reputationsschäden&lt;/li>
+&lt;li>Datenschutzmeldungen und mögliche Bußgelder&lt;/li>
+&lt;li>rechtliche Auseinandersetzungen&lt;/li>
+&lt;li>Veröffentlichung interner Informationen&lt;/li>
+&lt;li>Gefährdung von Partner:innen, Mitarbeitenden oder Betroffenen&lt;/li>
+&lt;li>Erpressung durch Androhung weiterer Veröffentlichungen&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Je sensibler die Daten, desto größer der Druck.&lt;/strong> Für NGOs, Universitäten, Forschungseinrichtungen, Betriebsräte, Kanzleien, Beratungen, Gesundheitsorganisationen oder soziale Träger kann ein solcher Datenabfluss besonders schwerwiegend sein.&lt;/p>
+&lt;h2 id="ki-macht-angriffe-schneller-und-überzeugender">KI macht Angriffe schneller und überzeugender&lt;/h2>
+&lt;p>Ein weiterer Schwerpunkt des Bundeslagebilds ist der &lt;strong>Einsatz künstlicher Intelligenz&lt;/strong>. Das BKA beschreibt, dass &lt;strong>KI die technischen Einstiegshürden für Cybercrime senkt&lt;/strong> und &lt;strong>Angriffe effizienter, schneller und glaubwürdiger machen kann.&lt;/strong>&lt;/p>
+&lt;p>Besonders sichtbar wird das beim &lt;strong>Phishing&lt;/strong>. KI kann dabei helfen, &lt;strong>täuschend echte E-Mails&lt;/strong> zu erstellen: sprachlich fehlerfrei, gut übersetzt, personalisiert und im Stil bekannter Unternehmen oder interner Kommunikation formuliert. Dadurch werden Phishing-Angriffe schwerer zu erkennen.&lt;/p>
+&lt;p>Aber der Bericht geht noch weiter. &lt;strong>KI kann auch bei der strategischen Auskundschaftung von Zielsystemen, bei der Identifikation von Schwachstellen und bei der Analyse großer Datenmengen helfen&lt;/strong>. Im Kontext von Ransomware kann das bedeuten: Angreifende können schneller herausfinden, welche Dateien besonders sensibel, vertraulich oder geschäftskritisch sind.&lt;/p>
+&lt;p>Das verändert die Verteidigungsperspektive. Organisationen müssen davon ausgehen, dass Angreifende künftig nicht nur mehr Daten stehlen können, sondern diese auch schneller auswerten und gezielter für Erpressung nutzen.&lt;/p>
+&lt;h2 id="warum-cloud-daten-besonders-geschützt-werden-müssen">Warum Cloud-Daten besonders geschützt werden müssen&lt;/h2>
+&lt;p>Viele Unternehmen und Organisationen &lt;strong>arbeiten heute cloudbasiert&lt;/strong>. Dateien werden in Cloud-Speichern abgelegt, zwischen Teams geteilt und von verschiedenen Standorten aus bearbeitet. Das ist effizient und für moderne Zusammenarbeit kaum noch wegzudenken.&lt;/p>
+&lt;p>Gleichzeitig entstehen neue Risiken. Denn je mehr sensible Daten in Cloud-Umgebungen liegen, desto wichtiger wird die Frage:&lt;/p>
+&lt;p>&lt;strong>Wer kann auf diese Daten zugreifen&lt;/strong> – und in welcher Form liegen sie dort vor?&lt;/p>
+&lt;p>Account-Sicherheit, Mehrfaktor-Authentifizierung und Rollenrechte sind wichtige Schutzmaßnahmen. Doch sie sollten nicht die einzigen Verteidigungslinien sein. Denn Phishing, kompromittierte Zugangsdaten, Fehlkonfigurationen oder unberechtigte Zugriffe können dazu führen, dass Angreifer Zugriff auf Cloud-Dateien erhalten.&lt;/p>
+&lt;p>Wenn diese Daten unverschlüsselt vorliegen, sind sie direkt verwertbar. Wenn sie hingegen &lt;strong>clientseitig verschlüsselt&lt;/strong> wurden, entsteht eine zusätzliche Schutzschicht. Angreifende können Dateien dann nicht ohne Weiteres lesen, selbst wenn sie Zugriff auf den Speicherort erhalten.&lt;/p>
+&lt;h2 id="welche-rolle-cryptomator-hub-dabei-spielen-kann">Welche Rolle Cryptomator Hub dabei spielen kann&lt;/h2>
+&lt;p>&lt;strong>Cryptomator Hub&lt;/strong> setzt genau an dieser Stelle an. Die Lösung &lt;strong>hilft Teams und Organisationen dabei, sensible Daten in der Cloud verschlüsselt zu speichern und den Zugriff zentral zu verwalten&lt;/strong>.&lt;/p>
+&lt;p>Wichtig ist die richtige Einordnung: Cryptomator Hub ist keine Anti-Ransomware-Software, kein Virenscanner und kein DDoS-Schutz. Die Lösung verhindert also nicht, dass Angreifende Phishing-Mails verschicken, Malware entwickeln oder Infrastrukturen angreifen.&lt;/p>
+&lt;p>Der Mehrwert liegt auf einer anderen Ebene: &lt;strong>Cryptomator Hub schützt Daten dort, wo sie besonders gefährdet sind&lt;/strong> – in der täglichen Zusammenarbeit, in Cloud-Speichern und in geteilten Arbeitsumgebungen.&lt;/p>
+&lt;p>Das ist vor allem in &lt;strong>vier Szenarien&lt;/strong> relevant:&lt;/p>
+&lt;p>&lt;strong>1. Schutz vor verwertbarem Datenabfluss&lt;/strong>&lt;/p>
+&lt;p>Wenn Angreifende versuchen, Daten aus Cloud-Speichern zu kopieren, entscheidet die Verschlüsselung darüber, ob diese Daten für sie lesbar sind. &lt;strong>Clientseitige Verschlüsselung&lt;/strong> sorgt dafür, dass Dateien bereits verschlüsselt werden, bevor sie in der Cloud gespeichert werden.&lt;/p>
+&lt;p>Für &lt;strong>Data Extortion&lt;/strong> ist das ein entscheidender Punkt. Denn gestohlene Daten sind für Erpressung nur dann wertvoll, wenn sie ausgewertet und veröffentlicht werden können.&lt;/p>
+&lt;p>&lt;strong>2. Zugriffskontrolle für Teams&lt;/strong>&lt;/p>
+&lt;p>In Organisationen müssen Daten geteilt werden – aber nicht alle Daten mit allen. Cryptomator Hub ermöglicht eine &lt;strong>strukturierte Verwaltung von Zugriffsrechten für Teams&lt;/strong>. Dadurch lässt sich besser steuern, wer Zugriff auf bestimmte Tresore und sensible Informationen hat.&lt;/p>
+&lt;p>Das ist besonders wichtig für Organisationen mit mehreren Abteilungen, Projektteams oder externen Beteiligten.&lt;/p>
+&lt;p>&lt;strong>3. Ergänzung bestehender Sicherheitsmaßnahmen&lt;/strong>&lt;/p>
+&lt;p>Cryptomator Hub ersetzt keine umfassende Sicherheitsstrategie. Es ergänzt sie. Eine &lt;strong>robuste Cybersecurity-Strategie sollte mehrere Ebenen kombinieren&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Awareness und Schulungen&lt;/li>
+&lt;li>Phishing-Schutz&lt;/li>
+&lt;li>starke Passwörter und Mehrfaktor-Authentifizierung&lt;/li>
+&lt;li>Endpoint Security&lt;/li>
+&lt;li>regelmäßige Updates&lt;/li>
+&lt;li>Backups&lt;/li>
+&lt;li>Rechte- und Rollenmanagement&lt;/li>
+&lt;li>Incident Response&lt;/li>
+&lt;li>Verschlüsselung sensibler Daten&lt;/li>
+&lt;/ul>
+&lt;p>Cryptomator Hub stärkt in diesem Modell vor allem die &lt;strong>Ebene der Datenvertraulichkeit&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>4. Praktikable Lösung für kleinere Organisationen&lt;/strong>&lt;/p>
+&lt;p>Da laut Bericht insbesondere &lt;strong>KMU stark von Ransomware betroffen&lt;/strong> sind, ist die praktische Umsetzbarkeit ein wichtiger Faktor. Nicht jede Organisation kann komplexe Enterprise-Security-Infrastrukturen aufbauen. Gleichzeitig müssen auch kleinere Teams sensible Daten schützen.&lt;/p>
+&lt;p>Cryptomator Hub kann hier als &lt;strong>niedrigschwellige, teamfähige Lösung&lt;/strong> positioniert werden: Cloud-Daten bleiben nutzbar, werden aber durch zusätzliche Verschlüsselung geschützt.&lt;/p>
+&lt;p>➡️ &lt;a href="https://staging.cryptomator.org/de/hub/managed/">Testen Sie Cryptomator Hub 30 Tage lang&lt;/a>!&lt;/p>
+&lt;h2 id="fazit-cybersecurity-muss-bei-den-daten-beginnen">Fazit: Cybersecurity muss bei den Daten beginnen&lt;/h2>
+&lt;p>Das &lt;a href="https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/Cybercrime/cybercrimeBundeslagebild2025.html?nn=28110">&lt;strong>Bundeslagebild Cybercrime 2025&lt;/strong>&lt;/a> macht deutlich, dass Unternehmen Cyberangriffe nicht mehr nur als technisches Risiko betrachten sollten. Die entscheidende Frage ist nicht mehr allein, ob ein Angriff abgewehrt werden kann. Entscheidend ist auch, &lt;strong>wie handlungsfähig eine Organisation bleibt, wenn ein Angriff erfolgreich ist&lt;/strong>.&lt;/p>
+&lt;p>Genau hier verändert sich der Blick auf Datensicherheit. Wenn Angreifer sensible Informationen kopieren, analysieren und als Druckmittel einsetzen, wird die Vertraulichkeit dieser Daten zu einem zentralen Bestandteil der eigenen Widerstandsfähigkeit. Wer vertrauliche Informationen ungeschützt in Cloud-Umgebungen ablegt, verlässt sich darauf, dass alle vorgelagerten Schutzmechanismen jederzeit funktionieren. Die aktuelle Bedrohungslage zeigt jedoch, dass diese Annahme riskant ist.&lt;/p>
+&lt;p>&lt;strong>Unternehmen brauchen deshalb Sicherheitsstrategien, die nicht nur Angriffe verhindern sollen, sondern auch deren Folgen begrenzen&lt;/strong>. Dazu gehört, sensible Daten konsequent so zu schützen, dass sie im Ernstfall nicht unmittelbar verwertbar sind. Verschlüsselung ist dabei keine Zusatzmaßnahme für besonders vorsichtige Organisationen, sondern ein grundlegender Baustein moderner Cyberresilienz.&lt;/p>
+&lt;p>&lt;strong>Cryptomator Hub setzt genau an diesem Punkt an&lt;/strong>: Die Lösung hilft Teams, sensible Cloud-Daten clientseitig zu verschlüsseln und Zugriffe zentral zu verwalten. Damit schützt sie nicht vor jeder Form von Cyberangriff, aber sie stärkt eine entscheidende Verteidigungslinie – die Daten selbst.&lt;/p>
+&lt;p>Denn je stärker Cyberkriminalität auf den Diebstahl und die Veröffentlichung sensibler Informationen ausgerichtet ist, desto wichtiger wird &lt;strong>eine einfache Erkenntnis: Daten, die für Angreifer nicht lesbar sind, verlieren einen großen Teil ihres Erpressungspotenzials&lt;/strong>.&lt;/p>
+&lt;p>➡️ &lt;a href="https://staging.cryptomator.org/de/contact-sales/">Demo jetzt anfragen&lt;/a>!&lt;/p></description><pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2026/06/10/cybercrime-report-2025/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2026/06/10/cybercrime-report-2025/</guid><category>cryptomator</category><category>hub</category><category>cybercrime</category></item><item><title>World Password Day 2026: Warum sichere Passwörter nicht mehr ausreichen</title><description>&lt;p>Der &lt;strong>World Password Day&lt;/strong> stand jahrelang für eine einfache Botschaft: sichere Passwörter verwenden, sie nicht mehrfach nutzen, einen Passwortmanager einsetzen und wo möglich Zwei-Faktor-Authentifizierung und Passkey aktivieren.&lt;/p>
 &lt;p>Diese Empfehlungen sind weiterhin sinnvoll. Gleichzeitig zeigt sich immer deutlicher, dass sie für die Anforderungen vieler Organisationen nicht mehr genügen. Die Debatte hat sich verschoben: Es geht nicht mehr nur darum, Passwörter besser zu machen. Immer häufiger geht es um &lt;strong>die Frage, wie sich die Abhängigkeit von Passwörtern insgesamt verringern lässt.&lt;/strong>&lt;/p>
 &lt;p>Für Unternehmen und Teams ist das besonders relevant. Passwörter sind hier &lt;strong>nicht nur ein individuelles Sicherheitsrisiko&lt;/strong>, sondern ein organisatorischer Faktor. Sie müssen verwaltet, zurückgesetzt, geschützt und im Teamkontext häufig in bestehende Prozesse eingebunden werden.&lt;/p>
 &lt;h2 id="warum-passwörter-in-der-praxis-an-grenzen-stoßen">Warum Passwörter in der Praxis an Grenzen stoßen&lt;/h2>
@@ -418,63 +508,4 @@ Damit investieren wir langfristig in &lt;strong>Sicherheitsstandards, Performanc
 &lt;p>&lt;strong>Vielen Dank&lt;/strong> an alle aus der Community, die die Beta getestet haben. Euer &lt;strong>Feedback&lt;/strong> hat direkt dazu beigetragen, 1.18.0 zu einem starken, stabilen Release zu machen. Mit diesem Update wird Cryptomator Desktop zuverlässiger denn je!&lt;/p>
 &lt;p>Vielen Dank, dass ihr Cryptomator nutzt – und danke fürs sichere Verschlüsseln eurer Daten.&lt;br>
 Wir freuen uns auf euer Feedback zum neuen Release!&lt;/p>
-&lt;p>Euer Cryptomator-Team&lt;/p></description><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/19/desktop-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/19/desktop-1.18.0/</guid><category>cryptomator</category><category>desktop</category></item><item><title>Zwei Jahre Cryptomator Hub – Teamverschlüsselung neu gedacht</title><description>&lt;p>Am &lt;strong>2. November 2023&lt;/strong> erschien &lt;strong>Cryptomator Hub 1.0&lt;/strong> – unsere Lösung für sichere, verschlüsselte Zusammenarbeit in der Cloud. &lt;strong>Zwei Jahre&lt;/strong> später hat sich Cryptomator Hub zu einem zentralen Werkzeug für Unternehmen, Universitäten und NGOs entwickelt, die ihre sensiblen Daten schützen und gleichzeitig effizient im Team arbeiten wollen.&lt;/p>
-&lt;p>Zum Jubiläum blicken wir auf zwei spannende Jahre voller Weiterentwicklungen, Beta-Features, neuer Einsatzbereiche – und auf das, was noch kommt.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025.png" alt="Zwei Jahre Cryptomator Hub – Teamverschlüsselung neu gedacht" />
-&lt;/figure>
-&lt;h2 id="was-ist-cryptomator-hub">Was ist Cryptomator Hub?&lt;/h2>
-&lt;p>Cryptomator Hub ist die &lt;strong>zentrale Plattform zur Verwaltung und gemeinsamen Nutzung verschlüsselter Tresore.&lt;/strong>&lt;/p>
-&lt;p>Während die klassische Cryptomator-App Einzelpersonen den Schutz ihrer Cloud-Dateien ermöglicht, überträgt der Hub dieses Prinzip auf Teams und Organisationen.&lt;/p>
-&lt;p>Cryptomator Hub bietet ein webbasiertes Dashboard, über das Admins und Teammitglieder &lt;strong>Nutzer:innen verwalten&lt;/strong>, &lt;strong>Rollen zuweisen&lt;/strong> und &lt;strong>Zugriffsrechte kontrollieren&lt;/strong> können – vollständig verschlüsselt und DSGVO-konform.&lt;/p>
-&lt;p>Damit bildet Cryptomator Hub die Brücke zwischen starker &lt;strong>Ende-zu-Ende-Verschlüsselung&lt;/strong> und benutzerfreundlicher Teamarbeit.&lt;/p>
-&lt;h3 id="funktionen-die-den-unterschied-machen">Funktionen, die den Unterschied machen&lt;/h3>
-&lt;ol>
-&lt;li>&lt;strong>Zentrale Verwaltung von Nutzer:innen und Rechten&lt;/strong>&lt;br>
-Ob kleines Team oder große Organisation – Admins behalten jederzeit den Überblick, wer Zugriff auf welche Tresore hat. Rollenbasierte Rechte machen das Management einfach und nachvollziehbar.&lt;/li>
-&lt;li>&lt;strong>Web of Trust&lt;/strong>&lt;br>
-Dieses Sicherheitsmodell ermöglicht den sicheren Schlüsselaustausch zwischen Mitglieder:innen des Teams über digitale Vertrauensbeziehungen. Kein unverschlüsselter Datenaustausch und keine komplizierten Schlüsseldateien, da Vertrauen technisch abgebildet wird.&lt;/li>
-&lt;li>&lt;strong>Create-Vault Role&lt;/strong>&lt;br>
-Teams können eigenständig neue Tresore erstellen, ohne dass Admins jeden Schritt begleiten müssen. Damit bleibt die Zusammenarbeit flexibel – bei gleichbleibend hoher Sicherheit.&lt;/li>
-&lt;li>&lt;strong>Self-Hosting &amp;amp; Datenschutz by Design&lt;/strong>&lt;br>
-Datenschutz ist kein Add-on, sondern Kernprinzip: Cryptomator Hub kann lokal (on-prem) oder in privaten Cloud-Umgebungen betrieben werden. Unternehmen und Institutionen behalten damit die vollständige Kontrolle über ihre Infrastruktur und Daten.&lt;/li>
-&lt;li>&lt;strong>Integration mit gängigen Cloud-Diensten&lt;/strong>&lt;br>
-Ob OneDrive, Google Drive, Dropbox oder Nextcloud – Cryptomator Hub fügt sich nahtlos in bestehende Arbeitsumgebungen ein und schützt Daten unabhängig vom Anbietenden.&lt;/li>
-&lt;/ol>
-&lt;h2 id="typische-einsatzbereiche">Typische Einsatzbereiche&lt;/h2>
-&lt;h3 id="unternehmen-und-behörden">Unternehmen und Behörden&lt;/h3>
-&lt;p>Unternehmen nutzen Cryptomator Hub, um Zero-Trust-Sicherheitsstrategien umzusetzen. Besonders &lt;strong>Branchen mit hohen Compliance-Anforderungen&lt;/strong> – etwa Gesundheitswesen, öffentliche Verwaltung oder Rechtsdienstleistungen – profitieren von DSGVO-konformer Cloud-Verschlüsselung.&lt;/p>
-&lt;p>Unternehmen wie &lt;a href="">Walbusch GmbH &amp;amp; Co. KG&lt;/a> setzen Cryptomator Hub bereits erfolgreich ein und können eine durchweg positive Bilanz ziehen:&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Mit Cryptomator Hub können wir sensible Unternehmensdaten sicher verwalten und gleichzeitig unseren Mitarbeitenden eine unkomplizierte Nutzung ermöglichen.&lt;/strong>&lt;/p>
-&lt;p>&lt;em>Andreas Cofalla, Application Manager IT, Walbusch GmbH &amp;amp; Co. KG&lt;/em>&lt;/p>&lt;/blockquote>
-&lt;h3 id="universitäten-und-forschungseinrichtungen">Universitäten und Forschungseinrichtungen&lt;/h3>
-&lt;p>Forschungsteams sichern ihre Projektdaten mit Hub, ohne auf Cloud-Kollaboration zu verzichten. &lt;strong>Sensible Forschungsdaten&lt;/strong> bleiben geschützt, während die Zusammenarbeit über Abteilungen oder Länder hinweg funktioniert.&lt;/p>
-&lt;h3 id="ngos-und-nonprofits">NGOs und Nonprofits&lt;/h3>
-&lt;p>Für Organisationen, die weltweit tätig sind, bietet Cryptomator Hub eine sichere Möglichkeit, &lt;strong>vertrauliche Dokumente&lt;/strong> zu teilen – von Förderprojekten bis hin zu Personaldaten – selbst bei begrenzten IT-Ressourcen.&lt;/p>
-&lt;h3 id="it-teams-und-datenschutzbeauftragte">IT-Teams und Datenschutzbeauftragte&lt;/h3>
-&lt;p>Hub vereinfacht Audits, Rollenmanagement und den Nachweis datenschutzkonformer Arbeitsweisen – ein klarer Vorteil bei internen und externen Sicherheitsprüfungen.&lt;/p>
-&lt;h2 id="zwei-jahre-weiterentwicklung--und-die-zukunft-im-blick">Zwei Jahre Weiterentwicklung – und die Zukunft im Blick&lt;/h2>
-&lt;p>Seit dem Launch in 2023 hat sich Cryptomator Hub rasant entwickelt.&lt;/p>
-&lt;p>Das &lt;a href="https://staging.cryptomator.org/de/blog/2025/04/15/hub-1.4.0/">Update 1.4.0&lt;/a> im April 2025 brachte mit dem &lt;strong>Web of Trust&lt;/strong> und der &lt;strong>Create-Vault-Rolle&lt;/strong> zwei entscheidende Meilensteine. Weiterhin steht alles im Zeichen von Optimierung, Skalierung und Zukunftssicherheit – insbesondere mit Blick auf die kommenden Standards der &lt;a href="https://staging.cryptomator.org/de/blog/2025/07/24/post-quantum-roadmap/">Post-Quantum-Kryptografie&lt;/a>.&lt;/p>
-&lt;p>Doch wir ruhen uns nicht auf Erfolgen aus. &lt;strong>Drei neue Features&lt;/strong> stehen bereits in den Startlöchern, um Cryptomator Hub noch leistungsfähiger und benutzerfreundlicher zu machen.&lt;/p>
-&lt;h3 id="usergroup-management">User/Group Management&lt;/h3>
-&lt;p>Die &lt;strong>Verwaltung von Nutzenden und Gruppen&lt;/strong> wird künftig deutlich komfortabler. Mit dem neuen, &lt;strong>integrierten User/Group Management&lt;/strong> können kleinere Unternehmen und Organisationen ihre Teamstrukturen direkt im Hub anlegen und verwalten – intuitiv, klar und ohne Umwege.&lt;/p>
-&lt;p>Im Hintergrund setzen wir weiterhin auf &lt;strong>Keycloak&lt;/strong> – eine bewährte, leistungsstarke Lösung für Identitäts- und Zugriffsverwaltung.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-user-management-preview.png" alt="Cryptomator Hub – User/Group Management Vorschau" />
-&lt;/figure>
-&lt;h3 id="emergency-access">Emergency Access&lt;/h3>
-&lt;p>In Unternehmen kann es immer vorkommen, dass Mitarbeitende ausscheiden und dadurch der Zugriff auf wichtige Daten verloren geht.&lt;/p>
-&lt;p>Das kommende &lt;strong>Emergency-Access-Feature&lt;/strong> schafft hier Abhilfe: Es ermöglicht, &lt;strong>eine festgelegte Gruppe autorisierter Personen&lt;/strong> zu bestimmen, die im Notfall gemeinsam oder teilweise den Zugriff auf einen Tresor wiederherstellen kann.&lt;/p>
-&lt;p>&lt;strong>Selbst in kritischen Situationen oder bei personellen Veränderungen&lt;/strong> bleibt das Unternehmen handlungsfähig.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/hub-anniversary-2025-emergency-access-preview.png" alt="Cryptomator Hub – Emergency Access Vorschau" />
-&lt;/figure>
-&lt;h3 id="files-in-use-in-der-desktop-app">Files-in-Use (in der Desktop-App)&lt;/h3>
-&lt;p>Ein häufig geäußerter Wunsch unserer Hub-Kund:innen: &lt;strong>bessere Unterstützung bei der Zusammenarbeit an Office-Dateien.&lt;/strong>&lt;/p>
-&lt;p>Während beispielsweise &lt;strong>LibreOffice&lt;/strong> bereits ein eingebautes Sperrsystem für geöffnete Dateien besitzt, fehlte dieses bislang bei &lt;strong>Microsoft Office&lt;/strong>. Daher entwickeln wir derzeit in der &lt;strong>Cryptomator-Desktop-App&lt;/strong> ein eigenes „&lt;strong>Locking-System&lt;/strong>“, das erkennt, wenn eine Datei bereits geöffnet ist, und andere Nutzer:innen darüber informiert.&lt;/p>
-&lt;p>Damit wird das gemeinsame Arbeiten an Dokumenten &lt;strong>konfliktfreier, transparenter und sicherer&lt;/strong> – ein weiterer Schritt hin zu reibungsloser Teamarbeit.&lt;/p>
-&lt;h2 id="zwei-jahre-vertrauen-zusammenarbeit-und-sicherheit">Zwei Jahre Vertrauen, Zusammenarbeit und Sicherheit&lt;/h2>
-&lt;p>In zwei Jahren hat sich Cryptomator Hub von einer Idee zu einer verlässlichen Plattform für sichere Teamarbeit entwickelt.&lt;/p>
-&lt;p>Wir danken allen Nutzer:innen, Administrator:innen und Tester:innen, die mit ihrem Feedback geholfen haben, Cryptomator Hub weiterzuentwickeln – und freuen uns auf das nächste Kapitel.&lt;/p></description><pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/02/hub-anniversary/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/02/hub-anniversary/</guid><category>cryptomator</category><category>hub</category><category>anniversary</category></item></channel></rss>
+&lt;p>Euer Cryptomator-Team&lt;/p></description><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/de/blog/2025/11/19/desktop-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/de/blog/2025/11/19/desktop-1.18.0/</guid><category>cryptomator</category><category>desktop</category></item></channel></rss>
