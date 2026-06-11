@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/desktop/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/desktop/</link></image><lastBuildDate>Wed, 10 Jun 2026 12:05:20 +0000</lastBuildDate><generator>Hugo</generator><item><title>Cybercrime in 2025: What Businesses Can Learn from Germany's BKA Report</title><description>&lt;p>&lt;strong>Cyberattacks are no longer the exception&lt;/strong>. They have become part of the everyday threat landscape for businesses, organizations, and public institutions. This is also evident in the latest report from &lt;strong>Germany&amp;rsquo;s Federal Criminal Police Office (Bundeskriminalamt, or BKA)&lt;/strong>, its &amp;ldquo;&lt;a href="https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/Cybercrime/cybercrimeBundeslagebild2025.html?nn=28110">&lt;strong>Federal Cybercrime Situation Report 2025&lt;/strong>&lt;/a>.&amp;rdquo; While the report focuses on Germany, the trends it describes are playing out internationally: cybercrime is becoming more professional, scalable, and potentially more damaging for those affected. &lt;strong>Ransomware, data extortion, phishing&lt;/strong>, and the misuse of artificial intelligence are particularly defining the current landscape.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cryptomator Blog</title><description>Recent Blog Posts on cryptomator.org</description><link>https://staging.cryptomator.org/tags/desktop/</link><language>en</language><atom:link href="https://staging.cryptomator.org/feed.xml" rel="self" type="application/rss+xml"/><image><url>https://staging.cryptomator.org/img/logo.png</url><title>Cryptomator Blog</title><link>https://staging.cryptomator.org/tags/desktop/</link></image><lastBuildDate>Thu, 11 Jun 2026 07:51:38 +0000</lastBuildDate><generator>Hugo</generator><item><title>Data Protection During the World Cup: How to Protect Your Data While Traveling and as Part of a Team</title><description>&lt;p>&lt;strong>The World Cup kicks off today.&lt;/strong> For many people, that means watching games together, being on the go, traveling, working remotely, or simply taking care of important tasks in between activities. Whether at a hotel, a café, the airport, or the office with colleagues, files are often shared quickly, devices are used more frequently on the go, and sensitive information is stored in the cloud.&lt;/p>
+&lt;p>In the process, &lt;strong>data protection and IT security can easily take a back seat&lt;/strong>. A ticket is stored in the cloud, travel documents are saved on a smartphone, project files are shared with colleagues, or important documents are left unencrypted in a cloud folder. It’s certainly convenient. But it’s not automatically secure.&lt;/p>
+&lt;p>Whether you are traveling privately, working remotely, or coordinating files in a team, a few &lt;strong>simple steps&lt;/strong> can help keep your data secure during the soccer frenzy. And that’s exactly where &lt;strong>Cryptomator&lt;/strong> and &lt;strong>Cryptomator Hub&lt;/strong> come in.&lt;/p>
+&lt;figure class="text-center">
+&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/worldcup-2026-checklist-dataprotection_en.png" alt="Data protection checklist for the world cup" />
+&lt;/figure>
+&lt;h2 id="why-the-soccer-season-is-a-good-opportunity-to-improve-data-security">Why the Soccer Season Is a Good Opportunity to Improve Data Security&lt;/h2>
+&lt;p>Major sporting events bring people together. At the same time, they often &lt;strong>disrupt our daily digital routines&lt;/strong>: many people travel, work on the go, use public networks, or coordinate with others at short notice. This creates situations in which sensitive data can end up unprotected faster than you might think.&lt;/p>
+&lt;p>&lt;strong>Typical examples&lt;/strong> include:&lt;/p>
+&lt;ul>
+&lt;li>Travel documents, tickets, or booking confirmations stored in the cloud&lt;/li>
+&lt;li>Work files on a laptop while traveling&lt;/li>
+&lt;li>Shared folders for teams, clubs, or organizations&lt;/li>
+&lt;li>Spontaneous file transfers via messaging apps or cloud links&lt;/li>
+&lt;li>Public Wi-Fi in hotels, cafes, or train stations&lt;/li>
+&lt;li>Personal photos, documents, and notes that are automatically synced&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Cloud storage&lt;/strong> is convenient, but it is no substitute for encryption. Anyone storing sensitive files in the cloud should ensure that this data is already encrypted before it is uploaded.&lt;/p>
+&lt;h2 id="1-store-travel-documents-and-tickets-only-in-encrypted-form">1. Store Travel Documents and Tickets Only in Encrypted Form&lt;/h2>
+&lt;p>&lt;strong>The cloud is especially handy when traveling&lt;/strong>. Flight or train tickets, hotel reservations, copies of ID, insurance documents, and event tickets are quickly accessible when stored online. At the same time, these documents often contain very personal information.&lt;/p>
+&lt;p>If &lt;strong>such files are stored in the cloud in unencrypted form&lt;/strong>, they aren’t automatically private there. While many cloud providers secure their infrastructure, as a user, you don’t always have full control over who might technically have access to your stored data.&lt;/p>
+&lt;p>With &lt;strong>Cryptomator&lt;/strong>, you can encrypt your files before they are uploaded to the cloud. To do this, you create what’s called a &lt;strong>vault&lt;/strong>. Everything you store in this vault is &lt;strong>encrypted locally on your device and then synced with your cloud provider as usual&lt;/strong>.&lt;/p>
+&lt;p>This means you can continue to use your preferred cloud service, but &lt;strong>your files will remain unreadable to third parties&lt;/strong>.&lt;/p>
+&lt;p>Already have the app but don&amp;rsquo;t know how to create a vault? Then take a look at our &lt;a href="https://docs.cryptomator.org/desktop/getting-started/">documentation&lt;/a>.&lt;/p>
+&lt;h2 id="2-use-public-wi-fi-with-caution">2. Use Public Wi-Fi With Caution&lt;/h2>
+&lt;p>During soccer season, people often get a lot of work done on the go: quickly sending a file, opening a document, reviewing a presentation, or accessing personal files. &lt;strong>Public Wi-Fi&lt;/strong> in hotels, cafés, trains, or airports is tempting for this, but it isn’t always trustworthy.&lt;/p>
+&lt;p>Even though modern websites and apps often use encrypted connections, public networks still pose a risk. This becomes particularly problematic when sensitive files are transmitted without protection or opened on unsecured devices.&lt;/p>
+&lt;p>Here are a few basic rules to follow:&lt;/p>
+&lt;ul>
+&lt;li>Use public Wi-Fi only when absolutely necessary&lt;/li>
+&lt;li>Avoid entering sensitive login credentials if you don&amp;rsquo;t trust the network&lt;/li>
+&lt;li>Keep your operating system and apps up to date&lt;/li>
+&lt;li>Enable two-factor authentication whenever possible&lt;/li>
+&lt;li>And above all: Don&amp;rsquo;t store confidential files in the cloud without encrypting them&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Cryptomator&lt;/strong> protects your files regardless of the network used to sync them. Even when your cloud files are being transferred or stored, they remain encrypted.&lt;/p>
+&lt;h2 id="3-plan-ahead-for-device-loss">3. Plan Ahead for Device Loss&lt;/h2>
+&lt;p>When traveling or attending events, things can go wrong in the blink of an eye: a smartphone gets left behind, a laptop gets stolen, or a tablet goes missing from a backpack. It’s always frustrating. But it becomes a serious problem &lt;strong>if sensitive files are stored on the device without protection&lt;/strong>.&lt;/p>
+&lt;p>That’s why it’s a good idea to check a few things before you start your trip:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Enable a screen lock&lt;/strong> with a strong password or biometric unlocking&lt;/li>
+&lt;li>Set up &lt;strong>device encryption&lt;/strong>&lt;/li>
+&lt;li>Use a &lt;strong>password manager&lt;/strong>&lt;/li>
+&lt;li>Check whether you can &lt;strong>remotely lock or wipe your devices&lt;/strong> in an emergency&lt;/li>
+&lt;li>And only store sensitive documents in &lt;strong>encrypted&lt;/strong> form&lt;/li>
+&lt;/ul>
+&lt;p>With &lt;strong>Cryptomator&lt;/strong>, you can store personal and work files in encrypted vaults. Even if someone gains access to your cloud storage or synced files, the contents remain protected without your password.&lt;/p>
+&lt;h2 id="4-teamwork-requires-more-than-just-shared-folders">4. Teamwork Requires More Than Just Shared Folders&lt;/h2>
+&lt;p>It’s not just individuals who benefit from encrypted cloud storage. &lt;strong>Teams, companies, universities, NGOs, and organizations&lt;/strong> also frequently work with sensitive documents. Collaboration often intensifies during major events or seasonal campaigns: marketing materials, press kits, budget plans, travel documents, internal lists, and project files need to be readily available.&lt;/p>
+&lt;p>A &lt;strong>shared cloud folder&lt;/strong> alone isn&amp;rsquo;t always enough. When it comes to sensitive data, it&amp;rsquo;s not just about making files available. It&amp;rsquo;s also about effectively controlling access and reliably protecting the content.&lt;/p>
+&lt;p>That&amp;rsquo;s where &lt;strong>Cryptomator Hub&lt;/strong> comes in.&lt;/p>
+&lt;p>Cryptomator Hub enables organizations to &lt;strong>share encrypted vaults within a team&lt;/strong>. Files remain &lt;strong>encrypted on the client side&lt;/strong>, while &lt;strong>access can be managed centrally&lt;/strong>. This allows teams to collaborate securely without storing sensitive information in the cloud in unencrypted form.&lt;/p>
+&lt;p>This is particularly helpful when multiple people need to access confidential files, for example in companies, research institutions, universities, NGOs, or agencies.&lt;/p>
+&lt;p>&lt;a href="https://cryptomator.org/hub/managed/">&lt;strong>[Try Cryptomator Hub for 30 Days]&lt;/strong>&lt;/a>&lt;/p>
+&lt;h2 id="5-check-access-rights-regularly">5. Check Access Rights Regularly&lt;/h2>
+&lt;p>In many organizations, cloud folders grow over time. People are added, projects change, external partners are granted access, and former team members sometimes retain access longer than they should.&lt;/p>
+&lt;p>Soccer offers a good analogy for this: Not everyone belongs in the starting lineup all the time. The same goes for file access—&lt;strong>you should regularly review who actually still needs access&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>For teams, this means&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Regularly reviewing access permissions&lt;/li>
+&lt;li>Consistently removing former team members&lt;/li>
+&lt;li>Limiting the duration of external access&lt;/li>
+&lt;li>Not sharing sensitive files via public links&lt;/li>
+&lt;li>Clearly defining roles and responsibilities&lt;/li>
+&lt;/ul>
+&lt;p>With &lt;strong>Cryptomator Hub&lt;/strong>, &lt;strong>access to encrypted vaults can be managed centrally&lt;/strong>. This makes secure collaboration easier without having to sacrifice the benefits of cloud storage.&lt;/p>
+&lt;h2 id="6-dont-forget-to-back-up-your-data">6. Don’t Forget to Back Up Your Data&lt;/h2>
+&lt;p>Data protection isn’t just about safeguarding files from unauthorized access. It’s also about making sure you don’t lose important data. It’s especially worth creating a &lt;strong>backup&lt;/strong> before trips, events, or busy work periods.&lt;/p>
+&lt;p>A &lt;strong>good backup protects you against device loss, accidental deletion, technical issues, or ransomware attacks&lt;/strong>. The key point is this: a backup shouldn’t just exist—it should also be tested regularly.&lt;/p>
+&lt;p>For particularly sensitive files, it makes sense to &lt;strong>store backups in an encrypted format&lt;/strong>. With Cryptomator, you can use an encrypted vault for this purpose and sync it with a cloud service of your choice. This way, your files remain accessible but protected.&lt;/p>
+&lt;h2 id="7-keep-personal-and-professional-information-separate">7. Keep Personal and Professional Information Separate&lt;/h2>
+&lt;p>During a major sporting event, &lt;strong>the lines between personal and professional use can quickly blur&lt;/strong>: personal smartphones are used for work emails, work laptops for travel documents, and team files end up in personal cloud folders.&lt;/p>
+&lt;p>This can lead to problems. Keeping personal and professional data clearly separate reduces risks and makes it easier to stay on top of things.&lt;/p>
+&lt;p>A &lt;strong>simple structure&lt;/strong> can help:&lt;/p>
+&lt;ul>
+&lt;li>a vault for personal documents&lt;/li>
+&lt;li>a vault for travel documents&lt;/li>
+&lt;li>a vault for work files&lt;/li>
+&lt;li>a shared vault for team projects via Cryptomator Hub&lt;/li>
+&lt;/ul>
+&lt;p>This makes it clear which files belong where and who should have access to them.&lt;/p>
+&lt;h2 id="8-encryption-should-be-simple">8. Encryption Should Be Simple&lt;/h2>
+&lt;p>Many people know that encryption is important. Yet it’s often not used in everyday life because it seems complicated. That’s exactly what Cryptomator aims to change.&lt;/p>
+&lt;p>&lt;strong>Cryptomator is designed so you can securely encrypt your files without having to understand cryptography&lt;/strong>. You create a vault, place files inside it, and continue using your cloud as usual. The encryption happens in the background on your device.&lt;/p>
+&lt;p>For individuals, this is an easy way to protect private documents, photos, backups, or travel documents. For organizations, &lt;strong>Cryptomator Hub&lt;/strong> also offers the ability to &lt;strong>enable encrypted team collaboration&lt;/strong>.&lt;/p>
+&lt;h2 id="conclusion-good-preparation-is-the-best-defense">Conclusion: Good Preparation Is the Best Defense&lt;/h2>
+&lt;p>&lt;strong>Whether on the soccer field or in IT security, a strong defense doesn’t start only when an emergency arises&lt;/strong>. If you want to protect your data, you should consider in advance where sensitive information is stored, who has access to it, and how it’s secured.&lt;/p>
+&lt;p>Soccer season is a good time &lt;strong>to review your own digital security&lt;/strong>. Not because you have to sacrifice convenience, but because &lt;strong>security and ease of use can go hand in hand&lt;/strong>.&lt;/p>
+&lt;p>With &lt;strong>Cryptomator&lt;/strong>, you can encrypt your files before they go to the cloud. With Cryptomator Hub, teams and organizations can securely collaborate on encrypted data.&lt;/p>
+&lt;p>This way, your files stay protected whether you’re on the go, working in a team, or using the cloud every day.&lt;/p>
+&lt;p>Ready for a strong digital defense? Protect your files now with Cryptomator — and secure team collaboration with Cryptomator Hub.&lt;/p>
+&lt;p>&lt;a href="https://cryptomator.org/contact-sales/">&lt;strong>[Request a demo now]&lt;/strong>&lt;/a>&lt;/p></description><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2026/06/11/data-protection-at-the-world-cup/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2026/06/11/data-protection-at-the-world-cup/</guid><category>cryptomator</category><category>cryptomator hub</category><category>worldcup2026</category></item><item><title>Cybercrime in 2025: What Businesses Can Learn from Germany's BKA Report</title><description>&lt;p>&lt;strong>Cyberattacks are no longer the exception&lt;/strong>. They have become part of the everyday threat landscape for businesses, organizations, and public institutions. This is also evident in the latest report from &lt;strong>Germany&amp;rsquo;s Federal Criminal Police Office (Bundeskriminalamt, or BKA)&lt;/strong>, its &amp;ldquo;&lt;a href="https://www.bka.de/SharedDocs/Downloads/DE/Publikationen/JahresberichteUndLagebilder/Cybercrime/cybercrimeBundeslagebild2025.html?nn=28110">&lt;strong>Federal Cybercrime Situation Report 2025&lt;/strong>&lt;/a>.&amp;rdquo; While the report focuses on Germany, the trends it describes are playing out internationally: cybercrime is becoming more professional, scalable, and potentially more damaging for those affected. &lt;strong>Ransomware, data extortion, phishing&lt;/strong>, and the misuse of artificial intelligence are particularly defining the current landscape.&lt;/p>
 &lt;p>This raises a key question for &lt;strong>companies&lt;/strong>: &lt;strong>How can sensitive data be protected&lt;/strong> when attacks are increasingly targeting not just systems, but the information itself?&lt;/p>
 &lt;figure class="text-center">
 &lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/cybercrime-report-2025.png" alt="Cybercrime in 2025: What Businesses Can Learn from Germany's BKA Report" />
@@ -458,52 +549,4 @@ This ensures long-term investment in &lt;strong>security standards, performance,
 &lt;p>It can also be used on &lt;strong>private devices&lt;/strong>, which is an important factor for smaller works councils or committees without their own office infrastructure.&lt;/p>
 &lt;h2 id="conclusion">Conclusion&lt;/h2>
 &lt;p>Confidentiality is not a nice-to-have, but a legal obligation and a responsibility that must be upheld. Works councils facing digital transformation &lt;strong>should view the protection of sensitive data as a key requirement&lt;/strong>—not only to comply with legal requirements, but also to maintain the trust of the workforce.&lt;/p>
-&lt;p>With end-to-end encryption and independent tools such as Cryptomator Hub, works councils can fulfill this obligation &lt;strong>securely, easily, and independently&lt;/strong>. And in doing so, they can send an important message: for digital maturity, for data protection, and for modern co-determination on an equal footing.&lt;/p></description><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/11/24/encryption-for-works-councils/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/11/24/encryption-for-works-councils/</guid><category>cryptomator</category><category>hub</category></item><item><title>Cryptomator Desktop 1.18.0 is here!</title><description>&lt;p>We are pleased to announce the &lt;strong>official release of Cryptomator Desktop version 1.18.0&lt;/strong>. Following the &lt;a href="https://staging.cryptomator.org/blog/2025/09/26/desktop-beta-1.18.0/">beta phase&lt;/a>, this version brings the full package of improvements, new features, and stability enhancements—now available for all supported platforms.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/desktop-1.18.0.png" alt="Cryptomator Desktop 1.18.0" />
-&lt;/figure>
-&lt;h2 id="new-features-whats-new-in-1180">New Features: What’s New in 1.18.0?&lt;/h2>
-&lt;h3 id="restoring-the-vault-configuration-file">Restoring the Vault Configuration File&lt;/h3>
-&lt;p>The &lt;strong>recovery key&lt;/strong> has been part of Cryptomator for some time, but with version 1.18.0, it is now significantly more powerful: You can now &lt;strong>completely restore lost or damaged master key files and vault configuration files&lt;/strong> using your existing recovery key.&lt;/p>
-&lt;p>Whether accidentally deleted, overwritten due to a backup problem, or damaged by a memory error, the vault can now be &lt;strong>reliably reconstructed&lt;/strong>.&lt;/p>
-&lt;p>This makes the recovery key a real emergency tool that secures access to the vault in case of an emergency and prevents complete data loss.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/recover-vault-config.png" srcset="https://staging.cryptomator.org/img/blog/recover-vault-config.png 1x, https://staging.cryptomator.org/img/blog/recover-vault-config@2x.png 2x" alt="Restoring the vault configuration file" />
-&lt;/figure>
-&lt;h3 id="new-signature-certificates-for-windows">New Signature Certificates for Windows&lt;/h3>
-&lt;p>The Windows installer and all binary files are &lt;strong>signed with a new certificate&lt;/strong>. The old certificate is no longer valid, and the new certificate ensures smooth installation on modern Windows systems without disruptive warning dialogs.&lt;/p>
-&lt;h3 id="remembering-the-last-vault-location">Remembering the Last Vault Location&lt;/h3>
-&lt;p>When creating a new vault, Cryptomator now automatically suggests the &lt;strong>last location used&lt;/strong>. Users who create multiple vaults in similar folder structures benefit from a &lt;strong>significantly faster setup process&lt;/strong>.&lt;/p>
-&lt;h2 id="bug-fixes--platform-improvements">Bug Fixes &amp;amp; Platform Improvements&lt;/h2>
-&lt;h3 id="macos-26-correct-display-of-the-app-icon--and-no-squircle-jail-for-cryptomator">macOS 26: Correct Display of the App Icon – And No &amp;ldquo;Squircle Jail&amp;rdquo; for Cryptomator&lt;/h3>
-&lt;p>On macOS 26 (codename &amp;ldquo;Tahoe&amp;rdquo;), the &lt;strong>Cryptomator icon&lt;/strong> was put inside a generic grey squircle, which didn&amp;rsquo;t look right. This issue has been fixed in version 1.18.0, so the icon now appears as it should.&lt;/p>
-&lt;p>With Tahoe, Apple now enforces squircle-shaped icons for all macOS apps—similar to the strict guidelines that have always applied to iOS. Previously, macOS apps could escape the squircle more freely, and many apps used this playfully as part of their visual identity. But now, app icons must conform to the squircle shape. We&amp;rsquo;re joining the &lt;strong>squircle resistance&lt;/strong> alongside other app developers who are keeping their distinctive icon designs instead of conforming to this new guideline.&lt;/p>
-&lt;figure class="text-center">
-&lt;img class="inline-block rounded-sm" src="https://staging.cryptomator.org/img/blog/squircle-jail-resistance.png" srcset="https://staging.cryptomator.org/img/blog/squircle-jail-resistance.png 1x, https://staging.cryptomator.org/img/blog/squircle-jail-resistance@2x.png 2x" alt="macOS 26: Correct Display of the App Icon – And No 'Squircle Jail' for Cryptomator" />
-&lt;/figure>
-&lt;h3 id="macfuse-detection-on-macos-26">macFUSE Detection on macOS 26&lt;/h3>
-&lt;p>Some users experienced problems integrating vaults because macFUSE was not always recognized on macOS 26. This bug has now been fixed, so vaults can be opened reliably again.&lt;/p>
-&lt;h3 id="windows-control-over-log-file-sizes">Windows: Control Over Log File Sizes&lt;/h3>
-&lt;p>In rare cases, log files on Windows could grow enormously and cause system problems. The size limit of the log files has been corrected so that Cryptomator runs reliably and conserves resources in the background again.&lt;/p>
-&lt;h3 id="linuxkde-cleaning-up-quickaccess-entries">Linux/KDE: Cleaning Up QuickAccess Entries&lt;/h3>
-&lt;p>Under KDE, the Dolphin file manager created a new QuickAccess entry every time a vault was unlocked—even if one already existed, for example after the app was unexpectedly closed. This behavior has now been corrected. Existing entries are reused, and unnecessary duplications are a thing of the past.&lt;/p>
-&lt;h2 id="further-changes--technical-updates">Further Changes &amp;amp; Technical Updates&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Update of the UI framework to JavaFX 25&lt;/strong>: improved performance, modern graphics display, and long-term compatibility.&lt;/li>
-&lt;li>&lt;strong>New “Share” entry in the context menu&lt;/strong> that explains how to share vaults.&lt;/li>
-&lt;li>Various &lt;strong>security and library updates&lt;/strong> (including nimbus-jose-jwt, logback, commons-lang3, dagger) to keep the software up to date and secure.&lt;/li>
-&lt;/ul>
-&lt;h2 id="why-this-update-is-important">Why This Update Is Important&lt;/h2>
-&lt;p>Version 1.18.0 makes Cryptomator Desktop &lt;strong>more robust, user-friendly, and better prepared for future operating system versions&lt;/strong>. The new recovery feature protects in critical scenarios (e.g., damaged configuration files), while UI and system improvements make everyday use of Cryptomator smoother.&lt;/p>
-&lt;h2 id="what-you-can-do-now">What You Can Do Now&lt;/h2>
-&lt;ul>
-&lt;li>Install Cryptomator Desktop 1.18.0 for your operating system.&lt;/li>
-&lt;li>If you have been using the &lt;strong>beta version&lt;/strong>, please be sure to update to the final release!&lt;/li>
-&lt;li>For businesses and security-conscious users, it&amp;rsquo;s worth taking a look at the &lt;strong>new Windows certificate&lt;/strong>.&lt;/li>
-&lt;li>And remember: &lt;strong>keep your vault recovery key safe&lt;/strong>.&lt;/li>
-&lt;/ul>
-&lt;h2 id="closing-remarks">Closing Remarks&lt;/h2>
-&lt;p>&lt;strong>Thank you&lt;/strong> to everyone in the community who tested the beta. Your &lt;strong>feedback&lt;/strong> directly contributed to making 1.18.0 a strong, stable release. With this update, Cryptomator Desktop is more reliable than ever!&lt;/p>
-&lt;p>Thank you for using Cryptomator—and thank you for securely encrypting your data.&lt;br>
-We look forward to your feedback on the new release!&lt;/p>
-&lt;p>Your Cryptomator Team&lt;/p></description><pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/11/19/desktop-1.18.0/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/11/19/desktop-1.18.0/</guid><category>cryptomator</category><category>desktop</category></item></channel></rss>
+&lt;p>With end-to-end encryption and independent tools such as Cryptomator Hub, works councils can fulfill this obligation &lt;strong>securely, easily, and independently&lt;/strong>. And in doing so, they can send an important message: for digital maturity, for data protection, and for modern co-determination on an equal footing.&lt;/p></description><pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate><link>https://staging.cryptomator.org/blog/2025/11/24/encryption-for-works-councils/</link><guid isPermaLink="true">https://staging.cryptomator.org/blog/2025/11/24/encryption-for-works-councils/</guid><category>cryptomator</category><category>hub</category></item></channel></rss>
